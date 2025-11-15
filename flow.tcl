@@ -9,10 +9,13 @@ create_lib -technology $TECH_FILE -ref_libs {
     /data/tsmc/28HPCPMMWAVE/synopsys/libs/tcbn28hpcplusbwp30p140.ndm
     /data/tsmc/28HPCPMMWAVE/synopsys/libs/tcbn28hpcplusbwp30p140hvt.ndm
     /data/tsmc/28HPCPMMWAVE/synopsys/libs/tcbn28hpcplusbwp30p140lvt.ndm
-    /data/tsmc/28HPCPMMWAVE/synopsys/libs/tphn28hpcpgv18_9lm.ndm
 } RISCV1.dlib
+
+
+
 open_lib RISCV1.dlib
 report_ref_libs
+
 
 # Parasitic Tech Files
 read_parasitic_tech -tlup /data/tsmc/28HPCPMMWAVE/dig_libs/snpsflow/rcbest/crn28hpc+_1p09m+ut-alrdl_6x1z1u_rcbest.tluplus -name rcbest
@@ -30,6 +33,8 @@ set_top_module riscv_core
 
 start_gui
 save_block -as RISCV1/elaborate
+
+read_tech_lef -merge_action overwrite  "/data/tsmc/28HPCPMMWAVE/synopsys/tsmcn28_9lm6X1Z1UUTRDL.tlef"
 
 #######################################################################
 ## MCMM setup
@@ -73,7 +78,7 @@ source riscv.sdc
 #######################################################################
 ## Floorplan and Implementation
 #######################################################################
-set_auto_floorplan_constraints -core_utilization 0.7 -side_ratio {1 1} -core_offset 2
+set_auto_floorplan_constraints -core_utilization 0.6 -side_ratio {1 1} -core_offset 2
 
 # Setup application options
 set_app_options -name place.coarse.continue_on_missing_scandef -value true
@@ -93,16 +98,9 @@ set_app_options -name compile.auto_floorplan.place_pins -value all
 # Pin placement constraints
 set ports [remove_from_collection [get_ports] {VDD VSS}]
 
-set_block_pin_constraints -self \
-	-allowed_layers {M2 M3} \
-	-sides {1 2 3 4} \
-	-pin_spacing_distance 1.9 \
-	-width 0.06 \
-	-length 0.06 
-
 report_block_pin_constraints -self
 
-place_pins -self
+place_pins -use_existing_routing -self
 
 # initial_place stage
 compile_fusion -from initial_place -to initial_place
@@ -173,15 +171,14 @@ create_pg_std_cell_conn_pattern M1_rail -layers {M1} -rail_width {@wtop @wbottom
 #### Connect all cess to pg nets 
 connect_pg_net -automatic
 ####  set the PG strategy for M1 cells straps
-set_pg_strategy M1_rail_strategy_pwr -core -pattern {{name: M1_rail} {nets: VDD} {parameters: {0.15 0.15 }}}
-set_pg_strategy M1_rail_strategy_gnd -core -pattern {{name: M1_rail} {nets: VSS} {parameters: {0.15 0.15 }}}
-
+set_pg_strategy M1_rail_strategy_pwr -core -pattern {{name: M1_rail} {nets: VDD} {parameters: {0.150 0.150}}}
+set_pg_strategy M1_rail_strategy_gnd -core -pattern {{name: M1_rail} {nets: VSS} {parameters: {0.150 0.150}}}
 ####  create pg for the cells on the rows
-compile_pg -strategies M1_rail_strategy_pwr 
-compile_pg -strategies M1_rail_strategy_gnd 
+compile_pg -strategies M1_rail_strategy_pwr -ignore_drc
+compile_pg -strategies M1_rail_strategy_gnd -ignore_drc
 ### Create M5 Veritacl PG Straps
 create_pg_mesh_pattern M5_PG         -layers { {vertical_layer: M5}   {width: 1.6} {spacing: interleaving} {pitch: 16} {offset: 4.0} }
-set_pg_strategy M5_PG_Strategy         -core         -pattern   { {name: M5_PG} {nets:{VSS VDD}} }         -extension { {stop: design_boundary_and_generate_pin} }
+set_pg_strategy M5_PG_Strategy         -core         -pattern   { {name: M5_PG} {nets:{VSS VDD}} }         -extension { {stop: core_boundary} }
 compile_pg -strategies {M5_PG_Strategy} -via_rule VIA_NIL
 #### Create M6 Horizontal PG Straps
 create_pg_mesh_pattern M6_PG         -layers { {horizontal_layer: M6}   {width: 1.6} {spacing: interleaving} {pitch: 16} {offset: 4.0} }
@@ -211,7 +208,7 @@ check_pg_drc
 ### ========================================
 compile_fusion -from logic_opto -to final_opto
 
-save_block -as RISCV1/power&graid
+save_block -as RISCV1/pg
 #####################################################################
 ### Placement and Optimization	
 #####################################################################
@@ -453,7 +450,7 @@ save_block -as RISCV1/filer
 #### ICV In-Design Run
 set_host_options -target ICV -max_cores 2
 
-set_app_options -name signoff.check_drc.runset -value /data/synopsys/lib/SAED14nm_PDK_12142021/SAED14_PDK/icv/drc/saed14nm_1p9m_drc_rules.rs
+set_app_options -name signoff.check_drc.runset -value /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt
 set_app_options -name signoff.check_drc.max_errors_per_rule -value 1000
 set_app_options -name signoff.check_drc.run_dir -value "./signoff_drc_run/"
 set_app_options -name signoff.physical.layer_map_file -value /data/tsmc/28HPCPMMWAVE/dig_libs/PRTF/PRTF_ICC_28nm_Syn_V19_1a/PR_tech/Synopsys/GdsOutMap/gdsout_6X1Z1U.map
@@ -471,7 +468,7 @@ signoff_fix_drc
 
 
 #### Metla Fil
-set_app_options -name signoff.create_metal_fill.runset -value "./runset_signoff_tec/saed14nm_1p9m_mfill_rules.rs"
+set_app_options -name signoff.create_metal_fill.runset -value /data/tsmc/28HPCPMMWAVE/synopsys/ICV/Dummy/Metal/2.1b/Dummy_Metal_Via_ICV_28nm.21b
 signoff_report_metal_density -output pre_metal_fill_density.rpt
 signoff_create_metal_fill -select_layers {M2 M3 M4 M5 M6}
 signoff_report_metal_density -output post_metal_fill_density.rpt
