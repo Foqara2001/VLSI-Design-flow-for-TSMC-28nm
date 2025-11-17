@@ -174,7 +174,7 @@ Verified timing closure across corners
 
 DRC/LVS-ready layout suitable for tape-out
 
-book that expalin every step in the flow to help the students in the future .
+Book that expalin every step in the flow to help the students in the future .
 
 # 📜 License
 
