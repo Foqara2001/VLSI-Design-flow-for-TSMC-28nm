@@ -1,0 +1,13 @@
+{
+    "PLEASE DON'T EDIT OR PARSE": "This is automatically generated file for extracting in QS",
+    "CREATION TIME": "Sun Aug 31 15:53:08 2025",
+    "VERSION": "1",
+    "LVS LAYOUT TOP ERRORS AND WARNINGS": {
+        "ERRS": [
+            "Subcircuit \"risc_core\" not found"
+        ]
+    },
+    "LVS REPORT OPTION": [
+        "S"
+    ]
+}

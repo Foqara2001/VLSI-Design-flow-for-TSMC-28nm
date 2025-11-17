@@ -1,0 +1,218 @@
+VENDOR: Synopsys Inc.
+PROGRAM: StarRC
+PROGRAM VERSION: W-2024.09-SP3
+PROGRAM DATE: Jan 16 2025 19:25:55
+GPD VERSION: 2.20.1
+GPD DATE: Tue Sep  2 13:45:47 2025
+NETS: 10894 (10897)
+CELLS: 9983 (21535)
+PORTS: 267 (267)
+IDEAL NETS: 0 (0)
+IDEAL CELLS: 0 (0)
+IDEAL PORTS: 0 (0)
+UNCONNECTED PORTS: 0 (0)
+UNCONNECTED PINS: 0
+MIN GND CAP: 0.001
+GPD CONTENTS: DATAP,DATAF,STITCH_EXT,CONV_FILE
+NAME MAP COMPLETE: YES
+GPD DATA COMPLETE: YES
+HAS VIA PILLAR: NO
+RESISTANCE DETAIL NO
+RESISTANCE BOUNDING BOXNO
+INSTANCE SECTION: NO
+SCALE FACTOR: 0.9
+SCALE FACTOR_VERTICAL: 0.9
+COORDINATES SCALED: NO
+RESISTOR PROPERTIES SCALED: NO
+DEVICE PROPERTIES SCALED: NO
+IS SINGLESIDED CC: 0
+INSTANCE_PORT_LOCATION_CLOSER_TO_DRIVER: NO
+
+NUM_CORNERS: 1
+NUM_CAP_CORNERS: 1
+CORNER 1
+  NAME: 
+  PROCESS: /data/tsmc/28HPCPMMWAVE/synopsys/StarRC/1.9p1a/typical/crn28hpc+_1p09m+ut-alrdl_5x1y1z1u_typical.nxtgrd
+  TEMPERATURE: 25
+  CAP_INDEX: 0
+
+
+COUPLING_ABS_THRESHOLD: 3
+COUPLING_REL_THRESHOLD: 0.03
+FILTERING_OPERATION: AND
+SMC_AWARE_COUPLING_FILTERING: NO
+
+CAPACITANCE UNIT: 1
+RESISTANCE UNIT: 1
+BUS BIT DELIMITER: []
+PIN DELIMITER: :
+HIERARCHY DELIMITER: /
+NET_SHORTING_CONDUCTANCE: 100
+OPEN_IP_SHORTING_CONDUCTANCE: 10
+NETLIST NODE SECTION: NO
+NETLIST_COMPRESSION: NO
+NETLIST PRECISION: 6
+NETLIST_INPUT_DRIVERS: NO
+NETLIST_NAME_MAP: YES
+NETLIST_INCREMENTAL: NO
+LUMPED_CAP_FORMATTING: NO
+NETLIST_NODENAME_NETNAME: NO
+NETLIST_SUBNODE_SELECTION: NO
+TEMPERATURE_SENSITIVITY: NO
+NETLIST_INTEGRITY_CHECK: GPIO_VIOLATION_LOCAL_NODE_ID
+
+Layer 1
+  ID: 0
+  Layer name: SUBSTRATE
+
+Layer 2
+  ID: 1
+  Layer name: M1
+  ITF Layer name: M1
+  Pic Level: 4
+  Layer Wmin: 0.045
+
+Layer 3
+  ID: 2
+  Layer name: M2
+  ITF Layer name: M2
+  Pic Level: 5
+  Layer Wmin: 0.045
+
+Layer 4
+  ID: 3
+  Layer name: M3
+  ITF Layer name: M3
+  Pic Level: 6
+  Layer Wmin: 0.045
+
+Layer 5
+  ID: 4
+  Layer name: M4
+  ITF Layer name: M4
+  Pic Level: 7
+  Layer Wmin: 0.045
+
+Layer 6
+  ID: 5
+  Layer name: M5
+  ITF Layer name: M5
+  Pic Level: 8
+  Layer Wmin: 0.045
+
+Layer 7
+  ID: 6
+  Layer name: M6
+  ITF Layer name: M6
+  Pic Level: 9
+  Layer Wmin: 0.045
+
+Layer 8
+  ID: 7
+  Layer name: M7
+  ITF Layer name: M7
+  Pic Level: 10
+  Layer Wmin: 0.09
+
+Layer 9
+  ID: 8
+  Layer name: M8
+  ITF Layer name: M8
+  Pic Level: 11
+  Layer Wmin: 0.36
+
+Layer 10
+  ID: 9
+  Layer name: M9
+  ITF Layer name: M9
+  Pic Level: 12
+  Layer Wmin: 1.8
+
+Layer 11
+  ID: 10
+  Layer name: AP
+  ITF Layer name: AP
+  Pic Level: 13
+  Layer Wmin: 1.8
+
+Layer 12
+  ID: 11
+  Layer name: VIA1
+  ITF Layer name: VIA1
+  from ID: 1
+  to ID: 2
+  Pic Level: 4
+  Table Via Grd Level Index: 14
+
+Layer 13
+  ID: 12
+  Layer name: VIA2
+  ITF Layer name: VIA2
+  from ID: 2
+  to ID: 3
+  Pic Level: 5
+  Table Via Grd Level Index: 13
+
+Layer 14
+  ID: 13
+  Layer name: VIA3
+  ITF Layer name: VIA3
+  from ID: 3
+  to ID: 4
+  Pic Level: 6
+  Table Via Grd Level Index: 12
+
+Layer 15
+  ID: 14
+  Layer name: VIA4
+  ITF Layer name: VIA4
+  from ID: 4
+  to ID: 5
+  Pic Level: 7
+  Table Via Grd Level Index: 11
+
+Layer 16
+  ID: 15
+  Layer name: VIA5
+  ITF Layer name: VIA5
+  from ID: 5
+  to ID: 6
+  Pic Level: 8
+  Table Via Grd Level Index: 10
+
+Layer 17
+  ID: 16
+  Layer name: VIA6
+  ITF Layer name: VIA6
+  from ID: 6
+  to ID: 7
+  Pic Level: 9
+  Table Via Grd Level Index: 9
+
+Layer 18
+  ID: 17
+  Layer name: VIA7
+  ITF Layer name: VIA7
+  from ID: 7
+  to ID: 8
+  Pic Level: 10
+  Table Via Grd Level Index: 8
+
+Layer 19
+  ID: 18
+  Layer name: VIA8
+  ITF Layer name: VIA8
+  from ID: 8
+  to ID: 9
+  Pic Level: 11
+  Table Via Grd Level Index: 7
+
+Layer 20
+  ID: 19
+  Layer name: RV
+  ITF Layer name: RV
+  from ID: 9
+  to ID: 10
+  Pic Level: 12
+  Table Via Grd Level Index: 6
+

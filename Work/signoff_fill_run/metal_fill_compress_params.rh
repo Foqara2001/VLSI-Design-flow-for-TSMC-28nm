@@ -1,0 +1,108 @@
+//LDT 31 0
+smf_layer_compress_info.push_back({layer_num = {31,0},compress_fill={ mode = AUTO, cell = "GEN_TCD_M1_v21b_" },cell_prefix=""});
+//LDT 150 1
+smf_layer_compress_info.push_back({layer_num = {150,1},compress_fill={ mode = AUTO, cell = "GEN_TCD_DM1EXCL_v21b_" },cell_prefix=""});
+//LDT 165 91
+smf_layer_compress_info.push_back({layer_num = {165,91},compress_fill={ mode = AUTO, cell = "GEN_TCD_TCDDMY_FDM1_v21b_" },cell_prefix=""});
+//LDT 31 1
+smf_layer_compress_info.push_back({layer_num = {31,1},compress_fill={ mode = AUTO, cell = "DM1_FILL_v21b_" },cell_prefix=""});
+//LDT 31 7
+smf_layer_compress_info.push_back({layer_num = {31,7},compress_fill={ mode = AUTO, cell = "ODM1_FILL_v21b_" },cell_prefix=""});
+//LDT 32 0
+smf_layer_compress_info.push_back({layer_num = {32,0},compress_fill={ mode = AUTO, cell = "GEN_TCD_M2_v21b_" },cell_prefix=""});
+//LDT 150 2
+smf_layer_compress_info.push_back({layer_num = {150,2},compress_fill={ mode = AUTO, cell = "GEN_TCD_DM2EXCL_v21b_" },cell_prefix=""});
+//LDT 165 92
+smf_layer_compress_info.push_back({layer_num = {165,92},compress_fill={ mode = AUTO, cell = "GEN_TCD_TCDDMY_FDM2_v21b_" },cell_prefix=""});
+//LDT 32 1
+smf_layer_compress_info.push_back({layer_num = {32,1},compress_fill={ mode = AUTO, cell = "DM2_FILL_v21b_" },cell_prefix=""});
+//LDT 32 7
+smf_layer_compress_info.push_back({layer_num = {32,7},compress_fill={ mode = AUTO, cell = "ODM2_FILL_v21b_" },cell_prefix=""});
+//LDT 33 0
+smf_layer_compress_info.push_back({layer_num = {33,0},compress_fill={ mode = AUTO, cell = "GEN_TCD_M3_v21b_" },cell_prefix=""});
+//LDT 150 3
+smf_layer_compress_info.push_back({layer_num = {150,3},compress_fill={ mode = AUTO, cell = "GEN_TCD_DM3EXCL_v21b_" },cell_prefix=""});
+//LDT 165 93
+smf_layer_compress_info.push_back({layer_num = {165,93},compress_fill={ mode = AUTO, cell = "GEN_TCD_TCDDMY_FDM3_v21b_" },cell_prefix=""});
+//LDT 33 1
+smf_layer_compress_info.push_back({layer_num = {33,1},compress_fill={ mode = AUTO, cell = "DM3_FILL_v21b_" },cell_prefix=""});
+//LDT 33 7
+smf_layer_compress_info.push_back({layer_num = {33,7},compress_fill={ mode = AUTO, cell = "ODM3_FILL_v21b_" },cell_prefix=""});
+//LDT 34 0
+smf_layer_compress_info.push_back({layer_num = {34,0},compress_fill={ mode = AUTO, cell = "GEN_TCD_M4_v21b_" },cell_prefix=""});
+//LDT 150 4
+smf_layer_compress_info.push_back({layer_num = {150,4},compress_fill={ mode = AUTO, cell = "GEN_TCD_DM4EXCL_v21b_" },cell_prefix=""});
+//LDT 165 94
+smf_layer_compress_info.push_back({layer_num = {165,94},compress_fill={ mode = AUTO, cell = "GEN_TCD_TCDDMY_FDM4_v21b_" },cell_prefix=""});
+//LDT 34 1
+smf_layer_compress_info.push_back({layer_num = {34,1},compress_fill={ mode = AUTO, cell = "DM4_FILL_v21b_" },cell_prefix=""});
+//LDT 34 7
+smf_layer_compress_info.push_back({layer_num = {34,7},compress_fill={ mode = AUTO, cell = "ODM4_FILL_v21b_" },cell_prefix=""});
+//LDT 35 0
+smf_layer_compress_info.push_back({layer_num = {35,0},compress_fill={ mode = AUTO, cell = "GEN_TCD_M5_v21b_" },cell_prefix=""});
+//LDT 150 5
+smf_layer_compress_info.push_back({layer_num = {150,5},compress_fill={ mode = AUTO, cell = "GEN_TCD_DM5EXCL_v21b_" },cell_prefix=""});
+//LDT 165 95
+smf_layer_compress_info.push_back({layer_num = {165,95},compress_fill={ mode = AUTO, cell = "GEN_TCD_TCDDMY_FDM5_v21b_" },cell_prefix=""});
+//LDT 35 1
+smf_layer_compress_info.push_back({layer_num = {35,1},compress_fill={ mode = AUTO, cell = "DM5_FILL_v21b_" },cell_prefix=""});
+//LDT 35 7
+smf_layer_compress_info.push_back({layer_num = {35,7},compress_fill={ mode = AUTO, cell = "ODM5_FILL_v21b_" },cell_prefix=""});
+//LDT 36 0
+smf_layer_compress_info.push_back({layer_num = {36,0},compress_fill={ mode = AUTO, cell = "GEN_TCD_M6_v21b_" },cell_prefix=""});
+//LDT 150 6
+smf_layer_compress_info.push_back({layer_num = {150,6},compress_fill={ mode = AUTO, cell = "GEN_TCD_DM6EXCL_v21b_" },cell_prefix=""});
+//LDT 165 96
+smf_layer_compress_info.push_back({layer_num = {165,96},compress_fill={ mode = AUTO, cell = "GEN_TCD_TCDDMY_FDM6_v21b_" },cell_prefix=""});
+//LDT 36 1
+smf_layer_compress_info.push_back({layer_num = {36,1},compress_fill={ mode = AUTO, cell = "DM6_FILL_v21b_" },cell_prefix=""});
+//LDT 36 7
+smf_layer_compress_info.push_back({layer_num = {36,7},compress_fill={ mode = AUTO, cell = "ODM6_FILL_v21b_" },cell_prefix=""});
+//LDT 37 0
+smf_layer_compress_info.push_back({layer_num = {37,0},compress_fill={ mode = AUTO, cell = "GEN_TCD_M7_v21b_" },cell_prefix=""});
+//LDT 150 7
+smf_layer_compress_info.push_back({layer_num = {150,7},compress_fill={ mode = AUTO, cell = "GEN_TCD_DM7EXCL_v21b_" },cell_prefix=""});
+//LDT 165 97
+smf_layer_compress_info.push_back({layer_num = {165,97},compress_fill={ mode = AUTO, cell = "GEN_TCD_TCDDMY_FDM7_v21b_" },cell_prefix=""});
+//LDT 37 1
+smf_layer_compress_info.push_back({layer_num = {37,1},compress_fill={ mode = AUTO, cell = "DM7_FILL_v21b_" },cell_prefix=""});
+//LDT 37 7
+smf_layer_compress_info.push_back({layer_num = {37,7},compress_fill={ mode = AUTO, cell = "ODM7_FILL_v21b_" },cell_prefix=""});
+//LDT 38 0
+smf_layer_compress_info.push_back({layer_num = {38,0},compress_fill={ mode = AUTO, cell = "GEN_TCD_M8_v21b_" },cell_prefix=""});
+//LDT 150 8
+smf_layer_compress_info.push_back({layer_num = {150,8},compress_fill={ mode = AUTO, cell = "GEN_TCD_DM8EXCL_v21b_" },cell_prefix=""});
+//LDT 165 98
+smf_layer_compress_info.push_back({layer_num = {165,98},compress_fill={ mode = AUTO, cell = "GEN_TCD_TCDDMY_FDM8_v21b_" },cell_prefix=""});
+//LDT 38 1
+smf_layer_compress_info.push_back({layer_num = {38,1},compress_fill={ mode = AUTO, cell = "DM8_FILL_v21b_" },cell_prefix=""});
+//LDT 38 7
+smf_layer_compress_info.push_back({layer_num = {38,7},compress_fill={ mode = AUTO, cell = "ODM8_FILL_v21b_" },cell_prefix=""});
+//LDT 39 1
+smf_layer_compress_info.push_back({layer_num = {39,1},compress_fill={ mode = AUTO, cell = "DM9_FILL_v21b_" },cell_prefix=""});
+//LDT 39 7
+smf_layer_compress_info.push_back({layer_num = {39,7},compress_fill={ mode = AUTO, cell = "ODM9_FILL_v21b_" },cell_prefix=""});
+//LDT 51 1
+smf_layer_compress_info.push_back({layer_num = {51,1},compress_fill={ mode = AUTO, cell = "DVIA1_FILL_v21b_" },cell_prefix=""});
+//LDT 52 1
+smf_layer_compress_info.push_back({layer_num = {52,1},compress_fill={ mode = AUTO, cell = "DVIA2_FILL_v21b_" },cell_prefix=""});
+//LDT 53 1
+smf_layer_compress_info.push_back({layer_num = {53,1},compress_fill={ mode = AUTO, cell = "DVIA3_FILL_v21b_" },cell_prefix=""});
+//LDT 54 1
+smf_layer_compress_info.push_back({layer_num = {54,1},compress_fill={ mode = AUTO, cell = "DVIA4_FILL_v21b_" },cell_prefix=""});
+//LDT 55 1
+smf_layer_compress_info.push_back({layer_num = {55,1},compress_fill={ mode = AUTO, cell = "DVIA5_FILL_v21b_" },cell_prefix=""});
+//LDT 56 1
+smf_layer_compress_info.push_back({layer_num = {56,1},compress_fill={ mode = AUTO, cell = "DVIA6_FILL_v21b_" },cell_prefix=""});
+//LDT 57 1
+smf_layer_compress_info.push_back({layer_num = {57,1},compress_fill={ mode = AUTO, cell = "DVIA7_FILL_v21b_" },cell_prefix=""});
+//LDT 58 1
+smf_layer_compress_info.push_back({layer_num = {58,1},compress_fill={ mode = AUTO, cell = "DVIA8_FILL_v21b_" },cell_prefix=""});
+//LDT 59 1
+smf_layer_compress_info.push_back({layer_num = {59,1},compress_fill={ mode = AUTO, cell = "DVIA9_FILL_v21b_" },cell_prefix=""});
+//LDT 60 1
+smf_layer_compress_info.push_back({layer_num = {60,1},compress_fill={ mode = AUTO, cell = "DVIA10_FILL_v21b_" },cell_prefix=""});
+//LDT 61 1
+smf_layer_compress_info.push_back({layer_num = {61,1},compress_fill={ mode = AUTO, cell = "DVIA11_FILL_v21b_" },cell_prefix=""});
+//LDT 62 1
+smf_layer_compress_info.push_back({layer_num = {62,1},compress_fill={ mode = AUTO, cell = "DVIA12_FILL_v21b_" },cell_prefix=""});

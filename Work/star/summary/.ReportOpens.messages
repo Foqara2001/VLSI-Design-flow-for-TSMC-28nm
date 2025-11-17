@@ -1,0 +1,12 @@
+Num parts for violation reports = 0
+coreIndx : 1
+report_opens NETID1 : 4
+report_opens NETID2 : 4
+WARNING: found open net(s) in the design. Check opens.sum file. (EX-414)
+  
+ReportOpens   Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=562.1 
+  
+Done          Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=562.1 
+
+End Time: Tue Sep  2 13:45:45 2025
+

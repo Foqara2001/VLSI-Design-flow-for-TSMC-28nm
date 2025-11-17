@@ -1,0 +1,54 @@
+set search_path [list . /tools/synopsys/fc/V-2023.12-SP3/dw/syn_ver /tools/synopsys/fc/V-2023.12-SP3/dw/sim_ver /tools/synopsys/fc/V-2023.12-SP3/libraries/syn scripts design_data ] 
+analyze -format sverilog  "rtl/riscv_alu.v rtl/riscv_core.v rtl/riscv_csr_regfile.v rtl/riscv_csr.v rtl/riscv_decoder.v rtl/riscv_decode.v rtl/riscv_defs.v rtl/riscv_divider.v rtl/riscv_exec.v rtl/riscv_fetch.v rtl/riscv_issue.v rtl/riscv_lsu.v rtl/riscv_mmu.v rtl/riscv_multiplier.v rtl/riscv_pipe_ctrl.v rtl/riscv_regfile.v rtl/riscv_trace_sim.v rtl/riscv_xilinx_2r1w.v" 
+C/project/tsmc28mmwave/users/foqara/ws/riscv
+/project/tsmc28mmwave/users/foqara/ws/riscv/rtl/riscv_alu.v
+/project/tsmc28mmwave/users/foqara/ws/riscv/rtl/riscv_defs.v
+riscv_alu
+/project/tsmc28mmwave/users/foqara/ws/riscv/rtl/riscv_core.v
+riscv_core
+/project/tsmc28mmwave/users/foqara/ws/riscv/rtl/riscv_csr_regfile.v
+/project/tsmc28mmwave/users/foqara/ws/riscv/rtl/riscv_defs.v
+riscv_csr_regfile
+/project/tsmc28mmwave/users/foqara/ws/riscv/rtl/riscv_csr.v
+/project/tsmc28mmwave/users/foqara/ws/riscv/rtl/riscv_defs.v
+riscv_csr
+/project/tsmc28mmwave/users/foqara/ws/riscv/rtl/riscv_decoder.v
+/project/tsmc28mmwave/users/foqara/ws/riscv/rtl/riscv_defs.v
+riscv_decoder
+/project/tsmc28mmwave/users/foqara/ws/riscv/rtl/riscv_decode.v
+riscv_decode
+/project/tsmc28mmwave/users/foqara/ws/riscv/rtl/riscv_defs.v
+/project/tsmc28mmwave/users/foqara/ws/riscv/rtl/riscv_divider.v
+/project/tsmc28mmwave/users/foqara/ws/riscv/rtl/riscv_defs.v
+riscv_divider
+/project/tsmc28mmwave/users/foqara/ws/riscv/rtl/riscv_exec.v
+/project/tsmc28mmwave/users/foqara/ws/riscv/rtl/riscv_defs.v
+riscv_exec
+/project/tsmc28mmwave/users/foqara/ws/riscv/rtl/riscv_fetch.v
+/project/tsmc28mmwave/users/foqara/ws/riscv/rtl/riscv_defs.v
+riscv_fetch
+/project/tsmc28mmwave/users/foqara/ws/riscv/rtl/riscv_issue.v
+/project/tsmc28mmwave/users/foqara/ws/riscv/rtl/riscv_defs.v
+riscv_issue
+/project/tsmc28mmwave/users/foqara/ws/riscv/rtl/riscv_lsu.v
+/project/tsmc28mmwave/users/foqara/ws/riscv/rtl/riscv_defs.v
+riscv_lsu
+riscv_lsu_fifo
+/project/tsmc28mmwave/users/foqara/ws/riscv/rtl/riscv_mmu.v
+/project/tsmc28mmwave/users/foqara/ws/riscv/rtl/riscv_defs.v
+riscv_mmu
+/project/tsmc28mmwave/users/foqara/ws/riscv/rtl/riscv_multiplier.v
+/project/tsmc28mmwave/users/foqara/ws/riscv/rtl/riscv_defs.v
+riscv_multiplier
+/project/tsmc28mmwave/users/foqara/ws/riscv/rtl/riscv_pipe_ctrl.v
+/project/tsmc28mmwave/users/foqara/ws/riscv/rtl/riscv_defs.v
+riscv_pipe_ctrl
+/project/tsmc28mmwave/users/foqara/ws/riscv/rtl/riscv_regfile.v
+riscv_regfile
+/project/tsmc28mmwave/users/foqara/ws/riscv/rtl/riscv_trace_sim.v
+/project/tsmc28mmwave/users/foqara/ws/riscv/rtl/riscv_defs.v
+riscv_trace_sim
+/project/tsmc28mmwave/users/foqara/ws/riscv/rtl/riscv_xilinx_2r1w.v
+riscv_xilinx_2r1w
+elaborate riscv_core
+set_top_module riscv_core

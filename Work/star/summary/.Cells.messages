@@ -1,0 +1,13 @@
+run_in_same_process: start time = 1756809908
+WARNING: HALF_NODE_SCALE_FACTOR detected in nxtgrd file, setting NETLIST_UNSCALED_RES_PROP:YES for
+         unshrunk coordinates. (SX-0291)
+create_xin_writer; sort_xin_in_memory YES cut_trap YES track_fill_detection NO
+Cells not flattened due to FLATTEN_CACHE_TOTAL_FLAT_COUNT_THRESHOLD: (15000000K)
+Cell     FlatCount   Accumulated     
+  
+InitDB          Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=835.6 
+ImportCells     Elp=00:00:01 Cpu=00:00:01 Usr=1.0    Sys=0.1    Mem=958.1 
+Cells           Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=958.1 
+BuildPinIndexDB Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=958.1 
+  
+Done          Elp=00:00:01 Cpu=00:00:01 Usr=1.0    Sys=0.1    Mem=958.1 

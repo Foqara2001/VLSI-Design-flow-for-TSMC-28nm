@@ -1,0 +1,7 @@
+# Master Broadcast File
+time 1750149476
+pid 1267395
+log /project/tsmc28mmwave/users/foqara/ws/riscv/FM_WORK2/.cdpl/master.micron2.eng.tau.ac.il.1267395.log
+tcp 132.66.48.74:44353
+wlog /project/tsmc28mmwave/users/foqara/ws/riscv/FM_WORK2/.cdpl/worker.W1.micron2.eng.tau.ac.il.1267575.log
+status done

@@ -1,0 +1,109 @@
+* Description of frequently used terms in hierarchy_analysis files*
+M indicates that the value of that column is in millions
+Hier Plc Count(Hierarchical Placement Count) : Number of unique instances of the cell in another cell (Parent)
+Flat Plc Count(Flat Placement Count)         : Total number of instances of the cell in the layout
+
+Example : 
+                               A                     
+                              / \                   Cell  Hier Plc Count Flat Plc Count 
+                             /   \                     A               1              1 
+                            B     B                    B               2              2 
+                           / \  /  \                   C               2              4 
+                          C   C C   C                
+------------------------------------------------------------------------------------------------------ 
+
+
+* Cells with flat area > 0.01 of top cell *
+Reports cells with flat area > 0.01 of top cell
+
+Flat A(Flat Area) : Total area covered by this cell in the layout(cell area * flat placement count)
+Cell A(Cell Area) : Area of this cell
+Percent of top    : Percentage of area of this cell w.r.t area of top cell
+This table contains 18 entries
+Original table contains 18 entries
+
+ Name                                          | Flat A (mm^2), Cell A (mm^2), Flat Plc Count, Hier Plc Count, Percent of top
+-----------------------------------------------
+ RISCV1                                        |         0.021,         0.021,              1,              1,       100.00 %
+ SDFCNQD0BWP30P140HVT                          |         0.003,         0.000,            971,            971,        15.36 %
+ SDFQD0BWP30P140HVT                            |         0.003,         0.000,            961,            961,        12.55 %
+ FILL64BWP30P140                               |         0.002,         0.000,            230,            230,        10.12 %
+ FILL4BWP30P140                                |         0.002,         0.000,           2656,           2656,         7.30 %
+ FILL8BWP30P140                                |         0.001,         0.000,           1264,           1264,         6.95 %
+ FA1D0BWP30P140HVT                             |         0.001,         0.000,            550,            550,         6.43 %
+ FILL16BWP30P140                               |         0.001,         0.000,            571,            571,         6.28 %
+ FILL32BWP30P140                               |         0.001,         0.000,            263,            263,         5.79 %
+ SDFCND0BWP30P140HVT                           |         0.001,         0.000,            228,            228,         3.92 %
+ FILL3BWP30P140                                |         0.001,         0.000,           1781,           1781,         3.67 %
+ AOI221D0BWP30P140HVT                          |         0.001,         0.000,            807,            807,         3.33 %
+ FILL2BWP30P140                                |         0.001,         0.000,           2180,           2180,         3.00 %
+ OAI22D0BWP30P140HVT                           |         0.000,         0.000,            612,            612,         2.10 %
+ AOI222D0BWP30P140HVT                          |         0.000,         0.000,            368,            368,         2.02 %
+ AOI22D0BWP30P140HVT                           |         0.000,         0.000,            541,            541,         1.86 %
+ MUX2ND0BWP30P140HVT                           |         0.000,         0.000,            365,            365,         1.51 %
+ TAPCELLBWP30P140                              |         0.000,         0.000,            395,            395,         1.09 %
+===============================================
+
+* Large-Area cells and child area ratio *
+This table reports cells with large areas and ratio of its area with total area covered by its children
+
+Num Inst(Number of instances) : Total Number of instances of the cell
+Child A(Child Area)           : Total area covered by all the children of the cell
+Pct of parent(Percent of area): Percentage of total area covered by its childern w.r.t area of this cell
+This table contains 18 entries
+Original table contains 18 entries
+
+ Name                                          | Flat A (mm^2), Cell A (mm^2), Num Inst (M), Child A (mm^2), Pct of parent
+-----------------------------------------------
+ RISCV1                                        |         0.021,         0.021,        0.020,         0.023,      108.56 %
+ SDFCNQD0BWP30P140HVT                          |         0.003,         0.000,        0.000,         0.000,        0.00 %
+ SDFQD0BWP30P140HVT                            |         0.003,         0.000,        0.000,         0.000,        0.00 %
+ FILL64BWP30P140                               |         0.002,         0.000,        0.000,         0.000,        0.00 %
+ FILL4BWP30P140                                |         0.002,         0.000,        0.000,         0.000,        0.00 %
+ FILL8BWP30P140                                |         0.001,         0.000,        0.000,         0.000,        0.00 %
+ FA1D0BWP30P140HVT                             |         0.001,         0.000,        0.000,         0.000,        0.00 %
+ FILL16BWP30P140                               |         0.001,         0.000,        0.000,         0.000,        0.00 %
+ FILL32BWP30P140                               |         0.001,         0.000,        0.000,         0.000,        0.00 %
+ SDFCND0BWP30P140HVT                           |         0.001,         0.000,        0.000,         0.000,        0.00 %
+ FILL3BWP30P140                                |         0.001,         0.000,        0.000,         0.000,        0.00 %
+ AOI221D0BWP30P140HVT                          |         0.001,         0.000,        0.000,         0.000,        0.00 %
+ FILL2BWP30P140                                |         0.001,         0.000,        0.000,         0.000,        0.00 %
+ OAI22D0BWP30P140HVT                           |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ AOI222D0BWP30P140HVT                          |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ AOI22D0BWP30P140HVT                           |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ MUX2ND0BWP30P140HVT                           |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ TAPCELLBWP30P140                              |         0.000,         0.000,        0.000,         0.000,        0.00 %
+===============================================
+
+* Layer Report with Estimated Data *
+Reports information of layers present in the layout
+
+Trap        : Number of hierarchical trapezoids in the layer
+Poly        : Number of hierarchical polygons in the layer
+Text        : Number of hierarchical text primitives in the layer
+Flat Trap   : Number of flat trapezoids 
+Flat Poly   : Number of flat polygons
+Flat Text   : Number of flat text primitives 
+Trap F/H    : Ratio of flat and hierarchical placements of the trapezoids
+Base, Metal, Via, Fill, Colored : Indicates layer intent
+This table contains 14 entries
+Original table contains 14 entries
+
+ Name                                          | Trap (M), Poly (M), Text (M), Flat Trap (M), Flat Poly (M), Flat Text (M), Trap F/H, Base, Metal, Via, Fill, Colored
+-----------------------------------------------
+ metal_layer                                   |    0.186,    0.186,    0.000,         0.186,         0.186,         0.000,     1.00,    0,     0,   0,    0,       0
+ metal_layer                                   |    0.150,    0.150,    0.000,         0.150,         0.150,         0.000,     1.00,    0,     0,   0,    0,       0
+ metal_layer                                   |    0.139,    0.139,    0.000,         0.255,         0.184,         0.000,     1.83,    0,     0,   0,    0,       0
+ VIA2I                                         |    0.089,    0.089,    0.000,         0.089,         0.089,         0.000,     1.00,    0,     0,   0,    0,       0
+ VIA3I                                         |    0.082,    0.082,    0.000,         0.082,         0.082,         0.000,     1.00,    0,     0,   0,    0,       0
+ metal_layer                                   |    0.068,    0.068,    0.000,         0.068,         0.068,         0.000,     1.00,    0,     0,   0,    0,       0
+ VIA4I                                         |    0.044,    0.044,    0.000,         0.044,         0.044,         0.000,     1.00,    0,     0,   0,    0,       0
+ VIA1I                                         |    0.042,    0.042,    0.000,         0.122,         0.122,         0.000,     2.88,    0,     0,   0,    0,       0
+ VIA5I                                         |    0.040,    0.040,    0.000,         0.040,         0.040,         0.000,     1.00,    0,     0,   0,    0,       0
+ M1I                                           |    0.032,    0.028,    0.000,         0.548,         0.222,         0.000,    17.27,    0,     1,   0,    0,       0
+ metal_layer                                   |    0.025,    0.025,    0.000,         0.025,         0.025,         0.000,     1.00,    0,     0,   0,    0,       0
+ COI                                           |    0.003,    0.003,    0.000,         0.261,         0.261,         0.000,    93.40,    1,     0,   0,    0,       0
+ smf_chip_boundary                             |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     1.00,    0,     0,   0,    0,       0
+ sel_layer                                     |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     0.00,    0,     0,   0,    0,       0
+===============================================
+

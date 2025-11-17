@@ -1,0 +1,4 @@
+icv Routing RISCV1.dlib RISCV1 NDM 2 /tools/synopsys/fc/V-2023.12-SP3/etc/pxl/signoff_metal_fill.rs /tools/synopsys/fc/V-2023.12-SP3/etc/pxl /tools/synopsys/fc/V-2023.12-SP3/etc/pxl /project/tsmc28mmwave/users/foqara/ws/riscv/signoff_fill_run/icv_run_1/icvOptionFile.rc /project/tsmc28mmwave/users/foqara/ws/riscv/signoff_fill_run/icv_run_1 /project/tsmc28mmwave/users/foqara/ws/riscv/signoff_fill_run /project/tsmc28mmwave/users/foqara/ws/riscv /data/tsmc/28HPCPMMWAVE/dig_libs/PRTF/PRTF_ICC_28nm_Syn_V19_1a/PR_tech/Synopsys/GdsOutMap/gdsout_6X1Z1U.map -rc -p -ndm_design_label -lf -icc_density_blockage -icc2 -i -host_init -f -c -I -I -I -I 
+schematic=UNSPECIFIED
+ICV_HOME_DIR=/tools/synopsys/icv/W-2024.09-SP3-1
+ICV_INCLUDES=UNSET

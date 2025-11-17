@@ -1,0 +1,36 @@
+
+                                  ICV_Manager 
+
+         Version W-2024.09-SP3-1 for linux64 - Feb 11, 2025 cl#11364552
+
+                    Copyright (c) 1996 - 2025 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Called as: icv -host_init 2 -icc2 -f NDM -i RISCV1.dlib -p /project/tsmc28mmwave/users/foqara/ws/riscv -c RISCV1 -ndm_design_label Routing -icc_density_blockage -I /project/tsmc28mmwave/users/foqara/ws/riscv/signoff_report_density_run -I /project/tsmc28mmwave/users/foqara/ws/riscv/signoff_report_density_run -I /tools/synopsys/fc/V-2023.12-SP3/etc/pxl -I /tools/synopsys/fc/V-2023.12-SP3/etc/pxl /tools/synopsys/fc/V-2023.12-SP3/etc/pxl/report_metal_density.rs
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+User name:        foqara
+Layout format:    NDM
+Input file name:  RISCV1.dlib
+Top cell name:    RISCV1
+Time started:     2025/09/07 01:11:18AM
+
+--------------------------------------------------------------------------------
+                          Signoff Rules to be Executed                          
+--------------------------------------------------------------------------------
+
+          12 @ "Violation"

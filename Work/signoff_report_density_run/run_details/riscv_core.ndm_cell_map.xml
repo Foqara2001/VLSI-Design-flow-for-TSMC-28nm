@@ -1,0 +1,709 @@
+<?xml version="1.0"?>
+<!-- Created by IC Validator 2024.09-SP3-1 on Thu Jun 19 22:21:33 2025
+ -->
+<icvCellMap version="1.1">
+  <library name="tcbn28hpcplusbwp30p140" path="/data/tsmc/28HPCPMMWAVE/synopsys/libs/tcbn28hpcplusbwp30p140.ndm"/>
+  <library name="tcbn28hpcplusbwp30p140lvt" path="/data/tsmc/28HPCPMMWAVE/synopsys/libs/tcbn28hpcplusbwp30p140lvt.ndm"/>
+  <library name="tcbn28hpcplusbwp30p140hvt" path="/data/tsmc/28HPCPMMWAVE/synopsys/libs/tcbn28hpcplusbwp30p140hvt.ndm"/>
+  <library name="RISCV1.dlib" path="/project/tsmc28mmwave/users/foqara/ws/riscv/RISCV1.dlib"/>
+  <cell id="144" unique_name="XOR2D1BWP30P140HVT" orig_name="XOR2D1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="131" unique_name="AN2D1BWP30P140HVT" orig_name="AN2D1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="27" unique_name="OAI222D1BWP30P140HVT" orig_name="OAI222D1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="136" unique_name="INR3D1BWP30P140HVT" orig_name="INR3D1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="125" unique_name="AO21D1BWP30P140HVT" orig_name="AO21D1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="126" unique_name="GFILL2BWP30P140" orig_name="GFILL2BWP30P140" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="15" unique_name="AOI221D1BWP30P140HVT" orig_name="AOI221D1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="96" unique_name="ND4D1BWP30P140HVT" orig_name="ND4D1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="159" unique_name="FILL3BWP30P140" orig_name="FILL3BWP30P140" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="80" unique_name="OR2D2BWP30P140HVT" orig_name="OR2D2BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="37" unique_name="MAOI222D1BWP30P140HVT" orig_name="MAOI222D1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="82" unique_name="AOI31D1BWP30P140" orig_name="AOI31D1BWP30P140" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="40" unique_name="CKND2D4BWP30P140HVT" orig_name="CKND2D4BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="116" unique_name="MUX2ND2BWP30P140HVT" orig_name="MUX2ND2BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="118" unique_name="CKND1BWP30P140" orig_name="CKND1BWP30P140" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="68" unique_name="OAI32D1BWP30P140" orig_name="OAI32D1BWP30P140" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="143" unique_name="NR4D1BWP30P140" orig_name="NR4D1BWP30P140" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="2" unique_name="FILL64BWP30P140" orig_name="FILL64BWP30P140" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="3" unique_name="GFILL12BWP30P140" orig_name="GFILL12BWP30P140" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="74" unique_name="CKND0BWP30P140HVT" orig_name="CKND0BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="109" unique_name="AOI32D1BWP30P140HVT" orig_name="AOI32D1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="132" unique_name="OAI221D2BWP30P140" orig_name="OAI221D2BWP30P140" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="92" unique_name="OR4D1BWP30P140HVT" orig_name="OR4D1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="141" unique_name="ND3OPTD6BWP30P140HVT" orig_name="ND3OPTD6BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="111" unique_name="AOI211D1BWP30P140HVT" orig_name="AOI211D1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="117" unique_name="FA1D1BWP30P140HVT" orig_name="FA1D1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="169" unique_name="CKLNQD4BWP30P140HVT" orig_name="CKLNQD4BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="165" unique_name="CKLNQD2BWP30P140" orig_name="CKLNQD2BWP30P140" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="45" unique_name="MUX2NUD1BWP30P140HVT" orig_name="MUX2NUD1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="78" unique_name="ND3D1BWP30P140" orig_name="ND3D1BWP30P140" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="59" unique_name="INVD2BWP30P140HVT" orig_name="INVD2BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="67" unique_name="AN3D4BWP30P140HVT" orig_name="AN3D4BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="4" unique_name="BUFFD12BWP30P140LVT" orig_name="BUFFD12BWP30P140LVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140lvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="113" unique_name="MUX2D0BWP30P140HVT" orig_name="MUX2D0BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="86" unique_name="AN2D2BWP30P140HVT" orig_name="AN2D2BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="115" unique_name="AO211D1BWP30P140HVT" orig_name="AO211D1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="134" unique_name="IOA21D1BWP30P140HVT" orig_name="IOA21D1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="137" unique_name="AO21D2BWP30P140HVT" orig_name="AO21D2BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="91" unique_name="IND4D1BWP30P140HVT" orig_name="IND4D1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="133" unique_name="NR2D1BWP30P140HVT" orig_name="NR2D1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="34" unique_name="AOI22D1BWP30P140HVT" orig_name="AOI22D1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="24" unique_name="OAI211D1BWP30P140" orig_name="OAI211D1BWP30P140" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="98" unique_name="OAI32D1BWP30P140HVT" orig_name="OAI32D1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="58" unique_name="INVD18BWP30P140LVT" orig_name="INVD18BWP30P140LVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140lvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="79" unique_name="SDFSND1BWP30P140HVT" orig_name="SDFSND1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="55" unique_name="SDFCNARD4BWP30P140HVT" orig_name="SDFCNARD4BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="106" unique_name="MUX2OPTD2BWP30P140HVT" orig_name="MUX2OPTD2BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="151" unique_name="AN4D1BWP30P140HVT" orig_name="AN4D1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="29" unique_name="MOAI22D1BWP30P140HVT" orig_name="MOAI22D1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="153" unique_name="ND4D2BWP30P140" orig_name="ND4D2BWP30P140" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="122" unique_name="OA22D1BWP30P140HVT" orig_name="OA22D1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="139" unique_name="SDFQND0BWP30P140HVT" orig_name="SDFQND0BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="11" unique_name="NR4D0BWP30P140HVT" orig_name="NR4D0BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="6" unique_name="FILL32BWP30P140" orig_name="FILL32BWP30P140" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="71" unique_name="SEDFCND2BWP30P140HVT" orig_name="SEDFCND2BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="70" unique_name="OA211D1BWP30P140HVT" orig_name="OA211D1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="171" unique_name="NR2OPTIBD1BWP30P140HVT" orig_name="NR2OPTIBD1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="102" unique_name="OR4D2BWP30P140HVT" orig_name="OR4D2BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="172" unique_name="CKAN2D4BWP30P140HVT" orig_name="CKAN2D4BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="52" unique_name="SDFCNQARD4BWP30P140HVT" orig_name="SDFCNQARD4BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="39" unique_name="AOI211D2BWP30P140HVT" orig_name="AOI211D2BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="160" unique_name="FILL2BWP30P140" orig_name="FILL2BWP30P140" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="20" unique_name="XOR3UD1BWP30P140HVT" orig_name="XOR3UD1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="157" unique_name="FA1D2BWP30P140HVT" orig_name="FA1D2BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="18" unique_name="BUFFD8BWP30P140" orig_name="BUFFD8BWP30P140" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="19" unique_name="XNR3UD1BWP30P140HVT" orig_name="XNR3UD1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="53" unique_name="XNR2D1BWP30P140HVT" orig_name="XNR2D1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="13" unique_name="OAI22D1BWP30P140HVT" orig_name="OAI22D1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="142" unique_name="AOI211D1BWP30P140" orig_name="AOI211D1BWP30P140" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="9" unique_name="BUFFD3BWP30P140HVT" orig_name="BUFFD3BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="120" unique_name="MAOI22D1BWP30P140HVT" orig_name="MAOI22D1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="156" unique_name="MUX2D1BWP30P140HVT" orig_name="MUX2D1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="129" unique_name="AO211D2BWP30P140HVT" orig_name="AO211D2BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="145" unique_name="IOA21D2BWP30P140HVT" orig_name="IOA21D2BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="107" unique_name="CKND0BWP30P140" orig_name="CKND0BWP30P140" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="147" unique_name="DFCND1BWP30P140HVT" orig_name="DFCND1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="47" unique_name="OAI221D1BWP30P140HVT" orig_name="OAI221D1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="35" unique_name="NR4D0BWP30P140" orig_name="NR4D0BWP30P140" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="99" unique_name="INR2D1BWP30P140HVT" orig_name="INR2D1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="49" unique_name="ND3D1BWP30P140HVT" orig_name="ND3D1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="12" unique_name="AOI22D2BWP30P140HVT" orig_name="AOI22D2BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="114" unique_name="OAI221D1BWP30P140" orig_name="OAI221D1BWP30P140" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="158" unique_name="NR3D2BWP30P140" orig_name="NR3D2BWP30P140" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="65" unique_name="SDFSND2BWP30P140HVT" orig_name="SDFSND2BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="124" unique_name="AN4D2BWP30P140HVT" orig_name="AN4D2BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="1" unique_name="CKLNQD1BWP30P140" orig_name="CKLNQD1BWP30P140" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="10" unique_name="GFILL4BWP30P140" orig_name="GFILL4BWP30P140" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="36" unique_name="INR4D0BWP30P140HVT" orig_name="INR4D0BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="21" unique_name="AO22D0BWP30P140HVT" orig_name="AO22D0BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="84" unique_name="AOI31D1BWP30P140HVT" orig_name="AOI31D1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="44" unique_name="NR2OPTIBD2BWP30P140HVT" orig_name="NR2OPTIBD2BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="173" unique_name="OAI211D1BWP30P140HVT" orig_name="OAI211D1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="0" unique_name="riscv_core" orig_name="riscv_core" type="design" parent_library="RISCV1.dlib" design_type="module">
+    <view name="design" library="RISCV1.dlib" type="main"/>
+    <use_stream_mode/>
+  </cell>
+  <cell id="112" unique_name="OR3D1BWP30P140HVT" orig_name="OR3D1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="119" unique_name="IND4D1BWP30P140" orig_name="IND4D1BWP30P140" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="51" unique_name="OAI22D2BWP30P140HVT" orig_name="OAI22D2BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="16" unique_name="AOI221D1BWP30P140" orig_name="AOI221D1BWP30P140" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="75" unique_name="CKND2D1BWP30P140HVT" orig_name="CKND2D1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="164" unique_name="INVD4BWP30P140LVT" orig_name="INVD4BWP30P140LVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140lvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="123" unique_name="SDFQD1BWP30P140HVT" orig_name="SDFQD1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="87" unique_name="IAO21D1BWP30P140HVT" orig_name="IAO21D1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="26" unique_name="ND4D1BWP30P140" orig_name="ND4D1BWP30P140" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="135" unique_name="CKND8BWP30P140HVT" orig_name="CKND8BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="174" unique_name="INR2D2BWP30P140HVT" orig_name="INR2D2BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="42" unique_name="NR2D3BWP30P140HVT" orig_name="NR2D3BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="17" unique_name="SEDFCNQARD1BWP30P140HVT" orig_name="SEDFCNQARD1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="93" unique_name="IND3D1BWP30P140HVT" orig_name="IND3D1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="81" unique_name="ND3D2BWP30P140HVT" orig_name="ND3D2BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="110" unique_name="FILL8BWP30P140" orig_name="FILL8BWP30P140" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="31" unique_name="AOI21D1BWP30P140HVT" orig_name="AOI21D1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="88" unique_name="OAI31D1BWP30P140HVT" orig_name="OAI31D1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="77" unique_name="SDFCNQD0BWP30P140HVT" orig_name="SDFCNQD0BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="167" unique_name="CKLNQD1BWP30P140HVT" orig_name="CKLNQD1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="72" unique_name="OAI22D2BWP30P140" orig_name="OAI22D2BWP30P140" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="162" unique_name="INVD1P5BWP30P140HVT" orig_name="INVD1P5BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="161" unique_name="DFCNQD1BWP30P140HVT" orig_name="DFCNQD1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="166" unique_name="CKLNQD1BWP30P140LVT" orig_name="CKLNQD1BWP30P140LVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140lvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="140" unique_name="XOR3D1BWP30P140HVT" orig_name="XOR3D1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="154" unique_name="AN3D1BWP30P140HVT" orig_name="AN3D1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="97" unique_name="INR4D1BWP30P140HVT" orig_name="INR4D1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="127" unique_name="AO22D1BWP30P140HVT" orig_name="AO22D1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="69" unique_name="SDFQND2BWP30P140HVT" orig_name="SDFQND2BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="100" unique_name="OA21D1BWP30P140HVT" orig_name="OA21D1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="61" unique_name="SDFQNARD1BWP30P140HVT" orig_name="SDFQNARD1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="64" unique_name="CKND3BWP30P140HVT" orig_name="CKND3BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="22" unique_name="AOI222D1BWP30P140HVT" orig_name="AOI222D1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="25" unique_name="NR3D0BWP30P140HVT" orig_name="NR3D0BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="149" unique_name="OAI211D2BWP30P140HVT" orig_name="OAI211D2BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="43" unique_name="OR3D2BWP30P140HVT" orig_name="OR3D2BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="7" unique_name="GFILL10BWP30P140" orig_name="GFILL10BWP30P140" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="62" unique_name="OAI31D1BWP30P140" orig_name="OAI31D1BWP30P140" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="146" unique_name="NR3D1BWP30P140" orig_name="NR3D1BWP30P140" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="23" unique_name="SDFCNARD1BWP30P140HVT" orig_name="SDFCNARD1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="28" unique_name="OAI21D1BWP30P140HVT" orig_name="OAI21D1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="30" unique_name="CKND2D2BWP30P140HVT" orig_name="CKND2D2BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="63" unique_name="SDFQD2BWP30P140HVT" orig_name="SDFQD2BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="38" unique_name="GFILL3BWP30P140" orig_name="GFILL3BWP30P140" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="150" unique_name="AOI33D1BWP30P140HVT" orig_name="AOI33D1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="148" unique_name="FILL4BWP30P140" orig_name="FILL4BWP30P140" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="163" unique_name="INVD2BWP30P140" orig_name="INVD2BWP30P140" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="94" unique_name="NR2D4BWP30P140HVT" orig_name="NR2D4BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="41" unique_name="CKAN2D1BWP30P140HVT" orig_name="CKAN2D1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="14" unique_name="SDFCNQARD1BWP30P140HVT" orig_name="SDFCNQARD1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="83" unique_name="AOI21D2BWP30P140HVT" orig_name="AOI21D2BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="60" unique_name="SDFSND4BWP30P140HVT" orig_name="SDFSND4BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="168" unique_name="CKLNQD2BWP30P140HVT" orig_name="CKLNQD2BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="121" unique_name="CKND2BWP30P140" orig_name="CKND2BWP30P140" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="73" unique_name="DFCNQD2BWP30P140HVT" orig_name="DFCNQD2BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="101" unique_name="AN3D2BWP30P140HVT" orig_name="AN3D2BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="48" unique_name="AO22D2BWP30P140HVT" orig_name="AO22D2BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="76" unique_name="OA21D2BWP30P140HVT" orig_name="OA21D2BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="33" unique_name="INR3D0BWP30P140HVT" orig_name="INR3D0BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="66" unique_name="CKND4BWP30P140HVT" orig_name="CKND4BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="128" unique_name="NR3D1BWP30P140HVT" orig_name="NR3D1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="90" unique_name="NR2OPTIBD4BWP30P140HVT" orig_name="NR2OPTIBD4BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="152" unique_name="OAI33D1BWP30P140HVT" orig_name="OAI33D1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="8" unique_name="FILL16BWP30P140" orig_name="FILL16BWP30P140" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="103" unique_name="OR2D1BWP30P140HVT" orig_name="OR2D1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="108" unique_name="ND3D2BWP30P140" orig_name="ND3D2BWP30P140" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="56" unique_name="SDFCNARD2BWP30P140HVT" orig_name="SDFCNARD2BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="85" unique_name="OAI22D4BWP30P140HVT" orig_name="OAI22D4BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="130" unique_name="OAI21D2BWP30P140HVT" orig_name="OAI21D2BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="46" unique_name="CKND2D3BWP30P140HVT" orig_name="CKND2D3BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="89" unique_name="NR2OPTPAD1BWP30P140HVT" orig_name="NR2OPTPAD1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="5" unique_name="BUFFD16BWP30P140LVT" orig_name="BUFFD16BWP30P140LVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140lvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="155" unique_name="AOI222D1BWP30P140" orig_name="AOI222D1BWP30P140" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="54" unique_name="INR2D4BWP30P140HVT" orig_name="INR2D4BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="105" unique_name="OAI211D2BWP30P140" orig_name="OAI211D2BWP30P140" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="170" unique_name="IND2D1BWP30P140HVT" orig_name="IND2D1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="50" unique_name="SDFCNQARD2BWP30P140HVT" orig_name="SDFCNQARD2BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="138" unique_name="XNR3D1BWP30P140HVT" orig_name="XNR3D1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="32" unique_name="SEDFCNARD1BWP30P140HVT" orig_name="SEDFCNARD1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="104" unique_name="ND4D3BWP30P140" orig_name="ND4D3BWP30P140" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="57" unique_name="INVD1BWP30P140HVT" orig_name="INVD1BWP30P140HVT" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140hvt" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+  <cell id="95" unique_name="NR3D0BWP30P140" orig_name="NR3D0BWP30P140" type="design" parent_library="RISCV1.dlib" default_view="timing" default_phys_view="frame" design_type="lib_cell">
+    <view name="frame" library="tcbn28hpcplusbwp30p140" type="alternate"/>
+    <parent_is_top/>
+  </cell>
+</icvCellMap>

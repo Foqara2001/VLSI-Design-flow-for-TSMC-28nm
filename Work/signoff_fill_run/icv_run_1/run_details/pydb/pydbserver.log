@@ -1,0 +1,61 @@
+
+                                  PYDB_Server 
+
+         Version W-2024.09-SP3-1 for linux64 - Feb 11, 2025 cl#11364552
+
+                    Copyright (c) 2007 - 2025 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+variable width coordinate support enabled.
+Listening for connections on port 47377
+PYDB_Server Started on host micron9.eng.tau.ac.il, Sun 09/07/2025 00:55:19
+Client micron9.eng.tau.ac.il(3292894):16 connected (1 total client)
+Verified current licenses.
+Creating file:/project/tsmc28mmwave/users/foqara/ws/riscv/signoff_fill_run/icv_run_1/run_details/pydb/PYDB_RISCV1?nolock=1
+SQLite page_size=65536
+SQLite cache_size=65536
+SQLite mmap_size=0
+SQLite journal_mode=OFF
+SQLite version 3.33.0
+Client micron9.eng.tau.ac.il(3293037):25 connected (2 total clients)
+Client micron9.eng.tau.ac.il(3293036):28 connected (3 total clients)
+Client micron9.eng.tau.ac.il(3293036):28 connection closed
+Client micron9.eng.tau.ac.il(3293036):28 disconnected (2 clients remain)
+Client micron9.eng.tau.ac.il(3293037):25 connection closed
+Client micron9.eng.tau.ac.il(3293037):25 disconnected (1 client remains)
+Client micron9.eng.tau.ac.il(3293036):25 connected (2 total clients)
+Client micron9.eng.tau.ac.il(3293037):28 connected (3 total clients)
+Client micron9.eng.tau.ac.il(3293036):25 connection closed
+Client micron9.eng.tau.ac.il(3293036):25 disconnected (2 clients remain)
+Client micron9.eng.tau.ac.il(3293036):25 connected (3 total clients)
+Client micron9.eng.tau.ac.il(3293036):25 connection closed
+Client micron9.eng.tau.ac.il(3293036):25 disconnected (2 clients remain)
+Client micron9.eng.tau.ac.il(3293037):28 connection closed
+Client micron9.eng.tau.ac.il(3293037):28 disconnected (1 client remains)
+Client micron9.eng.tau.ac.il(3293036):25 connected (2 total clients)
+Client micron9.eng.tau.ac.il(3293037):28 connected (3 total clients)
+Client micron9.eng.tau.ac.il(3293037):28 connection closed
+Client micron9.eng.tau.ac.il(3293037):28 disconnected (2 clients remain)
+Client micron9.eng.tau.ac.il(3293036):25 connection closed
+Client micron9.eng.tau.ac.il(3293036):25 disconnected (1 client remains)
+Generating /project/tsmc28mmwave/users/foqara/ws/riscv/signoff_fill_run/icv_run_1/RISCV1.LAYOUT_ERRORS
+  Generation Time=0:00:00  User=0.00 Sys=0.00 Mem=0.001 GB
+Flushing database cache
+  Flush Time=0:00:00  User=0.00 Sys=0.00 Mem=0.000 GB SQLite=0.007 GB Unpooled=0.000 GB
+Shutdown requested by client micron9.eng.tau.ac.il(3292894):16
+0 clients remain connected
+Client micron9.eng.tau.ac.il(3292894):16 connection closed
+Overall server Time=0:00:23  User=0.00 Sys=0.01 Mem=0.001 GB SQLite=0.007 GB Unpooled=0.000 GB

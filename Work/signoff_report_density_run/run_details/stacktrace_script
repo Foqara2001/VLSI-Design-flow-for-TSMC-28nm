@@ -1,0 +1,34 @@
+#!/bin/sh
+
+# This is a diagnostic script which reports the stacktrace of a process using GDB.
+# The recommended GDB version for IC Validator is '13.2'.
+# Set environment variable $GDB to configure the path of gdb binary.
+# Or, /usr/bin/gdb is used.
+
+if test $# -ne 1; then
+    echo "Usage: `basename $0 .sh` <pid>"
+    exit 1
+fi
+
+if test ! -r /proc/$1; then
+    echo "Process $1 not found."
+    exit 1
+fi
+
+backtrace="bt"
+if test `/bin/ls /proc/$1/task | /usr/bin/wc -l` -gt 1 2>/dev/null ; then
+    backtrace="thread apply all bt"
+fi
+
+GDB=${GDB:-/usr/bin/gdb}
+
+$GDB --quiet -nx /proc/$1/exe $1 <<EOF 2>&1 |
+set width 0
+set height 0
+set pagination no
+$backtrace
+EOF
+/bin/sed -n \
+    -e 's/^\((gdb) \)*//' \
+    -e '/^#/p' \
+    -e '/^Thread/p'

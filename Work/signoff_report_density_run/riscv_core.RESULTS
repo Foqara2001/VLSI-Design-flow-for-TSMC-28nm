@@ -1,0 +1,171 @@
+                             RESULTS: NOT CLEAN
+
+         #   #   ###   #####      ####  #      #####   ###   #   #
+         ##  #  #   #    #       #      #      #      #   #  ##  #
+         # # #  #   #    #       #      #      ####   #####  # # #
+         #  ##  #   #    #       #      #      #      #   #  #  ##
+         #   #   ###     #        ####  #####  #####  #   #  #   #
+
+===========================================================================
+
+
+---------------------------------------------------------------------------
+ICV Execution
+---------------------------------------------------------------------------
+
+
+                                 IC Validator 
+
+         Version W-2024.09-SP3-1 for linux64 - Feb 11, 2025 cl#11364552
+
+                    Copyright (c) 1996 - 2025 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Called as: icv -host_init 2 -icc2 -f NDM -i RISCV1.dlib -p /project/tsmc28mmwave/users/foqara/ws/riscv -c riscv_core -icc_density_blockage -I /project/tsmc28mmwave/users/foqara/ws/riscv/signoff_report_density_run -I /project/tsmc28mmwave/users/foqara/ws/riscv/signoff_report_density_run -I /tools/synopsys/fc/V-2023.12-SP3/etc/pxl -I /tools/synopsys/fc/V-2023.12-SP3/etc/pxl /tools/synopsys/fc/V-2023.12-SP3/etc/pxl/report_metal_density.rs
+
+Command Line Summary:
+icv
+-c riscv_core
+-f NDM
+-host_init 2
+-i RISCV1.dlib
+-icc2
+-icc_density_blockage
+-p /project/tsmc28mmwave/users/foqara/ws/riscv
+-I /project/tsmc28mmwave/users/foqara/ws/riscv/signoff_report_density_run
+-I /project/tsmc28mmwave/users/foqara/ws/riscv/signoff_report_density_run
+-I /tools/synopsys/fc/V-2023.12-SP3/etc/pxl
+-I /tools/synopsys/fc/V-2023.12-SP3/etc/pxl
+/tools/synopsys/fc/V-2023.12-SP3/etc/pxl/report_metal_density.rs
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Input file name:        RISCV1.dlib
+Top cell name:          riscv_core
+Layout format:          NDM
+Runset file:            /tools/synopsys/fc/V-2023.12-SP3/etc/pxl/report_metal_density.rs
+Working directory:      /project/tsmc28mmwave/users/foqara/ws/riscv/signoff_report_density_run
+Run details directory:  /project/tsmc28mmwave/users/foqara/ws/riscv/signoff_report_density_run/run_details
+Layout error file:      riscv_core.LAYOUT_ERRORS
+User name:              foqara
+Time started:           2025/06/19 10:21:30PM
+Time ended:             2025/06/19 10:21:39PM
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+---------------------------------------------------------------------------
+Results Summary
+---------------------------------------------------------------------------
+
+Rule and DRC Error Summary
+
+1 total rule was run.
+0 rules NOT EXECUTED.
+1 rule has violations.
+There are 20 total violations.
+Refer to riscv_core.LAYOUT_ERRORS
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Rule                          Violations Found
+Violation                     v = 20
+  density                       v = 20
+
+
+---------------------------------------------------------------------------
+Assign Layer Statistics
+---------------------------------------------------------------------------
+
+Utilized Assign Layers = 55
+ Empty Utilized Assign Layers = 37
+ Non-Empty Utilized Assign Layers = 18
+Pruned Assign Layers = 36
+
+
+---------------------------------------------------------------------------
+Run Configuration
+---------------------------------------------------------------------------
+
+run_options()
+ verbose_results_file = { ERRORS }
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+hierarchy_options()
+ delete = { }
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+error_options()
+ error_limit_per_check = 100
+ match_errors = { }
+ match_errors_processing_mode = HIERARCHICAL
+ match_errors_tolerance = 0.0000
+ violation_options = { }
+ report_empty_violations = false
+ clean_classifications = { }
+ report_error_details_limit_per_check = 100000
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Production Environment Variables
+
+HOME = "/a/home/cc/students/enginer/foqara"
+ICV_HOME_DIR = "/tools/synopsys/icv/W-2024.09-SP3-1"
+PATH = "/tools/synopsys/icv/W-2024.09-SP3-1/bin/LINUX.64:/tools/synopsys/icv/W-2024.09-SP3-1/contrib/bin/LINUX.64:/tools/common/sge/8.1.9/bin:/tools/common/sge/8.1.9/bin/lx-amd64:/usr/share/Modules/bin:/tmp/27138.1.normal:/tools/keysight/ADS/2023/bin:/tools/ansys/AnsysEM/22.2/v222/Linux64:/tools/synopsys/fc/V-2023.12-SP3/bin:/tools/synopsys/lc/U-2022.12/bin:/tools/synopsys/euclide/V-2023.12-1/linux.gtk.x86_64/eclipse/bin:/tools/synopsys/icv/W-2024.09-SP3-1/bin:/tools/synopsys/starrc/W-2024.09-SP3/bin:/tools/synopsys/prime/T-2022.03-SP3/bin:/tools/synopsys/verdi/T-2022.06-SP1/bin:/tools/synopsys/vcs/T-2022.06-SP1-1/bin:/tools/synopsys/syn/W-2024.09-SP3/bin:/tools/cadence/PVS/23.11/tools/bin:/tools/siemens/CALIBRE/2025.1_33.17/aoi_cal_2025.1_33.17/bin:/tools/keysight/GOLDENGATE/2024/bin:/tools/cadence/XCELIUM/24.09.005/tools/bin/64bit:/tools/cadence/XCELIUM/24.09.005/tools/bin:/tools/cadence/XCELIUM/24.09.005/bin:/tools/cadence/QUANTUS/23.11/tools/bin:/tools/cadence/SPECTRE/23.10.562/tools/bin:/tools/cadence/IC/23.10.120/tools/dfII/bin:/tools/cadence/IC/23.10.120/tools/bin:/tools/common/sge/8.1.9/bin:/tools/common/sge/8.1.9/bin/lx-amd64:/tools/synopsys/fm/W-2024.09-SP3/bin:/tools/synopsys/lc/S-2021.06-SP5/bin:/tools/cadence/EMX/24.10/bin:/tools/common/sge/8.1.9/bin:/tools/common/sge/8.1.9/bin/lx-amd64:/usr/local.cc/bin:/tools/common/bin:/tools/common/sge/8.1.9/bin:/tools/common/sge/8.1.9/bin/lx-amd64:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/bin:/bin:/tools/cadence/DDI/22.15/bin:/usr/bin:/bin:/usr/bin:/bin:/usr/bin:/bin"
+SNPSLMD_LICENSE_FILE = "27020@micron2.eng.tau.ac.il:27020@micron1.eng.tau.ac.il"
+USER = "foqara"
+
+5 production environment variables set.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Debug Environment Variables
+
+_ICV_RESTORE_LD_LIBRARY_PATH = "/tools/cadence/DDI/22.15/tools/cdsgcc/gcc/9.3/install/lib64"
+icv_WRITE_TECH_FILE_WITH_UPDATES = "/project/tsmc28mmwave/users/foqara/ws/riscv/signoff_report_density_run/tech.tf"
+
+2 debug environment variables set.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Distributed Processing
+ Distributed Cores = 2
+
+ micron9.eng.tau.ac.il (2/112)
+   Commands: 2 in parallel, maximum
+   Model: INTEL(R) XEON(R) GOLD 5520+
+   CPU:   112 cpu 4000 MHz
+   Cores: 56 HT
+   RAM:   1007.125 GB
+   Swap:  32.202 GB
+
+
+---------------------------------------------------------------------------
+Performance Statistics
+---------------------------------------------------------------------------
+
+IC Validator Run Time = 0:00:09
+Peak Single Command Memory = 0.109 GB
+Peak Disk Usage = 0.008 GB
+Network Disk Usage Peak=0.008 GB (no group)
+Group File Disk Usage Peak=0.004 GB
+
+Distributed Host Memory Usage
+ micron9.eng.tau.ac.il (2/112)  ....  Average=0.580 GB, Peak=0.580 GB / 1007.125 GB
+
+Overall Distributed Utilization: not available
+IC Validator is done.

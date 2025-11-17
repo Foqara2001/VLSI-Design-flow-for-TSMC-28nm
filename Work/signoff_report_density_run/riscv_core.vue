@@ -1,0 +1,15 @@
+ICV_HOME_DIR      = /tools/synopsys/icv/W-2024.09-SP3-1
+ICV_COORDS_BIT    = 32
+WORKING_DIR       = .
+INLIB             = RISCV1.dlib
+INLIB_PATH        = /project/tsmc28mmwave/users/foqara/ws/riscv
+BLOCK             = riscv_core
+CREATE_VUE_OUTPUT = FALSE
+PYDB_PATH         = run_details/pydb
+RUN_DETAILS_DIR   = run_details
+NDB_PATH          = run_details/.ndb
+REPORT_LAYOUT_ERRORS = HIERARCHICAL
+FORMAT            = NDM
+SCHEMATIC_FORMAT  = ICV
+GROUP_PATH        = run_details/group
+RUNSET_FILE_NAME  = report_metal_density.rs

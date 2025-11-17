@@ -1,0 +1,35 @@
+//
+//  Rule file generated on Wed Aug 27 17:02:56 2025
+//  by Calibre Interactive v2025.1_33.17    Wed Mar 5 19:23:48 PST 2025
+//
+//      *** PLEASE DO NOT MODIFY THIS FILE ***
+//
+//
+
+
+// +++ CUSTOMIZATION SETTINGS START +++
+
+#define "FULL_CHIP" 
+#define "WITH_SEALRING" 
+#undefine "CHECK_LOW_DENSITY"
+#undefine "DFM"
+#undefine "USE_IO_VOLTAGE_ON_CORE_TO_IO_NET"
+
+// +++ CUSTOMIZATION SETTINGS END +++
+
+
+LAYOUT PATH "/project/tsmc28mmwave/users/foqara/ws/riscv/extracted_data/top.gds"
+LAYOUT SYSTEM GDSII
+LAYOUT PRIMARY "riscv_core"
+
+DRC RESULTS DATABASE "/project/tsmc28mmwave/users/foqara/ws/riscv/runset_signoff_tec/%l.drc.results" GDSII
+
+DRC SUMMARY REPORT "%l.drc.summary" REPLACE HIER
+
+DRC MAXIMUM RESULTS ALL
+
+DRC MAXIMUM VERTEX 4096
+
+DRC ICSTATION YES
+
+INCLUDE "/data/tsmc/28HPCPMMWAVE/PDK/1.8.2.3a/9m/Calibre/drc/calibre.drc"

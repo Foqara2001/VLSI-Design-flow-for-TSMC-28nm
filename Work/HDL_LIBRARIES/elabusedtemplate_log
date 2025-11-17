@@ -1,0 +1,16 @@
+riscv_core
+riscv_exec
+riscv_decode
+riscv_mmu
+riscv_lsu
+riscv_csr
+riscv_multiplier
+riscv_divider
+riscv_issue
+riscv_fetch
+riscv_alu
+riscv_decoder
+riscv_lsu_fifo
+riscv_csr_regfile
+riscv_pipe_ctrl
+riscv_regfile

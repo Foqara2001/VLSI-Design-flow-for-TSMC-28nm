@@ -1,0 +1,76 @@
+-case_sensitive
+-stage_id 3
+-ordered_names_for_subckt subckt
+-message_suppression_limit  100
+-hn_file hnfile.hn
+-net_info_file netlist.netinfo
+-pin_file idx.pins
+-idx_nm_file idx.nm
+-inter_pic_level_connections
+-index_file idx
+-i xout
+-netlist_header_file netlist.hdr
+-output_form 3
+-skip_intranet_caps
+-keep_intranet_caps
+-xout2spef
+-xout2spf
+-instance_section 0
+-declare_pins
+-declare_instance_ports
+-reduction_greg 0
+-reduction_high_small_r_threshold 0.1
+-reduction_high_small_r_rel_threshold 0.9
+-reduction_high_max_r_threshold 1.96e+06
+-reduction_high_min_r_k 1
+-reduction_high_max_nd 30
+-merge_devices no
+-remove_inactive_devices 0
+-remove_devices 
+-e 1e-14
+-keep_via_nodes 0
+-c_unit 1e-15
+-r_unit 1
+-t_unit 1e-09
+-v_unit 1e-09
+-l_unit 1
+-abs_cap_threshold 3e-15
+-rel_cap_threshold 0.03
+-net_command_file select_nets
+-o .TMP
+-gpd_dir ../RISCV1.gpd
+-output_form 3
+-random_access_xout
+-direct_gpd
+-rename_pin_ports _
+-rename_instance_ports _
+-process_corner 2
+-layer_map_ext
+-layer_info layer_info
+-netlist_unscaled_coordinates
+-unmagnification_factor 0.9
+-unscale_open_short_coord
+-magnification_factor 0.9
+-netlist_unscaled_res_prop
+-unmag_res_prop 0.9
+-half_node_flow
+-suppress_print_extra_geometry_info
+-port_map
+-case_sensitive
+-fine_dbu
+-skip_xtract_pp xout
+-num_parts 0
+-multi_finger_coordinates_based_merge
+-xout_offset_file xout_offset
+-num_cores 1
+-random_access_xout
+-local_nodeids
+-new_ip_handling
+-consistent_open_instance_port
+-use_input_database_dbu_on_suffix
+-db_coor_unit 4 
+-smart_opens
+-smart_opens_node_limit 2147483647
+-smart_opens_rcg_limit 1000
+-warning_mos_gate_delta_for_via_on_gate 
+-hide_res_geometry_info

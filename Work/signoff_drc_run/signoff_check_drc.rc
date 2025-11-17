@@ -1,0 +1,14 @@
+/* ============================================ */
+/*   Environment setup for signoff_check_drc   */
+/* ============================================ */
+#define SNPSINDESIGN 
+#define USE_ICC2 
+#define RESOLUTION_OPTIONS_LAYOUT_RESOLUTION_CHECK {}
+#define SNPSINDESIGN_DRC_RUN_DIRECTORY /project/tsmc28mmwave/users/foqara/ws/riscv
+#define NDM_OPTIONS_DRC_BLACK_BOX_CELLS {"*","!RISCV1"}
+#define NDM_OPTIONS_MISSING_CELL ABORT
+#define NDM_OPTIONS_INSTANCE_NAMES DISCARD
+#define NDM_OPTIONS_INTERNAL_DESIGNS {{use=FILL_USE,read_from=ALL,out_of_date=DISCARD}}
+#define NDM_OPTIONS_MERGE_BLOCKAGE_WITH_LAYER { views={DESIGN_VIEW,FRAME_VIEW}, cells={"*","!"+get_top_cell()} }
+#define NDM_OPTIONS_SEARCH_PATH "/project/tsmc28mmwave/users/foqara/ws/riscv /tools/synopsys/fc/V-2023.12-SP3/dw/syn_ver /tools/synopsys/fc/V-2023.12-SP3/dw/sim_ver /tools/synopsys/fc/V-2023.12-SP3/libraries/syn  ."
+#define ERROR_OPTIONS_ERROR_LIMIT_PER_CHECK 1000

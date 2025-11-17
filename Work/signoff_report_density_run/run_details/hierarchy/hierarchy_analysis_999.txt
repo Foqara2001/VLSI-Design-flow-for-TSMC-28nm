@@ -1,0 +1,300 @@
+* Description of frequently used terms in hierarchy_analysis files*
+M indicates that the value of that column is in millions
+Hier Plc Count(Hierarchical Placement Count) : Number of unique instances of the cell in another cell (Parent)
+Flat Plc Count(Flat Placement Count)         : Total number of instances of the cell in the layout
+
+Example : 
+                               A                     
+                              / \                   Cell  Hier Plc Count Flat Plc Count 
+                             /   \                     A               1              1 
+                            B     B                    B               2              2 
+                           / \  /  \                   C               2              4 
+                          C   C C   C                
+------------------------------------------------------------------------------------------------------ 
+
+
+* Cells with flat area > 0.01 of top cell *
+Reports cells with flat area > 0.01 of top cell
+
+Flat A(Flat Area) : Total area covered by this cell in the layout(cell area * flat placement count)
+Cell A(Cell Area) : Area of this cell
+Percent of top    : Percentage of area of this cell w.r.t area of top cell
+This table contains 11 entries
+Original table contains 11 entries
+
+ Name                                          | Flat A (mm^2), Cell A (mm^2), Flat Plc Count, Hier Plc Count, Percent of top
+-----------------------------------------------
+ RISCV1                                        |         0.021,         0.021,              1,              1,       100.00 %
+ SDFCNQD0BWP30P140HVT                          |         0.002,         0.000,            611,            611,         9.66 %
+ SDFQD0BWP30P140HVT                            |         0.001,         0.000,            513,            513,         6.70 %
+ VCELLA1                                       |         0.001,         0.000,            224,            224,         5.85 %
+ VCELLA2                                       |         0.001,         0.000,            180,            180,         5.69 %
+ FA1D0BWP30P140HVT                             |         0.001,         0.000,            426,            426,         4.98 %
+ SDFCND0BWP30P140HVT                           |         0.001,         0.000,            228,            228,         3.92 %
+ AOI221D0BWP30P140HVT                          |         0.001,         0.000,            807,            807,         3.33 %
+ AOI222D0BWP30P140HVT                          |         0.000,         0.000,            368,            368,         2.02 %
+ AOI22D0BWP30P140HVT                           |         0.000,         0.000,            541,            541,         1.86 %
+ VCELLA3                                       |         0.000,         0.000,             62,             62,         1.45 %
+===============================================
+
+* Large-Area cells and child area ratio *
+This table reports cells with large areas and ratio of its area with total area covered by its children
+
+Num Inst(Number of instances) : Total Number of instances of the cell
+Child A(Child Area)           : Total area covered by all the children of the cell
+Pct of parent(Percent of area): Percentage of total area covered by its childern w.r.t area of this cell
+This table contains 11 entries
+Original table contains 11 entries
+
+ Name                                          | Flat A (mm^2), Cell A (mm^2), Num Inst (M), Child A (mm^2), Pct of parent
+-----------------------------------------------
+ RISCV1                                        |         0.021,         0.021,        0.005,         0.011,       51.73 %
+ SDFCNQD0BWP30P140HVT                          |         0.002,         0.000,        0.000,         0.000,        0.00 %
+ SDFQD0BWP30P140HVT                            |         0.001,         0.000,        0.000,         0.000,        0.00 %
+ VCELLA1                                       |         0.001,         0.000,        0.000,         0.000,        0.00 %
+ VCELLA2                                       |         0.001,         0.000,        0.000,         0.000,        0.00 %
+ FA1D0BWP30P140HVT                             |         0.001,         0.000,        0.000,         0.000,        0.00 %
+ SDFCND0BWP30P140HVT                           |         0.001,         0.000,        0.000,         0.000,        0.00 %
+ AOI221D0BWP30P140HVT                          |         0.001,         0.000,        0.000,         0.000,        0.00 %
+ AOI222D0BWP30P140HVT                          |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ AOI22D0BWP30P140HVT                           |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ VCELLA3                                       |         0.000,         0.000,        0.000,         0.000,        0.00 %
+===============================================
+
+* Exploded Cell Information *
+Displays information of exploded cells
+
+Parent cell           : Name of the parent cell the cell has exploded into
+Exploded Inst Count   : Total number of instances of the cell that has expldoed to the parent cell
+Parent Flat Plc Count : Parent cell flat placement count
+Parent Hier Plc Count : Parent cell hierarchical placement count
+This table contains 176 entries
+Original table contains 176 entries
+
+ Exploded Cell                                 | Parent Cell                                   | Exploded Inst Count, Parent Flat Plc Count, Parent Hier Plc Count
+----------------------------------------------- -----------------------------------------------
+ RISCV1$design_ODM6_FILL_v21b__350x70.FILL     | RISCV1                                        |               20541,                     1,                     1
+ RISCV1$design_ODM5_FILL_v21b__70x350.FILL     | RISCV1                                        |               15307,                     1,                     1
+ RISCV1$design_ODM4_FILL_v21b__350x70.FILL     | RISCV1                                        |               12871,                     1,                     1
+ RISCV1$design_ODM2_FILL_v21b__350x70.FILL     | RISCV1                                        |               12582,                     1,                     1
+ RISCV1$design_ODM3_FILL_v21b__350x70.FILL     | RISCV1                                        |                5095,                     1,                     1
+ FILL4BWP30P140                                | RISCV1                                        |                2656,                     1,                     1
+ FILL2BWP30P140                                | RISCV1                                        |                2180,                     1,                     1
+ FILL3BWP30P140                                | RISCV1                                        |                1781,                     1,                     1
+ FILL8BWP30P140                                | RISCV1                                        |                1264,                     1,                     1
+ OAI22D0BWP30P140HVT                           | RISCV1                                        |                 612,                     1,                     1
+ FILL16BWP30P140                               | RISCV1                                        |                 571,                     1,                     1
+ CKND0BWP30P140HVT                             | RISCV1                                        |                 564,                     1,                     1
+ TAPCELLBWP30P140                              | RISCV1                                        |                 395,                     1,                     1
+ TIELBWP30P140HVT                              | RISCV1                                        |                 391,                     1,                     1
+ MUX2ND0BWP30P140HVT                           | RISCV1                                        |                 365,                     1,                     1
+ OAI21D0BWP30P140HVT                           | RISCV1                                        |                 350,                     1,                     1
+ NR2D0BWP30P140HVT                             | RISCV1                                        |                 345,                     1,                     1
+ ND2D0BWP30P140HVT                             | RISCV1                                        |                 316,                     1,                     1
+ AN2D0BWP30P140HVT                             | RISCV1                                        |                 268,                     1,                     1
+ FILL32BWP30P140                               | RISCV1                                        |                 263,                     1,                     1
+ AOI21D0BWP30P140HVT                           | RISCV1                                        |                 257,                     1,                     1
+ FILL64BWP30P140                               | RISCV1                                        |                 230,                     1,                     1
+ RISCV1$design_DM6_FILL_v21b__500x120.FILL     | RISCV1                                        |                 192,                     1,                     1
+ BOUNDARY_LEFTBWP30P140                        | RISCV1                                        |                 156,                     1,                     1
+ BOUNDARY_RIGHTBWP30P140                       | RISCV1                                        |                 156,                     1,                     1
+ ND4D0BWP30P140HVT                             | RISCV1                                        |                 127,                     1,                     1
+ AN2D1BWP30P140HVT                             | RISCV1                                        |                  99,                     1,                     1
+ INR2D0BWP30P140HVT                            | RISCV1                                        |                  98,                     1,                     1
+ OA21D0BWP30P140HVT                            | RISCV1                                        |                  86,                     1,                     1
+ IOA21D0BWP30P140HVT                           | RISCV1                                        |                  83,                     1,                     1
+ RISCV1$design_DM4_FILL_v21b__500x120.FILL     | RISCV1                                        |                  67,                     1,                     1
+ NR3D0BWP30P140HVT                             | RISCV1                                        |                  62,                     1,                     1
+ RISCV1$design_DM5_FILL_v21b__120x500.FILL     | RISCV1                                        |                  61,                     1,                     1
+ RISCV1$design_DM3_FILL_v21b__120x500.FILL     | RISCV1                                        |                  59,                     1,                     1
+ BUFFD0BWP30P140HVT                            | RISCV1                                        |                  57,                     1,                     1
+ NR4D0BWP30P140HVT                             | RISCV1                                        |                  45,                     1,                     1
+ OR2D0BWP30P140HVT                             | RISCV1                                        |                  39,                     1,                     1
+ MUX2D0BWP30P140HVT                            | RISCV1                                        |                  37,                     1,                     1
+ OA211D0BWP30P140HVT                           | RISCV1                                        |                  34,                     1,                     1
+ ND3D0BWP30P140HVT                             | RISCV1                                        |                  33,                     1,                     1
+ ND4D1BWP30P140HVT                             | RISCV1                                        |                  33,                     1,                     1
+ RISCV1$design_DM6_FILL_v21b__1000x120.FILL    | RISCV1                                        |                  30,                     1,                     1
+ RISCV1$design_DM6_FILL_v21b__500x120_r3c1x0y130s30z0.FILL | RISCV1                                        |                  27,                     1,                     1
+ RISCV1$design_DM6_FILL_v21b__1000x120_r3c1x0y160s40z0.FILL | RISCV1                                        |                  19,                     1,                     1
+ NR2D0P7BWP30P140HVT                           | RISCV1                                        |                  18,                     1,                     1
+ RISCV1$design_DM6_FILL_v21b__500x120_r4c1x0y130s30z0.FILL | RISCV1                                        |                  18,                     1,                     1
+ RISCV1$design_DM6_FILL_v21b__500x120_r5c1x0y130s30z0.FILL | RISCV1                                        |                  17,                     1,                     1
+ IND2D0BWP30P140HVT                            | RISCV1                                        |                  15,                     1,                     1
+ RISCV1$design_DM6_FILL_v21b__1000x120_r4c1x0y160s40z0.FILL | RISCV1                                        |                  13,                     1,                     1
+ AOI31D0BWP30P140HVT                           | RISCV1                                        |                  12,                     1,                     1
+ RISCV1$design_DM6_FILL_v21b__500x120_r6c1x0y130s30z0.FILL | RISCV1                                        |                  12,                     1,                     1
+ RISCV1$design_DM5_FILL_v21b__120x1000_r1c3x160ys0z40.FILL | RISCV1                                        |                  11,                     1,                     1
+ RISCV1$design_DM6_FILL_v21b__500x120_r3c2xy130sz30.FILL | RISCV1                                        |                  11,                     1,                     1
+ IAO21D0BWP30P140HVT                           | RISCV1                                        |                  10,                     1,                     1
+ RISCV1$design_DM5_FILL_v21b__120x500_r1c3x130ys0z30.FILL | RISCV1                                        |                  10,                     1,                     1
+ RISCV1$design_DM6_FILL_v21b__500x120_r7c1x0y130s30z0.FILL | RISCV1                                        |                  10,                     1,                     1
+ IOA21D1BWP30P140HVT                           | RISCV1                                        |                   8,                     1,                     1
+ OR3D0BWP30P140HVT                             | RISCV1                                        |                   8,                     1,                     1
+ OR4D0BWP30P140HVT                             | RISCV1                                        |                   8,                     1,                     1
+ RISCV1$design_DM2_FILL_v21b__500x120_r5c1x0y120s30z0.FILL | RISCV1                                        |                   8,                     1,                     1
+ RISCV1$design_DM6_FILL_v21b__500x120_rc2xy130sz30.FILL | RISCV1                                        |                   8,                     1,                     1
+ AN3D0BWP30P140HVT                             | RISCV1                                        |                   7,                     1,                     1
+ AO21D0BWP30P140HVT                            | RISCV1                                        |                   7,                     1,                     1
+ INR3D0BWP30P140HVT                            | RISCV1                                        |                   7,                     1,                     1
+ NR2OPTIBD1BWP30P140HVT                        | RISCV1                                        |                   7,                     1,                     1
+ RISCV1$design_DM2_FILL_v21b__1000x120_r2c1x0y120s30z0.FILL | RISCV1                                        |                   7,                     1,                     1
+ RISCV1$design_DM6_FILL_v21b__1000x120_r2c1x0y160s40z0.FILL | RISCV1                                        |                   7,                     1,                     1
+ RISCV1$design_DM6_FILL_v21b__1000x120_r4c2xy160sz40.FILL | RISCV1                                        |                   7,                     1,                     1
+ RISCV1$design_DM6_FILL_v21b__1000x120_r5c1x0y160s40z0.FILL | RISCV1                                        |                   7,                     1,                     1
+ RISCV1$design_DM2_FILL_v21b__1000x120_r1c2x120ys0z30.FILL | RISCV1                                        |                   6,                     1,                     1
+ RISCV1$design_DM6_FILL_v21b__1000x120_r7c1x0y160s40z0.FILL | RISCV1                                        |                   6,                     1,                     1
+ RISCV1$design_DM6_FILL_v21b__1000x120_r8c1x0y160s40z0.FILL | RISCV1                                        |                   6,                     1,                     1
+ RISCV1$design_DM6_FILL_v21b__500x120_r4c2xy130sz30.FILL | RISCV1                                        |                   6,                     1,                     1
+ CKAN2D2BWP30P140HVT                           | RISCV1                                        |                   5,                     1,                     1
+ CKBD0BWP30P140HVT                             | RISCV1                                        |                   5,                     1,                     1
+ CKND1BWP30P140                                | RISCV1                                        |                   5,                     1,                     1
+ IND4D0BWP30P140HVT                            | RISCV1                                        |                   5,                     1,                     1
+ RISCV1$design_DM4_FILL_v21b__1000x120_rc2xy120sz30.FILL | RISCV1                                        |                   5,                     1,                     1
+ RISCV1$design_DM4_FILL_v21b__500x120_r3c1x0y120s30z0.FILL | RISCV1                                        |                   5,                     1,                     1
+ RISCV1$design_DM4_FILL_v21b__500x120_r4c1x0y120s30z0.FILL | RISCV1                                        |                   5,                     1,                     1
+ RISCV1$design_DM5_FILL_v21b__120x1000_r1c2x160ys0z40.FILL | RISCV1                                        |                   5,                     1,                     1
+ RISCV1$design_DM6_FILL_v21b__1000x120_r5c2xy160sz40.FILL | RISCV1                                        |                   5,                     1,                     1
+ RISCV1$design_DM6_FILL_v21b__500x120_r2c1x0y130s30z0.FILL | RISCV1                                        |                   5,                     1,                     1
+ RISCV1$design_DM6_FILL_v21b__500x120_r9c1x0y130s30z0.FILL | RISCV1                                        |                   5,                     1,                     1
+ CKMUX2D0BWP30P140HVT                          | RISCV1                                        |                   4,                     1,                     1
+ IND3D0BWP30P140HVT                            | RISCV1                                        |                   4,                     1,                     1
+ OAI21D0P7BWP30P140HVT                         | RISCV1                                        |                   4,                     1,                     1
+ OAI31D0BWP30P140HVT                           | RISCV1                                        |                   4,                     1,                     1
+ RISCV1$design_DM5_FILL_v21b__120x1000.FILL    | RISCV1                                        |                   4,                     1,                     1
+ RISCV1$design_DM5_FILL_v21b__120x1000_r5c1x0y160s40z0.FILL | RISCV1                                        |                   4,                     1,                     1
+ RISCV1$design_DM5_FILL_v21b__120x1000_rc2xy160sz40.FILL | RISCV1                                        |                   4,                     1,                     1
+ RISCV1$design_DM6_FILL_v21b__1000x120_r10c1x0y160s40z0.FILL | RISCV1                                        |                   4,                     1,                     1
+ RISCV1$design_DM6_FILL_v21b__1000x120_rc2xy160sz40.FILL | RISCV1                                        |                   4,                     1,                     1
+ RISCV1$design_DM6_FILL_v21b__500x120_r8c1x0y130s30z0.FILL | RISCV1                                        |                   4,                     1,                     1
+ DEL050MD1BWP30P140HVT                         | RISCV1                                        |                   3,                     1,                     1
+ INVD1BWP30P140LVT                             | RISCV1                                        |                   3,                     1,                     1
+ ND4D1BWP30P140                                | RISCV1                                        |                   3,                     1,                     1
+ OA22D0BWP30P140HVT                            | RISCV1                                        |                   3,                     1,                     1
+ RISCV1$design_DM2_FILL_v21b__1000x120_r3c1x0y120s30z0.FILL | RISCV1                                        |                   3,                     1,                     1
+ RISCV1$design_DM2_FILL_v21b__1000x120_rc2xy120sz30.FILL | RISCV1                                        |                   3,                     1,                     1
+ RISCV1$design_DM2_FILL_v21b__500x120_r3c1x0y120s30z0.FILL | RISCV1                                        |                   3,                     1,                     1
+ RISCV1$design_DM4_FILL_v21b__1000x120_r2c1x0y120s30z0.FILL | RISCV1                                        |                   3,                     1,                     1
+ RISCV1$design_DM4_FILL_v21b__1000x120_r3c1x0y120s30z0.FILL | RISCV1                                        |                   3,                     1,                     1
+ RISCV1$design_DM5_FILL_v21b__120x1000_r1c4x160ys0z40.FILL | RISCV1                                        |                   3,                     1,                     1
+ RISCV1$design_DM5_FILL_v21b__120x1000_r2c3xy160sz40.FILL | RISCV1                                        |                   3,                     1,                     1
+ RISCV1$design_DM5_FILL_v21b__120x500_r1c2x130ys0z30.FILL | RISCV1                                        |                   3,                     1,                     1
+ RISCV1$design_DM5_FILL_v21b__120x500_r1c4x130ys0z30.FILL | RISCV1                                        |                   3,                     1,                     1
+ RISCV1$design_DM5_FILL_v21b__120x500_r2c4xy130sz30.FILL | RISCV1                                        |                   3,                     1,                     1
+ RISCV1$design_DM5_FILL_v21b__120x500_rc2xy130sz30.FILL | RISCV1                                        |                   3,                     1,                     1
+ RISCV1$design_DM6_FILL_v21b__1000x120_r3c2xy160sz40.FILL | RISCV1                                        |                   3,                     1,                     1
+ RISCV1$design_DM6_FILL_v21b__1000x120_r4c3xy160sz40.FILL | RISCV1                                        |                   3,                     1,                     1
+ RISCV1$design_DM6_FILL_v21b__1000x120_r9c1x0y120s30z0.FILL | RISCV1                                        |                   3,                     1,                     1
+ RISCV1$design_DM6_FILL_v21b__500x120_r3c1x0y120s30z0.FILL | RISCV1                                        |                   3,                     1,                     1
+ RISCV1$design_DM6_FILL_v21b__500x120_r5c2xy130sz30.FILL | RISCV1                                        |                   3,                     1,                     1
+ RISCV1$design_DM6_FILL_v21b__500x120_r6c2xy130sz30.FILL | RISCV1                                        |                   3,                     1,                     1
+ CKND2D1BWP30P140HVT                           | RISCV1                                        |                   2,                     1,                     1
+ INR4D0BWP30P140HVT                            | RISCV1                                        |                   2,                     1,                     1
+ ND2D0P7BWP30P140HVT                           | RISCV1                                        |                   2,                     1,                     1
+ RISCV1$design_DM2_FILL_v21b__1000x120_r13c1x0y120s30z0.FILL | RISCV1                                        |                   2,                     1,                     1
+ RISCV1$design_DM2_FILL_v21b__1000x120_r4c1x0y120s30z0.FILL | RISCV1                                        |                   2,                     1,                     1
+ RISCV1$design_DM2_FILL_v21b__1000x120_r5c1x0y120s30z0.FILL | RISCV1                                        |                   2,                     1,                     1
+ RISCV1$design_DM2_FILL_v21b__1000x120_r6c3xy120sz30.FILL | RISCV1                                        |                   2,                     1,                     1
+ RISCV1$design_DM2_FILL_v21b__1000x120_r9c4xy120sz30.FILL | RISCV1                                        |                   2,                     1,                     1
+ RISCV1$design_DM3_FILL_v21b__120x1000_r1c2x160ys0z40.FILL | RISCV1                                        |                   2,                     1,                     1
+ RISCV1$design_DM3_FILL_v21b__120x1000_r1c5x160ys0z40.FILL | RISCV1                                        |                   2,                     1,                     1
+ RISCV1$design_DM3_FILL_v21b__120x500_r1c3x130ys0z30.FILL | RISCV1                                        |                   2,                     1,                     1
+ RISCV1$design_DM4_FILL_v21b__1000x120_r4c1x0y120s30z0.FILL | RISCV1                                        |                   2,                     1,                     1
+ RISCV1$design_DM4_FILL_v21b__500x120_rc2xy120sz30.FILL | RISCV1                                        |                   2,                     1,                     1
+ RISCV1$design_DM5_FILL_v21b__120x1000_r1c5x160ys0z40.FILL | RISCV1                                        |                   2,                     1,                     1
+ RISCV1$design_DM5_FILL_v21b__120x1000_r2c4xy160sz40.FILL | RISCV1                                        |                   2,                     1,                     1
+ RISCV1$design_DM5_FILL_v21b__120x1000_r2c5xy160sz40.FILL | RISCV1                                        |                   2,                     1,                     1
+ RISCV1$design_DM5_FILL_v21b__120x1000_r3c1x0y160s40z0.FILL | RISCV1                                        |                   2,                     1,                     1
+ RISCV1$design_DM5_FILL_v21b__120x500_r1c6x130ys0z30.FILL | RISCV1                                        |                   2,                     1,                     1
+ RISCV1$design_DM5_FILL_v21b__120x500_r1c7x130ys0z30.FILL | RISCV1                                        |                   2,                     1,                     1
+ RISCV1$design_DM6_FILL_v21b__1000x120_r13c4xy160sz40.FILL | RISCV1                                        |                   2,                     1,                     1
+ RISCV1$design_DM6_FILL_v21b__1000x120_r16c1x0y160s40z0.FILL | RISCV1                                        |                   2,                     1,                     1
+ RISCV1$design_DM6_FILL_v21b__1000x120_r18c7xy160sz40.FILL | RISCV1                                        |                   2,                     1,                     1
+ RISCV1$design_DM6_FILL_v21b__1000x120_r1c4x160ys0z40.FILL | RISCV1                                        |                   2,                     1,                     1
+ RISCV1$design_DM6_FILL_v21b__1000x120_r1c5x160ys0z40.FILL | RISCV1                                        |                   2,                     1,                     1
+ RISCV1$design_DM6_FILL_v21b__1000x120_r2c3xy160sz40.FILL | RISCV1                                        |                   2,                     1,                     1
+ RISCV1$design_DM6_FILL_v21b__1000x120_r6c1x0y160s40z0.FILL | RISCV1                                        |                   2,                     1,                     1
+ RISCV1$design_DM6_FILL_v21b__1000x120_r6c2xy160sz40.FILL | RISCV1                                        |                   2,                     1,                     1
+ RISCV1$design_DM6_FILL_v21b__1000x120_r9c1x0y160s40z0.FILL | RISCV1                                        |                   2,                     1,                     1
+ RISCV1$design_DM6_FILL_v21b__500x120_r10c1x0y130s30z0.FILL | RISCV1                                        |                   2,                     1,                     1
+ RISCV1$design_DM6_FILL_v21b__500x120_r6c1x0y120s30z0.FILL | RISCV1                                        |                   2,                     1,                     1
+ RISCV1$design_DM6_FILL_v21b__500x120_r9c2xy130sz30.FILL | RISCV1                                        |                   2,                     1,                     1
+ TIEHBWP30P140HVT                              | RISCV1                                        |                   2,                     1,                     1
+ SDFQD0BWP30P140HVT                            | VCELLA1                                       |                   2,                   224,                   224
+ SDFCNQD0BWP30P140HVT                          | VCELLA2                                       |                   2,                   180,                   180
+ FA1D0BWP30P140HVT                             | VCELLA3                                       |                   2,                    62,                    62
+ AN3D1BWP30P140HVT                             | RISCV1                                        |                   1,                     1,                     1
+ AN4D0BWP30P140HVT                             | RISCV1                                        |                   1,                     1,                     1
+ BUFFD0P7BWP30P140HVT                          | RISCV1                                        |                   1,                     1,                     1
+ CKBD12BWP30P140                               | RISCV1                                        |                   1,                     1,                     1
+ CKBD4BWP30P140LVT                             | RISCV1                                        |                   1,                     1,                     1
+ CKLNQD2BWP30P140                              | RISCV1                                        |                   1,                     1,                     1
+ CKLNQD2BWP30P140HVT                           | RISCV1                                        |                   1,                     1,                     1
+ CKLNQD2BWP30P140LVT                           | RISCV1                                        |                   1,                     1,                     1
+ CKLNQD3BWP30P140                              | RISCV1                                        |                   1,                     1,                     1
+ CKLNQD4BWP30P140HVT                           | RISCV1                                        |                   1,                     1,                     1
+ CKLNQD6BWP30P140LVT                           | RISCV1                                        |                   1,                     1,                     1
+ CKND1BWP30P140LVT                             | RISCV1                                        |                   1,                     1,                     1
+ CKND2BWP30P140                                | RISCV1                                        |                   1,                     1,                     1
+ CKND8BWP30P140LVT                             | RISCV1                                        |                   1,                     1,                     1
+ DEL025D1BWP30P140HVT                          | RISCV1                                        |                   1,                     1,                     1
+ INR3D1BWP30P140HVT                            | RISCV1                                        |                   1,                     1,                     1
+ INVD2BWP30P140HVT                             | RISCV1                                        |                   1,                     1,                     1
+ ND2OPTIBD1BWP30P140                           | RISCV1                                        |                   1,                     1,                     1
+ ND2OPTIBD1BWP30P140HVT                        | RISCV1                                        |                   1,                     1,                     1
+ ND3D0P7BWP30P140HVT                           | RISCV1                                        |                   1,                     1,                     1
+ ND4D2BWP30P140                                | RISCV1                                        |                   1,                     1,                     1
+ ND4D3BWP30P140HVT                             | RISCV1                                        |                   1,                     1,                     1
+ NR4D1BWP30P140HVT                             | RISCV1                                        |                   1,                     1,                     1
+ OAI221D1BWP30P140HVT                          | RISCV1                                        |                   1,                     1,                     1
+ OR3D1BWP30P140HVT                             | RISCV1                                        |                   1,                     1,                     1
+ RISCV1$design.FILL                            | RISCV1                                        |                   1,                     1,                     1
+=============================================== ===============================================
+
+* Region Report *
+Reports information about different regions present in the layout
+Area      : Total area of the cell
+Num Reg   : Number of regions
+MaxR MinR : Area of maximum and minimum region
+Est Trap  : Average number of trapezoids present in a single region
+Est Plc   : Average number of instances present in a single region 
+Large inst wrt Region: Number of instances with area larger than Max Region Area
+Min/Avg/Max ratio : Minimum, average and maximum ratio of child cell area to Max Region Area for large instances
+This table contains a single entry
+
+ Name                                          | Area (mm^2), Num Reg, MaxR (mm^2), MinR (mm^2), Est Trap (M), Est Plc (M), Large inst wrt Region: Num, Min ratio, Avg ratio, Max ratio
+-----------------------------------------------
+ RISCV1                                        |       0.021,       5,       0.004,       0.004,        0.265,       0.001,                          0,      0.00,      0.00,      0.00
+===============================================
+
+* Layer Report with Estimated Data *
+Reports information of layers present in the layout
+
+Trap        : Number of hierarchical trapezoids in the layer
+Poly        : Number of hierarchical polygons in the layer
+Text        : Number of hierarchical text primitives in the layer
+Flat Trap   : Number of flat trapezoids 
+Flat Poly   : Number of flat polygons
+Flat Text   : Number of flat text primitives 
+Trap F/H    : Ratio of flat and hierarchical placements of the trapezoids
+Base, Metal, Via, Fill, Colored : Indicates layer intent
+This table contains 13 entries
+Original table contains 13 entries
+
+ Name                                          | Trap (M), Poly (M), Text (M), Flat Trap (M), Flat Poly (M), Flat Text (M), Trap F/H, Base, Metal, Via, Fill, Colored
+-----------------------------------------------
+ m3_layer                                      |    0.186,    0.186,    0.000,         0.186,         0.186,         0.000,     1.00,    0,     0,   0,    0,       0
+ m4_layer                                      |    0.150,    0.150,    0.000,         0.150,         0.150,         0.000,     1.00,    0,     0,   0,    0,       0
+ m1_layer                                      |    0.145,    0.075,    0.000,         0.548,         0.222,         0.000,     3.78,    0,     0,   0,    0,       0
+ m2_layer                                      |    0.140,    0.139,    0.000,         0.255,         0.184,         0.000,     1.82,    0,     0,   0,    0,       0
+ m5_layer                                      |    0.068,    0.068,    0.000,         0.068,         0.068,         0.000,     1.00,    0,     0,   0,    0,       0
+ m6_layer                                      |    0.025,    0.025,    0.000,         0.025,         0.025,         0.000,     1.00,    0,     0,   0,    0,       0
+ m6_fill_diff_datatype_layer                   |    0.024,    0.024,    0.000,         0.024,         0.024,         0.000,     1.00,    0,     0,   0,    0,       0
+ m5_fill_diff_datatype_layer                   |    0.017,    0.017,    0.000,         0.017,         0.017,         0.000,     1.00,    0,     0,   0,    0,       0
+ m2_fill_diff_datatype_layer                   |    0.014,    0.014,    0.000,         0.014,         0.014,         0.000,     1.00,    0,     0,   0,    0,       0
+ hier_chip_boundary                            |    0.014,    0.014,    0.000,         0.020,         0.020,         0.000,     1.38,    0,     0,   0,    0,       0
+ m4_fill_diff_datatype_layer                   |    0.014,    0.014,    0.000,         0.014,         0.014,         0.000,     1.00,    0,     0,   0,    0,       0
+ m3_fill_diff_datatype_layer                   |    0.006,    0.006,    0.000,         0.006,         0.006,         0.000,     1.00,    0,     0,   0,    0,       0
+ m7_layer                                      |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     0.00,    0,     0,   0,    0,       0
+===============================================
+

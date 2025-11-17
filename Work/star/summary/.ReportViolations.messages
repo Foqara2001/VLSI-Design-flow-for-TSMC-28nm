@@ -1,0 +1,20 @@
+Num parts for violation reports = 0
+  Parsing summary/xtract.sum
+generate from binary
+  Parsing shorts violations binary files ...
+WARNING: Found shorted nets (see file shorts_all.sum). The capacitances of these nets may be
+         unreliable due to the shorts. (SX-0955)
+WARNING: The short could be on the db layer or other db layers with the same height in
+         star/short_all.sum. (SX-4093)
+  
+Dump VMF File      Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=562.1 
+ReadShorts         Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=563.3 
+WriteShortsReport  Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=563.8 
+ReportViaAndSmin   Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=563.8 
+InstPortNotCovered Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=563.8 
+ReportShorts       Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=563.8 
+  
+Done          Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=563.8 
+
+End Time: Tue Sep  2 13:45:42 2025
+

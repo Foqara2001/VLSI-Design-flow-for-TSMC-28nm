@@ -1,0 +1,12 @@
+run_in_same_process: start time = 1756809905
+WARNING: HALF_NODE_SCALE_FACTOR detected in nxtgrd file, setting NETLIST_UNSCALED_RES_PROP:YES for
+         unshrunk coordinates. (SX-0291)
+WARNING: MAPPING_FILE layer "poly" is not a valid database layer and will be removed. (SX-1813)
+WARNING: MAPPING_FILE layer "polyCont" is not a valid database layer and will be removed. (SX-1813)
+  
+InitDB           Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=834.7 
+CacheStdCellPort Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=843.0 
+CacheTopCellPort Elp=00:00:00 Cpu=00:00:00 Usr=0.1    Sys=0.0    Mem=846.5 
+Layers           Elp=00:00:00 Cpu=00:00:00 Usr=0.1    Sys=0.0    Mem=846.5 
+  
+Done          Elp=00:00:00 Cpu=00:00:00 Usr=0.1    Sys=0.0    Mem=846.5 

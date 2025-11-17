@@ -1,0 +1,70 @@
+
+-------------------------------------------------------------------------------
+Rule: AP.DN.1 : Minimum AP density across full chip (Except WB package w/o AP-RDL) >= 10%	              1 error
+Rule: DM1.R.1 : DM1 is a must. The DM1 CAD layer (TSMC default, 31;1 for DM1) must be different from the M1 CAD layer.	              1 error
+Rule: DM2.R.1 : DM2 is a must. The DM2 CAD layer (TSMC default, 32;1 for DM2) must be different from the M2 CAD layer.	              1 error
+Rule: DM3.R.1 : DM3 is a must. The DM3 CAD layer (TSMC default, 33;1 for DM3) must be different from the M3 CAD layer.	              1 error
+Rule: DM4.R.1 : DM4 is a must. The DM4 CAD layer (TSMC default, 34;1 for DM4) must be different from the M4 CAD layer.	              1 error
+Rule: DM5.R.1 : DM5 is a must. The DM5 CAD layer (TSMC default, 35;81 for DM5) must be different from the M5 CAD layer.	              1 error
+Rule: EFP.VIA1.S.3 : VIMB (Via Induce Metal Bridge) rule type-3: 'Confined VIAx' space to VIAx [parallel run length > -0.04 um, INTERACT the same Mx and Mx+1 as 'Confined VIAx' at the same time] Definition of 'Confined VIAx': VIAx enclosure [0 um at one side and < 0.04 um (E1) at adjacent side] by Mx+1 [the edge with 0 um VIAx enclosure space to Mx+1 < 0.065 um (D1)] >= 0.09	              9 errors
+Rule: G.4:M1i : Adjacent edges with length less than min. width is not allowed.	              3 errors
+Rule: G.4:M2i : Adjacent edges with length less than min. width is not allowed.	             36 errors
+Rule: G.4:M3i : Adjacent edges with length less than min. width is not allowed.	             24 errors
+Rule: G.4:M4i : Adjacent edges with length less than min. width is not allowed.	              2 errors
+Rule: M1.EN.4 : Enclosure of CO [M1 width >= 0.08 um, M1 space < 0.06 um and parallel run length > 0.18 um] (This check doesn't include 2 COs with space < 0.08 um) >= 0.015	              2 errors
+Rule:                           M1.S.1 : Space >= 0.05	              5 errors
+Rule: M1.S.7 : Space to M1 line-end [parallel run length > -0.025 um (T)] . Definition of 'M1 line-end': M1 edge with length < 0.07 um (W) between 2 outer vertex >= 0.06	              2 errors
+Rule: M1.S.8 : Space (S1) to dense M1 line-end [parallel run length > -0.025 um (T)], Definition of dense M1 line-end: 1. M1 line-end: M1 edge with length < 0.07 um (W) between 2 outer vertex. 2. Other metal INTERACT Region 1. Region 1 = (T+Q) x S2. (W+S2) < 0.12 um. This check doesn't include small jog with edge length < 0.05 um (R) >= 0.07	              1 error
+Rule:                        M2.A.2 : M2 area >= 0.014	              3 errors
+Rule: M2.EN.11 : Enclosure of VIAx-1 [0.16 um >= metal width > 0.07 um, metal space < 0.1 um (D1) and parallel run length > 0.1 um] (For Mx.EN.11, the rule check is not included same VIAx group, which is defined as below.) 1. VIAx space <= 0.11 um2. Mx is same net 3. Mx+1 is same net >= 0.01	              3 errors
+Rule:                           M2.S.1 : Space >= 0.05	             77 errors
+Rule: M2.S.12 : Space of Mx line-end [parallel run length > -0.025 um (T)] . Definition of 'Mx line-end': Mx edge with length < 0.07 um (W) between 2 outer vertex >= 0.08	              1 error
+Rule: M2.S.7 : Space to Mx line-end [parallel run length > -0.025 um (T)] . Definition of 'Mx line-end': Mx edge with length < 0.07 um (W) between 2 outer vertex >= 0.07	             48 errors
+Rule: M2.S.8 : Mx line space (S1) to dense Mx line-end [parallel run length > -0.025 um (T)], and dense Mx line-end enclosure of Vx-1 (V). Definition of dense Mx line-end: 1. Mx line-end: Mx edge with length < 0.07 um (W) between 2 outer vertex. 2. Other metal INTERACT Region 1. Region 1 = (T+Q) x S2. (W+S2) < 0.115 um. This check doesn't include small jog with edge length < 0.05 um (R) >= 0.08/0.05 or 0.1/0.03 (1)	              7 errors
+Rule: M2.S.8 : Mx line space (S1) to dense Mx line-end [parallel run length > -0.025 um (T)], and dense Mx line-end enclosure of Vx-1 (V). Definition of dense Mx line-end: 1. Mx line-end: Mx edge with length < 0.07 um (W) between 2 outer vertex. 2. Other metal INTERACT Region 1. Region 1 = (T+Q) x S2. (W+S2) < 0.115 um. This check doesn't include small jog with edge length < 0.05 um (R) >= 0.08/0.05 or 0.1/0.03 (2)	             22 errors
+Rule:                           M2.W.1 : Width >= 0.05	              4 errors
+Rule: M2.W.4 : Length of the edge with adjacent edge < 0.05 um [these 2 edges formed by 3 consecutive 270 degree inner vertex-90 degree outer vertex-270 degree inner vertex; DRC doesn't flag if there is Mx within the area formed by 0.16 um extension from these 2 edges and the 90 degree outer vertex.] (This check doesn't include the region covered by MetalFuse (156;2)) >= 0.065	              4 errors
+Rule:               M3.A.1 : Area (except M2) >= 0.017	              2 errors
+Rule:                           M3.S.1 : Space >= 0.05	            133 errors
+Rule: M3.S.12 : Space of Mx line-end [parallel run length > -0.025 um (T)] . Definition of 'Mx line-end': Mx edge with length < 0.07 um (W) between 2 outer vertex >= 0.08	              1 error
+Rule: M3.S.2 : Space [at least one metal line width > 0.09 um (W1) and the parallel run length > 0.22 um (L1)] >= 0.06	             71 errors
+Rule: M3.S.7 : Space to Mx line-end [parallel run length > -0.025 um (T)] . Definition of 'Mx line-end': Mx edge with length < 0.07 um (W) between 2 outer vertex >= 0.07	             15 errors
+Rule: M3.S.8 : Mx line space (S1) to dense Mx line-end [parallel run length > -0.025 um (T)], and dense Mx line-end enclosure of Vx-1 (V). Definition of dense Mx line-end: 1. Mx line-end: Mx edge with length < 0.07 um (W) between 2 outer vertex. 2. Other metal INTERACT Region 1. Region 1 = (T+Q) x S2. (W+S2) < 0.115 um. This check doesn't include small jog with edge length < 0.05 um (R) >= 0.08/0.05 or 0.1/0.03 (1)	              6 errors
+Rule: M3.S.8 : Mx line space (S1) to dense Mx line-end [parallel run length > -0.025 um (T)], and dense Mx line-end enclosure of Vx-1 (V). Definition of dense Mx line-end: 1. Mx line-end: Mx edge with length < 0.07 um (W) between 2 outer vertex. 2. Other metal INTERACT Region 1. Region 1 = (T+Q) x S2. (W+S2) < 0.115 um. This check doesn't include small jog with edge length < 0.05 um (R) >= 0.08/0.05 or 0.1/0.03 (2)	             14 errors
+Rule:               M4.A.1 : Area (except M2) >= 0.017	              1 error
+Rule: M4.A.3 : Area [with all of edge lengths < 0.13 um] (This check doesn't include the patterns filling 0.05 um x 0.13 um rectangular tile) >= 0.044	              1 error
+Rule:                    M4.A.4 : Enclosed area >= 0.2	              5 errors
+Rule: M4.EN.12 : Enclosure of VIAx-1 [4.5 um >= metal width > 0.16 um, metal space < 0.13 um and parallel run length > 0.1 um] >= 0.015	              1 error
+Rule:                           M4.S.1 : Space >= 0.05	             80 errors
+Rule: M4.S.12 : Space of Mx line-end [parallel run length > -0.025 um (T)] . Definition of 'Mx line-end': Mx edge with length < 0.07 um (W) between 2 outer vertex >= 0.08	              1 error
+Rule: M4.S.13 : Space [at least one metal line width > 0.13 um (W1) and the parallel run length > 0.22 um (L1)] >= 0.08	              3 errors
+Rule: M4.S.2 : Space [at least one metal line width > 0.09 um (W1) and the parallel run length > 0.22 um (L1)] >= 0.06	             46 errors
+Rule: M4.S.3 : Space [at least one metal line width > 0.16 um (W2) and the parallel run length > 0.22 um (L2)] >= 0.1	              3 errors
+Rule: M4.S.7 : Space to Mx line-end [parallel run length > -0.025 um (T)] . Definition of 'Mx line-end': Mx edge with length < 0.07 um (W) between 2 outer vertex >= 0.07	              7 errors
+Rule: M4.S.8 : Mx line space (S1) to dense Mx line-end [parallel run length > -0.025 um (T)], and dense Mx line-end enclosure of Vx-1 (V). Definition of dense Mx line-end: 1. Mx line-end: Mx edge with length < 0.07 um (W) between 2 outer vertex. 2. Other metal INTERACT Region 1. Region 1 = (T+Q) x S2. (W+S2) < 0.115 um. This check doesn't include small jog with edge length < 0.05 um (R) >= 0.08/0.05 or 0.1/0.03 (1)	              1 error
+Rule: M4.S.8 : Mx line space (S1) to dense Mx line-end [parallel run length > -0.025 um (T)], and dense Mx line-end enclosure of Vx-1 (V). Definition of dense Mx line-end: 1. Mx line-end: Mx edge with length < 0.07 um (W) between 2 outer vertex. 2. Other metal INTERACT Region 1. Region 1 = (T+Q) x S2. (W+S2) < 0.115 um. This check doesn't include small jog with edge length < 0.05 um (R) >= 0.08/0.05 or 0.1/0.03 (2)	              3 errors
+Rule: M5.DN.1 : Minimum local density [window 125.0 um x 125.0 um, stepping 62.5 um] >= 0.2	              1 error
+Rule: M6_VIA5:WARNING1 : This is 5M DRC. If customer wants to check M6. Please use M6 DRC command file. (1)	           1153 errors
+  WARNING: Runset error limit exceeded for this rule, some errors omitted.
+Rule: M6_VIA5:WARNING1 : This is 5M DRC. If customer wants to check M6. Please use M6 DRC command file. (2)	           1007 errors
+  WARNING: Runset error limit exceeded for this rule, some errors omitted.
+Rule: OD.DN.3 : Minimum {{OD OR DOD} OR SR_DOD} local density [window 20 um x 20 um, stepping 10 um] >= 20%	              1 error
+Rule: OD.S.14 : Maximum space between {{OD OR SR_DOD} OR DOD} <= 10	              1 error
+Rule: PO.DN.3 : Minimum {{{PO OR SR_DPO} OR DPO} NOT CPO} local density [window 20.0 um x 20.0 um, stepping 10.0 um] >= 0.1	              1 error
+Rule: PO.DN.3.1 : Minimum {{{PO OR SR_DPO} OR DPO} NOT CPO} local density [window 10.0 um x 10.0 um, stepping 5.0 um] >= 0.1	              1 error
+Rule: USER_GUIDE.M5 : Metal layers with forbidden datatypes.	           1026 errors
+  WARNING: Runset error limit exceeded for this rule, some errors omitted.
+Rule: USER_GUIDE.VIA4 : Via layers with forbidden datatypes.	           1006 errors
+  WARNING: Runset error limit exceeded for this rule, some errors omitted.
+Rule:             VIA1.S.1 : Square VIAx space >= 0.07	              4 errors
+Rule: VIA1.S.5 : VIAx space [parallel run length > -0.04 um] >= 0.08	              4 errors
+Rule: VIA2.EN.11 : Enclosure by Mx [0.16 um >= metal width > 0.07 um, space < 0.1 um (D1) and parallel run length > 0.1 um] (For VIAx.EN.11, the rule check is not included same VIAx group, which is defined as below). 1. VIAx space <= 0.11 um2. Mx is same net 3. Mx+1 is same net >= 0.01	              3 errors
+Rule:             VIA2.S.1 : Square VIAx space >= 0.07	              1 error
+Rule: VIA2.S.5 : VIAx space [parallel run length > -0.04 um] >= 0.08	              1 error
+Rule: VIA3.R.2__VIA3.R.3 : When M3 or M4 width > 0.18 um, more than one VIA3 is required. 2 vias spacing should be <= 0.1 um or 4 vias spacing should be <= 0.65 um 4 vias spacing should be <= 0.1 um or 9 vias spacing should be <= 0.85 um	              3 errors
+Rule: VIA3.R.4:M4 : At least 2 square VIAx or one rectangular VIAx must be used for a connection that distance <= 1.65 um (D) away from a metal plate (either Mx or Mx+1) with length > 0.18 um (L) and width > 0.18 um (W). (Except VIA bar region)	              3 errors
+Rule: VIA3.R.8 : Single VIAx is not allowed for H-shape Mx+1 when all of the following conditions come into existence: 1. The Mx+1 has H-shape interact with two metal holes: two metal hole length(L2) <= 5.0 um and both two metal hole area <= 5.0 um2 2. The VIAx overlaps on the center metal bar of this H-shape Mx+1 3. The length (L) of the center metal bar <= 1.0 um and the width of metal bar is <= 0.15 um.	             15 errors
+Rule:             VIA3.S.1 : Square VIAx space >= 0.07	              2 errors
+Rule: VIA3.S.5 : VIAx space [parallel run length > -0.04 um] >= 0.08	              2 errors
+-------------------------------------------------------------------------------
+NOTE: TRANSLATE_ERROR_INST is ON

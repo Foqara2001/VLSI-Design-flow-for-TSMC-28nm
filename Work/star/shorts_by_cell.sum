@@ -1,0 +1,3 @@
+Instantiated_cell Nb_shorts Top_ten_nets
+u_issue_u_regfile_REGFILE_reg_r10_q_reg_25_ 4 ctmn_133 ZCTSNET_94
+u_issue_u_regfile_REGFILE_reg_r12_q_reg_17_ 3 optlc_net_9520 clk_i_clock_gate_u_issue_u_regfile_REGFILE_reg_r12_q_reg

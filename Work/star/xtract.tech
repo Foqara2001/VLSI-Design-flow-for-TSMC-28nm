@@ -1,0 +1,131 @@
+-improve_comb_accuracy_on_capacitor_layer
+-abs_cap_threshold_xt 3e-15
+-rel_cap_threshold_xt 0.03
+-disable_skip_pcell_tcap_filter
+-ground_small_net_ccap
+-abutment_merge_mode 4
+-layer_based_nxtgrd_read 1
+-noncritical_min_area 0.25
+-noncritical_min_length 0.25
+-local_nodeids
+-new_res_rc
+-new_res_environment 2
+-new_res_optimization 1
+-res_cache_hash_size 50000
+-limit_handle_long_contacts
+-rx_enclosure_simple
+-new_ip_handling
+-process_point_based_ip
+-consistent_open_instance_port
+-new_cap_environment 6
+-new_cap_environment_nondominant 1
+-new_cap_model 1
+-ground_non_reciprocal_fill_coupling
+-thickness_var_threshold 0.05
+-thickness_var_threshold_discard 0.02
+-new_cap_plane_limit 4.0
+-new_cap_simple_via_pad_model 2
+-abstract_polygon_mode 1
+-no_colored_patterns 1
+-abstract_pattern_expand_mode 5
+-fill_pattern_generation_mode 5
+-via_enclosure_modeling 1
+-fast_env_nondominant_scan_wmin_threshold 2.0
+-edge_cap_cache_hash_size 65000
+-fringe_cap_cache_hash_size 10000
+-cap_area_cache_hash_size 25000
+-tv_cache_hash_size 25000
+-single_cap_node_delay_threshold 12.0
+-max_ccap_merge_length 5.0
+-abstract_polygon_area_tuning_factor 0.6
+-abstract_polygon_via_tuning_factor 0.7
+-use_relaxed_area_cap_env_merge
+-new_cap_sort_small_environments 8
+-max_env_model_length_multiple 0.0
+-max_model_length_ratio 0.0
+-simple_model_plane_limit 0.0
+-max_env_prune_length_multiple 2.0
+-max_prune_length_ratio 1.0
+-max_via_env_prune_length_multiple 2.0
+-fill_extraction_abs_threshold 1e-19
+-new_cap_fill_extract_iterations 2
+-full_cap_fill_mode
+-last_fill_iteration_simple
+-fast_fill_model 5
+-select_pruned_fill_polygons 1
+-use_partition_based_density
+-ignore_reconnected_fill_in_ip_location
+-stage_id 1
+-o xout
+-clean_via
+-handle_45_polygons
+-nonmanhattan_ratio 0.95
+-nonmanhattan_tolerance 5
+-enhanced_via_model_for_via_coverage
+-adjust_rpv_by_via_count
+-num_cores 1
+-ignore_ek_stub_for_ip
+-filter
+-dsd 25
+-message_suppression_limit  100
+-i xin
+-tcad_file /data/tsmc/28HPCPMMWAVE/synopsys/StarRC/1.9p1a/typical/crn28hpc+_1p09m+ut-alrdl_5x1y1z1u_typical.nxtgrd
+-layer_info layer_info
+-GVM_skip 
+-GV_m0_factor 0
+-GV_shielding_ext -1
+-detect_VT 0
+-density_based_thickness
+-e 1e-14
+-tsmc_n28
+-is_tsmc_node
+-enable_tall_contact_modeling
+-extraction RC
+-keep_via_nodes 0
+-reduction_high_small_r_rel_threshold 0.9
+-max_tdecm_level 2
+-rfr 0.99
+-suppress_file xtract.sup
+-extra_geometry_info node
+-vert_parts
+-cut_thickness 1
+-overlap_dist 2
+-trench_contact_virtual_via_segmentation_ratio 1000
+-trench_contact_virtual_via_segmentation_ratio_for_power 1000
+-max_virtual_via_segmentation_number 1
+-dont_physically_cut_virtual_via 
+-net_segment_cut_length 20
+-stop_extraction_on_numerous_shorts 
+-inter_pic_level_connections
+-fine_dbu
+-calc_text_count
+-multi_finger_coordinates_based_merge
+-pi_cap_polygon
+-pi_cap_polygon_length 20
+-net_command_file select_nets
+-small_net_delay_threshold 0.25
+-random_access_xout
+-lateral_cap_scaling_mode 2
+-new_current_direction_for_em
+-ignore_vdr_jogs
+-gpd_dir ../RISCV1.gpd
+-direct_gpd
+-nco_setup_file gpd_connect_open_nets
+-netlist_unscaled_coordinates
+-unmagnification_factor 0.9
+-unscale_open_short_coord
+-netlist_unscaled_res_prop 
+-unmag_res_prop 0.9
+-enhanced_via_extraction
+-enhanced_via_extraction_for_fake_via
+-smart_opens
+-smart_opens_node_limit 2147483647
+-smart_opens_rcg_limit 1000
+-vertical_gate_resistance
+-persistent_extractor_mode 3
+-enhanced_obs_short_reporting
+-non_color_setting 0
+-warning_mos_gate_delta_for_via_on_gate 
+-enhanced_evws_resistance_accuracy
+-enhanced_evws_resistance_accuracy_max_coor_size 102
+-prefer_fill_style_pn_over_xin_pn

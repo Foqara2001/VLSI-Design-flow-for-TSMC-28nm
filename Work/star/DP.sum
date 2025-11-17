@@ -1,0 +1,29 @@
+----------------------------------------------------------------------------------------------
+CPU#   | STAGE SUMMARY                                            |END TIME             |HOST NAME
+----------------------------------------------------------------------------------------------
+CPU_01 |*Setup                     Elp=00:00:02 Cpu=00:00:01 Mem=834.7  |Sep  2 13:45:05 |micron1.eng.tau.ac.il
+CPU_01 |*Layers                    Elp=00:00:00 Cpu=00:00:00 Mem=846.5  |Sep  2 13:45:05 |micron1.eng.tau.ac.il
+CPU_01 |*HN                        Elp=00:00:01 Cpu=00:00:00 Mem=928.3  |Sep  2 13:45:08 |micron1.eng.tau.ac.il
+CPU_01 |*Cells                     Elp=00:00:01 Cpu=00:00:01 Mem=958.1  |Sep  2 13:45:09 |micron1.eng.tau.ac.il
+CPU_01 |*Translate                 Elp=00:00:01 Cpu=00:00:00 Mem=879    |Sep  2 13:45:10 |micron1.eng.tau.ac.il
+CPU_01 |*NetlistSetup              Elp=00:00:00 Cpu=00:00:00 Mem=563.8  |Sep  2 13:45:10 |micron1.eng.tau.ac.il
+CPU_01 |*GPD_XtractSetup           Elp=00:00:00 Cpu=00:00:00 Mem=835.6  |Sep  2 13:45:12 |micron1.eng.tau.ac.il
+CPU_01 |*GPD_NameMap               Elp=00:00:00 Cpu=00:00:00 Mem=565.1  |Sep  2 13:45:14 |micron1.eng.tau.ac.il
+CPU_01 |*xTract                    Elp=00:00:22 Cpu=00:00:19 Mem=1741.5 |Sep  2 13:45:36 |micron1.eng.tau.ac.il
+CPU_01 |*xTractPP                  Elp=00:00:04 Cpu=00:00:00 Mem=406.6  |Sep  2 13:45:40 |micron1.eng.tau.ac.il
+CPU_01 |*ReportViolations          Elp=00:00:00 Cpu=00:00:00 Mem=563.8  |Sep  2 13:45:42 |micron1.eng.tau.ac.il
+CPU_01 |*ReportOpens               Elp=00:00:01 Cpu=00:00:00 Mem=562.1  |Sep  2 13:45:45 |micron1.eng.tau.ac.il
+CPU_01 |*GPD_PostProcess           Elp=00:00:00 Cpu=00:00:00 Mem=562.5  |Sep  2 13:45:47 |micron1.eng.tau.ac.il
+CPU_01 |*GPD_Converter_DP          Elp=00:00:03 Cpu=00:00:00 Mem=415.7  |Sep  2 13:45:52 |micron1.eng.tau.ac.il
+CPU_01 |*GPD_Converter_merge       Elp=00:00:00 Cpu=00:00:00 Mem=400.6  |Sep  2 13:45:54 |micron1.eng.tau.ac.il
+----------------------------------------------------------------------------------------------
+Start Time: Tue Sep  2 13:45:03 2025
+End Time: Tue Sep  2 13:45:47 2025
+----------------------------------------------------------------------------------------------
+Overall:         Elp=00:00:44 Cpu= 00:00:23 Peak_Mem(MB)=1741.5
+PreXtraction:    Elp=00:00:11 Cpu= 00:00:03 Peak_Mem(MB)=958.1
+Xtraction:       Elp=00:00:22 Cpu= 00:00:19 Peak_Mem(MB)=1741.5
+PostXtraction:   Elp=00:00:11 Cpu= 00:00:00 Peak_Mem(MB)=563.8
+----------------------------------------------------------------------------------------------
+Spef Output:     Elp= 00:00:05 Cpu= 00:00:00 Peak_Mem(MB)=415.7
+----------------------------------------------------------------------------------------------

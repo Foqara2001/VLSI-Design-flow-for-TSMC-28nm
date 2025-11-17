@@ -1,0 +1,13 @@
+# Automagically generated file: Please do not edit!
+lvs_LvsOutFile RUNDIR /project/tsmc28mmwave/users/foqara/ws/riscv
+lvs_LvsfVersion 4
+lvs_LvsInputSummary {0 0 1}
+lvs_LvsComparisonSummary {2 0 0 0}
+lvs_LvsOutFile LVS_SUMMARY lvs.summary
+lvs_SourceCase YES
+lvs_LayoutCase YES
+lvs_PowerName VDD
+lvs_GroundName VSS
+lvs_LvsOutFile LVS_REPORT %l.lvs.report
+lvs_LvsOutFile SOURCE_NETLIST top.v.v2lvs.sp
+lvs_LvsOutFile RULES_FILE _DFM_LVS_RC_CALIBRE_N28HP_1p9M_5X1Y1Z1U_ALRDL.v1.0_3p_

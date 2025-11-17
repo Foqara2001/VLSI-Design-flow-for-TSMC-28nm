@@ -1,0 +1,17 @@
+Listening socket 13 is set on main worker.
+Listening socket 13 is binded to filename file_log_manager_sock_R94cmPijHANqZo5d.
+Listening socket 13 starts to listen on main worker=3289964.
+Log file is set on main worker. (stdout)
+Log file is set on main worker. (stderr)
+Listening socket 13 starts to listen on child=3289967. Socket filename=file_log_manager_sock_R94cmPijHANqZo5d
+SubworkerPID 3289978  0.12620 : File Log: finish initialization. Current system time is 2025-09-07 00:52:09
+SubworkerPID 3289988  0.19123 : File Log: finish initialization. Current system time is 2025-09-07 00:52:10
+Rank 0  0.20454 : File Log: finish initialization. Current system time is 2025-09-07 00:52:10
+Rank 0  0.20504 : fcopy log is set.
+Rank 0  0.20564 : File Copy Manager is created. Cache dir: /project/tsmc28mmwave/users/foqara/ws/riscv/signoff_drc_run/run_details/group/CACHE_DIR. Group dir: /project/tsmc28mmwave/users/foqara/ws/riscv/signoff_drc_run/run_details/group/CACHE_DIR. Cache is Good.
+Rank 0  0.20592 : engine pid=3289998
+Rank 1  0.20646 : File Log: finish initialization. Current system time is 2025-09-07 00:52:10
+Rank 1  0.20679 : fcopy log is set.
+Rank 1  0.20731 : File Copy Manager is created. Cache dir: /project/tsmc28mmwave/users/foqara/ws/riscv/signoff_drc_run/run_details/group/CACHE_DIR. Group dir: /project/tsmc28mmwave/users/foqara/ws/riscv/signoff_drc_run/run_details/group/CACHE_DIR. Cache is Good.
+Rank 1  0.20775 : engine pid=3289999
+Main worker dies. Exit normally.

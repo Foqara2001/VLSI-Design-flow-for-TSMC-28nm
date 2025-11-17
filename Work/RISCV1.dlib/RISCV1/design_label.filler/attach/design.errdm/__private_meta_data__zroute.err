@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<errorData typeCount="19" majorVersion="1" minorVersion="8" name="__private_meta_data_:zroute.err" designName="riscv_core" info="" checker="Zroute" checkerVersion="" created="1756580385" createdDate="08:30:2025:21:59:45:IDT" modified="1756590635" modifiedDate="08:31:2025:00:50:35:IDT" interactive="false" internal="false" metaData="true" numTypes="19" numInsts="952"/>

@@ -1,0 +1,16 @@
+1 Setup 1756809903 1756809905 2 1.43 0 834.7 micron1.eng.tau.ac.il
+1 Layers 1756809905 1756809905 0 0.1 0 846.5 micron1.eng.tau.ac.il
+1 HN 1756809907 1756809908 1 0.5 0 928.3 micron1.eng.tau.ac.il
+1 Cells 1756809908 1756809909 1 1 0.1 958.1 micron1.eng.tau.ac.il
+1 Translate 1756809909 1756809910 1 0.3 0 879 micron1.eng.tau.ac.il
+1 NetlistSetup 1756809910 1756809910 0 0 0 563.8 micron1.eng.tau.ac.il
+1 GPD_XtractSetup 1756809912 1756809912 0 0 0 835.6 micron1.eng.tau.ac.il
+1 GPD_NameMap 1756809914 1756809914 0 0.1 0 565.1 micron1.eng.tau.ac.il
+1 xTract 1756809916 1756809936 20 19.1 0.5 1741.5 micron1.eng.tau.ac.il
+1 xTractPP 1756809940 1756809940 0 0 0 406.6 micron1.eng.tau.ac.il
+1 ReportViolations 1756809942 1756809942 0 0 0 563.8 micron1.eng.tau.ac.il
+1 ReportOpens 1756809944 1756809945 0 0 0 562.1 micron1.eng.tau.ac.il
+1 GPD_PostProcess 1756809947 1756809947 0 0 0 562.5 micron1.eng.tau.ac.il
+1 GPD_Converter1 1756809949 1756809949 0 0.6 0 415.7 micron1.eng.tau.ac.il
+1 GPD_Converter2 1756809951 1756809952 0 0 0 400.7 micron1.eng.tau.ac.il
+1 GPD_Converter_merge 1756809954 1756809954 0 0 0 400.6 micron1.eng.tau.ac.il

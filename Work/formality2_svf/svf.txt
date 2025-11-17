@@ -1,0 +1,63 @@
+
+
+##################################################################################
+# Copyright 2002-2025 Synopsys, Inc.  All rights reserved.
+# This Synopsys product and all associated documentation and files are
+# proprietary to Synopsys, Inc. and may only be used pursuant to the terms
+# and conditions of a written license agreement with Synopsys, Inc. All other
+# use, reproduction, modification, or distribution of the Synopsys product or
+# the associated documentation or files is strictly prohibited.
+##################################################################################
+
+
+## SVF file read: /project/tsmc28mmwave/users/foqara/ws/riscv/guidFM/riscv_core1.svf
+
+guide \
+  -tool { Fusion Compiler } \
+  -version { V-2023.12-SP3 built May 07, 2024 } \
+  -SVF { 21.230 } \
+  -timestamp { Thu Jun 12 13:40:17 2025 } 
+
+## Operation Id: 1
+guide_environment \
+  { { dc_product_version V-2023.12-SP3 } \
+    { dc_product_build_date { May 07, 2024 } } \
+    { hdlin_allow_4state_parameters true } \
+    { hdlin_array_instance_naming_style %s[%d] } \
+    { hdlin_cell_naming_style %s[%d] } \
+    { hdlin_enable_hier_naming false } \
+    { hdlin_enable_upf_compatible_naming false } \
+    { hdlin_vhdl_preserve_case false } \
+    { hdlin_generate_naming_style %s_%d } \
+    { hdlin_generate_separator_style _ } \
+    { hdlin_hierarchy_separator_style / } \
+    { hdlin_interfacecontent_naming_style %s.%s } \
+    { hdl_naming_threshold 20 } \
+    { hdlin_preserve_sequential none } \
+    { hdlin_sverilog_std 2017 } \
+    { hdlin_sv_packages dont_chain } \
+    { hdlin_sv_union_member_naming false } \
+    { template_naming_style %s_%p } \
+    { template_parameter_style %s%d } \
+    { template_separator_style _ } \
+    { hdlin_use_hierarchical_register_names false } \
+    { hdlin_use_vhdl_gen_hierarchy_for_naming false } \
+    { hdlin_vrlg_std 2005 } \
+    { hdlin_v2005_replication_semantics true } \
+    { hdlin_vhdl_std 2008 } \
+    { hdlin_while_loop_iterations 4096 } \
+    { hdlin_dwversion DWBB_202312.2 } \
+    { hdlin_out_of_bounds_X_to_0 false } \
+    { hdlin_enable_verilog_configurations_array_n_block true } \
+    { hdlin_enable_persistent_macros false } \
+    { hdlin_persistent_macros_filename syn_auto_generated_macro_file.sv } \
+    { compile_seqmap_propagate_high_effort true } \
+    { compile_seqmap_propagate_high_effort true } \
+    { issue_guide_hier_map_during_relink false } \
+    { synopsys_root /tools/synopsys/fc/V-2023.12-SP3 } \
+    { cwd /project/tsmc28mmwave/users/foqara/ws/riscv } \
+    { search_path { . /tools/synopsys/fc/V-2023.12-SP3/dw/syn_ver /tools/synopsys/fc/V-2023.12-SP3/dw/sim_ver /tools/synopsys/fc/V-2023.12-SP3/libraries/syn scripts design_data } } \
+    { target_library { /data/tsmc/28HPCPMMWAVE/synopsys/libs/tcbn28hpcplusbwp30p140.ndm /data/tsmc/28HPCPMMWAVE/synopsys/libs/tcbn28hpcplusbwp30p140hvt.ndm /data/tsmc/28HPCPMMWAVE/synopsys/libs/tcbn28hpcplusbwp30p140lvt.ndm } } } 
+
+setup
+

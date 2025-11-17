@@ -1,0 +1,8 @@
+#define METAL_FILL_INSTALL_ICV_RH <icv_wrapper.rh>
+#define METAL_FILL_OUTLIB "icv_indesign_nlib.nlib"
+#define METAL_FILL_OUTLIB_PATH "/project/tsmc28mmwave/users/foqara/ws/riscv/signoff_report_density_run"
+#define NDM_OPTIONS_SEARCH_PATH "/project/tsmc28mmwave/users/foqara/ws/riscv /tools/synopsys/fc/V-2023.12-SP3/dw/syn_ver /tools/synopsys/fc/V-2023.12-SP3/dw/sim_ver /tools/synopsys/fc/V-2023.12-SP3/libraries/syn  ."
+#define NDM_OPTIONS_INSTANCE_NAMES DISCARD
+#define NDM_OPTIONS_INTERNAL_DESIGNS {{use=FILL_USE,read_from=ALL,out_of_date=USE}}
+#define NDM_OPTIONS_MERGE_BLOCKAGE_WITH_LAYER { views={DESIGN_VIEW, FRAME_VIEW}, cells={"*"} }
+#define ALL_METAL_FILL_LAYER_NUMBERS {31,32,33,34,35,36,51,52,53,54,55}

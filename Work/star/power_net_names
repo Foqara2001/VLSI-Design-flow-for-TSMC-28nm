@@ -1,0 +1,4 @@
+begin_power_nets
+VDD
+VSS
+end_power_nets

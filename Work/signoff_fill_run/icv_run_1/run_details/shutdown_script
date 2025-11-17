@@ -1,0 +1,11 @@
+#! /bin/sh
+
+echo $HOSTNAME | grep micron9.eng.tau.ac.il > /dev/null 2>&1 
+if [ $? == 0  ]
+then 
+kill 3292894 
+else 
+ssh micron9.eng.tau.ac.il kill 3292894 
+ sleep 10 
+ssh micron9.eng.tau.ac.il kill -9 3292894 
+fi

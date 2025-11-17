@@ -1,0 +1,170 @@
+* Description of frequently used terms in hierarchy_analysis files*
+M indicates that the value of that column is in millions
+Hier Plc Count(Hierarchical Placement Count) : Number of unique instances of the cell in another cell (Parent)
+Flat Plc Count(Flat Placement Count)         : Total number of instances of the cell in the layout
+
+Example : 
+                               A                     
+                              / \                   Cell  Hier Plc Count Flat Plc Count 
+                             /   \                     A               1              1 
+                            B     B                    B               2              2 
+                           / \  /  \                   C               2              4 
+                          C   C C   C                
+------------------------------------------------------------------------------------------------------ 
+
+
+* Cells with flat area > 0.01 of top cell *
+Reports cells with flat area > 0.01 of top cell
+
+Flat A(Flat Area) : Total area covered by this cell in the layout(cell area * flat placement count)
+Cell A(Cell Area) : Area of this cell
+Percent of top    : Percentage of area of this cell w.r.t area of top cell
+This table contains 13 entries
+Original table contains 13 entries
+
+ Name                                          | Flat A (mm^2), Cell A (mm^2), Flat Plc Count, Hier Plc Count, Percent of top
+-----------------------------------------------
+ RISCV1                                        |         0.021,         0.021,              1,              1,       100.00 %
+ SDFCNQD0BWP30P140HVT                          |         0.002,         0.000,            613,            613,         9.69 %
+ SDFQD0BWP30P140HVT                            |         0.001,         0.000,            509,            509,         6.65 %
+ VCELLA1                                       |         0.001,         0.000,            226,            226,         5.90 %
+ VCELLA2                                       |         0.001,         0.000,            179,            179,         5.66 %
+ FA1D0BWP30P140HVT                             |         0.001,         0.000,            426,            426,         4.98 %
+ SDFCND0BWP30P140HVT                           |         0.001,         0.000,            228,            228,         3.92 %
+ AOI221D0BWP30P140HVT                          |         0.001,         0.000,            807,            807,         3.33 %
+ OAI22D0BWP30P140HVT                           |         0.000,         0.000,            612,            612,         2.10 %
+ AOI222D0BWP30P140HVT                          |         0.000,         0.000,            368,            368,         2.02 %
+ AOI22D0BWP30P140HVT                           |         0.000,         0.000,            541,            541,         1.86 %
+ MUX2ND0BWP30P140HVT                           |         0.000,         0.000,            365,            365,         1.51 %
+ VCELLA3                                       |         0.000,         0.000,             62,             62,         1.45 %
+===============================================
+
+* Large-Area cells and child area ratio *
+This table reports cells with large areas and ratio of its area with total area covered by its children
+
+Num Inst(Number of instances) : Total Number of instances of the cell
+Child A(Child Area)           : Total area covered by all the children of the cell
+Pct of parent(Percent of area): Percentage of total area covered by its childern w.r.t area of this cell
+This table contains 13 entries
+Original table contains 13 entries
+
+ Name                                          | Flat A (mm^2), Cell A (mm^2), Num Inst (M), Child A (mm^2), Pct of parent
+-----------------------------------------------
+ RISCV1                                        |         0.021,         0.021,        0.008,         0.013,       61.42 %
+ SDFCNQD0BWP30P140HVT                          |         0.002,         0.000,        0.000,         0.000,        0.00 %
+ SDFQD0BWP30P140HVT                            |         0.001,         0.000,        0.000,         0.000,        0.00 %
+ VCELLA1                                       |         0.001,         0.000,        0.000,         0.000,        0.00 %
+ VCELLA2                                       |         0.001,         0.000,        0.000,         0.000,        0.00 %
+ FA1D0BWP30P140HVT                             |         0.001,         0.000,        0.000,         0.000,        0.00 %
+ SDFCND0BWP30P140HVT                           |         0.001,         0.000,        0.000,         0.000,        0.00 %
+ AOI221D0BWP30P140HVT                          |         0.001,         0.000,        0.000,         0.000,        0.00 %
+ OAI22D0BWP30P140HVT                           |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ AOI222D0BWP30P140HVT                          |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ AOI22D0BWP30P140HVT                           |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ MUX2ND0BWP30P140HVT                           |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ VCELLA3                                       |         0.000,         0.000,        0.000,         0.000,        0.00 %
+===============================================
+
+* Exploded Cell Information *
+Displays information of exploded cells
+
+Parent cell           : Name of the parent cell the cell has exploded into
+Exploded Inst Count   : Total number of instances of the cell that has expldoed to the parent cell
+Parent Flat Plc Count : Parent cell flat placement count
+Parent Hier Plc Count : Parent cell hierarchical placement count
+This table contains 41 entries
+Original table contains 41 entries
+
+ Exploded Cell                                 | Parent Cell                                   | Exploded Inst Count, Parent Flat Plc Count, Parent Hier Plc Count
+----------------------------------------------- -----------------------------------------------
+ FILL4BWP30P140                                | RISCV1                                        |                2656,                     1,                     1
+ FILL2BWP30P140                                | RISCV1                                        |                2180,                     1,                     1
+ FILL3BWP30P140                                | RISCV1                                        |                1781,                     1,                     1
+ FILL8BWP30P140                                | RISCV1                                        |                1264,                     1,                     1
+ FILL16BWP30P140                               | RISCV1                                        |                 571,                     1,                     1
+ CKND0BWP30P140HVT                             | RISCV1                                        |                 564,                     1,                     1
+ TAPCELLBWP30P140                              | RISCV1                                        |                 395,                     1,                     1
+ NR2D0BWP30P140HVT                             | RISCV1                                        |                 345,                     1,                     1
+ ND2D0BWP30P140HVT                             | RISCV1                                        |                 316,                     1,                     1
+ FILL32BWP30P140                               | RISCV1                                        |                 263,                     1,                     1
+ FILL64BWP30P140                               | RISCV1                                        |                 230,                     1,                     1
+ BOUNDARY_LEFTBWP30P140                        | RISCV1                                        |                 156,                     1,                     1
+ BOUNDARY_RIGHTBWP30P140                       | RISCV1                                        |                 156,                     1,                     1
+ SDFQD0BWP30P140HVT                            | VCELLA1                                       |                   2,                   226,                   226
+ SDFCNQD0BWP30P140HVT                          | VCELLA2                                       |                   2,                   179,                   179
+ FA1D0BWP30P140HVT                             | VCELLA3                                       |                   2,                    62,                    62
+ AN3D1BWP30P140HVT                             | RISCV1                                        |                   1,                     1,                     1
+ AN4D0BWP30P140HVT                             | RISCV1                                        |                   1,                     1,                     1
+ BUFFD0P7BWP30P140HVT                          | RISCV1                                        |                   1,                     1,                     1
+ CKBD12BWP30P140                               | RISCV1                                        |                   1,                     1,                     1
+ CKBD4BWP30P140LVT                             | RISCV1                                        |                   1,                     1,                     1
+ CKLNQD2BWP30P140                              | RISCV1                                        |                   1,                     1,                     1
+ CKLNQD2BWP30P140HVT                           | RISCV1                                        |                   1,                     1,                     1
+ CKLNQD2BWP30P140LVT                           | RISCV1                                        |                   1,                     1,                     1
+ CKLNQD3BWP30P140                              | RISCV1                                        |                   1,                     1,                     1
+ CKLNQD4BWP30P140HVT                           | RISCV1                                        |                   1,                     1,                     1
+ CKLNQD6BWP30P140LVT                           | RISCV1                                        |                   1,                     1,                     1
+ CKND1BWP30P140LVT                             | RISCV1                                        |                   1,                     1,                     1
+ CKND2BWP30P140                                | RISCV1                                        |                   1,                     1,                     1
+ CKND8BWP30P140LVT                             | RISCV1                                        |                   1,                     1,                     1
+ DEL025D1BWP30P140HVT                          | RISCV1                                        |                   1,                     1,                     1
+ INR3D1BWP30P140HVT                            | RISCV1                                        |                   1,                     1,                     1
+ INVD2BWP30P140HVT                             | RISCV1                                        |                   1,                     1,                     1
+ ND2OPTIBD1BWP30P140                           | RISCV1                                        |                   1,                     1,                     1
+ ND2OPTIBD1BWP30P140HVT                        | RISCV1                                        |                   1,                     1,                     1
+ ND3D0P7BWP30P140HVT                           | RISCV1                                        |                   1,                     1,                     1
+ ND4D2BWP30P140                                | RISCV1                                        |                   1,                     1,                     1
+ ND4D3BWP30P140HVT                             | RISCV1                                        |                   1,                     1,                     1
+ NR4D1BWP30P140HVT                             | RISCV1                                        |                   1,                     1,                     1
+ OAI221D1BWP30P140HVT                          | RISCV1                                        |                   1,                     1,                     1
+ OR3D1BWP30P140HVT                             | RISCV1                                        |                   1,                     1,                     1
+=============================================== ===============================================
+
+* Region Report *
+Reports information about different regions present in the layout
+Area      : Total area of the cell
+Num Reg   : Number of regions
+MaxR MinR : Area of maximum and minimum region
+Est Trap  : Average number of trapezoids present in a single region
+Est Plc   : Average number of instances present in a single region 
+Large inst wrt Region: Number of instances with area larger than Max Region Area
+Min/Avg/Max ratio : Minimum, average and maximum ratio of child cell area to Max Region Area for large instances
+This table contains a single entry
+
+ Name                                          | Area (mm^2), Num Reg, MaxR (mm^2), MinR (mm^2), Est Trap (M), Est Plc (M), Large inst wrt Region: Num, Min ratio, Avg ratio, Max ratio
+-----------------------------------------------
+ RISCV1                                        |       0.021,       5,       0.004,       0.004,        0.374,       0.002,                          0,      0.00,      0.00,      0.00
+===============================================
+
+* Layer Report with Estimated Data *
+Reports information of layers present in the layout
+
+Trap        : Number of hierarchical trapezoids in the layer
+Poly        : Number of hierarchical polygons in the layer
+Text        : Number of hierarchical text primitives in the layer
+Flat Trap   : Number of flat trapezoids 
+Flat Poly   : Number of flat polygons
+Flat Text   : Number of flat text primitives 
+Trap F/H    : Ratio of flat and hierarchical placements of the trapezoids
+Base, Metal, Via, Fill, Colored : Indicates layer intent
+This table contains 14 entries
+Original table contains 14 entries
+
+ Name                                          | Trap (M), Poly (M), Text (M), Flat Trap (M), Flat Poly (M), Flat Text (M), Trap F/H, Base, Metal, Via, Fill, Colored
+-----------------------------------------------
+ M3I                                           |    0.186,    0.186,    0.000,         0.186,         0.186,         0.000,     1.00,    0,     1,   0,    0,       0
+ M4I                                           |    0.150,    0.150,    0.000,         0.150,         0.150,         0.000,     1.00,    0,     1,   0,    0,       0
+ M2I                                           |    0.139,    0.139,    0.000,         0.255,         0.184,         0.000,     1.83,    0,     1,   0,    0,       0
+ VIA2II                                        |    0.089,    0.089,    0.000,         0.089,         0.089,         0.000,     1.00,    0,     0,   0,    0,       0
+ VIA3II                                        |    0.082,    0.082,    0.000,         0.082,         0.082,         0.000,     1.00,    0,     0,   0,    0,       0
+ M1I                                           |    0.071,    0.053,    0.000,         0.548,         0.222,         0.000,     7.70,    0,     1,   0,    0,       0
+ NOUSEM5                                       |    0.068,    0.068,    0.000,         0.068,         0.068,         0.000,     1.00,    0,     0,   0,    0,       0
+ NOUSEV4                                       |    0.044,    0.044,    0.000,         0.044,         0.044,         0.000,     1.00,    0,     0,   0,    0,       0
+ VIA1II                                        |    0.042,    0.042,    0.000,         0.122,         0.122,         0.000,     2.87,    0,     0,   0,    0,       0
+ VIA_ABOVE_TOP                                 |    0.040,    0.040,    0.000,         0.040,         0.040,         0.000,     1.00,    0,     0,   0,    0,       0
+ METAL_ABOVE_TOP                               |    0.025,    0.025,    0.000,         0.025,         0.025,         0.000,     1.00,    0,     0,   0,    0,       0
+ COII                                          |    0.012,    0.012,    0.000,         0.261,         0.261,         0.000,    21.49,    1,     0,   0,    0,       0
+ NDM_BOUNDARY                                  |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     1.00,    0,     0,   0,    0,       0
+ DNWI                                          |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     0.00,    0,     0,   0,    0,       0
+===============================================
+

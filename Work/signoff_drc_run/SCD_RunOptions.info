@@ -1,0 +1,55 @@
+run_information runset_file /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt
+run_information max_errors 1000
+run_information read_design_view_missing_view_ignore N
+run_information ignore_frame_blockages Y
+run_information read_fill_view discard
+run_information ignore_child_cell_errors N
+run_information error_data_name signoff_check_drc.err
+tech_information db_unit 10000
+tech_information layer layer_name PW
+tech_information layer layer_name NW
+tech_information layer layer_name OD
+tech_information layer layer_name PO layer_mask_name poly
+tech_information layer layer_name PP layer_mask_name implant
+tech_information layer layer_name NP layer_mask_name implant
+tech_information layer layer_name CO layer_mask_name polyCont
+tech_information layer layer_name VTL_N layer_mask_name implant layer_pitch -1
+tech_information layer layer_name VTL_P layer_mask_name implant layer_pitch -1
+tech_information layer layer_name VTUL_N layer_mask_name implant layer_pitch -1
+tech_information layer layer_name VTUL_P layer_mask_name implant layer_pitch -1
+tech_information layer layer_name VTH_N layer_mask_name implant layer_pitch -1
+tech_information layer layer_name VTH_P layer_mask_name implant layer_pitch -1
+tech_information layer layer_name VTUH_N layer_mask_name implant layer_pitch -1
+tech_information layer layer_name VTUH_P layer_mask_name implant layer_pitch -1
+tech_information layer layer_name M1 layer_mask_name metal1 layer_pitch 1000
+tech_information layer layer_name M2 layer_mask_name metal2 layer_pitch 1350
+tech_information layer layer_name M3 layer_mask_name metal3 layer_pitch 1000
+tech_information layer layer_name M4 layer_mask_name metal4 layer_pitch 1000
+tech_information layer layer_name M5 layer_mask_name metal5 layer_pitch 1000
+tech_information layer layer_name M6 layer_mask_name metal6 layer_pitch 1000
+tech_information layer layer_name M7 layer_mask_name metal7 layer_pitch 1000
+tech_information layer layer_name M8 layer_mask_name metal8 layer_pitch 8000
+tech_information layer layer_name M9 layer_mask_name metal9 layer_pitch 30000
+tech_information layer layer_name AP layer_mask_name metal10 layer_pitch 45000
+tech_information layer layer_name CB
+tech_information layer layer_name CB2
+tech_information layer layer_name VIA1 layer_mask_name via1
+tech_information layer layer_name VIA2 layer_mask_name via2
+tech_information layer layer_name VIA3 layer_mask_name via3
+tech_information layer layer_name VIA4 layer_mask_name via4
+tech_information layer layer_name VIA5 layer_mask_name via5
+tech_information layer layer_name VIA6 layer_mask_name via6
+tech_information layer layer_name VIA7 layer_mask_name via7
+tech_information layer layer_name VIA8 layer_mask_name via8
+tech_information layer layer_name RV layer_mask_name via9
+tech_information layer layer_name SDI
+tech_information layer layer_name TEXT_AP
+tech_information layer layer_name TEXT1
+tech_information layer layer_name TEXT2
+tech_information layer layer_name TEXT3
+tech_information layer layer_name TEXT4
+tech_information layer layer_name TEXT5
+tech_information layer layer_name TEXT6
+tech_information layer layer_name TEXT7
+tech_information layer layer_name TEXT8
+tech_information layer layer_name TEXT9

@@ -1,0 +1,12 @@
+# Automagically generated file: Please do not edit!
+lvs_ExtfVersion 3
+lvs_ExtRunTimes 1756644771 1756644788
+lvs_ExtOutFile RUNDIR /project/tsmc28mmwave/users/foqara/ws/riscv
+lvs_ExtOutFile RULES_FILE _DFM_LVS_RC_CALIBRE_N28HP_1p9M_5X1Y1Z1U_ALRDL.v1.0_3p_
+lvs_ExtInfoExtSummary {0 0 0 0 0 0 0 0 0 0 0}
+lvs_ExtInfoErcSummary {35 0 0 0 0 0 0 0 0 1 0}
+lvs_ExtInfoDfmSummary {0}
+lvs_ExtOutFile LAYOUT_NETLIST /project/tsmc28mmwave/users/foqara/ws/riscv/netlist/riscv_core_syn.v
+lvs_ExtOutFile EXTRACTION_REPORT %l.lvs.report.ext
+lvs_ExtOutFile ERC_DATABASE calibre_erc.db
+lvs_ExtOutFile ERC_SUMMARY %l.erc.summary

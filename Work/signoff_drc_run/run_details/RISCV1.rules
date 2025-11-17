@@ -1,0 +1,890 @@
+
+                                  ICV_Manager 
+
+         Version W-2024.09-SP3-1 for linux64 - Feb 11, 2025 cl#11364552
+
+                    Copyright (c) 1996 - 2025 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Called as: icv -host_init 2 -icc2 -f NDM -i RISCV1.dlib -p /project/tsmc28mmwave/users/foqara/ws/riscv -c RISCV1 -ndm_design_label Routing -clf /project/tsmc28mmwave/users/foqara/ws/riscv/signoff_drc_run/slnFile.txt -icc_density_blockage -icc2_error_categories -hm -I /project/tsmc28mmwave/users/foqara/ws/riscv/signoff_drc_run -icc2_error_browser INST -icc2_error_cell signoff_check_drc.err -rc /project/tsmc28mmwave/users/foqara/ws/riscv/signoff_drc_run/signoff_check_drc.rc -I /project/tsmc28mmwave/users/foqara/ws/riscv/signoff_drc_run -lf /data/tsmc/28HPCPMMWAVE/dig_libs/PRTF/PRTF_ICC_28nm_Syn_V19_1a/PR_tech/Synopsys/GdsOutMap/gdsout_6X1Z1U.map /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt 
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+User name:        foqara
+Layout format:    NDM
+Input file name:  RISCV1.dlib
+Top cell name:    RISCV1
+Time started:     2025/09/07 12:52:18AM
+
+--------------------------------------------------------------------------------
+                          Signoff Rules to be Executed                          
+--------------------------------------------------------------------------------
+
+           0 rAN_R_17MG @= { @ "AN.R.17mg : Place high R resistor on an N-well for better noise immunity" }
+           0 rAN_R_20MG @= { @ "AN.R.20mg : Use thick oxide (OD2) MOS varactor and capacitor to reduce gate oxide leakage. DRC can't check capacitor" }
+           0 rAN_R_77_2MG @= { @ "AN.R.77.2mg : Add {SR_DPO AND RPO} to surround high R resistor as shown in figure 8.3.2.4.3. The width of {SR_DPO AND RPO} should be identical to the width of high R resistor. DRC flag {PO SIZING 1.2 um} NOT INTERACT {SR_DPO AND RPO} or the width of {SR_DPO AND RPO} is not identical to the width of high R resistor" }
+           0 rAN_R_77_3MG @= { @ "AN.R.77.3mg : Recommend the length of {PO OR SR_DPO} surrounding the high R resistor in the length direction >= 1.2.DRC flag no {PO OR SR_DPO} [length >= 1.2um] INTERACT {PO GROW TOP/BOTTOM by 1.2 um}." }
+           0 rAN_R_79_4M @= { @ "AN.R.79.4m : In order to reduce the current mismatch of MOS array, recommend to follow one of the following conditions: 1. ANARRAY_H space to AP (CUT is not recommended) >= 3 um, or 2. ANARRAY_H enclosure by AP >= 3 um Warning: When violated AN.R.79.4m, > 2X current mean shift will be occurred by comparing with 1-sigma of device mismatch within a MOS array" }
+           0 rAN_R_80_4M @= { @ "AN.R.80.4m : In order to reduce the current mismatch of MOS array, recommend to follow one of the following conditions: 1. ANARRAY_M space to AP (CUT is not recommended) >= 3 um, or 2. ANARRAY_M enclosure by AP >= 3 um Warning: When violated AN.R.80.4m, > 2X current mean shift compared with 1-sigma of device mismatch within a MOS array will be occurred" }
+           1 rAP_DN_1 @= { @ "AP.DN.1 : Minimum AP density across full chip (Except WB package w/o AP-RDL) >= 10%" }
+           0 rAP_DN_2 @= { @ "AP.DN.2 : Maximum AP density across full chip <= 0.7" }
+           0 rAP_EN_1 @= { @ "AP.EN.1 : Enclosure of RV >= 0.5" }
+           0 rAP_EN_2 @= { @ "AP.EN.2 : Enclosure of AP bar overlaps with inner seal-ring and SREZ by inner seal-ring (DRC tolerance at 45-degree turning: +-0.02 um) = 1" }
+           0 rAP_S_1 @= { @ "AP.S.1 : Space Except the following conditions in the same polygon: 1. AP_PAD_waived_region 2. Jog [length <= 1 um] interact AP_PAD_waived_region The definition of AP_PAD: The width of AP interact {CB2_WB OR CB2_FC} > 35 um The definition of AP_PAD_waived_region: {{{AP AND {AP_PAD SIZING 2 um}} NOT AP_PAD} INTERACT AP_PAD} >= 2" }
+           0 rAP_S_1_1 @= { @ "AP.S.1.1 : Space of metal pad, or space of metal pad to metal line [different nets] Except the following conditions: {{{chip INTERACT CoWAM (109;150)} INTERACT CB2_FC} INTERACT CB2_WB} The definition of metal pad: The width of AP interact CB2_WB > 35 um >= 2.5" }
+           0 rAP_W_1 @= { @ "AP.W.1 : Width (as interconnect) >= 2" }
+           0 rAP_W_2 @= { @ "AP.W.2 : Maximum width by {{AP/AP-MD SIZING 0.995 um} SIZING -0.995 um} (Interconnect only) {Not INSIDE UBM for Flip Chip, CBD, CB2_FC, CB or CB2_WB} <= 35" }
+           0 rAP_W_3 @= { @ "AP.W.3 : Width of AP bar bar overlaps with inner seal-ring and SREZ (Except AP connect to inner seal-ring from Prime Chip) (DRC tolerance at 45-degree turning: +-0.020 um) = 8" }
+           0 rAP_W_4 @= { @ "AP.W.4 : Width of AP bar in SLDB. == 4.0" }
+           0 rAP_W_5 @= { @ "AP.W.5 : AP hole width for 28KA AP should >= 3, except < 100 inner 90-degrees vertex of AP holes [width < 3 um] within window 100 um x 100 um, stepping 50 um" }
+           0 rAP_W_6 @= { @ "AP.W.6 : AP hole width >= 2" }
+           0 rBDTCD_R_1_M1 @= { @ "BDTCD.R.1:M1 : TCDDMY_FDM1/ TCDDMY_FM1/ TCDDMY_M1 should contain M1 and DM1EXCL layers. TCDDMY_FDM1/ TCDDMY_FMx/ TCDDMY_Mx should contain Mx and DMxEXCL layers" }
+           0 rBDTCD_R_1_M2 @= { @ "BDTCD.R.1:M2 : TCDDMY_FDM1/ TCDDMY_FM1/ TCDDMY_M1 should contain M1 and DM1EXCL layers. TCDDMY_FDM1/ TCDDMY_FMx/ TCDDMY_Mx should contain Mx and DMxEXCL layers" }
+           0 rBDTCD_R_1_M3 @= { @ "BDTCD.R.1:M3 : TCDDMY_FDM1/ TCDDMY_FM1/ TCDDMY_M1 should contain M1 and DM1EXCL layers. TCDDMY_FDM1/ TCDDMY_FMx/ TCDDMY_Mx should contain Mx and DMxEXCL layers" }
+           0 rBDTCD_R_1_M4 @= { @ "BDTCD.R.1:M4 : TCDDMY_FDM1/ TCDDMY_FM1/ TCDDMY_M1 should contain M1 and DM1EXCL layers. TCDDMY_FDM1/ TCDDMY_FMx/ TCDDMY_Mx should contain Mx and DMxEXCL layers" }
+           0 rBDTCD_R_2_M1 @= { @ "BDTCD.R.2:M1 : {TCDDMY_FDM1 OR {TCDDMY_FM1 OR TCDDMY_M1}} overlap of CO, VIA1, DM1, DVIA1, or INDDMY is not allowed. {TCDDMY_FDMx OR {TCDDMY_FMx OR TCDDMY_Mx}} overlap of VIAx, VIAx-1, DMx, DVIAx, DVIAx-1, or INDDMY is not allowed" }
+           0 rBDTCD_R_2_M2 @= { @ "BDTCD.R.2:M2 : {TCDDMY_FDM1 OR {TCDDMY_FM1 OR TCDDMY_M1}} overlap of CO, VIA1, DM1, DVIA1, or INDDMY is not allowed. {TCDDMY_FDMx OR {TCDDMY_FMx OR TCDDMY_Mx}} overlap of VIAx, VIAx-1, DMx, DVIAx, DVIAx-1, or INDDMY is not allowed" }
+           0 rBDTCD_R_2_M3 @= { @ "BDTCD.R.2:M3 : {TCDDMY_FDM1 OR {TCDDMY_FM1 OR TCDDMY_M1}} overlap of CO, VIA1, DM1, DVIA1, or INDDMY is not allowed. {TCDDMY_FDMx OR {TCDDMY_FMx OR TCDDMY_Mx}} overlap of VIAx, VIAx-1, DMx, DVIAx, DVIAx-1, or INDDMY is not allowed" }
+           0 rBDTCD_R_2_M4 @= { @ "BDTCD.R.2:M4 : {TCDDMY_FDM1 OR {TCDDMY_FM1 OR TCDDMY_M1}} overlap of CO, VIA1, DM1, DVIA1, or INDDMY is not allowed. {TCDDMY_FDMx OR {TCDDMY_FMx OR TCDDMY_Mx}} overlap of VIAx, VIAx-1, DMx, DVIAx, DVIAx-1, or INDDMY is not allowed" }
+           0 rBDTCD_R_3_M1 @= { @ "BDTCD.R.3:M1 : Any mirror and 180' rotation in X,Y are legal for TCDDMY_FDM1/ TCDDMY_FM1 and TCDDMY_FDMx/ TCDMY_FMx, but 90' and 270' rotations will be not allowed. DRC will check the orientation of M1/Mx length >= 1.2 um in TCDDMY_FDM1/ TCDDMY_FDMx and TCDDMY_FM1/ TCDDMY_FMx respectively" }
+           0 rBDTCD_R_3_M2 @= { @ "BDTCD.R.3:M2 : Any mirror and 180' rotation in X,Y are legal for TCDDMY_FDM1/ TCDDMY_FM1 and TCDDMY_FDMx/ TCDMY_FMx, but 90' and 270' rotations will be not allowed. DRC will check the orientation of M1/Mx length >= 1.2 um in TCDDMY_FDM1/ TCDDMY_FDMx and TCDDMY_FM1/ TCDDMY_FMx respectively" }
+           0 rBDTCD_R_3_M3 @= { @ "BDTCD.R.3:M3 : Any mirror and 180' rotation in X,Y are legal for TCDDMY_FDM1/ TCDDMY_FM1 and TCDDMY_FDMx/ TCDMY_FMx, but 90' and 270' rotations will be not allowed. DRC will check the orientation of M1/Mx length >= 1.2 um in TCDDMY_FDM1/ TCDDMY_FDMx and TCDDMY_FM1/ TCDDMY_FMx respectively" }
+           0 rBDTCD_R_3_M4 @= { @ "BDTCD.R.3:M4 : Any mirror and 180' rotation in X,Y are legal for TCDDMY_FDM1/ TCDDMY_FM1 and TCDDMY_FDMx/ TCDMY_FMx, but 90' and 270' rotations will be not allowed. DRC will check the orientation of M1/Mx length >= 1.2 um in TCDDMY_FDM1/ TCDDMY_FDMx and TCDDMY_FM1/ TCDDMY_FMx respectively" }
+           0 rBDTCD_R_4_M1 @= { @ "BDTCD.R.4:M1 : TCDDMY_M1 and TCDMY_Mx must keep same block orientation. Any rotation, any mirror in X,Y in placement will be not allowed. DRC will check related coordinates of 0.5 um X 0.5 um M1 or 0.5 um X 0.5 um Mx alignment marks in TCDDMY_M1/Mx" }
+           0 rBDTCD_R_4_M2 @= { @ "BDTCD.R.4:M2 : TCDDMY_M1 and TCDMY_Mx must keep same block orientation. Any rotation, any mirror in X,Y in placement will be not allowed. DRC will check related coordinates of 0.5 um X 0.5 um M1 or 0.5 um X 0.5 um Mx alignment marks in TCDDMY_M1/Mx" }
+           0 rBDTCD_R_4_M3 @= { @ "BDTCD.R.4:M3 : TCDDMY_M1 and TCDMY_Mx must keep same block orientation. Any rotation, any mirror in X,Y in placement will be not allowed. DRC will check related coordinates of 0.5 um X 0.5 um M1 or 0.5 um X 0.5 um Mx alignment marks in TCDDMY_M1/Mx" }
+           0 rBDTCD_R_4_M4 @= { @ "BDTCD.R.4:M4 : TCDDMY_M1 and TCDMY_Mx must keep same block orientation. Any rotation, any mirror in X,Y in placement will be not allowed. DRC will check related coordinates of 0.5 um X 0.5 um M1 or 0.5 um X 0.5 um Mx alignment marks in TCDDMY_M1/Mx" }
+           0 rBDTCD_R_7 @= { @ "BDTCD.R.7 : {M1 CUT TCDDMY_FDM1} is not allowed" }
+           0 rBDTCD_R_8_M2 @= { @ "BDTCD.R.8:M2 : {Mx CUT TCDDMY_FDMx} is not allowed" }
+           0 rBDTCD_R_8_M3 @= { @ "BDTCD.R.8:M3 : {Mx CUT TCDDMY_FDMx} is not allowed" }
+           0 rBDTCD_R_8_M4 @= { @ "BDTCD.R.8:M4 : {Mx CUT TCDDMY_FDMx} is not allowed" }
+           0 rBDTCD_S_1__BDTCD_S_2_M1 @= { @ "BDTCD.S.1__BDTCD.S.2:M1 : Space between two M1 inside {TCDDMY_FDM1 OR {TCDDMY_FM1 OR TCDDMY_M1}} or two Mx inside {TCDDMY_FDMx OR {TCDDMY_FMx OR TCDDMY_Mx}} [M1/Mx [edge length >= 1.2 um ] width = 0.05 um] = 0.05. Space between two M1 inside {TCDDMY_FDM1 OR {TCDDMY_FM1 OR TCDDMY_M1}} or two Mx inside {TCDDMY_FDMx OR {TCDDMY_FMx OR TCDDMY_Mx}} [M1/Mx [edge length >= 1.2 um] width = 0.05 um space to M1/Mx [edge length >= 1.2 um] width = 0.1 um or M1/Mx [edge length >= 1.2 um] width = 0.05 um space to M1/Mx [edge length >= 1.2 um] width = 0.2 um] = 0.1" }
+           0 rBDTCD_S_1__BDTCD_S_2_M2 @= { @ "BDTCD.S.1__BDTCD.S.2:M2 : Space between two M1 inside {TCDDMY_FDM1 OR {TCDDMY_FM1 OR TCDDMY_M1}} or two Mx inside {TCDDMY_FDMx OR {TCDDMY_FMx OR TCDDMY_Mx}} [M1/Mx [edge length >= 1.2 um ] width = 0.05 um] = 0.05. Space between two M1 inside {TCDDMY_FDM1 OR {TCDDMY_FM1 OR TCDDMY_M1}} or two Mx inside {TCDDMY_FDMx OR {TCDDMY_FMx OR TCDDMY_Mx}} [M1/Mx [edge length >= 1.2 um] width = 0.05 um space to M1/Mx [edge length >= 1.2 um] width = 0.1 um or M1/Mx [edge length >= 1.2 um] width = 0.05 um space to M1/Mx [edge length >= 1.2 um] width = 0.2 um] = 0.1" }
+           0 rBDTCD_S_1__BDTCD_S_2_M3 @= { @ "BDTCD.S.1__BDTCD.S.2:M3 : Space between two M1 inside {TCDDMY_FDM1 OR {TCDDMY_FM1 OR TCDDMY_M1}} or two Mx inside {TCDDMY_FDMx OR {TCDDMY_FMx OR TCDDMY_Mx}} [M1/Mx [edge length >= 1.2 um ] width = 0.05 um] = 0.05. Space between two M1 inside {TCDDMY_FDM1 OR {TCDDMY_FM1 OR TCDDMY_M1}} or two Mx inside {TCDDMY_FDMx OR {TCDDMY_FMx OR TCDDMY_Mx}} [M1/Mx [edge length >= 1.2 um] width = 0.05 um space to M1/Mx [edge length >= 1.2 um] width = 0.1 um or M1/Mx [edge length >= 1.2 um] width = 0.05 um space to M1/Mx [edge length >= 1.2 um] width = 0.2 um] = 0.1" }
+           0 rBDTCD_S_1__BDTCD_S_2_M4 @= { @ "BDTCD.S.1__BDTCD.S.2:M4 : Space between two M1 inside {TCDDMY_FDM1 OR {TCDDMY_FM1 OR TCDDMY_M1}} or two Mx inside {TCDDMY_FDMx OR {TCDDMY_FMx OR TCDDMY_Mx}} [M1/Mx [edge length >= 1.2 um ] width = 0.05 um] = 0.05. Space between two M1 inside {TCDDMY_FDM1 OR {TCDDMY_FM1 OR TCDDMY_M1}} or two Mx inside {TCDDMY_FDMx OR {TCDDMY_FMx OR TCDDMY_Mx}} [M1/Mx [edge length >= 1.2 um] width = 0.05 um space to M1/Mx [edge length >= 1.2 um] width = 0.1 um or M1/Mx [edge length >= 1.2 um] width = 0.05 um space to M1/Mx [edge length >= 1.2 um] width = 0.2 um] = 0.1" }
+           0 rBDTCD_W_3_M1 @= { @ "BDTCD.W.3:M1 : Width of M1 inside {TCDDMY_FDM1 OR {TCDDMY_FM1 OR TCDDMY_M1}} or Mx inside {TCDDMY_FDMx OR {TCDDMY_FMx OR TCDDMY_Mx}} [M1/Mx length >= 1.2 um] = 0.05, 0.1, 0.2" }
+           0 rBDTCD_W_3_M2 @= { @ "BDTCD.W.3:M2 : Width of M1 inside {TCDDMY_FDM1 OR {TCDDMY_FM1 OR TCDDMY_M1}} or Mx inside {TCDDMY_FDMx OR {TCDDMY_FMx OR TCDDMY_Mx}} [M1/Mx length >= 1.2 um] = 0.05, 0.1, 0.2" }
+           0 rBDTCD_W_3_M3 @= { @ "BDTCD.W.3:M3 : Width of M1 inside {TCDDMY_FDM1 OR {TCDDMY_FM1 OR TCDDMY_M1}} or Mx inside {TCDDMY_FDMx OR {TCDDMY_FMx OR TCDDMY_Mx}} [M1/Mx length >= 1.2 um] = 0.05, 0.1, 0.2" }
+           0 rBDTCD_W_3_M4 @= { @ "BDTCD.W.3:M4 : Width of M1 inside {TCDDMY_FDM1 OR {TCDDMY_FM1 OR TCDDMY_M1}} or Mx inside {TCDDMY_FDMx OR {TCDDMY_FMx OR TCDDMY_Mx}} [M1/Mx length >= 1.2 um] = 0.05, 0.1, 0.2" }
+           0 rBIB_R_1 @= { @ "BiB.R.1 : PO_DOD, CO_DOD and CO_PO BiB patterns must inside CSR. PO_DOD BiB pattern is formed by [DOD reverse tone ring + PO ring inside DOD reverse tone ring] CO_PO {CO_OD} BiB pattern is formed by [PO {DOD reverse tone ring} ring + CO ring inside PO {DOD reverse tone rign} ring]" }
+           0 rCB2_W_5 @= { @ "CB2.W.5 : Width of CB2_WB/CB2_FC line opening in outer seal-ring = 2" }
+           0 rCB_EN_2 @= { @ "CB.EN.2 : Enclosure of CB/CBD/RV by AP in inner seal-ring >= 1" }
+           0 rCB_EN_3 @= { @ "CB.EN.3 : Enclosure of CB/CBD/RV by AP in SLDB >= 1" }
+           0 rCB_W_3 @= { @ "CB.W.3 : Width of CB/CBD/RV line opening in inner seal-ring = 2" }
+           0 rCB_W_4 @= { @ "CB.W.4 : Width of CB/CBD/RV line opening in SLDB = 2" }
+           0 rCO_R_5 @= { @ "CO.R.5 : CO [connects to >= 5V net] outside OD2 is not allowed" }
+           0 rCSR_DM1_O_1 @= { @ "CSR_DM1.O.1 : Overlay of two adjacent DMV metal layers, except Mr and Mu." }
+           0 rCSR_DM2_O_1 @= { @ "CSR_DM2.O.1 : Overlay of two adjacent DMV metal layers, except Mr and Mu." }
+           0 rCSR_DM3_O_1 @= { @ "CSR_DM3.O.1 : Overlay of two adjacent DMV metal layers, except Mr and Mu." }
+           0 rCSR_DM_S_1_M1 @= { @ "CSR_DM.S.1:M1 : Metal space of DMV in CSR region." }
+           0 rCSR_DM_S_1_M2 @= { @ "CSR_DM.S.1:M2 : Metal space of DMV in CSR region." }
+           0 rCSR_DM_S_1_M3 @= { @ "CSR_DM.S.1:M3 : Metal space of DMV in CSR region." }
+           0 rCSR_DM_S_1_M4 @= { @ "CSR_DM.S.1:M4 : Metal space of DMV in CSR region." }
+           0 rCSR_DM_S_1_M5 @= { @ "CSR_DM.S.1:M5 : Metal space of DMV in CSR region." }
+           0 rCSR_DM_S_2_M1 @= { @ "CSR_DM.S.2:M1 : Metal space of DMV to CSR metal bar." }
+           0 rCSR_DM_S_2_M2 @= { @ "CSR_DM.S.2:M2 : Metal space of DMV to CSR metal bar." }
+           0 rCSR_DM_S_2_M3 @= { @ "CSR_DM.S.2:M3 : Metal space of DMV to CSR metal bar." }
+           0 rCSR_DM_S_2_M4 @= { @ "CSR_DM.S.2:M4 : Metal space of DMV to CSR metal bar." }
+           0 rCSR_DM_S_2_M5 @= { @ "CSR_DM.S.2:M5 : Metal space of DMV to CSR metal bar." }
+           0 rCSR_DM_W_1_M1 @= { @ "CSR_DM.W.1:M1 : Metal width of DMV in CSR region." }
+           0 rCSR_DM_W_1_M2 @= { @ "CSR_DM.W.1:M2 : Metal width of DMV in CSR region." }
+           0 rCSR_DM_W_1_M3 @= { @ "CSR_DM.W.1:M3 : Metal width of DMV in CSR region." }
+           0 rCSR_DM_W_1_M4 @= { @ "CSR_DM.W.1:M4 : Metal width of DMV in CSR region." }
+           0 rCSR_DM_W_1_M5 @= { @ "CSR_DM.W.1:M5 : Metal width of DMV in CSR region." }
+           0 rCSR_DV_EN_1_V1 @= { @ "CSR_DV.EN.1:V1 : DMV via enclosure by DMV metal in CSR region. DMV via must be inside DMV metal." }
+           0 rCSR_DV_EN_1_V2 @= { @ "CSR_DV.EN.1:V2 : DMV via enclosure by DMV metal in CSR region. DMV via must be inside DMV metal." }
+           0 rCSR_DV_EN_1_V3 @= { @ "CSR_DV.EN.1:V3 : DMV via enclosure by DMV metal in CSR region. DMV via must be inside DMV metal." }
+           0 rCSR_DV_EN_1_V4 @= { @ "CSR_DV.EN.1:V4 : DMV via enclosure by DMV metal in CSR region. DMV via must be inside DMV metal." }
+           0 rCSR_DV_S_1_V1 @= { @ "CSR_DV.S.1:V1 : Via space of DMV in CSR region." }
+           0 rCSR_DV_S_1_V2 @= { @ "CSR_DV.S.1:V2 : Via space of DMV in CSR region." }
+           0 rCSR_DV_S_1_V3 @= { @ "CSR_DV.S.1:V3 : Via space of DMV in CSR region." }
+           0 rCSR_DV_S_1_V4 @= { @ "CSR_DV.S.1:V4 : Via space of DMV in CSR region." }
+           0 rCSR_DV_W_1_V1 @= { @ "CSR_DV.W.1:V1 : Via width of DMV in CSR region." }
+           0 rCSR_DV_W_1_V2 @= { @ "CSR_DV.W.1:V2 : Via width of DMV in CSR region." }
+           0 rCSR_DV_W_1_V3 @= { @ "CSR_DV.W.1:V3 : Via width of DMV in CSR region." }
+           0 rCSR_DV_W_1_V4 @= { @ "CSR_DV.W.1:V4 : Via width of DMV in CSR region." }
+           0 rCSR_L_1_M1 @= { @ "CSR.L.1:M1 : Length of reinforced metal structure = 24~25 Length of reinforced metal structure >= 24.0 um <= 25.0 um" }
+           0 rCSR_L_1_M2 @= { @ "CSR.L.1:M2 : Length of reinforced metal structure = 24~25 Length of reinforced metal structure >= 24.0 um <= 25.0 um" }
+           0 rCSR_L_1_M3 @= { @ "CSR.L.1:M3 : Length of reinforced metal structure = 24~25 Length of reinforced metal structure >= 24.0 um <= 25.0 um" }
+           0 rCSR_L_1_M4 @= { @ "CSR.L.1:M4 : Length of reinforced metal structure = 24~25 Length of reinforced metal structure >= 24.0 um <= 25.0 um" }
+           0 rCSR_L_1_M5 @= { @ "CSR.L.1:M5 : Length of reinforced metal structure = 24~25 Length of reinforced metal structure >= 24.0 um <= 25.0 um" }
+           0 rCSR_R_3 @= { @ "CSR.R.3 : Distance between 45-degree outer seal-ring and seal-ring corner = 18~20 Distance between 45 degree 1st seal ring and seal ring corner >= 18.0 um <= 20.0 um" }
+           0 rCSR_R_4 @= { @ "CSR.R.4 : CSRDMY layer (CAD layer: 166;0), CSRBIB1DMY (CAD layer: 166;1), and CSRBIB2DMY (CAD layer: 166;2) is must if customers add seal-ring by themselves. DRC doesn't check CSR and BiB related rules without these dummy layers" }
+           0 rCSR_R_5 @= { @ "CSR.R.5 : DMV pattern in CSR must include Mtop/VIAtop/Mtop-1/VIAtop-1/Mtop-2/VIAtop-2/.../V1/M1, except for Mu design." }
+           0 rCSR_R_7 @= { @ "CSR.R.7 : The CSR structure must include PM, CB2_FC or CB2_WB, AP, CB or CBD or RV, Mtop~M1, VIAtop~VIA1, CO, PP, PO, DOD, DPO layers." }
+           0 rCSR_W_1_M1 @= { @ "CSR.W.1:M1 : Width of reinforced metal structure = 9~10 Width of reinforced metal structure >= 9.0 um <= 10.0 um" }
+           0 rCSR_W_1_M2 @= { @ "CSR.W.1:M2 : Width of reinforced metal structure = 9~10 Width of reinforced metal structure >= 9.0 um <= 10.0 um" }
+           0 rCSR_W_1_M3 @= { @ "CSR.W.1:M3 : Width of reinforced metal structure = 9~10 Width of reinforced metal structure >= 9.0 um <= 10.0 um" }
+           0 rCSR_W_1_M4 @= { @ "CSR.W.1:M4 : Width of reinforced metal structure = 9~10 Width of reinforced metal structure >= 9.0 um <= 10.0 um" }
+           0 rCSR_W_1_M5 @= { @ "CSR.W.1:M5 : Width of reinforced metal structure = 9~10 Width of reinforced metal structure >= 9.0 um <= 10.0 um" }
+           0 rDM1_A_1 @= { @ "DM1.A.1 : Min. area >= 0.0576 um2" }
+           0 rDM1_A_2 @= { @ "DM1.A.2 : Max. area <= 80.0 um2" }
+           0 rDM1_O_R_1 @= { @ "DM1_O.R.1 : DMx_O INTERACT Mx is not allowed. [Mx, and My only]" }
+           1 rDM1_R_1 @= { @ "DM1.R.1 : DM1 is a must. The DM1 CAD layer (TSMC default, 31;1 for DM1) must be different from the M1 CAD layer." }
+           0 rDM1_R_3 @= { @ "DM1.R.3 : DMx must be rectangular" }
+           0 rDM1_R_4_VIA1 @= { @ "DM1.R.4:VIA1 : {DMx OR DMx_O} overlap of VIAx is not allowed. (This check doesn't include the highest metal layer {DMx OR DMx_O})" }
+           0 rDM1_S_1 @= { @ "DM1.S.1 : Space >= 0.12 um" }
+           0 rDM1_S_2 @= { @ "DM1.S.2 : Space to Mx >= 0.2/1.5 um" }
+           0 rDM1_S_3_1 @= { @ "DM1.S.3.1 : DMx space to Mx (overlap is not allowed) [Mx width > 1.5 um and the parallel metal run length > 1.5 um] >= 0.5" }
+           0 rDM1_W_1 @= { @ "DM1.W.1 : Width >= 0.12 um" }
+           0 rDM1_W_2 @= { @ "DM1.W.2 : Maximum width of {DMx OR DMx_O} (checked by sizing down 1.5 um) <= 3" }
+           0 rDM2_A_1 @= { @ "DM2.A.1 : Min. area >= 0.0576 um2" }
+           0 rDM2_A_2 @= { @ "DM2.A.2 : Max. area <= 80.0 um2" }
+           0 rDM2_EN_2 @= { @ "DM2.EN.2 : Enclosure of DVIAx-1 (This check doesn't include M1) >= 0.0 um" }
+           0 rDM2_EN_3 @= { @ "DM2.EN.3 : Enclosure of DVIAx-1 (at least two opposite sides) (This check doesn't include M1) >= 0.1 um" }
+           0 rDM2_O_R_1 @= { @ "DM2_O.R.1 : DMx_O INTERACT Mx is not allowed. [Mx, and My only]" }
+           1 rDM2_R_1 @= { @ "DM2.R.1 : DM2 is a must. The DM2 CAD layer (TSMC default, 32;1 for DM2) must be different from the M2 CAD layer." }
+           0 rDM2_R_3 @= { @ "DM2.R.3 : DMx must be rectangular" }
+           0 rDM2_R_4_VIA2 @= { @ "DM2.R.4:VIA2 : {DMx OR DMx_O} overlap of VIAx is not allowed. (This check doesn't include the highest metal layer {DMx OR DMx_O})" }
+           0 rDM2_R_5_VIA1 @= { @ "DM2.R.5:VIA1 : {DMx OR DMx_O} overlap of {VIAx-1} is not allowed (This check doesn't include M1 {DM1 OR DM1_O})" }
+           0 rDM2_S_1 @= { @ "DM2.S.1 : Space >= 0.12 um" }
+           0 rDM2_S_2 @= { @ "DM2.S.2 : Space to Mx >= 0.2/1.5 um" }
+           0 rDM2_S_3_1 @= { @ "DM2.S.3.1 : DMx space to Mx (overlap is not allowed) [Mx width > 1.5 um and the parallel metal run length > 1.5 um] >= 0.5" }
+           0 rDM2_W_1 @= { @ "DM2.W.1 : Width >= 0.12 um" }
+           0 rDM2_W_2 @= { @ "DM2.W.2 : Maximum width of {DMx OR DMx_O} (checked by sizing down 1.5 um) <= 3" }
+           0 rDM3_A_1 @= { @ "DM3.A.1 : Min. area >= 0.0576 um2" }
+           0 rDM3_A_2 @= { @ "DM3.A.2 : Max. area <= 80.0 um2" }
+           0 rDM3_EN_2 @= { @ "DM3.EN.2 : Enclosure of DVIAx-1 (This check doesn't include M1) >= 0.0 um" }
+           0 rDM3_EN_3 @= { @ "DM3.EN.3 : Enclosure of DVIAx-1 (at least two opposite sides) (This check doesn't include M1) >= 0.1 um" }
+           0 rDM3_O_R_1 @= { @ "DM3_O.R.1 : DMx_O INTERACT Mx is not allowed. [Mx, and My only]" }
+           1 rDM3_R_1 @= { @ "DM3.R.1 : DM3 is a must. The DM3 CAD layer (TSMC default, 33;1 for DM3) must be different from the M3 CAD layer." }
+           0 rDM3_R_3 @= { @ "DM3.R.3 : DMx must be rectangular" }
+           0 rDM3_R_4_VIA3 @= { @ "DM3.R.4:VIA3 : {DMx OR DMx_O} overlap of VIAx is not allowed. (This check doesn't include the highest metal layer {DMx OR DMx_O})" }
+           0 rDM3_R_5_VIA2 @= { @ "DM3.R.5:VIA2 : {DMx OR DMx_O} overlap of {VIAx-1} is not allowed (This check doesn't include M1 {DM1 OR DM1_O})" }
+           0 rDM3_S_1 @= { @ "DM3.S.1 : Space >= 0.12 um" }
+           0 rDM3_S_2 @= { @ "DM3.S.2 : Space to Mx >= 0.2/1.5 um" }
+           0 rDM3_S_3_1 @= { @ "DM3.S.3.1 : DMx space to Mx (overlap is not allowed) [Mx width > 1.5 um and the parallel metal run length > 1.5 um] >= 0.5" }
+           0 rDM3_W_1 @= { @ "DM3.W.1 : Width >= 0.12 um" }
+           0 rDM3_W_2 @= { @ "DM3.W.2 : Maximum width of {DMx OR DMx_O} (checked by sizing down 1.5 um) <= 3" }
+           0 rDM4_A_1 @= { @ "DM4.A.1 : Min. area >= 0.0576 um2" }
+           0 rDM4_A_2 @= { @ "DM4.A.2 : Max. area <= 80.0 um2" }
+           0 rDM4_EN_2 @= { @ "DM4.EN.2 : Enclosure of DVIAx-1 (This check doesn't include M1) >= 0.0 um" }
+           0 rDM4_EN_3 @= { @ "DM4.EN.3 : Enclosure of DVIAx-1 (at least two opposite sides) (This check doesn't include M1) >= 0.1 um" }
+           0 rDM4_O_R_1 @= { @ "DM4_O.R.1 : DMx_O INTERACT Mx is not allowed. [Mx, and My only]" }
+           1 rDM4_R_1 @= { @ "DM4.R.1 : DM4 is a must. The DM4 CAD layer (TSMC default, 34;1 for DM4) must be different from the M4 CAD layer." }
+           0 rDM4_R_3 @= { @ "DM4.R.3 : DMx must be rectangular" }
+           0 rDM4_R_4_VIA4 @= { @ "DM4.R.4:VIA4 : {DMx OR DMx_O} overlap of VIAx is not allowed. (This check doesn't include the highest metal layer {DMx OR DMx_O})" }
+           0 rDM4_R_5_VIA3 @= { @ "DM4.R.5:VIA3 : {DMx OR DMx_O} overlap of {VIAx-1} is not allowed (This check doesn't include M1 {DM1 OR DM1_O})" }
+           0 rDM4_S_1 @= { @ "DM4.S.1 : Space >= 0.12 um" }
+           0 rDM4_S_2 @= { @ "DM4.S.2 : Space to Mx >= 0.2/1.5 um" }
+           0 rDM4_S_3_1 @= { @ "DM4.S.3.1 : DMx space to Mx (overlap is not allowed) [Mx width > 1.5 um and the parallel metal run length > 1.5 um] >= 0.5" }
+           0 rDM4_W_1 @= { @ "DM4.W.1 : Width >= 0.12 um" }
+           0 rDM4_W_2 @= { @ "DM4.W.2 : Maximum width of {DMx OR DMx_O} (checked by sizing down 1.5 um) <= 3" }
+           0 rDM5_A_1 @= { @ "DM5.A.1 : Min. area >= 1.44 um2" }
+           0 rDM5_A_2 @= { @ "DM5.A.2 : Max. area <= 160.0 um2" }
+           1 rDM5_R_1 @= { @ "DM5.R.1 : DM5 is a must. The DM5 CAD layer (TSMC default, 35;81 for DM5) must be different from the M5 CAD layer." }
+           0 rDM5_R_3 @= { @ "DM5.R.3 : DMx must be rectangular" }
+           0 rDM5_R_5_VIA4 @= { @ "DM5.R.5:VIA4 : {DMx OR DMx_O} overlap of {VIAx-1} is not allowed (This check doesn't include M1 {DM1 OR DM1_O})" }
+           0 rDM5_S_1 @= { @ "DM5.S.1 : Space >= 0.8 um" }
+           0 rDM5_S_2 @= { @ "DM5.S.2 : Space to Mx >= 0.8 um" }
+           0 rDM5_S_3 @= { @ "DM5.S.3 : DMx space to Mx (overlap is not allowed) [Mx width > 4.5 um and the parallel run length > 4.5 um] (This check doesn't include 1x inter-metal, Mx.) >= 1.5." }
+           0 rDM5_W_1 @= { @ "DM5.W.1 : Width >= 0.8 um" }
+           0 rDM5_W_2 @= { @ "DM5.W.2 : Maximum width of {DMx OR DMx_O} (checked by sizing down 1.5 um) <= 3" }
+           0 rDVIA1_EN_1 @= { @ "DVIA1.EN.1 : Enclosure by DMx >= 0" }
+           0 rDVIA1_EN_2 @= { @ "DVIA1.EN.2 : Enclosure by DMx (at least 2 opposite sides) >= 0.1" }
+           0 rDVIA1_R_1 @= { @ "DVIA1.R.1 : DVIAx must fully inside DMx and DMx+1" }
+           0 rDVIA1_R_2 @= { @ "DVIA1.R.2 : DVIAx INTERACT {{{Mx OR Mx+1} OR DMx_O} OR DMx+1_O} is not allowed." }
+           0 rDVIA1_R_3 @= { @ "DVIA1.R.3 : DVIA1 is a must for Flip Chip. To comply tsmc dummy utility, DRC will flag as violation when the area ratio of (DVIA1 to DM1) and (DVIA1 to DM2) are < 1% at the same time" }
+           0 rDVIA1_S_1 @= { @ "DVIA1.S.1 : Space >= 0.36 um" }
+           0 rDVIA1_S_2 @= { @ "DVIA1.S.2 : Space to VIAx >= 0.6 um" }
+           0 rDVIA1_W_1 @= { @ "DVIA1.W.1 : Width(maximun = minimun) == 0.12 um" }
+           0 rDVIA2_EN_1 @= { @ "DVIA2.EN.1 : Enclosure by DMx >= 0" }
+           0 rDVIA2_EN_2 @= { @ "DVIA2.EN.2 : Enclosure by DMx (at least 2 opposite sides) >= 0.1" }
+           0 rDVIA2_R_1 @= { @ "DVIA2.R.1 : DVIAx must fully inside DMx and DMx+1" }
+           0 rDVIA2_R_2 @= { @ "DVIA2.R.2 : DVIAx INTERACT {{{Mx OR Mx+1} OR DMx_O} OR DMx+1_O} is not allowed." }
+           0 rDVIA2_R_3 @= { @ "DVIA2.R.3 : DVIA2 is a must for Flip Chip. To comply tsmc dummy utility, DRC will flag as violation when the area ratio of (DVIA2 to DM2) and (DVIA2 to DM3) are < 1% at the same time" }
+           0 rDVIA2_S_1 @= { @ "DVIA2.S.1 : Space >= 0.36 um" }
+           0 rDVIA2_S_2 @= { @ "DVIA2.S.2 : Space to VIAx >= 0.6 um" }
+           0 rDVIA2_W_1 @= { @ "DVIA2.W.1 : Width(maximun = minimun) == 0.12 um" }
+           0 rDVIA3_EN_1 @= { @ "DVIA3.EN.1 : Enclosure by DMx >= 0" }
+           0 rDVIA3_EN_2 @= { @ "DVIA3.EN.2 : Enclosure by DMx (at least 2 opposite sides) >= 0.1" }
+           0 rDVIA3_R_1 @= { @ "DVIA3.R.1 : DVIAx must fully inside DMx and DMx+1" }
+           0 rDVIA3_R_2 @= { @ "DVIA3.R.2 : DVIAx INTERACT {{{Mx OR Mx+1} OR DMx_O} OR DMx+1_O} is not allowed." }
+           0 rDVIA3_R_3 @= { @ "DVIA3.R.3 : DVIA3 is a must for Flip Chip. To comply tsmc dummy utility, DRC will flag as violation when the area ratio of (DVIA3 to DM3) and (DVIA3 to DM4) are < 1% at the same time" }
+           0 rDVIA3_S_1 @= { @ "DVIA3.S.1 : Space >= 0.36 um" }
+           0 rDVIA3_S_2 @= { @ "DVIA3.S.2 : Space to VIAx >= 0.6 um" }
+           0 rDVIA3_W_1 @= { @ "DVIA3.W.1 : Width(maximun = minimun) == 0.12 um" }
+           0 rEFP_M1_S_1 @= { @ "EFP.M1.S.1 : CIC rule: At least one side space of Mx line [width = 0.05 um (W1), between 2 C-shape Mxs] to opposite C-shape Mx. Definition of 'C-shape Mx': Mx has 2 consecutive 270-270 inner vertexes, and the edge [line width = 0.05 um (Wc)] between the consecutive inner vertexes faces to another Mx [width >= 0.055 um (Ws)]. Parallel run length of the edge lengths between individual 2 consecutive 270-270 inner vertexes must be < 0.3 um (L1) in 2 C-shape Mx configuration >= 0.055" }
+           0 rEFP_M1_S_4 @= { @ "EFP.M1.S.4 : Comb rule: At least one side space of Mx line [width = 0.05 um (W1), in a COMB configuration] to Mx lines. Definition of COMB configuration: Middle Mx line space to both Mx lines [width = 0.05 um (W2) and both Mxs are part of one polygon] = 0.05 um (S1) in width direction. Another 2 Mx lines (W3) space to middle Mx = 0.15 um (S3). Parallel run length of 5 Mx lines is within 0 um ~ 0.4 um (L1). In addition, the odd Mx (W1,W3) line-end space to opposite Mx <= 0.08 um (S2) >= 0.055" }
+           0 rEFP_M2_S_1 @= { @ "EFP.M2.S.1 : CIC rule: At least one side space of Mx line [width = 0.05 um (W1), between 2 C-shape Mxs] to opposite C-shape Mx. Definition of 'C-shape Mx': Mx has 2 consecutive 270-270 inner vertexes, and the edge [line width = 0.05 um (Wc)] between the consecutive inner vertexes faces to another Mx [width >= 0.055 um (Ws)]. Parallel run length of the edge lengths between individual 2 consecutive 270-270 inner vertexes must be < 0.3 um (L1) in 2 C-shape Mx configuration >= 0.055" }
+           0 rEFP_M2_S_4 @= { @ "EFP.M2.S.4 : Comb rule: At least one side space of Mx line [width = 0.05 um (W1), in a COMB configuration] to Mx lines. Definition of COMB configuration: Middle Mx line space to both Mx lines [width = 0.05 um (W2) and both Mxs are part of one polygon] = 0.05 um (S1) in width direction. Another 2 Mx lines (W3) space to middle Mx = 0.15 um (S3). Parallel run length of 5 Mx lines is within 0 um ~ 0.4 um (L1). In addition, the odd Mx (W1,W3) line-end space to opposite Mx <= 0.08 um (S2) >= 0.055" }
+           0 rEFP_M3_S_1 @= { @ "EFP.M3.S.1 : CIC rule: At least one side space of Mx line [width = 0.05 um (W1), between 2 C-shape Mxs] to opposite C-shape Mx. Definition of 'C-shape Mx': Mx has 2 consecutive 270-270 inner vertexes, and the edge [line width = 0.05 um (Wc)] between the consecutive inner vertexes faces to another Mx [width >= 0.055 um (Ws)]. Parallel run length of the edge lengths between individual 2 consecutive 270-270 inner vertexes must be < 0.3 um (L1) in 2 C-shape Mx configuration >= 0.055" }
+           0 rEFP_M3_S_4 @= { @ "EFP.M3.S.4 : Comb rule: At least one side space of Mx line [width = 0.05 um (W1), in a COMB configuration] to Mx lines. Definition of COMB configuration: Middle Mx line space to both Mx lines [width = 0.05 um (W2) and both Mxs are part of one polygon] = 0.05 um (S1) in width direction. Another 2 Mx lines (W3) space to middle Mx = 0.15 um (S3). Parallel run length of 5 Mx lines is within 0 um ~ 0.4 um (L1). In addition, the odd Mx (W1,W3) line-end space to opposite Mx <= 0.08 um (S2) >= 0.055" }
+           0 rEFP_M4_S_1 @= { @ "EFP.M4.S.1 : CIC rule: At least one side space of Mx line [width = 0.05 um (W1), between 2 C-shape Mxs] to opposite C-shape Mx. Definition of 'C-shape Mx': Mx has 2 consecutive 270-270 inner vertexes, and the edge [line width = 0.05 um (Wc)] between the consecutive inner vertexes faces to another Mx [width >= 0.055 um (Ws)]. Parallel run length of the edge lengths between individual 2 consecutive 270-270 inner vertexes must be < 0.3 um (L1) in 2 C-shape Mx configuration >= 0.055" }
+           0 rEFP_M4_S_4 @= { @ "EFP.M4.S.4 : Comb rule: At least one side space of Mx line [width = 0.05 um (W1), in a COMB configuration] to Mx lines. Definition of COMB configuration: Middle Mx line space to both Mx lines [width = 0.05 um (W2) and both Mxs are part of one polygon] = 0.05 um (S1) in width direction. Another 2 Mx lines (W3) space to middle Mx = 0.15 um (S3). Parallel run length of 5 Mx lines is within 0 um ~ 0.4 um (L1). In addition, the odd Mx (W1,W3) line-end space to opposite Mx <= 0.08 um (S2) >= 0.055" }
+           0 rEFP_VIA1_S_1 @= { @ "EFP.VIA1.S.1 : VIMB (Via Induce Metal Bridge) rule type-1: 'Confined VIAx' space to neighboring VIAx [INTERACT the same Mx and Mx+1 as 'Confined VIAx' at the same time] Definition of 'Confined VIAx': VIAx enclosure [0 um at one side and < 0.04 um (E1) at adjacent side] by Mx+1 [the edge with 0 um VIAx enclosure space to neighboring Mx+1 < 0.065 um (D1)] >= 0.08" }
+           0 rEFP_VIA1_S_2 @= { @ "EFP.VIA1.S.2 : VIMB (Via Induce Metal Bridge) rule type-2: 'Confined VIAx' space to neighboring VIAx [NOT INTERACT the same Mx and Mx+1 as 'Confined VIAx' at the same time] Definition of 'Confined VIAx': VIAx enclosure [0 um at one side and < 0.04 um (E1) at adjacent side] by Mx+1 [the edge with 0 um VIAx enclosure space to neighboring Mx+1 < 0.065 um (D1)] >= 0.08" }
+           9 rEFP_VIA1_S_3 @= { @ "EFP.VIA1.S.3 : VIMB (Via Induce Metal Bridge) rule type-3: 'Confined VIAx' space to VIAx [parallel run length > -0.04 um, INTERACT the same Mx and Mx+1 as 'Confined VIAx' at the same time] Definition of 'Confined VIAx': VIAx enclosure [0 um at one side and < 0.04 um (E1) at adjacent side] by Mx+1 [the edge with 0 um VIAx enclosure space to Mx+1 < 0.065 um (D1)] >= 0.09" }
+           0 rEFP_VIA1_S_4 @= { @ "EFP.VIA1.S.4 : VIMB (Via Induce Metal Bridge) rule type-4: 'Confined VIAx' space to VIAx [parallel run length > -0.04 um, NOT INTERACT the same Mx and Mx+1 as 'Confined VIAx' at the same time] Definition of 'Confined VIAx': VIAx enclosure [0 um at one side and < 0.04 um (E1) at adjacent side] by Mx+1 [the edge with 0 um VIAx enclosure space to Mx+1 < 0.065 um (D1)] >= 0.09" }
+           0 rEFP_VIA1_S_5 @= { @ "EFP.VIA1.S.5 : VIMB (Via Induce Metal Bridge) rule type-5: 'Confined VIAx' space to neighboring rectangular VIAx [INTERACT the same Mx and Mx+1 as 'Confined VIAx' at the same time] Definition of 'Confined VIAx': VIAx enclosure [0 um at one side and < 0.04 um (E1) at adjacent side] by Mx+1 [the edge with 0 um VIAx enclosure space to neighboring Mx+1 < 0.065 um (D1)] >= 0.085" }
+           0 rEFP_VIA1_S_6 @= { @ "EFP.VIA1.S.6 : VIMB (Via Induce Metal Bridge) rule type-6: 'Confined VIAx' space to neighboring rectangular VIAx [NOT INTERACT the same Mx and Mx+1 as 'Confined VIAx' at the same time] Definition of 'Confined VIAx': VIAx enclosure [0 um at one side and < 0.04 um (E1) at adjacent side] by Mx+1 [the edge with 0 um VIAx enclosure space to neighboring Mx+1 < 0.065 um (D1)] >= 0.085" }
+           0 rEFP_VIA2_S_1 @= { @ "EFP.VIA2.S.1 : VIMB (Via Induce Metal Bridge) rule type-1: 'Confined VIAx' space to neighboring VIAx [INTERACT the same Mx and Mx+1 as 'Confined VIAx' at the same time] Definition of 'Confined VIAx': VIAx enclosure [0 um at one side and < 0.04 um (E1) at adjacent side] by Mx+1 [the edge with 0 um VIAx enclosure space to neighboring Mx+1 < 0.065 um (D1)] >= 0.08" }
+           0 rEFP_VIA2_S_2 @= { @ "EFP.VIA2.S.2 : VIMB (Via Induce Metal Bridge) rule type-2: 'Confined VIAx' space to neighboring VIAx [NOT INTERACT the same Mx and Mx+1 as 'Confined VIAx' at the same time] Definition of 'Confined VIAx': VIAx enclosure [0 um at one side and < 0.04 um (E1) at adjacent side] by Mx+1 [the edge with 0 um VIAx enclosure space to neighboring Mx+1 < 0.065 um (D1)] >= 0.08" }
+           0 rEFP_VIA2_S_3 @= { @ "EFP.VIA2.S.3 : VIMB (Via Induce Metal Bridge) rule type-3: 'Confined VIAx' space to VIAx [parallel run length > -0.04 um, INTERACT the same Mx and Mx+1 as 'Confined VIAx' at the same time] Definition of 'Confined VIAx': VIAx enclosure [0 um at one side and < 0.04 um (E1) at adjacent side] by Mx+1 [the edge with 0 um VIAx enclosure space to Mx+1 < 0.065 um (D1)] >= 0.09" }
+           0 rEFP_VIA2_S_4 @= { @ "EFP.VIA2.S.4 : VIMB (Via Induce Metal Bridge) rule type-4: 'Confined VIAx' space to VIAx [parallel run length > -0.04 um, NOT INTERACT the same Mx and Mx+1 as 'Confined VIAx' at the same time] Definition of 'Confined VIAx': VIAx enclosure [0 um at one side and < 0.04 um (E1) at adjacent side] by Mx+1 [the edge with 0 um VIAx enclosure space to Mx+1 < 0.065 um (D1)] >= 0.09" }
+           0 rEFP_VIA2_S_5 @= { @ "EFP.VIA2.S.5 : VIMB (Via Induce Metal Bridge) rule type-5: 'Confined VIAx' space to neighboring rectangular VIAx [INTERACT the same Mx and Mx+1 as 'Confined VIAx' at the same time] Definition of 'Confined VIAx': VIAx enclosure [0 um at one side and < 0.04 um (E1) at adjacent side] by Mx+1 [the edge with 0 um VIAx enclosure space to neighboring Mx+1 < 0.065 um (D1)] >= 0.085" }
+           0 rEFP_VIA2_S_6 @= { @ "EFP.VIA2.S.6 : VIMB (Via Induce Metal Bridge) rule type-6: 'Confined VIAx' space to neighboring rectangular VIAx [NOT INTERACT the same Mx and Mx+1 as 'Confined VIAx' at the same time] Definition of 'Confined VIAx': VIAx enclosure [0 um at one side and < 0.04 um (E1) at adjacent side] by Mx+1 [the edge with 0 um VIAx enclosure space to neighboring Mx+1 < 0.065 um (D1)] >= 0.085" }
+           0 rEFP_VIA3_S_1 @= { @ "EFP.VIA3.S.1 : VIMB (Via Induce Metal Bridge) rule type-1: 'Confined VIAx' space to neighboring VIAx [INTERACT the same Mx and Mx+1 as 'Confined VIAx' at the same time] Definition of 'Confined VIAx': VIAx enclosure [0 um at one side and < 0.04 um (E1) at adjacent side] by Mx+1 [the edge with 0 um VIAx enclosure space to neighboring Mx+1 < 0.065 um (D1)] >= 0.08" }
+           0 rEFP_VIA3_S_2 @= { @ "EFP.VIA3.S.2 : VIMB (Via Induce Metal Bridge) rule type-2: 'Confined VIAx' space to neighboring VIAx [NOT INTERACT the same Mx and Mx+1 as 'Confined VIAx' at the same time] Definition of 'Confined VIAx': VIAx enclosure [0 um at one side and < 0.04 um (E1) at adjacent side] by Mx+1 [the edge with 0 um VIAx enclosure space to neighboring Mx+1 < 0.065 um (D1)] >= 0.08" }
+           0 rEFP_VIA3_S_3 @= { @ "EFP.VIA3.S.3 : VIMB (Via Induce Metal Bridge) rule type-3: 'Confined VIAx' space to VIAx [parallel run length > -0.04 um, INTERACT the same Mx and Mx+1 as 'Confined VIAx' at the same time] Definition of 'Confined VIAx': VIAx enclosure [0 um at one side and < 0.04 um (E1) at adjacent side] by Mx+1 [the edge with 0 um VIAx enclosure space to Mx+1 < 0.065 um (D1)] >= 0.09" }
+           0 rEFP_VIA3_S_4 @= { @ "EFP.VIA3.S.4 : VIMB (Via Induce Metal Bridge) rule type-4: 'Confined VIAx' space to VIAx [parallel run length > -0.04 um, NOT INTERACT the same Mx and Mx+1 as 'Confined VIAx' at the same time] Definition of 'Confined VIAx': VIAx enclosure [0 um at one side and < 0.04 um (E1) at adjacent side] by Mx+1 [the edge with 0 um VIAx enclosure space to Mx+1 < 0.065 um (D1)] >= 0.09" }
+           0 rEFP_VIA3_S_5 @= { @ "EFP.VIA3.S.5 : VIMB (Via Induce Metal Bridge) rule type-5: 'Confined VIAx' space to neighboring rectangular VIAx [INTERACT the same Mx and Mx+1 as 'Confined VIAx' at the same time] Definition of 'Confined VIAx': VIAx enclosure [0 um at one side and < 0.04 um (E1) at adjacent side] by Mx+1 [the edge with 0 um VIAx enclosure space to neighboring Mx+1 < 0.065 um (D1)] >= 0.085" }
+           0 rEFP_VIA3_S_6 @= { @ "EFP.VIA3.S.6 : VIMB (Via Induce Metal Bridge) rule type-6: 'Confined VIAx' space to neighboring rectangular VIAx [NOT INTERACT the same Mx and Mx+1 as 'Confined VIAx' at the same time] Definition of 'Confined VIAx': VIAx enclosure [0 um at one side and < 0.04 um (E1) at adjacent side] by Mx+1 [the edge with 0 um VIAx enclosure space to neighboring Mx+1 < 0.065 um (D1)] >= 0.085" }
+           0 rESD_WARN_1 @= { @ "ESD.WARN.1 : SDI (122;0) needs to be found in each of power, ground, or I/O pad of CB, CBD, CB2_WB, and CB2_FC and PM2. Exception: SEALRING_ALL When turn on option 'DEFINE_PAD_BY_TEXT', only check connectivity of CB, CBD, CB2_WB, CB2_FC and PM2 with text. When turn off option 'DEFINE_PAD_BY_TEXT', only check connectivity of CB, CBD, CB2_WB, CB2_FC and PM2 to STRAP/VDDDMY/VSSDMY Connection is broken by PO/OD/NW resistor" }
+           0 rG_1_APB @= { @ "G.1:APB : grid must be an integer multiple of 0.005 um" }
+           0 rG_1_DM1_O @= { @ "G.1:DM1_O : grid must be an integer multiple of 0.005 um" }
+           0 rG_1_DM2_O @= { @ "G.1:DM2_O : grid must be an integer multiple of 0.005 um" }
+           0 rG_1_DM3_O @= { @ "G.1:DM3_O : grid must be an integer multiple of 0.005 um" }
+           0 rG_1_DM4_O @= { @ "G.1:DM4_O : grid must be an integer multiple of 0.005 um" }
+           0 rG_1_DUM1 @= { @ "G.1:DUM1 : grid must be an integer multiple of 0.005 um" }
+           0 rG_1_DUM2 @= { @ "G.1:DUM2 : grid must be an integer multiple of 0.005 um" }
+           0 rG_1_DUM3 @= { @ "G.1:DUM3 : grid must be an integer multiple of 0.005 um" }
+           0 rG_1_DUM4 @= { @ "G.1:DUM4 : grid must be an integer multiple of 0.005 um" }
+           0 rG_1_DUM5 @= { @ "G.1:DUM5 : grid must be an integer multiple of 0.005 um" }
+           0 rG_1_DUVIA1 @= { @ "G.1:DUVIA1 : grid must be an integer multiple of 0.005 um" }
+           0 rG_1_DUVIA2 @= { @ "G.1:DUVIA2 : grid must be an integer multiple of 0.005 um" }
+           0 rG_1_DUVIA3 @= { @ "G.1:DUVIA3 : grid must be an integer multiple of 0.005 um" }
+           0 rG_1_M1I @= { @ "G.1:M1i : grid must be an integer multiple of 0.005 um" }
+           0 rG_1_M2I @= { @ "G.1:M2i : grid must be an integer multiple of 0.005 um" }
+           0 rG_1_M3I @= { @ "G.1:M3i : grid must be an integer multiple of 0.005 um" }
+           0 rG_1_M4I @= { @ "G.1:M4i : grid must be an integer multiple of 0.005 um" }
+           0 rG_1_M5I @= { @ "G.1:M5i : grid must be an integer multiple of 0.005 um" }
+           0 rG_1_METAL_ABOVE_TOP @= { @ "G.1:METAL_ABOVE_TOP : grid must be an integer multiple of 0.005 um" }
+           0 rG_1_RVB @= { @ "G.1:RVB : grid must be an integer multiple of 0.005 um" }
+           0 rG_1_RVI @= { @ "G.1:RVi : grid must be an integer multiple of 0.005 um" }
+           0 rG_1_VIA1II @= { @ "G.1:VIA1ii : grid must be an integer multiple of 0.005 um" }
+           0 rG_1_VIA1_VIRT @= { @ "G.1:VIA1_VIRT : grid must be an integer multiple of 0.005 um" }
+           0 rG_1_VIA2II @= { @ "G.1:VIA2ii : grid must be an integer multiple of 0.005 um" }
+           0 rG_1_VIA2_VIRT @= { @ "G.1:VIA2_VIRT : grid must be an integer multiple of 0.005 um" }
+           0 rG_1_VIA3II @= { @ "G.1:VIA3ii : grid must be an integer multiple of 0.005 um" }
+           0 rG_1_VIA3_VIRT @= { @ "G.1:VIA3_VIRT : grid must be an integer multiple of 0.005 um" }
+           0 rG_1_VIA4I @= { @ "G.1:VIA4i : grid must be an integer multiple of 0.005 um" }
+           0 rG_1_VIA_ABOVE_TOP @= { @ "G.1:VIA_ABOVE_TOP : grid must be an integer multiple of 0.005 um" }
+           0 rG_2_APB @= { @ "G.2:APB : LAYERS Shapes with acute angles between line segments are not allowed." }
+           0 rG_2_API @= { @ "G.2:APi : LAYERS Shapes with acute angles between line segments are not allowed." }
+           0 rG_2_CU_PPII @= { @ "G.2:Cu_PPIi : LAYERS Shapes with acute angles between line segments are not allowed." }
+           0 rG_2_DM1_O @= { @ "G.2:DM1_O : LAYERS Shapes with acute angles between line segments are not allowed." }
+           0 rG_2_DM2_O @= { @ "G.2:DM2_O : LAYERS Shapes with acute angles between line segments are not allowed." }
+           0 rG_2_DM3_O @= { @ "G.2:DM3_O : LAYERS Shapes with acute angles between line segments are not allowed." }
+           0 rG_2_DM4_O @= { @ "G.2:DM4_O : LAYERS Shapes with acute angles between line segments are not allowed." }
+           0 rG_2_DUM1 @= { @ "G.2:DUM1 : LAYERS Shapes with acute angles between line segments are not allowed." }
+           0 rG_2_DUM2 @= { @ "G.2:DUM2 : LAYERS Shapes with acute angles between line segments are not allowed." }
+           0 rG_2_DUM3 @= { @ "G.2:DUM3 : LAYERS Shapes with acute angles between line segments are not allowed." }
+           0 rG_2_DUM4 @= { @ "G.2:DUM4 : LAYERS Shapes with acute angles between line segments are not allowed." }
+           0 rG_2_DUM5 @= { @ "G.2:DUM5 : LAYERS Shapes with acute angles between line segments are not allowed." }
+           0 rG_2_DUVIA1 @= { @ "G.2:DUVIA1 : LAYERS Shapes with acute angles between line segments are not allowed." }
+           0 rG_2_DUVIA2 @= { @ "G.2:DUVIA2 : LAYERS Shapes with acute angles between line segments are not allowed." }
+           0 rG_2_DUVIA3 @= { @ "G.2:DUVIA3 : LAYERS Shapes with acute angles between line segments are not allowed." }
+           0 rG_2_M1I @= { @ "G.2:M1i : LAYERS Shapes with acute angles between line segments are not allowed." }
+           0 rG_2_M2I @= { @ "G.2:M2i : LAYERS Shapes with acute angles between line segments are not allowed." }
+           0 rG_2_M3I @= { @ "G.2:M3i : LAYERS Shapes with acute angles between line segments are not allowed." }
+           0 rG_2_M4I @= { @ "G.2:M4i : LAYERS Shapes with acute angles between line segments are not allowed." }
+           0 rG_2_M5I @= { @ "G.2:M5i : LAYERS Shapes with acute angles between line segments are not allowed." }
+           0 rG_2_METAL_ABOVE_TOP @= { @ "G.2:METAL_ABOVE_TOP : LAYERS Shapes with acute angles between line segments are not allowed." }
+           0 rG_2_RVB @= { @ "G.2:RVB : LAYERS Shapes with acute angles between line segments are not allowed." }
+           0 rG_2_RVI @= { @ "G.2:RVi : LAYERS Shapes with acute angles between line segments are not allowed." }
+           0 rG_2_VIA1II @= { @ "G.2:VIA1ii : LAYERS Shapes with acute angles between line segments are not allowed." }
+           0 rG_2_VIA1_VIRT @= { @ "G.2:VIA1_VIRT : LAYERS Shapes with acute angles between line segments are not allowed." }
+           0 rG_2_VIA2II @= { @ "G.2:VIA2ii : LAYERS Shapes with acute angles between line segments are not allowed." }
+           0 rG_2_VIA2_VIRT @= { @ "G.2:VIA2_VIRT : LAYERS Shapes with acute angles between line segments are not allowed." }
+           0 rG_2_VIA3II @= { @ "G.2:VIA3ii : LAYERS Shapes with acute angles between line segments are not allowed." }
+           0 rG_2_VIA3_VIRT @= { @ "G.2:VIA3_VIRT : LAYERS Shapes with acute angles between line segments are not allowed." }
+           0 rG_2_VIA4I @= { @ "G.2:VIA4i : LAYERS Shapes with acute angles between line segments are not allowed." }
+           0 rG_2_VIA_ABOVE_TOP @= { @ "G.2:VIA_ABOVE_TOP : LAYERS Shapes with acute angles between line segments are not allowed." }
+           0 rG_3_APB @= { @ "G.3:APB : Shapes must be orthogonal or on a 45 degree angle." }
+           0 rG_3_DM1_O @= { @ "G.3:DM1_O : Shapes must be orthogonal or on a 45 degree angle." }
+           0 rG_3_DM2_O @= { @ "G.3:DM2_O : Shapes must be orthogonal or on a 45 degree angle." }
+           0 rG_3_DM3_O @= { @ "G.3:DM3_O : Shapes must be orthogonal or on a 45 degree angle." }
+           0 rG_3_DM4_O @= { @ "G.3:DM4_O : Shapes must be orthogonal or on a 45 degree angle." }
+           0 rG_3_DUM1 @= { @ "G.3:DUM1 : Shapes must be orthogonal or on a 45 degree angle." }
+           0 rG_3_DUM2 @= { @ "G.3:DUM2 : Shapes must be orthogonal or on a 45 degree angle." }
+           0 rG_3_DUM3 @= { @ "G.3:DUM3 : Shapes must be orthogonal or on a 45 degree angle." }
+           0 rG_3_DUM4 @= { @ "G.3:DUM4 : Shapes must be orthogonal or on a 45 degree angle." }
+           0 rG_3_DUM5 @= { @ "G.3:DUM5 : Shapes must be orthogonal or on a 45 degree angle." }
+           0 rG_3_DUVIA1 @= { @ "G.3:DUVIA1 : Shapes must be orthogonal or on a 45 degree angle." }
+           0 rG_3_DUVIA2 @= { @ "G.3:DUVIA2 : Shapes must be orthogonal or on a 45 degree angle." }
+           0 rG_3_DUVIA3 @= { @ "G.3:DUVIA3 : Shapes must be orthogonal or on a 45 degree angle." }
+           0 rG_3_M1I @= { @ "G.3:M1i : Shapes must be orthogonal or on a 45 degree angle." }
+           0 rG_3_M2I @= { @ "G.3:M2i : Shapes must be orthogonal or on a 45 degree angle." }
+           0 rG_3_M3I @= { @ "G.3:M3i : Shapes must be orthogonal or on a 45 degree angle." }
+           0 rG_3_M4I @= { @ "G.3:M4i : Shapes must be orthogonal or on a 45 degree angle." }
+           0 rG_3_M5I @= { @ "G.3:M5i : Shapes must be orthogonal or on a 45 degree angle." }
+           0 rG_3_RVB @= { @ "G.3:RVB : Shapes must be orthogonal or on a 45 degree angle." }
+           0 rG_3_RVI @= { @ "G.3:RVi : Shapes must be orthogonal or on a 45 degree angle." }
+           0 rG_3_VIA1II @= { @ "G.3:VIA1ii : Shapes must be orthogonal or on a 45 degree angle." }
+           0 rG_3_VIA1_VIRT @= { @ "G.3:VIA1_VIRT : Shapes must be orthogonal or on a 45 degree angle." }
+           0 rG_3_VIA2II @= { @ "G.3:VIA2ii : Shapes must be orthogonal or on a 45 degree angle." }
+           0 rG_3_VIA2_VIRT @= { @ "G.3:VIA2_VIRT : Shapes must be orthogonal or on a 45 degree angle." }
+           0 rG_3_VIA3II @= { @ "G.3:VIA3ii : Shapes must be orthogonal or on a 45 degree angle." }
+           0 rG_3_VIA3_VIRT @= { @ "G.3:VIA3_VIRT : Shapes must be orthogonal or on a 45 degree angle." }
+           0 rG_3_VIA4I @= { @ "G.3:VIA4i : Shapes must be orthogonal or on a 45 degree angle." }
+           3 rG_4_M1I @= { @ "G.4:M1i : Adjacent edges with length less than min. width is not allowed." }
+          36 rG_4_M2I @= { @ "G.4:M2i : Adjacent edges with length less than min. width is not allowed." }
+          24 rG_4_M3I @= { @ "G.4:M3i : Adjacent edges with length less than min. width is not allowed." }
+           2 rG_4_M4I @= { @ "G.4:M4i : Adjacent edges with length less than min. width is not allowed." }
+           0 rICOVL_EN_2 @= { @ "ICOVL.EN.2 : M1 ring enclosure by PO ring inside OVL_CO_PO (maximum = minimum) = 3.92" }
+           0 rICOVL_S_8 @= { @ "ICOVL.S.8 : ICOVL_M1_CO space to {{M1 OR DM1} OR DM1_O} ({M1 OR DM1} overlap ICOVL_M1_CO is not allowed) >= 0.22" }
+           0 rICOVL_W_2 @= { @ "ICOVL.W.2 : Width of M1 ring inside OVL_CO_PO (maximum = minimum) = 1.1" }
+           0 rIND_DN_2_M1 @= { @ "IND.DN.2:M1 : Maximum M1/Mx/My density within (INDDMY SIZING 16 um) in window 125 um x 125 um, stepping 62.5 um <= 85%" }
+           0 rIND_DN_2_M2 @= { @ "IND.DN.2:M2 : Maximum M1/Mx/My density within (INDDMY SIZING 16 um) in window 125 um x 125 um, stepping 62.5 um <= 85%" }
+           0 rIND_DN_2_M3 @= { @ "IND.DN.2:M3 : Maximum M1/Mx/My density within (INDDMY SIZING 16 um) in window 125 um x 125 um, stepping 62.5 um <= 85%" }
+           0 rIND_DN_2_M4 @= { @ "IND.DN.2:M4 : Maximum M1/Mx/My density within (INDDMY SIZING 16 um) in window 125 um x 125 um, stepping 62.5 um <= 85%" }
+           0 rIND_DN_3_M1 @= { @ "IND.DN.3:M1 : M1/Mx/My/Mz/Mr metal density over the whole chip (include INDDMY) >= 20%" }
+           0 rIND_DN_3_M2 @= { @ "IND.DN.3:M2 : M1/Mx/My/Mz/Mr metal density over the whole chip (include INDDMY) >= 20%" }
+           0 rIND_DN_3_M3 @= { @ "IND.DN.3:M3 : M1/Mx/My/Mz/Mr metal density over the whole chip (include INDDMY) >= 20%" }
+           0 rIND_DN_3_M4 @= { @ "IND.DN.3:M4 : M1/Mx/My/Mz/Mr metal density over the whole chip (include INDDMY) >= 20%" }
+           0 rIND_DN_3_M5 @= { @ "IND.DN.3:M5 : M1/Mx/My/Mz/Mr metal density over the whole chip (include INDDMY) >= 20%" }
+           0 rIND_R_1 @= { @ "IND.R.1 : In the region of (INDDMY SIZING 16 um), inter-via VIAx, and VIAy are not allowed. (Except VIAx in {LOWMEDN NOT {LOWMEDN SIZING -4 um}})" }
+           0 rIND_R_4_VIA4 @= { @ "IND.R.4:VIA4 : At least 4 VIAr with space <= 1.7 um are required to connect [two Mr layers] or [Mr to Mx] in (INDDMY SIZING 16 um) (DRC checks VIAu counts including VIAu beside {INDDMY SIZING 16 um}) <= 1.7" }
+           0 rIND_R_5 @= { @ "IND.R.5 : In the INDDMY identified region 'a', except the Mx or My layer (one layer only) directly below [Mz, Mr or Mu], any other inter-metal layer (Mx/My) is not allowed. (e.g., for a 1P6M process with 0.9 um of M6 (Mz), then Mx of M5 is allowed, but other lower Mx metal layers are not allowed for the INDDMY identified inductor.) Except the following condition: 1 Mx in {{LOWMEDN NOT {LOWMEDN SIZING -5 um}} INTERACT VIAx bar}, 2 Inter-metal Mx in INDDMY is allowed if the metal density of all M1/Mx layer in region 'a' are all larger than 10% in window 125 um x 125 um, stepping 62.5 um (M1.DN.1 and Mx.DN.1) 3 Inter-metal My in INDDMY is allowed if the metal density of all M1/Mx/My layer in region 'a' are all larger than 10% in window 125 um x 125 um, stepping 62.5 um (M1.DN.1, Mx.DN.1 and My.DN.1)" }
+           0 rIND_S_10_M5 @= { @ "IND.S.10:M5 : M5, and DM5 space in (INDDMY SIZING 16 um) [at least one metal line width > 12 um (W3) and the parallel run lengths > 12 um (L3)] >= 2" }
+           0 rIND_S_1_M1 @= { @ "IND.S.1:M1 : M1, DM1, and DM1_O space in (INDDMY SIZING 16 um) >= 0.28" }
+           0 rIND_S_2_M2 @= { @ "IND.S.2:M2 : M2, DM2, and DM2_O space in (INDDMY SIZING 16 um) >= 0.28" }
+           0 rIND_S_2_M3 @= { @ "IND.S.2:M3 : M3, DM3, and DM3_O space in (INDDMY SIZING 16 um) >= 0.28" }
+           0 rIND_S_2_M4 @= { @ "IND.S.2:M4 : M4, DM4, and DM4_O space in (INDDMY SIZING 16 um) >= 0.28" }
+           0 rIND_S_5_M5 @= { @ "IND.S.5:M5 : M5, DM5 space in (INDDMY SIZING 16 um) >= 1" }
+           0 rIND_S_7_M1 @= { @ "IND.S.7:M1 : M1, DM1, and DM1_O space in (INDDMY SIZING 16 um) [at least one metal line width > 1.5 um (W1) and the parallel run lengths > 1.5 um (L1)] >= 0.5" }
+           0 rIND_S_7_M2 @= { @ "IND.S.7:M2 : M2, DM2, and DM2_O space in (INDDMY SIZING 16 um) [at least one metal line width > 1.5 um (W1) and the parallel run lengths > 1.5 um (L1)] >= 0.5" }
+           0 rIND_S_7_M3 @= { @ "IND.S.7:M3 : M3, DM3, and DM3_O space in (INDDMY SIZING 16 um) [at least one metal line width > 1.5 um (W1) and the parallel run lengths > 1.5 um (L1)] >= 0.5" }
+           0 rIND_S_7_M4 @= { @ "IND.S.7:M4 : M4, DM4, and DM4_O space in (INDDMY SIZING 16 um) [at least one metal line width > 1.5 um (W1) and the parallel run lengths > 1.5 um (L1)] >= 0.5" }
+           0 rIND_S_9_M5 @= { @ "IND.S.9:M5 : M5, DM5 space in (INDDMY SIZING 16 um) [at least one metal line width > 4.5 um (W2) and the parallel run lengths > 4.5 um (L2)] >= 1.5" }
+           0 rIND_W_1_M1 @= { @ "IND.W.1:M1 : M1, DM1, and DM1_O width in (INDDMY SIZING 16 um) >= 0.28" }
+           0 rIND_W_2_M2 @= { @ "IND.W.2:M2 : M2, DM2, and DM2_O width in (INDDMY SIZING 16 um) >= 0.28" }
+           0 rIND_W_2_M3 @= { @ "IND.W.2:M3 : M3, DM3, and DM3_O width in (INDDMY SIZING 16 um) >= 0.28" }
+           0 rIND_W_2_M4 @= { @ "IND.W.2:M4 : M4, DM4, and DM4_O width in (INDDMY SIZING 16 um) >= 0.28" }
+           0 rIND_W_5_M5 @= { @ "IND.W.5:M5 : M5, DM5 width in (INDDMY SIZING 16 um) >= 1" }
+           0 rIND_W_7_M1 @= { @ "IND.W.7:M1 : M1, DM1, and DM1_O maximum width in (INDDMY SIZING 16 um) <= 4.5" }
+           0 rIND_W_7_M2 @= { @ "IND.W.7:M2 : M2, DM2, and DM2_O maximum width in (INDDMY SIZING 16 um) <= 4.5" }
+           0 rIND_W_7_M3 @= { @ "IND.W.7:M3 : M3, DM3, and DM3_O maximum width in (INDDMY SIZING 16 um) <= 4.5" }
+           0 rIND_W_7_M4 @= { @ "IND.W.7:M4 : M4, DM4, and DM4_O maximum width in (INDDMY SIZING 16 um) <= 4.5" }
+           0 rIND_W_9_M5 @= { @ "IND.W.9:M5 : M5, DM5 maximum width inside (INDDMY SIZING 22 um) (for inductor application only) <= 30" }
+           0 rLNP_FC_R_8_M4 @= { @ "LNP_FC.R.8:M4 : {{Mtop/Mtop-1 AND LNP} NOT SEALRING_ALL} must be mesh type [regular holes with metal width = 2 um and hole width = 4~7 um] DRC flag: 1. Width (W4) of {{Mtop/Mtop-1 AND LNP} NOT SEALRING_ALL} is not 2 um (except 45-degree corners), or 2. Hole width (C) of {{Mtop/Mtop-1 AND LNP} NOT SEALRING_ALL} is not 4~7 um" }
+           0 rLNP_FC_R_8_M5 @= { @ "LNP_FC.R.8:M5 : {{Mtop/Mtop-1 AND LNP} NOT SEALRING_ALL} must be mesh type [regular holes with metal width = 2 um and hole width = 4~7 um] DRC flag: 1. Width (W4) of {{Mtop/Mtop-1 AND LNP} NOT SEALRING_ALL} is not 2 um (except 45-degree corners), or 2. Hole width (C) of {{Mtop/Mtop-1 AND LNP} NOT SEALRING_ALL} is not 4~7 um" }
+           0 rLNP_R_1_M2 @= { @ "LNP.R.1:M2 : Mtop/Mtop-1/Mtop-2/Mtop-3 [within {LNP AND SEALRING_ALL}] must connect to inner seal-ring" }
+           0 rLNP_R_1_M3 @= { @ "LNP.R.1:M3 : Mtop/Mtop-1/Mtop-2/Mtop-3 [within {LNP AND SEALRING_ALL}] must connect to inner seal-ring" }
+           0 rLNP_R_1_M4 @= { @ "LNP.R.1:M4 : Mtop/Mtop-1/Mtop-2/Mtop-3 [within {LNP AND SEALRING_ALL}] must connect to inner seal-ring" }
+           0 rLNP_R_1_M5 @= { @ "LNP.R.1:M5 : Mtop/Mtop-1/Mtop-2/Mtop-3 [within {LNP AND SEALRING_ALL}] must connect to inner seal-ring" }
+           0 rLNP_R_2 @= { @ "LNP.R.2 : VIAtop-3 [INSIDE LNP] is not allowed" }
+           0 rLNP_R_3_M2 @= { @ "LNP.R.3:M2 : {LNP NOT SEALRING_ALL} must interact with Mtop, Mtop-1, Mtop-2, Mtop-3, VIAtop, VIAtop-1, and VIAtop-2" }
+           0 rLNP_R_3_M3 @= { @ "LNP.R.3:M3 : {LNP NOT SEALRING_ALL} must interact with Mtop, Mtop-1, Mtop-2, Mtop-3, VIAtop, VIAtop-1, and VIAtop-2" }
+           0 rLNP_R_3_M4 @= { @ "LNP.R.3:M4 : {LNP NOT SEALRING_ALL} must interact with Mtop, Mtop-1, Mtop-2, Mtop-3, VIAtop, VIAtop-1, and VIAtop-2" }
+           0 rLNP_R_3_M5 @= { @ "LNP.R.3:M5 : {LNP NOT SEALRING_ALL} must interact with Mtop, Mtop-1, Mtop-2, Mtop-3, VIAtop, VIAtop-1, and VIAtop-2" }
+           0 rLNP_R_3_VIA2 @= { @ "LNP.R.3:VIA2 : {LNP NOT SEALRING_ALL} must interact with Mtop, Mtop-1, Mtop-2, Mtop-3, VIAtop, VIAtop-1, and VIAtop-2" }
+           0 rLNP_R_3_VIA3 @= { @ "LNP.R.3:VIA3 : {LNP NOT SEALRING_ALL} must interact with Mtop, Mtop-1, Mtop-2, Mtop-3, VIAtop, VIAtop-1, and VIAtop-2" }
+           0 rLNP_R_3_VIA4 @= { @ "LNP.R.3:VIA4 : {LNP NOT SEALRING_ALL} must interact with Mtop, Mtop-1, Mtop-2, Mtop-3, VIAtop, VIAtop-1, and VIAtop-2" }
+           0 rLNP_R_5 @= { @ "LNP.R.5 : It is not allowed to connect low noise pattern and sealring by AP DRC check: {AP AND SEALRING_ALL} INTERACT {LNP NOT SEALRING_ALL}" }
+           0 rLNP_R_6_M2 @= { @ "LNP.R.6:M2 : The number of Mtop/Mtop-1/Mtop-3 [within {LNP AND SEALRING_ALL}] = 6" }
+           0 rLNP_R_6_M4 @= { @ "LNP.R.6:M4 : The number of Mtop/Mtop-1/Mtop-3 [within {LNP AND SEALRING_ALL}] = 6" }
+           0 rLNP_R_6_M5 @= { @ "LNP.R.6:M5 : The number of Mtop/Mtop-1/Mtop-3 [within {LNP AND SEALRING_ALL}] = 6" }
+           0 rLNP_R_7 @= { @ "LNP.R.7 : The number of Mtop-2 [within {LNP AND SEALRING_ALL}] = 1" }
+           0 rLNP_R_9 @= { @ "LNP.R.9 : VIAtop-2 is not allowed in MOM-like region [INSIDE LNP] Definition of MOM-like region: Number of metal line >= 3, Space = 0.1 um, PRL = 45.76 um" }
+           0 rLNP_S_1_M2 @= { @ "LNP.S.1:M2 : Space of Mtop/Mtop-1/Mtop-3 [within {LNP AND SEALRING_ALL}] = 6" }
+           0 rLNP_S_1_M4 @= { @ "LNP.S.1:M4 : Space of Mtop/Mtop-1/Mtop-3 [within {LNP AND SEALRING_ALL}] = 6" }
+           0 rLNP_S_1_M5 @= { @ "LNP.S.1:M5 : Space of Mtop/Mtop-1/Mtop-3 [within {LNP AND SEALRING_ALL}] = 6" }
+           0 rLNP_S_2 @= { @ "LNP.S.2 : Space to Mtop-3 line-end [width= 0.1 um, INSIDE LNP] = 0.12" }
+           0 rLNP_S_3 @= { @ "LNP.S.3 : Space of Mtop-3 [width= 0.1 um, INSIDE LNP] = 0.1" }
+           0 rLNP_W_2_M2 @= { @ "LNP.W.2:M2 : Width of Mtop/Mtop-1/Mtop-3 [within {LNP AND SEALRING_ALL}] = 2" }
+           0 rLNP_W_2_M4 @= { @ "LNP.W.2:M4 : Width of Mtop/Mtop-1/Mtop-3 [within {LNP AND SEALRING_ALL}] = 2" }
+           0 rLNP_W_2_M5 @= { @ "LNP.W.2:M5 : Width of Mtop/Mtop-1/Mtop-3 [within {LNP AND SEALRING_ALL}] = 2" }
+           0 rLNP_W_3 @= { @ "LNP.W.3 : Width of {Mtop-2 AND LNP} = 1.5" }
+           0 rLNP_W_4 @= { @ "LNP.W.4 : Width of {Mtop-3 AND LNP} in MOM-like region Definition of MOM-like region: Number of metal line >= 3, Space = 0.1 um, PRL = 45.76 um = 0.1" }
+           0 rLOGO_S_1 @= { @ "LOGO.S.1 : Space to OD, PO, or Metals (non-dummy patterns) (This check doesn't include the M1/ Mx protection ring inside {LOWMEDN NOT {LOWMEDN SIZING -4 um}} region, and FEOL/BEOL dummy TCD) >= 10" }
+           0 rLOWMEDN_R_1 @= { @ "LOWMEDN.R.1 : Protection ring must exist in {LOWMEDN NOT {LOWMEDN SIZING -1 um}}. The protection ring must include all Mx/all VIAx/.../V1/M1 layers" }
+           0 rLOWMEDN_R_2 @= { @ "LOWMEDN.R.2 : VIAx bar in {LOWMEDN NOT {LOWMEDN SIZING -4 um}} must be continuous as a ring. (except {LOWMEDN INTERACT INDDMY})" }
+           0 rLOWMEDN_R_5 @= { @ "LOWMEDN.R.5 : For {LOWMEDN INTERACT INDDMY}, there must be either only one breach of metal/Via with via space <= 4 um or VIAx bar must be continuous within {LOWMEDN NOT {LOWMEDN SIZING -4 um}}. Remark: Inductor simulation comparison between with and without protection ring is important. Especially to account for it's impact to the performance and the possibility of resonance" }
+           0 rLOWMEDN_R_6 @= { @ "LOWMEDN.R.6 : For C-shape ring, at least 2 protection rings in {LOWMEDN INTERACT INDDMY} and at least 2 VIAx bar in {LOWMEDN NOT {LOWMEDN SIZING -4 um}} are must for protection ring with breach (C-shape ring)" }
+           0 rLOWMEDN_S_1 @= { @ "LOWMEDN.S.1 : Space of {{M1 OR DM1_O} AND LOWMEDN} >= 0.14" }
+           0 rLOWMEDN_S_2 @= { @ "LOWMEDN.S.2 : Space of {DM1 AND LOWMEDN} >= 0.12" }
+           0 rLOWMEDN_S_3_M2 @= { @ "LOWMEDN.S.3:M2 : Space of {{Mx OR DMx_O} AND LOWMEDN} >= 0.14" }
+           0 rLOWMEDN_S_3_M3 @= { @ "LOWMEDN.S.3:M3 : Space of {{Mx OR DMx_O} AND LOWMEDN} >= 0.14" }
+           0 rLOWMEDN_S_3_M4 @= { @ "LOWMEDN.S.3:M4 : Space of {{Mx OR DMx_O} AND LOWMEDN} >= 0.14" }
+           0 rLOWMEDN_S_4_DM2 @= { @ "LOWMEDN.S.4:DM2 : Space of {DMx AND LOWMEDN} >= 0.12" }
+           0 rLOWMEDN_S_4_DM3 @= { @ "LOWMEDN.S.4:DM3 : Space of {DMx AND LOWMEDN} >= 0.12" }
+           0 rLOWMEDN_S_4_DM4 @= { @ "LOWMEDN.S.4:DM4 : Space of {DMx AND LOWMEDN} >= 0.12" }
+           0 rLOWMEDN_W_1 @= { @ "LOWMEDN.W.1 : Width of {{M1 OR DM1_O} AND LOWMEDN} >= 0.14" }
+           0 rLOWMEDN_W_2 @= { @ "LOWMEDN.W.2 : Width of {DM1 AND LOWMEDN} >= 0.12" }
+           0 rLOWMEDN_W_3_M2 @= { @ "LOWMEDN.W.3:M2 : Width of {{Mx OR DMx_O} AND LOWMEDN}\t>= 0.14" }
+           0 rLOWMEDN_W_3_M3 @= { @ "LOWMEDN.W.3:M3 : Width of {{Mx OR DMx_O} AND LOWMEDN}\t>= 0.14" }
+           0 rLOWMEDN_W_3_M4 @= { @ "LOWMEDN.W.3:M4 : Width of {{Mx OR DMx_O} AND LOWMEDN}\t>= 0.14" }
+           0 rLOWMEDN_W_4_DM2 @= { @ "LOWMEDN.W.4:DM2 : Width of {DMx AND LOWMEDN} >= 0.12" }
+           0 rLOWMEDN_W_4_DM3 @= { @ "LOWMEDN.W.4:DM3 : Width of {DMx AND LOWMEDN} >= 0.12" }
+           0 rLOWMEDN_W_4_DM4 @= { @ "LOWMEDN.W.4:DM4 : Width of {DMx AND LOWMEDN} >= 0.12" }
+           0 rM1_A_1 @= { @ "M1.A.1 : Area >= 0.0115" }
+           0 rM1_A_2 @= { @ "M1.A.2 : Area [with all of edge lengths < 0.2 um, any edge length >= 0.13 um] (This check doesn't include the patterns filling 0.05 um x 0.2 um rectangular tile) >= 0.014" }
+           0 rM1_A_3 @= { @ "M1.A.3 : Area [with all of edge lengths < 0.13 um] (This check doesn't include the patterns filling 0.05 um x 0.13 um rectangular tile) >= 0.038" }
+           0 rM1_A_4 @= { @ "M1.A.4 : Enclosed area >= 0.2" }
+           0 rM1_DN_1 @= { @ "M1.DN.1 : Minimum local density [window 125.0 um x 125.0 um, stepping 62.5 um] >= 0.1" }
+           0 rM1_DN_2 @= { @ "M1.DN.2 : Maximum metal density in window 125 um x 125 um, stepping 62.5 um <= 85%" }
+           0 rM1_DN_3 @= { @ "M1.DN.3 : The metal density difference between any two neighboring checking windows including DM1EXCL [window 200.0 um x 200.0 um, stepping 200.0 um]  <= 0.5" }
+           0 rM1_DN_6 @= { @ "M1.DN.6 : Metal Density >= 0.01 must be followed for item(A) to (C) (A) Metal density [checking window 80.0 um x 80.0 um, stepping 40.0 um] >= 0.01 (B) Maximum area of merged low density windows [checking window 10.0 um x 10.0 um, stepping 5.0 um, density < 0.01] <= 6400.0 um2. Merged low density windows width <= 30.0 um is except. (C) Maximum area of merged low density windows [checking window 10.0 um x 10.0 um, stepping 5.0 um, density < 0.01] <= 18000.0 um2 1. The following special regions are excluded Chip corner triangle empty areas if sealring is added by tsmc. LOWMEDN 2. This rule is applied while the width of (checking window NOT above excluding region) >= 40.0 um for (A) and >= 5.0 um for both (B)/(C)" }
+           0 rM1_EN_1 @= { @ "M1.EN.1 : Enclosure of CO >= 0" }
+           0 rM1_EN_2__M1_EN_6 @= { @ "M1.EN.2__M1.EN.6 : Enclosure of CO [at least two opposite sides] >= 0.02 OR Enclosure of CO [all sides] >= 0.015" }
+           0 rM1_EN_3 @= { @ "M1.EN.3 : Enclosure of CO [M1 width > 0.7 um] >= 0.03" }
+           2 rM1_EN_4 @= { @ "M1.EN.4 : Enclosure of CO [M1 width >= 0.08 um, M1 space < 0.06 um and parallel run length > 0.18 um] (This check doesn't include 2 COs with space < 0.08 um) >= 0.015" }
+           0 rM1_EN_5 @= { @ "M1.EN.5 : Enclosure of CO [at least 2 opposite sides, M1 area < 0.014 um2] >= 0.03" }
+           0 rM1_L_1 @= { @ "M1.L.1 : Length of 45-degree bent M1 (minimum edge length) >= 0.5" }
+           0 rM1_R_3 @= { @ "M1.R.3 : Metal (pin) layers must be drawn only interact with one related Metal (drawing) layers" }
+           5 rM1_S_1 @= { @ "M1.S.1 : Space >= 0.05" }
+           0 rM1_S_10 @= { @ "M1.S.10 : Space to neighboring VIA1 [either VIA1 or M1 connects to >=1.8V <=2.5V net] >= 0.08 Do not check same net and metal/via connect to PWELL(Vss) only." }
+           0 rM1_S_10_1 @= { @ "M1.S.10.1 : Space to neighboring VIA1 [either VIA1 or M1 connects to > 2.5V <=3.3V net] >= 0.08500000000000001 Do not check same net and metal/via connect to PWELL(Vss) only." }
+           0 rM1_S_11 @= { @ "M1.S.11 : Space to neighboring VIA1 [either VIA1 or M1 connects to >1.2V <1.8V net] >= 0.06" }
+           0 rM1_S_14 @= { @ "M1.S.14 : Space between 'wide metal space regionA' in 'wide metal space regionB'. 1. Definition of 'wide metal space regionA' At least one metal line width > 0.25 um (W1B) and the parallel run length <= 0.22 um (L2A) in metal space < 0.08 um (S2A) region. 2. Definition of 'wide metal space regionB': At least one metal line width > 0.25 um (W1B) and the parallel run length > 0.3 um (L1B) in metal space < 0.29 um (S1B) region >= 0.3" }
+           0 rM1_S_15 @= { @ "M1.S.15 : Wide metal [width > 0.25 um (W1B)] space to metal [parallel run length > 0.22 um (L2A)] in wide metal space regionB >= 0.1" }
+           0 rM1_S_16 @= { @ "M1.S.16 : Wide metal [width > 0.25 um (W1B)] space to metal [parallel run length <= 0.22 um (L2A)] in wide metal space regionB >= 0.06" }
+           0 rM1_S_17 @= { @ "M1.S.17 : Space between 'wide metal space regionA' in 'wide metal space regionB'. 1. Definition of 'wide metal space regionA' At least one metal line width > 0.47 um (W1B) and the parallel run length <= 0.22 um (L2A) in metal space < 0.13 um (S2A) region. 2. Definition of 'wide metal space regionB': At least one metal line width > 0.47 um (W1B) and the parallel run length > 0.5 um (L1B) in metal space < 0.32 um (S1B) region >= 0.3" }
+           0 rM1_S_18 @= { @ "M1.S.18 : Wide metal [width > 0.47 um (W1B)] space to metal [parallel run length > 0.22 um (L2A)] in wide metal space regionB >= 0.13" }
+           0 rM1_S_19 @= { @ "M1.S.19 : Wide metal [width > 0.47 um (W1B)] space to metal [parallel run length <= 0.22 um (L2A)] in wide metal space regionB >= 0.06" }
+           0 rM1_S_2 @= { @ "M1.S.2 : Space [at least one metal line width > 0.1 um (W1) and the parallel run length > 0.22 um (L1)] >= 0.06" }
+           0 rM1_S_20 @= { @ "M1.S.20 : Space between 'wide metal space regionA' in 'wide metal space regionB'. 1. Definition of 'wide metal space regionA' At least one metal line width > 0.63 um (W1B) and the parallel run length <= 0.22 um (L2A) in metal space < 0.15 um (S2A) region. 2. Definition of 'wide metal space regionB': At least one metal line width > 0.63 um (W1B) and the parallel run length > 0.7 um (L1B) in metal space < 0.34 um (S1B) region >= 0.3" }
+           0 rM1_S_21 @= { @ "M1.S.21 : Wide metal [width > 0.63 um (W1B)] space to metal [parallel run length > 0.22 um (L2A)] in wide metal space regionB >= 0.15" }
+           0 rM1_S_22 @= { @ "M1.S.22 : Wide metal [width > 0.63 um (W1B)] space to metal [parallel run length <= 0.22 um (L2A)] in wide metal space regionB >= 0.06" }
+           0 rM1_S_23 @= { @ "M1.S.23 : Space between 'wide metal space regionA' in 'wide metal space regionB'. 1. Definition of 'wide metal space regionA' At least one metal line width > 1.5 um (W1B) and the parallel run length <= 0.22 um (L2A) in metal space < 0.3 um (S2A) region. 2. Definition of 'wide metal space regionB': At least one metal line width > 1.5 um (W1B) and the parallel run length > 1.5 um (L1B) in metal space < 0.5 um (S1B) region >= 0.3" }
+           0 rM1_S_24 @= { @ "M1.S.24 : Wide metal [width > 1.5 um (W1B)] space to metal [parallel run length > 0.22 um (L2A)] in wide metal space regionB >= 0.3" }
+           0 rM1_S_25 @= { @ "M1.S.25 : Wide metal [width > 1.5 um (W1B)] space to metal [parallel run length <= 0.22 um (L2A)] in wide metal space regionB >= 0.06" }
+           0 rM1_S_27 @= { @ "M1.S.27 : Space between 'wide metal space regionA' in 'wide metal space regionB'. 1. Definition of 'wide metal space regionA' At least one metal line width > 0.25 um (W1B) and the parallel run length <= 0.22 um (L2A) in metal space < 0.1 um (S2A) region. 2. Definition of 'wide metal space regionB': At least one metal line width > 0.25 um (W1B) and the parallel run length > 0.3 um (L1B) in metal space < 0.19 um (S1B) region >= 0.3" }
+           0 rM1_S_3 @= { @ "M1.S.3 : Space [at least one metal line width > 0.18 um (W2) and the parallel run length > 0.22 um (L2)] >= 0.1" }
+           0 rM1_S_32 @= { @ "M1.S.32 : Space of M1 line to line [same net or different net, any one of M1 connect to > 3.3V and <= 5V net, parallel run length > -0.11 um (T)] Definition of 'M1 line-end': M1 edge with length < 0.08 um (W) between 2 outer vertex. Definition of 'M1 line' : M1 edge NOT Mx line-end >= 0.11" }
+           0 rM1_S_32_1 @= { @ "M1.S.32.1 : Space of M1 line to end [same net or different net, any one of M1 connect to > 3.3V and <= 5V net, parallel run length > -0.14 um (T)] Definition of 'M1 line-end': M1 edge with length < 0.08 um (W) between 2 outer vertex. Definition of 'M1 line' : M1 edge NOT Mx line-end >= 0.14" }
+           0 rM1_S_32_2 @= { @ "M1.S.32.2 : Space of M1 line-end [same net or different net, any one of M1 connect to > 3.3V and <= 5V net, parallel run length > -0.12 um (T)] Definition of 'M1 line-end': M1 edge with length < 0.08 um (W) between 2 outer vertex >= 0.12" }
+           0 rM1_S_33 @= { @ "M1.S.33 : Space to neighboring VIA1 [either VIA1 or M1 connects to >3.3V <=5 net] >= 0.16" }
+           0 rM1_S_34 @= { @ "M1.S.34 : Space to M1 [M1 connects to > 2.5V <= 3.3 net] >= 0.07000000000000001" }
+           0 rM1_S_35 @= { @ "M1.S.35 : Space (DRC only flag: M1 space error region INTERACT {SRAMDMY NOT {SRAMDMY SIZING -0.5 um}}) >= 0.05" }
+           0 rM1_S_4 @= { @ "M1.S.4 : Space [at least one metal line width > 0.47 um (W3) and the parallel run length > 0.47 um (L3)] >= 0.13" }
+           0 rM1_S_5 @= { @ "M1.S.5 : Space [at least one metal line width > 0.63 um (W4) and the parallel run length > 0.63 um (L4)] >= 0.15" }
+           0 rM1_S_6 @= { @ "M1.S.6 : Space [at least one metal line width > 1.5 um (W5) and the parallel run length > 1.5 um (L5)] >= 0.5" }
+           2 rM1_S_7 @= { @ "M1.S.7 : Space to M1 line-end [parallel run length > -0.025 um (T)] . Definition of 'M1 line-end': M1 edge with length < 0.07 um (W) between 2 outer vertex >= 0.06" }
+           1 rM1_S_8 @= { @ "M1.S.8 : Space (S1) to dense M1 line-end [parallel run length > -0.025 um (T)], Definition of dense M1 line-end: 1. M1 line-end: M1 edge with length < 0.07 um (W) between 2 outer vertex. 2. Other metal INTERACT Region 1. Region 1 = (T+Q) x S2. (W+S2) < 0.12 um. This check doesn't include small jog with edge length < 0.05 um (R) >= 0.07" }
+           0 rM1_S_9 @= { @ "M1.S.9 : Space to 45-degree bent M1 >= 0.17" }
+           0 rM1_W_1 @= { @ "M1.W.1 : Width >= 0.05" }
+           0 rM1_W_2 @= { @ "M1.W.2 : Width of 45-degree bent M1. (Please make sure the vertex of 45-degree pattern is on 0.005 um grid (refer to the guideline, G.6gU, in section XXX)) >= 0.17" }
+           0 rM1_W_3 @= { @ "M1.W.3 : Maximum width <= 4.5" }
+           0 rM1_W_4 @= { @ "M1.W.4 : Length of the edge with adjacent edge < 0.05 um [these 2 edges formed by 3 consecutive 270 degree inner vertex-90 degree outer vertex-270 degree inner vertex; DRC doesn't flag if there is M1 within the area formed by 0.16 um extension from these 2 edges and the 90 degree outer vertex.] >= 0.065" }
+           0 rM1_W_6 @= { @ "M1.W.6 : Width of M1 metal line in SLDB = 0.5" }
+           0 rM1_W_7 @= { @ "M1.W.7 : Width of M1 metal line in outer seal-ring. (DRC tolerance at 45-degree turning: +-0.02 um) = 2 Width of M1 metal line in outer seal ring == 2.0" }
+           0 rM1_W_8 @= { @ "M1.W.8 : Width of M1 metal line in inner seal-ring. (DRC tolerance at 45-degree turning: +-0.02 um) = 6" }
+           3 rM2_A_2 @= { @ "M2.A.2 : M2 area >= 0.014" }
+           0 rM2_A_3 @= { @ "M2.A.3 : Area [with all of edge lengths < 0.13 um] (This check doesn't include the patterns filling 0.05 um x 0.13 um rectangular tile) >= 0.044" }
+           0 rM2_A_4 @= { @ "M2.A.4 : Enclosed area >= 0.2" }
+           0 rM2_DN_1 @= { @ "M2.DN.1 : Minimum local density [window 125.0 um x 125.0 um, stepping 62.5 um] >= 0.1" }
+           0 rM2_DN_2 @= { @ "M2.DN.2 : Maximum metal density in window 125 um x 125 um, stepping 62.5 um (This rule only apply while the area of {checking window NOT exclusive region} >= 1/2 window area) Except following condition: 1. Mtop-1 for Fully-Stacking pad metal ({{{CB2_WB OR CB} NOT WBDMY} SIZING 5 um}), or 2. Mtop-1 for CUP pad metal ({{{WBDMY AND {CB2_WB OR CB}} SIZING 5 um} OR WBDMY}) (but Mtop-1 for 'Mx+Mu' metal combinations will be checked), or 3. SEALRING_ALL, or 4. {INDDMY OR INDDMY_MD}, or 5. ICOVL <= 85%" }
+           0 rM2_DN_3 @= { @ "M2.DN.3 : The metal density difference between any two neighboring checking windows including DM2EXCL [window 200.0 um x 200.0 um, stepping 200.0 um]  <= 0.5" }
+           0 rM2_DN_6 @= { @ "M2.DN.6 : Metal Density >= 0.01 must be followed for item(A) to (C) (A) Metal density [checking window 80.0 um x 80.0 um, stepping 40.0 um] >= 0.01 (B) Maximum area of merged low density windows [checking window 10.0 um x 10.0 um, stepping 5.0 um, density < 0.01] <= 6400.0 um2. Merged low density windows width <= 30.0 um is except. (C) Maximum area of merged low density windows [checking window 10.0 um x 10.0 um, stepping 5.0 um, density < 0.01] <= 18000.0 um2 1. The following special regions are excluded Chip corner triangle empty areas if sealring is added by tsmc. LOWMEDN 2. This rule is applied while the width of (checking window NOT above excluding region) >= 40.0 um for (A) and >= 5.0 um for both (B)/(C)" }
+           0 rM2_EN_1 @= { @ "M2.EN.1 : Enclosure of square VIAx-1 >= 0" }
+           0 rM2_EN_10 @= { @ "M2.EN.10 : Enclosure of VIAx-1 [0.07 um >= metal width > 0.055 um, metal space < 0.065 um (D1) and parallel run length > 0.1 um] >= 0.005" }
+           3 rM2_EN_11 @= { @ "M2.EN.11 : Enclosure of VIAx-1 [0.16 um >= metal width > 0.07 um, metal space < 0.1 um (D1) and parallel run length > 0.1 um] (For Mx.EN.11, the rule check is not included same VIAx group, which is defined as below.) 1. VIAx space <= 0.11 um2. Mx is same net 3. Mx+1 is same net >= 0.01" }
+           0 rM2_EN_12 @= { @ "M2.EN.12 : Enclosure of VIAx-1 [4.5 um >= metal width > 0.16 um, metal space < 0.13 um and parallel run length > 0.1 um] >= 0.015" }
+           0 rM2_EN_13 @= { @ "M2.EN.13 : Enclosure of VIAx-1 bar in LOWMEDN >= 0.1" }
+           0 rM2_EN_2__M2_EN_3__M2_EN_14__M2_EN_15 @= { @ "M2.EN.2__M2.EN.3__M2.EN.14__M2.EN.15 : Enclosure of VIA1 [at least two opposite sides] >= 0.03 um OR [all sides] >= 0.02 OR [all side] >= 0.01 / [at least two opposite sides] >= 0.025" }
+           0 rM2_EN_3__M2_EN_5__M2_EN_6__M2_EN_7 @= { @ "M2.EN.3__M2.EN.5__M2.EN.6__M2.EN.7 : Enclosure of rectangular VIA1 [two opposite side >= 0.03 and all side >= 0.01], OR Enclosure of rectangular VIA1 [at rectangular VIA1 end direction] >= 0.04, OR Enclosure of rectangular VIA1 [all sides] >= 0.02" }
+           0 rM2_EN_9 @= { @ "M2.EN.9 : Enclosure of VIAx-1 [0.055 um >= metal width > 0.05 um, metal space < 0.06 um (D1) and the other side space >= 0.06 um (D1'), parallel run length > 0.1 um] >= 0.005" }
+           0 rM2_L_1 @= { @ "M2.L.1 : Length of 45-degree bent Mx (minimum edge length) >= 0.5" }
+           0 rM2_R_3 @= { @ "M2.R.3 : Metal (pin) layers must be drawn only interact with one related Metal (drawing) layers" }
+          77 rM2_S_1 @= { @ "M2.S.1 : Space >= 0.05" }
+           0 rM2_S_10 @= { @ "M2.S.10 : Space to neighboring VIA1 [either VIA1 or M2 connects to >=1.8V <=2.5V net] >= 0.08 Space to neighboring VIA2 [either VIA2 or M2 connects to >=1.8V <=2.5V net] >= 0.08 Do not check same net and metal/via connect to PWELL(Vss) only." }
+           0 rM2_S_10_1 @= { @ "M2.S.10.1 : Space to neighboring VIA1 [either VIA1 or M2 connects to > 2.5V <=3.3V net] >= 0.08500000000000001 Space to neighboring VIA2 [either VIA2 or M2 connects to > 2.5V <=3.3V net] >= 0.08500000000000001 Do not check same net and metal/via connect to PWELL(Vss) only." }
+           0 rM2_S_11 @= { @ "M2.S.11 : Space to neighboring VIA1 [either VIA1 or M2 connects to >1.2V <1.8V net] >= 0.06 Space to neighboring VIA2 [either VIA2 or M2 connects to >1.2V <1.8V net] >= 0.06" }
+           1 rM2_S_12 @= { @ "M2.S.12 : Space of Mx line-end [parallel run length > -0.025 um (T)] . Definition of 'Mx line-end': Mx edge with length < 0.07 um (W) between 2 outer vertex >= 0.08" }
+           0 rM2_S_13 @= { @ "M2.S.13 : Space [at least one metal line width > 0.13 um (W1) and the parallel run length > 0.22 um (L1)] >= 0.08" }
+           0 rM2_S_14 @= { @ "M2.S.14 : Space between 'wide metal space regionA' in 'wide metal space regionB'. 1. Definition of 'wide metal space regionA' At least one metal line width > 0.25 um (W1B) and the parallel run length <= 0.22 um (L2A) in metal space < 0.08 um (S2A) region. 2. Definition of 'wide metal space regionB': At least one metal line width > 0.25 um (W1B) and the parallel run length > 0.3 um (L1B) in metal space < 0.29 um (S1B) region >= 0.3" }
+           0 rM2_S_15 @= { @ "M2.S.15 : Wide metal [width > 0.25 um (W1B)] space to metal [parallel run length > 0.22 um (L2A)] in wide metal space regionB >= 0.1" }
+           0 rM2_S_16 @= { @ "M2.S.16 : Wide metal [width > 0.25 um (W1B)] space to metal [parallel run length <= 0.22 um (L2A)] in wide metal space regionB >= 0.06" }
+           0 rM2_S_17 @= { @ "M2.S.17 : Space between 'wide metal space regionA' in 'wide metal space regionB'. 1. Definition of 'wide metal space regionA' At least one metal line width > 0.47 um (W1B) and the parallel run length <= 0.22 um (L2A) in metal space < 0.13 um (S2A) region. 2. Definition of 'wide metal space regionB': At least one metal line width > 0.47 um (W1B) and the parallel run length > 0.5 um (L1B) in metal space < 0.32 um (S1B) region >= 0.3" }
+           0 rM2_S_18 @= { @ "M2.S.18 : Wide metal [width > 0.47 um (W1B)] space to metal [parallel run length > 0.22 um (L2A)] in wide metal space regionB >= 0.13" }
+           0 rM2_S_19 @= { @ "M2.S.19 : Wide metal [width > 0.47 um (W1B)] space to metal [parallel run length <= 0.22 um (L2A)] in wide metal space regionB >= 0.06" }
+           0 rM2_S_2 @= { @ "M2.S.2 : Space [at least one metal line width > 0.09 um (W1) and the parallel run length > 0.22 um (L1)] >= 0.06" }
+           0 rM2_S_20 @= { @ "M2.S.20 : Space between 'wide metal space regionA' in 'wide metal space regionB'. 1. Definition of 'wide metal space regionA' At least one metal line width > 0.63 um (W1B) and the parallel run length <= 0.22 um (L2A) in metal space < 0.15 um (S2A) region. 2. Definition of 'wide metal space regionB': At least one metal line width > 0.63 um (W1B) and the parallel run length > 0.7 um (L1B) in metal space < 0.34 um (S1B) region >= 0.3" }
+           0 rM2_S_21 @= { @ "M2.S.21 : Wide metal [width > 0.63 um (W1B)] space to metal [parallel run length > 0.22 um (L2A)] in wide metal space regionB >= 0.15" }
+           0 rM2_S_22 @= { @ "M2.S.22 : Wide metal [width > 0.63 um (W1B)] space to metal [parallel run length <= 0.22 um (L2A)] in wide metal space regionB >= 0.06" }
+           0 rM2_S_23 @= { @ "M2.S.23 : Space between 'wide metal space regionA' in 'wide metal space regionB'. 1. Definition of 'wide metal space regionA' At least one metal line width > 1.5 um (W1B) and the parallel run length <= 0.22 um (L2A) in metal space < 0.3 um (S2A) region. 2. Definition of 'wide metal space regionB': At least one metal line width > 1.5 um (W1B) and the parallel run length > 1.5 um (L1B) in metal space < 0.5 um (S1B) region >= 0.3" }
+           0 rM2_S_24 @= { @ "M2.S.24 : Wide metal [width > 1.5 um (W1B)] space to metal [parallel run length > 0.22 um (L2A)] in wide metal space regionB >= 0.3" }
+           0 rM2_S_25 @= { @ "M2.S.25 : Wide metal [width > 1.5 um (W1B)] space to metal [parallel run length <= 0.22 um (L2A)] in wide metal space regionB >= 0.06" }
+           0 rM2_S_27 @= { @ "M2.S.27 : Space between 'wide metal space regionA' in 'wide metal space regionB'. 1. Definition of 'wide metal space regionA' At least one metal line width > 0.25 um (W1B) and the parallel run length <= 0.22 um (L2A) in metal space < 0.1 um (S2A) region. 2. Definition of 'wide metal space regionB': At least one metal line width > 0.25 um (W1B) and the parallel run length > 0.3 um (L1B) in metal space < 0.19 um (S1B) region >= 0.3" }
+           0 rM2_S_3 @= { @ "M2.S.3 : Space [at least one metal line width > 0.16 um (W2) and the parallel run length > 0.22 um (L2)] >= 0.1" }
+           0 rM2_S_32 @= { @ "M2.S.32 : Space of Mx line to line [same net or different net, any one of Mx connect to > 3.3V and <= 5V net, parallel run length > -0.11 um (T)] Definition of 'Mx line-end': Mx edge with length < 0.08 um (W) between 2 outer vertex. Definition of 'Mx line' : Mx edge NOT Mx line-end >= 0.11" }
+           0 rM2_S_32_1 @= { @ "M2.S.32.1 : Space of Mx line to end [same net or different net, any one of Mx connect to > 3.3V and <= 5V net, parallel run length > -0.14 um (T)] Definition of 'Mx line-end': Mx edge with length < 0.08 um (W) between 2 outer vertex. Definition of 'Mx line' : Mx edge NOT Mx line-end >= 0.14" }
+           0 rM2_S_32_2 @= { @ "M2.S.32.2 : Space of Mx line-end [same net or different net, any one of Mx connect to > 3.3V and <= 5V net, parallel run length > -0.12 um (T)] Definition of 'Mx line-end': Mx edge with length < 0.08 um (W) between 2 outer vertex >= 0.12" }
+           0 rM2_S_33 @= { @ "M2.S.33 : Space to neighboring VIA1 [either VIA1 or M2 connects to >3.3V <=5 net] >= 0.16 Space to neighboring VIA2 [either VIA2 or M2 connects to >3.3V <=5 net] >= 0.16" }
+           0 rM2_S_34 @= { @ "M2.S.34 : Space to M2 [M2 connects to > 2.5V <= 3.3 net] >= 0.07000000000000001" }
+           0 rM2_S_35 @= { @ "M2.S.35 : Minimum space of Mx between Mx metal bars in the direction parallel/ vertical to prime chip edge >= 0.5" }
+           0 rM2_S_36 @= { @ "M2.S.36 : Space of Mx between Mx metal bars in the direction parallel to prime chip edge between the same metal bars >= 2.5" }
+           0 rM2_S_4 @= { @ "M2.S.4 : Space [at least one metal line width > 0.47 um (W3) and the parallel run length > 0.47 um (L3)] >= 0.13" }
+           0 rM2_S_5 @= { @ "M2.S.5 : Space [at least one metal line width > 0.63 um (W4) and the parallel run length > 0.63 um (L4)] >= 0.15" }
+           0 rM2_S_6 @= { @ "M2.S.6 : Space [at least one metal line width > 1.5 um (W5) and the parallel run length > 1.5 um (L5)] >= 0.5" }
+          48 rM2_S_7 @= { @ "M2.S.7 : Space to Mx line-end [parallel run length > -0.025 um (T)] . Definition of 'Mx line-end': Mx edge with length < 0.07 um (W) between 2 outer vertex >= 0.07" }
+          29 rM2_S_8 @= { @ "M2.S.8 : Mx line space (S1) to dense Mx line-end [parallel run length > -0.025 um (T)], and dense Mx line-end enclosure of Vx-1 (V). Definition of dense Mx line-end: 1. Mx line-end: Mx edge with length < 0.07 um (W) between 2 outer vertex. 2. Other metal INTERACT Region 1. Region 1 = (T+Q) x S2. (W+S2) < 0.115 um. This check doesn't include small jog with edge length < 0.05 um (R) >= 0.08/0.05 or 0.1/0.03" }
+           0 rM2_S_9 @= { @ "M2.S.9 : Space to 45-degree bent Mx >= 0.17" }
+           4 rM2_W_1 @= { @ "M2.W.1 : Width >= 0.05" }
+           0 rM2_W_2 @= { @ "M2.W.2 : Width of 45-degree bent Mx. (Please make sure the vertex of 45-degree pattern is on 0.005 um grid (refer to the guideline, G.6gU, in section XXX)) >= 0.17" }
+           0 rM2_W_3 @= { @ "M2.W.3 : Maximum width Except following condition: 1. Mtop-1 for Fully-Stacking pad metal ({{{CB2_WB OR CB} NOT WBDMY} SIZING 5 um}), or 2. Mtop-1 for CUP pad metal ({{{WBDMY AND {CB2_WB OR CB}} SIZING 5 um} OR WBDMY}) (but Mtop-1 for 'Mx+Mu' metal combinations will be checked), or 3. SEALRING, or 4. {{INDDMY OR INDDMY_MD} SIZING 16 um}, or 5. CSRDMY, or 6. PADDMY (255;16) <= 4.5" }
+           4 rM2_W_4 @= { @ "M2.W.4 : Length of the edge with adjacent edge < 0.05 um [these 2 edges formed by 3 consecutive 270 degree inner vertex-90 degree outer vertex-270 degree inner vertex; DRC doesn't flag if there is Mx within the area formed by 0.16 um extension from these 2 edges and the 90 degree outer vertex.] (This check doesn't include the region covered by MetalFuse (156;2)) >= 0.065" }
+           0 rM2_W_6 @= { @ "M2.W.6 : Width of Mx metal line in SLDB. (DRC tolerance at 45-degree turning: +-0.02 um) = 0.5" }
+           0 rM2_W_7 @= { @ "M2.W.7 : Width of Mx metal line in outer seal-ring. (DRC tolerance at 45-degree turning: +-0.02 um) = 2" }
+           0 rM2_W_8 @= { @ "M2.W.8 : Width of Mx metal line in inner seal-ring. (DRC tolerance at 45-degree turning: +-0.02 um) = 6" }
+           2 rM3_A_1 @= { @ "M3.A.1 : Area (except M2) >= 0.017" }
+           0 rM3_A_3 @= { @ "M3.A.3 : Area [with all of edge lengths < 0.13 um] (This check doesn't include the patterns filling 0.05 um x 0.13 um rectangular tile) >= 0.044" }
+           0 rM3_A_4 @= { @ "M3.A.4 : Enclosed area >= 0.2" }
+           0 rM3_DN_1 @= { @ "M3.DN.1 : Minimum local density [window 125.0 um x 125.0 um, stepping 62.5 um] >= 0.1" }
+           0 rM3_DN_2 @= { @ "M3.DN.2 : Maximum metal density in window 125 um x 125 um, stepping 62.5 um (This rule only apply while the area of {checking window NOT exclusive region} >= 1/2 window area) Except following condition: 1. Mtop-1 for Fully-Stacking pad metal ({{{CB2_WB OR CB} NOT WBDMY} SIZING 5 um}), or 2. Mtop-1 for CUP pad metal ({{{WBDMY AND {CB2_WB OR CB}} SIZING 5 um} OR WBDMY}) (but Mtop-1 for 'Mx+Mu' metal combinations will be checked), or 3. SEALRING_ALL, or 4. {INDDMY OR INDDMY_MD}, or 5. ICOVL <= 85%" }
+           0 rM3_DN_3 @= { @ "M3.DN.3 : The metal density difference between any two neighboring checking windows including DM3EXCL [window 200.0 um x 200.0 um, stepping 200.0 um]  <= 0.5" }
+           0 rM3_DN_6 @= { @ "M3.DN.6 : Metal Density >= 0.01 must be followed for item(A) to (C) (A) Metal density [checking window 80.0 um x 80.0 um, stepping 40.0 um] >= 0.01 (B) Maximum area of merged low density windows [checking window 10.0 um x 10.0 um, stepping 5.0 um, density < 0.01] <= 6400.0 um2. Merged low density windows width <= 30.0 um is except. (C) Maximum area of merged low density windows [checking window 10.0 um x 10.0 um, stepping 5.0 um, density < 0.01] <= 18000.0 um2 1. The following special regions are excluded Chip corner triangle empty areas if sealring is added by tsmc. LOWMEDN 2. This rule is applied while the width of (checking window NOT above excluding region) >= 40.0 um for (A) and >= 5.0 um for both (B)/(C)" }
+           0 rM3_EN_1 @= { @ "M3.EN.1 : Enclosure of square VIAx-1 >= 0" }
+           0 rM3_EN_10 @= { @ "M3.EN.10 : Enclosure of VIAx-1 [0.07 um >= metal width > 0.055 um, metal space < 0.065 um (D1) and parallel run length > 0.1 um] >= 0.005" }
+           0 rM3_EN_11 @= { @ "M3.EN.11 : Enclosure of VIAx-1 [0.16 um >= metal width > 0.07 um, metal space < 0.1 um (D1) and parallel run length > 0.1 um] (For Mx.EN.11, the rule check is not included same VIAx group, which is defined as below.) 1. VIAx space <= 0.11 um2. Mx is same net 3. Mx+1 is same net >= 0.01" }
+           0 rM3_EN_12 @= { @ "M3.EN.12 : Enclosure of VIAx-1 [4.5 um >= metal width > 0.16 um, metal space < 0.13 um and parallel run length > 0.1 um] >= 0.015" }
+           0 rM3_EN_13 @= { @ "M3.EN.13 : Enclosure of VIAx-1 bar in LOWMEDN >= 0.1" }
+           0 rM3_EN_2__M3_EN_3__M3_EN_14__M3_EN_15 @= { @ "M3.EN.2__M3.EN.3__M3.EN.14__M3.EN.15 : Enclosure of VIA2 [at least two opposite sides] >= 0.03 um OR [all sides] >= 0.02 OR [all side] >= 0.01 / [at least two opposite sides] >= 0.025" }
+           0 rM3_EN_3__M3_EN_5__M3_EN_6__M3_EN_7 @= { @ "M3.EN.3__M3.EN.5__M3.EN.6__M3.EN.7 : Enclosure of rectangular VIA2 [two opposite side >= 0.03 and all side >= 0.01], OR Enclosure of rectangular VIA2 [at rectangular VIA2 end direction] >= 0.04, OR Enclosure of rectangular VIA2 [all sides] >= 0.02" }
+           0 rM3_EN_9 @= { @ "M3.EN.9 : Enclosure of VIAx-1 [0.055 um >= metal width > 0.05 um, metal space < 0.06 um (D1) and the other side space >= 0.06 um (D1'), parallel run length > 0.1 um] >= 0.005" }
+           0 rM3_L_1 @= { @ "M3.L.1 : Length of 45-degree bent Mx (minimum edge length) >= 0.5" }
+           0 rM3_R_3 @= { @ "M3.R.3 : Metal (pin) layers must be drawn only interact with one related Metal (drawing) layers" }
+         133 rM3_S_1 @= { @ "M3.S.1 : Space >= 0.05" }
+           0 rM3_S_10 @= { @ "M3.S.10 : Space to neighboring VIA2 [either VIA2 or M3 connects to >=1.8V <=2.5V net] >= 0.08 Space to neighboring VIA3 [either VIA3 or M3 connects to >=1.8V <=2.5V net] >= 0.08 Do not check same net and metal/via connect to PWELL(Vss) only." }
+           0 rM3_S_10_1 @= { @ "M3.S.10.1 : Space to neighboring VIA2 [either VIA2 or M3 connects to > 2.5V <=3.3V net] >= 0.08500000000000001 Space to neighboring VIA3 [either VIA3 or M3 connects to > 2.5V <=3.3V net] >= 0.08500000000000001 Do not check same net and metal/via connect to PWELL(Vss) only." }
+           0 rM3_S_11 @= { @ "M3.S.11 : Space to neighboring VIA2 [either VIA2 or M3 connects to >1.2V <1.8V net] >= 0.06 Space to neighboring VIA3 [either VIA3 or M3 connects to >1.2V <1.8V net] >= 0.06" }
+           1 rM3_S_12 @= { @ "M3.S.12 : Space of Mx line-end [parallel run length > -0.025 um (T)] . Definition of 'Mx line-end': Mx edge with length < 0.07 um (W) between 2 outer vertex >= 0.08" }
+           0 rM3_S_13 @= { @ "M3.S.13 : Space [at least one metal line width > 0.13 um (W1) and the parallel run length > 0.22 um (L1)] >= 0.08" }
+           0 rM3_S_14 @= { @ "M3.S.14 : Space between 'wide metal space regionA' in 'wide metal space regionB'. 1. Definition of 'wide metal space regionA' At least one metal line width > 0.25 um (W1B) and the parallel run length <= 0.22 um (L2A) in metal space < 0.08 um (S2A) region. 2. Definition of 'wide metal space regionB': At least one metal line width > 0.25 um (W1B) and the parallel run length > 0.3 um (L1B) in metal space < 0.29 um (S1B) region >= 0.3" }
+           0 rM3_S_15 @= { @ "M3.S.15 : Wide metal [width > 0.25 um (W1B)] space to metal [parallel run length > 0.22 um (L2A)] in wide metal space regionB >= 0.1" }
+           0 rM3_S_16 @= { @ "M3.S.16 : Wide metal [width > 0.25 um (W1B)] space to metal [parallel run length <= 0.22 um (L2A)] in wide metal space regionB >= 0.06" }
+           0 rM3_S_17 @= { @ "M3.S.17 : Space between 'wide metal space regionA' in 'wide metal space regionB'. 1. Definition of 'wide metal space regionA' At least one metal line width > 0.47 um (W1B) and the parallel run length <= 0.22 um (L2A) in metal space < 0.13 um (S2A) region. 2. Definition of 'wide metal space regionB': At least one metal line width > 0.47 um (W1B) and the parallel run length > 0.5 um (L1B) in metal space < 0.32 um (S1B) region >= 0.3" }
+           0 rM3_S_18 @= { @ "M3.S.18 : Wide metal [width > 0.47 um (W1B)] space to metal [parallel run length > 0.22 um (L2A)] in wide metal space regionB >= 0.13" }
+           0 rM3_S_19 @= { @ "M3.S.19 : Wide metal [width > 0.47 um (W1B)] space to metal [parallel run length <= 0.22 um (L2A)] in wide metal space regionB >= 0.06" }
+          71 rM3_S_2 @= { @ "M3.S.2 : Space [at least one metal line width > 0.09 um (W1) and the parallel run length > 0.22 um (L1)] >= 0.06" }
+           0 rM3_S_20 @= { @ "M3.S.20 : Space between 'wide metal space regionA' in 'wide metal space regionB'. 1. Definition of 'wide metal space regionA' At least one metal line width > 0.63 um (W1B) and the parallel run length <= 0.22 um (L2A) in metal space < 0.15 um (S2A) region. 2. Definition of 'wide metal space regionB': At least one metal line width > 0.63 um (W1B) and the parallel run length > 0.7 um (L1B) in metal space < 0.34 um (S1B) region >= 0.3" }
+           0 rM3_S_21 @= { @ "M3.S.21 : Wide metal [width > 0.63 um (W1B)] space to metal [parallel run length > 0.22 um (L2A)] in wide metal space regionB >= 0.15" }
+           0 rM3_S_22 @= { @ "M3.S.22 : Wide metal [width > 0.63 um (W1B)] space to metal [parallel run length <= 0.22 um (L2A)] in wide metal space regionB >= 0.06" }
+           0 rM3_S_23 @= { @ "M3.S.23 : Space between 'wide metal space regionA' in 'wide metal space regionB'. 1. Definition of 'wide metal space regionA' At least one metal line width > 1.5 um (W1B) and the parallel run length <= 0.22 um (L2A) in metal space < 0.3 um (S2A) region. 2. Definition of 'wide metal space regionB': At least one metal line width > 1.5 um (W1B) and the parallel run length > 1.5 um (L1B) in metal space < 0.5 um (S1B) region >= 0.3" }
+           0 rM3_S_24 @= { @ "M3.S.24 : Wide metal [width > 1.5 um (W1B)] space to metal [parallel run length > 0.22 um (L2A)] in wide metal space regionB >= 0.3" }
+           0 rM3_S_25 @= { @ "M3.S.25 : Wide metal [width > 1.5 um (W1B)] space to metal [parallel run length <= 0.22 um (L2A)] in wide metal space regionB >= 0.06" }
+           0 rM3_S_27 @= { @ "M3.S.27 : Space between 'wide metal space regionA' in 'wide metal space regionB'. 1. Definition of 'wide metal space regionA' At least one metal line width > 0.25 um (W1B) and the parallel run length <= 0.22 um (L2A) in metal space < 0.1 um (S2A) region. 2. Definition of 'wide metal space regionB': At least one metal line width > 0.25 um (W1B) and the parallel run length > 0.3 um (L1B) in metal space < 0.19 um (S1B) region >= 0.3" }
+           0 rM3_S_3 @= { @ "M3.S.3 : Space [at least one metal line width > 0.16 um (W2) and the parallel run length > 0.22 um (L2)] >= 0.1" }
+           0 rM3_S_32 @= { @ "M3.S.32 : Space of Mx line to line [same net or different net, any one of Mx connect to > 3.3V and <= 5V net, parallel run length > -0.11 um (T)] Definition of 'Mx line-end': Mx edge with length < 0.08 um (W) between 2 outer vertex. Definition of 'Mx line' : Mx edge NOT Mx line-end >= 0.11" }
+           0 rM3_S_32_1 @= { @ "M3.S.32.1 : Space of Mx line to end [same net or different net, any one of Mx connect to > 3.3V and <= 5V net, parallel run length > -0.14 um (T)] Definition of 'Mx line-end': Mx edge with length < 0.08 um (W) between 2 outer vertex. Definition of 'Mx line' : Mx edge NOT Mx line-end >= 0.14" }
+           0 rM3_S_32_2 @= { @ "M3.S.32.2 : Space of Mx line-end [same net or different net, any one of Mx connect to > 3.3V and <= 5V net, parallel run length > -0.12 um (T)] Definition of 'Mx line-end': Mx edge with length < 0.08 um (W) between 2 outer vertex >= 0.12" }
+           0 rM3_S_33 @= { @ "M3.S.33 : Space to neighboring VIA2 [either VIA2 or M3 connects to >3.3V <=5 net] >= 0.16 Space to neighboring VIA3 [either VIA3 or M3 connects to >3.3V <=5 net] >= 0.16" }
+           0 rM3_S_34 @= { @ "M3.S.34 : Space to M3 [M3 connects to > 2.5V <= 3.3 net] >= 0.07000000000000001" }
+           0 rM3_S_35 @= { @ "M3.S.35 : Minimum space of Mx between Mx metal bars in the direction parallel/ vertical to prime chip edge >= 0.5" }
+           0 rM3_S_36 @= { @ "M3.S.36 : Space of Mx between Mx metal bars in the direction parallel to prime chip edge between the same metal bars >= 2.5" }
+           0 rM3_S_4 @= { @ "M3.S.4 : Space [at least one metal line width > 0.47 um (W3) and the parallel run length > 0.47 um (L3)] >= 0.13" }
+           0 rM3_S_5 @= { @ "M3.S.5 : Space [at least one metal line width > 0.63 um (W4) and the parallel run length > 0.63 um (L4)] >= 0.15" }
+           0 rM3_S_6 @= { @ "M3.S.6 : Space [at least one metal line width > 1.5 um (W5) and the parallel run length > 1.5 um (L5)] >= 0.5" }
+          15 rM3_S_7 @= { @ "M3.S.7 : Space to Mx line-end [parallel run length > -0.025 um (T)] . Definition of 'Mx line-end': Mx edge with length < 0.07 um (W) between 2 outer vertex >= 0.07" }
+          20 rM3_S_8 @= { @ "M3.S.8 : Mx line space (S1) to dense Mx line-end [parallel run length > -0.025 um (T)], and dense Mx line-end enclosure of Vx-1 (V). Definition of dense Mx line-end: 1. Mx line-end: Mx edge with length < 0.07 um (W) between 2 outer vertex. 2. Other metal INTERACT Region 1. Region 1 = (T+Q) x S2. (W+S2) < 0.115 um. This check doesn't include small jog with edge length < 0.05 um (R) >= 0.08/0.05 or 0.1/0.03" }
+           0 rM3_S_9 @= { @ "M3.S.9 : Space to 45-degree bent Mx >= 0.17" }
+           0 rM3_W_1 @= { @ "M3.W.1 : Width >= 0.05" }
+           0 rM3_W_2 @= { @ "M3.W.2 : Width of 45-degree bent Mx. (Please make sure the vertex of 45-degree pattern is on 0.005 um grid (refer to the guideline, G.6gU, in section XXX)) >= 0.17" }
+           0 rM3_W_3 @= { @ "M3.W.3 : Maximum width Except following condition: 1. Mtop-1 for Fully-Stacking pad metal ({{{CB2_WB OR CB} NOT WBDMY} SIZING 5 um}), or 2. Mtop-1 for CUP pad metal ({{{WBDMY AND {CB2_WB OR CB}} SIZING 5 um} OR WBDMY}) (but Mtop-1 for 'Mx+Mu' metal combinations will be checked), or 3. SEALRING, or 4. {{INDDMY OR INDDMY_MD} SIZING 16 um}, or 5. CSRDMY, or 6. PADDMY (255;16) <= 4.5" }
+           0 rM3_W_4 @= { @ "M3.W.4 : Length of the edge with adjacent edge < 0.05 um [these 2 edges formed by 3 consecutive 270 degree inner vertex-90 degree outer vertex-270 degree inner vertex; DRC doesn't flag if there is Mx within the area formed by 0.16 um extension from these 2 edges and the 90 degree outer vertex.] (This check doesn't include the region covered by MetalFuse (156;2)) >= 0.065" }
+           0 rM3_W_6 @= { @ "M3.W.6 : Width of Mx metal line in SLDB. (DRC tolerance at 45-degree turning: +-0.02 um) = 0.5" }
+           0 rM3_W_7 @= { @ "M3.W.7 : Width of Mx metal line in outer seal-ring. (DRC tolerance at 45-degree turning: +-0.02 um) = 2" }
+           0 rM3_W_8 @= { @ "M3.W.8 : Width of Mx metal line in inner seal-ring. (DRC tolerance at 45-degree turning: +-0.02 um) = 6" }
+           1 rM4_A_1 @= { @ "M4.A.1 : Area (except M2) >= 0.017" }
+           1 rM4_A_3 @= { @ "M4.A.3 : Area [with all of edge lengths < 0.13 um] (This check doesn't include the patterns filling 0.05 um x 0.13 um rectangular tile) >= 0.044" }
+           5 rM4_A_4 @= { @ "M4.A.4 : Enclosed area >= 0.2" }
+           0 rM4_DN_1 @= { @ "M4.DN.1 : Minimum local density [window 125.0 um x 125.0 um, stepping 62.5 um] >= 0.1" }
+           0 rM4_DN_2 @= { @ "M4.DN.2 : Maximum metal density in window 125 um x 125 um, stepping 62.5 um (This rule only apply while the area of {checking window NOT exclusive region} >= 1/2 window area) Except following condition: 1. Mtop-1 for Fully-Stacking pad metal ({{{CB2_WB OR CB} NOT WBDMY} SIZING 5 um}), or 2. Mtop-1 for CUP pad metal ({{{WBDMY AND {CB2_WB OR CB}} SIZING 5 um} OR WBDMY}) (but Mtop-1 for 'Mx+Mu' metal combinations will be checked), or 3. SEALRING_ALL, or 4. {INDDMY OR INDDMY_MD}, or 5. ICOVL <= 85%" }
+           0 rM4_DN_3 @= { @ "M4.DN.3 : The metal density difference between any two neighboring checking windows including DM4EXCL [window 200.0 um x 200.0 um, stepping 200.0 um]  <= 0.5" }
+           0 rM4_DN_6 @= { @ "M4.DN.6 : Metal Density >= 0.01 must be followed for item(A) to (C) (A) Metal density [checking window 80.0 um x 80.0 um, stepping 40.0 um] >= 0.01 (B) Maximum area of merged low density windows [checking window 10.0 um x 10.0 um, stepping 5.0 um, density < 0.01] <= 6400.0 um2. Merged low density windows width <= 30.0 um is except. (C) Maximum area of merged low density windows [checking window 10.0 um x 10.0 um, stepping 5.0 um, density < 0.01] <= 18000.0 um2 1. The following special regions are excluded Chip corner triangle empty areas if sealring is added by tsmc. LOWMEDN 2. This rule is applied while the width of (checking window NOT above excluding region) >= 40.0 um for (A) and >= 5.0 um for both (B)/(C)" }
+           0 rM4_EN_1 @= { @ "M4.EN.1 : Enclosure of square VIAx-1 >= 0" }
+           0 rM4_EN_10 @= { @ "M4.EN.10 : Enclosure of VIAx-1 [0.07 um >= metal width > 0.055 um, metal space < 0.065 um (D1) and parallel run length > 0.1 um] >= 0.005" }
+           0 rM4_EN_11 @= { @ "M4.EN.11 : Enclosure of VIAx-1 [0.16 um >= metal width > 0.07 um, metal space < 0.1 um (D1) and parallel run length > 0.1 um] (For Mx.EN.11, the rule check is not included same VIAx group, which is defined as below.) 1. VIAx space <= 0.11 um2. Mx is same net 3. Mx+1 is same net >= 0.01" }
+           1 rM4_EN_12 @= { @ "M4.EN.12 : Enclosure of VIAx-1 [4.5 um >= metal width > 0.16 um, metal space < 0.13 um and parallel run length > 0.1 um] >= 0.015" }
+           0 rM4_EN_13 @= { @ "M4.EN.13 : Enclosure of VIAx-1 bar in LOWMEDN >= 0.1" }
+           0 rM4_EN_2__M4_EN_3__M4_EN_14__M4_EN_15 @= { @ "M4.EN.2__M4.EN.3__M4.EN.14__M4.EN.15 : Enclosure of VIA3 [at least two opposite sides] >= 0.03 um OR [all sides] >= 0.02 OR [all side] >= 0.01 / [at least two opposite sides] >= 0.025" }
+           0 rM4_EN_3__M4_EN_5__M4_EN_6__M4_EN_7 @= { @ "M4.EN.3__M4.EN.5__M4.EN.6__M4.EN.7 : Enclosure of rectangular VIA3 [two opposite side >= 0.03 and all side >= 0.01], OR Enclosure of rectangular VIA3 [at rectangular VIA3 end direction] >= 0.04, OR Enclosure of rectangular VIA3 [all sides] >= 0.02" }
+           0 rM4_EN_9 @= { @ "M4.EN.9 : Enclosure of VIAx-1 [0.055 um >= metal width > 0.05 um, metal space < 0.06 um (D1) and the other side space >= 0.06 um (D1'), parallel run length > 0.1 um] >= 0.005" }
+           0 rM4_L_1 @= { @ "M4.L.1 : Length of 45-degree bent Mx (minimum edge length) >= 0.5" }
+           0 rM4_R_3 @= { @ "M4.R.3 : Metal (pin) layers must be drawn only interact with one related Metal (drawing) layers" }
+          80 rM4_S_1 @= { @ "M4.S.1 : Space >= 0.05" }
+           0 rM4_S_10 @= { @ "M4.S.10 : Space to neighboring VIA3 [either VIA3 or M4 connects to >=1.8V <=2.5V net] >= 0.08 Space to neighboring VIA4 [either VIA4 or M4 connects to >=1.8V <=2.5V net] >= 0.08 Do not check same net and metal/via connect to PWELL(Vss) only." }
+           0 rM4_S_10_1 @= { @ "M4.S.10.1 : Space to neighboring VIA3 [either VIA3 or M4 connects to > 2.5V <=3.3V net] >= 0.08500000000000001 Space to neighboring VIA4 [either VIA4 or M4 connects to > 2.5V <=3.3V net] >= 0.08500000000000001 Do not check same net and metal/via connect to PWELL(Vss) only." }
+           0 rM4_S_11 @= { @ "M4.S.11 : Space to neighboring VIA3 [either VIA3 or M4 connects to >1.2V <1.8V net] >= 0.06 Space to neighboring VIA4 [either VIA4 or M4 connects to >1.2V <1.8V net] >= 0.06" }
+           1 rM4_S_12 @= { @ "M4.S.12 : Space of Mx line-end [parallel run length > -0.025 um (T)] . Definition of 'Mx line-end': Mx edge with length < 0.07 um (W) between 2 outer vertex >= 0.08" }
+           3 rM4_S_13 @= { @ "M4.S.13 : Space [at least one metal line width > 0.13 um (W1) and the parallel run length > 0.22 um (L1)] >= 0.08" }
+           0 rM4_S_14 @= { @ "M4.S.14 : Space between 'wide metal space regionA' in 'wide metal space regionB'. 1. Definition of 'wide metal space regionA' At least one metal line width > 0.25 um (W1B) and the parallel run length <= 0.22 um (L2A) in metal space < 0.08 um (S2A) region. 2. Definition of 'wide metal space regionB': At least one metal line width > 0.25 um (W1B) and the parallel run length > 0.3 um (L1B) in metal space < 0.29 um (S1B) region >= 0.3" }
+           0 rM4_S_15 @= { @ "M4.S.15 : Wide metal [width > 0.25 um (W1B)] space to metal [parallel run length > 0.22 um (L2A)] in wide metal space regionB >= 0.1" }
+           0 rM4_S_16 @= { @ "M4.S.16 : Wide metal [width > 0.25 um (W1B)] space to metal [parallel run length <= 0.22 um (L2A)] in wide metal space regionB >= 0.06" }
+           0 rM4_S_17 @= { @ "M4.S.17 : Space between 'wide metal space regionA' in 'wide metal space regionB'. 1. Definition of 'wide metal space regionA' At least one metal line width > 0.47 um (W1B) and the parallel run length <= 0.22 um (L2A) in metal space < 0.13 um (S2A) region. 2. Definition of 'wide metal space regionB': At least one metal line width > 0.47 um (W1B) and the parallel run length > 0.5 um (L1B) in metal space < 0.32 um (S1B) region >= 0.3" }
+           0 rM4_S_18 @= { @ "M4.S.18 : Wide metal [width > 0.47 um (W1B)] space to metal [parallel run length > 0.22 um (L2A)] in wide metal space regionB >= 0.13" }
+           0 rM4_S_19 @= { @ "M4.S.19 : Wide metal [width > 0.47 um (W1B)] space to metal [parallel run length <= 0.22 um (L2A)] in wide metal space regionB >= 0.06" }
+          46 rM4_S_2 @= { @ "M4.S.2 : Space [at least one metal line width > 0.09 um (W1) and the parallel run length > 0.22 um (L1)] >= 0.06" }
+           0 rM4_S_20 @= { @ "M4.S.20 : Space between 'wide metal space regionA' in 'wide metal space regionB'. 1. Definition of 'wide metal space regionA' At least one metal line width > 0.63 um (W1B) and the parallel run length <= 0.22 um (L2A) in metal space < 0.15 um (S2A) region. 2. Definition of 'wide metal space regionB': At least one metal line width > 0.63 um (W1B) and the parallel run length > 0.7 um (L1B) in metal space < 0.34 um (S1B) region >= 0.3" }
+           0 rM4_S_21 @= { @ "M4.S.21 : Wide metal [width > 0.63 um (W1B)] space to metal [parallel run length > 0.22 um (L2A)] in wide metal space regionB >= 0.15" }
+           0 rM4_S_22 @= { @ "M4.S.22 : Wide metal [width > 0.63 um (W1B)] space to metal [parallel run length <= 0.22 um (L2A)] in wide metal space regionB >= 0.06" }
+           0 rM4_S_23 @= { @ "M4.S.23 : Space between 'wide metal space regionA' in 'wide metal space regionB'. 1. Definition of 'wide metal space regionA' At least one metal line width > 1.5 um (W1B) and the parallel run length <= 0.22 um (L2A) in metal space < 0.3 um (S2A) region. 2. Definition of 'wide metal space regionB': At least one metal line width > 1.5 um (W1B) and the parallel run length > 1.5 um (L1B) in metal space < 0.5 um (S1B) region >= 0.3" }
+           0 rM4_S_24 @= { @ "M4.S.24 : Wide metal [width > 1.5 um (W1B)] space to metal [parallel run length > 0.22 um (L2A)] in wide metal space regionB >= 0.3" }
+           0 rM4_S_25 @= { @ "M4.S.25 : Wide metal [width > 1.5 um (W1B)] space to metal [parallel run length <= 0.22 um (L2A)] in wide metal space regionB >= 0.06" }
+           0 rM4_S_27 @= { @ "M4.S.27 : Space between 'wide metal space regionA' in 'wide metal space regionB'. 1. Definition of 'wide metal space regionA' At least one metal line width > 0.25 um (W1B) and the parallel run length <= 0.22 um (L2A) in metal space < 0.1 um (S2A) region. 2. Definition of 'wide metal space regionB': At least one metal line width > 0.25 um (W1B) and the parallel run length > 0.3 um (L1B) in metal space < 0.19 um (S1B) region >= 0.3" }
+           3 rM4_S_3 @= { @ "M4.S.3 : Space [at least one metal line width > 0.16 um (W2) and the parallel run length > 0.22 um (L2)] >= 0.1" }
+           0 rM4_S_32 @= { @ "M4.S.32 : Space of Mx line to line [same net or different net, any one of Mx connect to > 3.3V and <= 5V net, parallel run length > -0.11 um (T)] Definition of 'Mx line-end': Mx edge with length < 0.08 um (W) between 2 outer vertex. Definition of 'Mx line' : Mx edge NOT Mx line-end >= 0.11" }
+           0 rM4_S_32_1 @= { @ "M4.S.32.1 : Space of Mx line to end [same net or different net, any one of Mx connect to > 3.3V and <= 5V net, parallel run length > -0.14 um (T)] Definition of 'Mx line-end': Mx edge with length < 0.08 um (W) between 2 outer vertex. Definition of 'Mx line' : Mx edge NOT Mx line-end >= 0.14" }
+           0 rM4_S_32_2 @= { @ "M4.S.32.2 : Space of Mx line-end [same net or different net, any one of Mx connect to > 3.3V and <= 5V net, parallel run length > -0.12 um (T)] Definition of 'Mx line-end': Mx edge with length < 0.08 um (W) between 2 outer vertex >= 0.12" }
+           0 rM4_S_33 @= { @ "M4.S.33 : Space to neighboring VIA3 [either VIA3 or M4 connects to >3.3V <=5 net] >= 0.16 Space to neighboring VIA4 [either VIA4 or M4 connects to >3.3V <=5 net] >= 0.16" }
+           0 rM4_S_34 @= { @ "M4.S.34 : Space to M4 [M4 connects to > 2.5V <= 3.3 net] >= 0.07000000000000001" }
+           0 rM4_S_35 @= { @ "M4.S.35 : Minimum space of Mx between Mx metal bars in the direction parallel/ vertical to prime chip edge >= 0.5" }
+           0 rM4_S_36 @= { @ "M4.S.36 : Space of Mx between Mx metal bars in the direction parallel to prime chip edge between the same metal bars >= 2.5" }
+           0 rM4_S_4 @= { @ "M4.S.4 : Space [at least one metal line width > 0.47 um (W3) and the parallel run length > 0.47 um (L3)] >= 0.13" }
+           0 rM4_S_5 @= { @ "M4.S.5 : Space [at least one metal line width > 0.63 um (W4) and the parallel run length > 0.63 um (L4)] >= 0.15" }
+           0 rM4_S_6 @= { @ "M4.S.6 : Space [at least one metal line width > 1.5 um (W5) and the parallel run length > 1.5 um (L5)] >= 0.5" }
+           7 rM4_S_7 @= { @ "M4.S.7 : Space to Mx line-end [parallel run length > -0.025 um (T)] . Definition of 'Mx line-end': Mx edge with length < 0.07 um (W) between 2 outer vertex >= 0.07" }
+           4 rM4_S_8 @= { @ "M4.S.8 : Mx line space (S1) to dense Mx line-end [parallel run length > -0.025 um (T)], and dense Mx line-end enclosure of Vx-1 (V). Definition of dense Mx line-end: 1. Mx line-end: Mx edge with length < 0.07 um (W) between 2 outer vertex. 2. Other metal INTERACT Region 1. Region 1 = (T+Q) x S2. (W+S2) < 0.115 um. This check doesn't include small jog with edge length < 0.05 um (R) >= 0.08/0.05 or 0.1/0.03" }
+           0 rM4_S_9 @= { @ "M4.S.9 : Space to 45-degree bent Mx >= 0.17" }
+           0 rM4_W_1 @= { @ "M4.W.1 : Width >= 0.05" }
+           0 rM4_W_2 @= { @ "M4.W.2 : Width of 45-degree bent Mx. (Please make sure the vertex of 45-degree pattern is on 0.005 um grid (refer to the guideline, G.6gU, in section XXX)) >= 0.17" }
+           0 rM4_W_3 @= { @ "M4.W.3 : Maximum width Except following condition: 1. Mtop-1 for Fully-Stacking pad metal ({{{CB2_WB OR CB} NOT WBDMY} SIZING 5 um}), or 2. Mtop-1 for CUP pad metal ({{{WBDMY AND {CB2_WB OR CB}} SIZING 5 um} OR WBDMY}) (but Mtop-1 for 'Mx+Mu' metal combinations will be checked), or 3. SEALRING, or 4. {{INDDMY OR INDDMY_MD} SIZING 16 um}, or 5. CSRDMY, or 6. PADDMY (255;16) <= 4.5" }
+           0 rM4_W_4 @= { @ "M4.W.4 : Length of the edge with adjacent edge < 0.05 um [these 2 edges formed by 3 consecutive 270 degree inner vertex-90 degree outer vertex-270 degree inner vertex; DRC doesn't flag if there is Mx within the area formed by 0.16 um extension from these 2 edges and the 90 degree outer vertex.] (This check doesn't include the region covered by MetalFuse (156;2)) >= 0.065" }
+           0 rM4_W_6 @= { @ "M4.W.6 : Width of Mx metal line in SLDB. (DRC tolerance at 45-degree turning: +-0.02 um) = 0.5" }
+           0 rM4_W_7 @= { @ "M4.W.7 : Width of Mx metal line in outer seal-ring. (DRC tolerance at 45-degree turning: +-0.02 um) = 2" }
+           0 rM4_W_8 @= { @ "M4.W.8 : Width of Mx metal line in inner seal-ring. (DRC tolerance at 45-degree turning: +-0.02 um) = 6" }
+           0 rM5_A_1 @= { @ "M5.A.1 : Area >= 1" }
+           0 rM5_A_2 @= { @ "M5.A.2 : Enclosed area >= 1" }
+           1 rM5_DN_1 @= { @ "M5.DN.1 : Minimum local density [window 125.0 um x 125.0 um, stepping 62.5 um] >= 0.2" }
+           0 rM5_DN_2 @= { @ "M5.DN.2 : Maximum local density [window 125.0 um x 125.0 um, stepping 62.5 um] <= 0.85" }
+           0 rM5_DN_3 @= { @ "M5.DN.3 : The metal density difference between any two neighboring checking windows including DM5EXCL [window 200.0 um x 200.0 um, stepping 200.0 um]  <= 0.5" }
+           0 rM5_EN_1 @= { @ "M5.EN.1 : Enclosure of VIAr-1 >= 0.02" }
+           0 rM5_EN_2 @= { @ "M5.EN.2 : Enclosure of VIAr-1 [at least 2 opposite sides] >= 0.08" }
+           0 rM5_R_2 @= { @ "M5.R.2 : Metal (pin) layers must be drawn only interact with one related Metal (drawing) layers" }
+           0 rM5_S_1 @= { @ "M5.S.1 : Space >= 0.5" }
+           0 rM5_S_2 @= { @ "M5.S.2 : Space [at least one metal line width > 1.5 um (W1) and the parallel run length > 1.5 um (L1)] >= 0.65" }
+           0 rM5_S_3 @= { @ "M5.S.3 : Space [at least one metal line width > 4.5 um (W2) and the parallel metal run length > 4.5 um (L2)] >= 1.5" }
+           0 rM5_S_6 @= { @ "M5.S.6 : Minimum space between Mr metal bars >= 1" }
+           0 rM5_W_1 @= { @ "M5.W.1 : Width >= 0.5" }
+           0 rM5_W_2 @= { @ "M5.W.2 : Maximum width [except bond pad, {INDDMY SIZING 22 um}] <= 12.0" }
+           0 rM5_W_4 @= { @ "M5.W.4 : Width of Mr metal line in outer seal-ring. (DRC tolerance at 45-degree turning: +-0.02 um) = 2" }
+           0 rM5_W_5 @= { @ "M5.W.5 : Width of Mr metal line in inner seal-ring. (DRC tolerance at 45-degree turning: +-0.02 um) = 6" }
+           0 rM5_W_6 @= { @ "M5.W.6 : Width of Mr metal line in SLDB. (DRC tolerance at 45-degree turning: +-0.02 um) = 3" }
+       47180 rM6_VIA5_WARNING1 @= { @ "M6_VIA5:WARNING1 : This is 5M DRC. If customer wants to check M6. Please use M6 DRC command file." }
+           0 rMFUSE_R_2 @= { @ "MFUSE.R.2 : MetalFuse (152;2) must overlap M2" }
+           0 rMOM_A_1 @= { @ "MOM.A.1 : Maximum sidewall area of total metals in MOM without Via. For the definition of the sidewall area of total metals, please refer to the following figure <= 1.31E+06" }
+           0 rMOM_R_1 @= { @ "MOM.R.1 : VIA in MOMDMY is not allowed" }
+           0 rMOM_S_2_M1 @= { @ "MOM.S.2:M1 : Space of metal (M1/Mx) line-end in MOMDMY_n >= 0.1" }
+           0 rMOM_S_2_M2 @= { @ "MOM.S.2:M2 : Space of metal (M1/Mx) line-end in MOMDMY_n >= 0.1" }
+           0 rMOM_S_2_M3 @= { @ "MOM.S.2:M3 : Space of metal (M1/Mx) line-end in MOMDMY_n >= 0.1" }
+           0 rMOM_S_2_M4 @= { @ "MOM.S.2:M4 : Space of metal (M1/Mx) line-end in MOMDMY_n >= 0.1" }
+           0 rMX_DN_4_M1_M2_M3 @= { @ "Mx.DN.4:M1_M2_M3 : It is not allowed to have local density > 85% of all 3 consecutive metal (Mx, Mx+1 and Mx+2) over any window 62.5 um x 62.5 um (stepping 31.25 um), i.e. it is allowed for either one of Mx, Mx+1, or Mx+2 to have a local density > 85%. 1. The metal layers include M1/Mx and dummy metals. 2. Except following condition: (1). Mtop-1 for Fully-Stacking pad metal ({{{CB2_WB OR CB} NOT WBDMY} SIZING 5 um}), or (2). Mtop-1 for CUP pad metal ({{{WBDMY AND {CB2_WB OR CB}} SIZING 5 um} OR WBDMY}) (but Mtop-1 for 'Mx+Mu' metal combinations will be checked), or (3). SEALRING_ALL, or (4) Chip corner triangle empty areas" }
+           0 rMX_DN_4_M2_M3_M4 @= { @ "Mx.DN.4:M2_M3_M4 : It is not allowed to have local density > 85% of all 3 consecutive metal (Mx, Mx+1 and Mx+2) over any window 62.5 um x 62.5 um (stepping 31.25 um), i.e. it is allowed for either one of Mx, Mx+1, or Mx+2 to have a local density > 85%. 1. The metal layers include M1/Mx and dummy metals. 2. Except following condition: (1). Mtop-1 for Fully-Stacking pad metal ({{{CB2_WB OR CB} NOT WBDMY} SIZING 5 um}), or (2). Mtop-1 for CUP pad metal ({{{WBDMY AND {CB2_WB OR CB}} SIZING 5 um} OR WBDMY}) (but Mtop-1 for 'Mx+Mu' metal combinations will be checked), or (3). SEALRING_ALL, or (4) Chip corner triangle empty areas" }
+           0 rMX_DN_7_M1_M2_M3 @= { @ "Mx.DN.7:M1_M2_M3 : It is not allowed to have local density < 5% of all 3 consecutive metal layer(M1,M2,M3) over any 30umx30um window (stepping 15um) 1. The following special regions are excluded while the density checking Chip corner triangle empty areas if sealring is added by tsmc. LOWMEDN 2. This rule is applied while the width of (checking window NOT above excluding region) >= 15 um" }
+           0 rMX_DN_7_M2_M3_M4 @= { @ "Mx.DN.7:M2_M3_M4 : It is not allowed to have local density < 5% of all 3 consecutive metal layer(M2,M3,M4) over any 30umx30um window (stepping 15um) 1. The following special regions are excluded while the density checking Chip corner triangle empty areas if sealring is added by tsmc. LOWMEDN 2. This rule is applied while the width of (checking window NOT above excluding region) >= 15 um" }
+           0 rNP_EX_1 @= { @ "NP.EX.1 : Extension on N+ ACTIVE >= 0.065" }
+           0 rNP_EX_2 @= { @ "NP.EX.2 : Extension on NW STRAP >= 0.02" }
+           1 rOD_DN_3 @= { @ "OD.DN.3 : Minimum {{OD OR DOD} OR SR_DOD} local density [window 20 um x 20 um, stepping 10 um] >= 20%" }
+           0 rOD_DN_4 @= { @ "OD.DN.4 : Maximum {{OD OR DOD} OR SR_DOD} local density [OUTSIDE OD2, window 150.0 um x 150.0 um, stepping 75.0 um] <= 0.8" }
+           0 rOD_DN_5 @= { @ "OD.DN.5 : Maximum {{OD OR DOD} OR SR_DOD} local density [window 150.0 um x 150.0 um, stepping 75.0 um] <= 0.9" }
+           1 rOD_S_14 @= { @ "OD.S.14 : Maximum space between {{OD OR SR_DOD} OR DOD} <= 10" }
+           1 rPO_DN_3 @= { @ "PO.DN.3 : Minimum {{{PO OR SR_DPO} OR DPO} NOT CPO} local density [window 20.0 um x 20.0 um, stepping 10.0 um] >= 0.1" }
+           1 rPO_DN_3_1 @= { @ "PO.DN.3.1 : Minimum {{{PO OR SR_DPO} OR DPO} NOT CPO} local density [window 10.0 um x 10.0 um, stepping 5.0 um] >= 0.1" }
+           0 rPO_DN_7 @= { @ "PO.DN.7 : Minimum PO local density in SEALRING_ALL [window 20.0 um x 20.0 um, stepping 10.0 um] 0.1" }
+           0 rPO_DN_8 @= { @ "PO.DN.8 : Maximum PO local density in SEALRING_ALL [window 20.0 um x 20.0 um, stepping 10.0 um] 0.65" }
+           0 rPO_R_25 @= { @ "PO.R.25 : {{PO OR SR_DPO} NOT CPO} [NOT INSIDE OD2] can't apply the voltage > 3.3V" }
+           0 rPO_S_50 @= { @ "PO.S.50 : {PO NOT CPO} [connects to (>= 1.2V and <= 3.3V) net] space to OD [INTERACT CO, NOT INSIDE OD2]. (This check doesn't include the region covered by MetalFuse (156;2)) >= 0.06" }
+           0 rPP_EX_1 @= { @ "PP.EX.1 : Extension on P+ ACTIVE >= 0.065" }
+           0 rPP_EX_2 @= { @ "PP.EX.2 : Extension on PW STRAP >= 0.02" }
+           0 rRM_WARN_3 @= { @ "RM.WARN.3 : CO overlap {RMDMY1 AND M1} is not allowed" }
+           0 rRM_WARN_4_M1 @= { @ "RM.WARN.4:M1 : VIA1 overlap {RMDMY1 AND M1} is not allowed." }
+           0 rRM_WARN_4_M2 @= { @ "RM.WARN.4:M2 : {VIA2 OR VIA1} overlap {RMDMY2 AND M2} is not allowed." }
+           0 rRM_WARN_4_M3 @= { @ "RM.WARN.4:M3 : {VIA3 OR VIA2} overlap {RMDMY3 AND M3} is not allowed." }
+           0 rRM_WARN_4_M4 @= { @ "RM.WARN.4:M4 : {VIA4 OR VIA3} overlap {RMDMY4 AND M4} is not allowed." }
+           0 rRM_WARN_4_M5 @= { @ "RM.WARN.4:M5 : VIA4 overlap {RMDMY5 AND M5} is not allowed." }
+           0 rRM_WARN_5 @= { @ "RM.WARN.5 : RV overlap {{RMDMYAP AND AP} OR {RMDMYn AND Mn}} is not allowed. (n = top)" }
+           0 rRV_EN_1 @= { @ "RV.EN.1 : Enclosure by top metal >= 0.5" }
+           0 rRV_R_1 @= { @ "RV.R.1 : A 45-degree rotated RV is not allowed (Except INDDMY)" }
+           0 rRV_S_1 @= { @ "RV.S.1 : Space >= 2" }
+           0 rRV_W_1 @= { @ "RV.W.1 : Width (maximum = minimum) (Except SEALRING_ALL (162;2)) = 3" }
+           0 rSRAM_BTC_S_2 @= { @ "SRAM.BTC.S.2 : BTC space to M1 [different nets] >= 0.05 um" }
+           0 rSRAM_R_17 @= { @ "SRAM.R.17 : SRAMDMY;0 (186;0) must fully cover OD, CO, VIA1. except SRM;3 (50;3)" }
+           0 rSRAM_R_38 @= { @ "SRAM.R.38 : VIA1 enclosure by M1 >= 0 in SRAMDMY (186;0)" }
+           0 rSRAM_R_39__SRAM_R_40 @= { @ "SRAM.R.39__SRAM.R.40 : VIA1 enclosure by M1 [at least two opposite sides] >= 0.01 or Enclosure by M1 [all sides] >= 0.005" }
+           0 rSRAM_R_43_1__SRAM_R_44 @= { @ "SRAM.R.43.1__SRAM.R.44 : VIA2 enclosure by M2 [at least two opposite sides] in SRM_18 >= 0.02 or Enclosure by M2 [all sides] >= 0.01" }
+           0 rSRAM_R_43__SRAM_R_44 @= { @ "SRAM.R.43__SRAM.R.44 : VIA2 enclosure by M2 [at least two opposite sides] >= 0.025 or Enclosure by M2 [all sides] >= 0.01, except SRM_18" }
+           0 rSRAM_R_45 @= { @ "SRAM.R.45 : Enclosure of rectangular VIA1 by M1 >= 0.005" }
+           0 rSRAM_R_46 @= { @ "SRAM.R.46 : Enclosure of rectangular VIA2 by M2 >= 0 , VIA2 fully inside M2" }
+           0 rSRAM_R_47 @= { @ "SRAM.R.47 : VIA2 enclosure by M2 [0.16 um >= metal width > 0.07 um, space < 0.1 um (D1) and parallel run length > 0.1 um] For SRAM.R.44, the rule check is not included same VIA2 group, which is defined as below. 1. VIAx space to neighboring VIA2 <= 0.11 um 2. M2 is same net >= 0.005" }
+           0 rSRAM_R_48 @= { @ "SRAM.R.48 : VIA1 enclosure by M1 [4.5 um >= metal width > 0.16 um, space < 0.13 um and parallel run length > 0.1 um] >= 0.005" }
+           0 rSRAM_R_49_M2 @= { @ "SRAM.R.49:M2 : Space [at least one metal line width > 0.16 um (W2) and the parallel run lengths > 0.22 um (L2)] (union projection) >= 0.1 Except space >= 0.09 in SRM(50;13)" }
+           0 rSRAM_R_49_M3 @= { @ "SRAM.R.49:M3 : Space [at least one metal line width > 0.16 um (W2) and the parallel run lengths > 0.22 um (L2)] (union projection) >= 0.1 Except space >= 0.09 in SRM(50;13)" }
+           0 rSRAM_R_50 @= { @ "SRAM.R.50 : Space at M2 line-end (W < 0.07um) in a line-end configuration: If M2 has parallel run length with opposite M2 (measured with T = 0.025 um extension), then end to line space (S1) needs to be at least this value >= 0.055" }
+           0 rSRAM_R_51 @= { @ "SRAM.R.51 : Space at M2 line-end (W < 0.07 um, Q = 0.07 um) in a dense line-end configuration: If M2 has parallel run lengths with opposite M2 (measured with T = 0.025 um extension) along 2 adjacent edges of M2 [any one edge < Q distance from the corner of the 2 edges], and side to side space (S2) + Mx width (W), pitch < 0.115 um, then end to line space (S1) and M2 enclose VIA1 (V) needs to be at least this value. 1 This check doesn't include small jog with edge lengths < 0.05 um (R). 2 The following conditions can pass the check flow. 1 S2+W, pitch < 0.115 um, S1 >= 0.08 um, and M2 enclosure VIA1 >= 0.05 um 2 S2+W, pitch < 0.115 um, S1 >= 0.1 um, and M2 enclosure VIA1 >= 0.03 um (>= 0.06/0.05 or 0.1/0.03 in SRM(50;13), others >= 0.08/0.05 or 0.1/0.03)" }
+           0 rSRAM_R_52 @= { @ "SRAM.R.52 : Space at M2 line-end (W < 0.07 um) in a line-end configuration: If M2 has parallel run lengths with opposite M2 (measured with T = 0.025 um extension), then end to end space (S3) needs to be at least this value >= 0.07" }
+           0 rSRAM_R_53__SRAM_R_53_1 @= { @ "SRAM.R.53__SRAM.R.53.1 : The layer covered SRAMDMY(186;0), enclosure of square VIA1 [at least two opposite sides] >= 0.025 Enclosure of VIA1 square [at least two opposite sides] >= 0.025 um OR Enclosure of VIA1 [all sides] >= 0.01" }
+           0 rSRAM_R_54 @= { @ "SRAM.R.54 : M2 enclosure of VIA1 [0.16 um >= metal width > 0.07 um, space < 0.1 um (D1) and parallel run length > 0.1 um] (this rule check is not included same VIA1 group, which is defined as below.) 1. VIA1 space to neighboring VIA1 <= 0.11 um 2. M2 is same net >= 0.005" }
+           0 rSR_DM1_O_1 @= { @ "SR_DM1.O.1 : Overlay of two adjacent DMV metal layers, except Mr and Mu." }
+           0 rSR_DM2_O_1 @= { @ "SR_DM2.O.1 : Overlay of two adjacent DMV metal layers, except Mr and Mu." }
+           0 rSR_DM3_O_1 @= { @ "SR_DM3.O.1 : Overlay of two adjacent DMV metal layers, except Mr and Mu." }
+           0 rSR_DM_S_1_M1 @= { @ "SR_DM.S.1:M1 : Metal space of DMV in seal-ring enhanced zone" }
+           0 rSR_DM_S_1_M2 @= { @ "SR_DM.S.1:M2 : Metal space of DMV in seal-ring enhanced zone" }
+           0 rSR_DM_S_1_M3 @= { @ "SR_DM.S.1:M3 : Metal space of DMV in seal-ring enhanced zone" }
+           0 rSR_DM_S_1_M4 @= { @ "SR_DM.S.1:M4 : Metal space of DMV in seal-ring enhanced zone" }
+           0 rSR_DM_S_1_M5 @= { @ "SR_DM.S.1:M5 : Metal space of DMV in seal-ring enhanced zone" }
+           0 rSR_DM_S_2_M1 @= { @ "SR_DM.S.2:M1 : Metal space of DMV to seal ring metal bar." }
+           0 rSR_DM_S_2_M2 @= { @ "SR_DM.S.2:M2 : Metal space of DMV to seal ring metal bar." }
+           0 rSR_DM_S_2_M3 @= { @ "SR_DM.S.2:M3 : Metal space of DMV to seal ring metal bar." }
+           0 rSR_DM_S_2_M4 @= { @ "SR_DM.S.2:M4 : Metal space of DMV to seal ring metal bar." }
+           0 rSR_DM_S_2_M5 @= { @ "SR_DM.S.2:M5 : Metal space of DMV to seal ring metal bar." }
+           0 rSR_DM_W_1_M1 @= { @ "SR_DM.W.1:M1 : Metal width of DMV in seal-ring enhanced zone" }
+           0 rSR_DM_W_1_M2 @= { @ "SR_DM.W.1:M2 : Metal width of DMV in seal-ring enhanced zone" }
+           0 rSR_DM_W_1_M3 @= { @ "SR_DM.W.1:M3 : Metal width of DMV in seal-ring enhanced zone" }
+           0 rSR_DM_W_1_M4 @= { @ "SR_DM.W.1:M4 : Metal width of DMV in seal-ring enhanced zone" }
+           0 rSR_DM_W_1_M5 @= { @ "SR_DM.W.1:M5 : Metal width of DMV in seal-ring enhanced zone" }
+           0 rSR_DV_EN_1_V1 @= { @ "SR_DV.EN.1:V1 : DMV via enclosure by DMV metal in seal-ring enhanced zone. DMV via must be inside DMV metal." }
+           0 rSR_DV_EN_1_V2 @= { @ "SR_DV.EN.1:V2 : DMV via enclosure by DMV metal in seal-ring enhanced zone. DMV via must be inside DMV metal." }
+           0 rSR_DV_EN_1_V3 @= { @ "SR_DV.EN.1:V3 : DMV via enclosure by DMV metal in seal-ring enhanced zone. DMV via must be inside DMV metal." }
+           0 rSR_DV_EN_1_V4 @= { @ "SR_DV.EN.1:V4 : DMV via enclosure by DMV metal in seal-ring enhanced zone. DMV via must be inside DMV metal." }
+           0 rSR_DV_S_1_V1 @= { @ "SR_DV.S.1:V1 : Via space of DMV in seal-ring enhanced zone" }
+           0 rSR_DV_S_1_V2 @= { @ "SR_DV.S.1:V2 : Via space of DMV in seal-ring enhanced zone" }
+           0 rSR_DV_S_1_V3 @= { @ "SR_DV.S.1:V3 : Via space of DMV in seal-ring enhanced zone" }
+           0 rSR_DV_S_1_V4 @= { @ "SR_DV.S.1:V4 : Via space of DMV in seal-ring enhanced zone" }
+           0 rSR_DV_W_1_V1 @= { @ "SR_DV.W.1:V1 : Via width of DMV in seal-ring enhanced zone" }
+           0 rSR_DV_W_1_V2 @= { @ "SR_DV.W.1:V2 : Via width of DMV in seal-ring enhanced zone" }
+           0 rSR_DV_W_1_V3 @= { @ "SR_DV.W.1:V3 : Via width of DMV in seal-ring enhanced zone" }
+           0 rSR_DV_W_1_V4 @= { @ "SR_DV.W.1:V4 : Via width of DMV in seal-ring enhanced zone" }
+           0 rSR_R_1 @= { @ "SR.R.1 : SEALRING layer (CAD layer: 162;0) and SEALRING_DB layer (CAD layer: 162;1) are Must if customers add seal ring by themselves. 162;0 is used to cover the outer seal ring (2um) and inner seal ring (6um); 162;1 is used to cover SLDB (3.5um duplicate). 162;2 is used to cover SEALRING, SLDB, and seal-ring enhanced zone. SEALRING layer (162;0) , SEALRING_DB layer (162;1), and SEALRING_ALL layer (162;2) must exist. All the drawing of seal ring and SLDB structures must be inside of SEALRING_ALL (162;2). Please follow the CAD layers usage of 162;0, 162;1, and 162;2." }
+           0 rSR_R_2 @= { @ "SR.R.2 : DMV pattern in seal-ring enhanced zone must include Mtop/VIAtop/ Mtop-1/VIAtop-1/Mtop-2/VIAtop-2/.../V1/M1, except Mu design." }
+           0 rSR_R_4 @= { @ "SR.R.4 : Please add VIA holes in metal lines of inner and outer seal-ring as many as possible. DRC flags: {SEALRING NOT INTERACT VIAx, VIAy, VIAz, VIAu and VIAr holes respectively}" }
+           0 rSR_R_7 @= { @ "SR.R.7 : CO bar and VIA {x,y,z,r,u} bar must be continuous as a ring" }
+           0 rSR_R_9 @= { @ "SR.R.9 : Width of seal-ring enhanced zone (SREZ)= 6 um (layout forbidden area.) Only M1~AP and DMV pattern are allowed in seal-ring enhanced zone region (DMV pattern: metal/via dummy pattern, DOD, & DPO) Each M1~AP patterns in seal-ring enhanced zone region must follow the following conditions: 1. Each M1~Mtop must be connected to seal-ring wall 2. Each AP can only connect to the inner seal-ring wall 3. Each M1~AP overlap SLDB is not allowed" }
+           0 rSR_R_9_AP @= { @ "SR.R.9:AP : Width of seal-ring enhanced zone (SREZ)= 6 um (layout forbidden area.) Only M1~AP and DMV pattern are allowed in seal-ring enhanced zone region (DMV pattern: metal/via dummy pattern, DOD, & DPO) Each M1~AP patterns in seal-ring enhanced zone region must follow the following conditions: 1. Each M1~Mtop must be connected to seal-ring wall 2. Each AP can only connect to the inner seal-ring wall 3. Each M1~AP overlap SLDB is not allowed" }
+           0 rSR_R_9_M1 @= { @ "SR.R.9:M1 : Width of seal-ring enhanced zone (SREZ)= 6 um (layout forbidden area.) Only M1~AP and DMV pattern are allowed in seal-ring enhanced zone region (DMV pattern: metal/via dummy pattern, DOD, & DPO) Each M1~AP patterns in seal-ring enhanced zone region must follow the following conditions: 1. Each M1~Mtop must be connected to seal-ring wall 2. Each AP can only connect to the inner seal-ring wall 3. Each M1~AP overlap SLDB is not allowed" }
+           0 rSR_R_9_M2 @= { @ "SR.R.9:M2 : Width of seal-ring enhanced zone (SREZ)= 6 um (layout forbidden area.) Only M1~AP and DMV pattern are allowed in seal-ring enhanced zone region (DMV pattern: metal/via dummy pattern, DOD, & DPO) Each M1~AP patterns in seal-ring enhanced zone region must follow the following conditions: 1. Each M1~Mtop must be connected to seal-ring wall 2. Each AP can only connect to the inner seal-ring wall 3. Each M1~AP overlap SLDB is not allowed" }
+           0 rSR_R_9_M3 @= { @ "SR.R.9:M3 : Width of seal-ring enhanced zone (SREZ)= 6 um (layout forbidden area.) Only M1~AP and DMV pattern are allowed in seal-ring enhanced zone region (DMV pattern: metal/via dummy pattern, DOD, & DPO) Each M1~AP patterns in seal-ring enhanced zone region must follow the following conditions: 1. Each M1~Mtop must be connected to seal-ring wall 2. Each AP can only connect to the inner seal-ring wall 3. Each M1~AP overlap SLDB is not allowed" }
+           0 rSR_R_9_M4 @= { @ "SR.R.9:M4 : Width of seal-ring enhanced zone (SREZ)= 6 um (layout forbidden area.) Only M1~AP and DMV pattern are allowed in seal-ring enhanced zone region (DMV pattern: metal/via dummy pattern, DOD, & DPO) Each M1~AP patterns in seal-ring enhanced zone region must follow the following conditions: 1. Each M1~Mtop must be connected to seal-ring wall 2. Each AP can only connect to the inner seal-ring wall 3. Each M1~AP overlap SLDB is not allowed" }
+           0 rSR_R_9_M5 @= { @ "SR.R.9:M5 : Width of seal-ring enhanced zone (SREZ)= 6 um (layout forbidden area.) Only M1~AP and DMV pattern are allowed in seal-ring enhanced zone region (DMV pattern: metal/via dummy pattern, DOD, & DPO) Each M1~AP patterns in seal-ring enhanced zone region must follow the following conditions: 1. Each M1~Mtop must be connected to seal-ring wall 2. Each AP can only connect to the inner seal-ring wall 3. Each M1~AP overlap SLDB is not allowed" }
+           0 rSR_UBM_WARNING1 @= { @ "SR.UBM:WARNING1 : Do not draw UBM on Chip corner stress relief pattern/Seal ring/seal-ring enhanced zone" }
+           0 rUSER_GUIDE_M1 @= { @ "USER_GUIDE.M1 : Metal layers with forbidden datatypes." }
+           0 rUSER_GUIDE_M2 @= { @ "USER_GUIDE.M2 : Metal layers with forbidden datatypes." }
+           0 rUSER_GUIDE_M3 @= { @ "USER_GUIDE.M3 : Metal layers with forbidden datatypes." }
+           0 rUSER_GUIDE_M4 @= { @ "USER_GUIDE.M4 : Metal layers with forbidden datatypes." }
+       18466 rUSER_GUIDE_M5 @= { @ "USER_GUIDE.M5 : Metal layers with forbidden datatypes." }
+           0 rUSER_GUIDE_VIA1 @= { @ "USER_GUIDE.VIA1 : Via layers with forbidden datatypes." }
+           0 rUSER_GUIDE_VIA2 @= { @ "USER_GUIDE.VIA2 : Via layers with forbidden datatypes." }
+           0 rUSER_GUIDE_VIA3 @= { @ "USER_GUIDE.VIA3 : Via layers with forbidden datatypes." }
+       44231 rUSER_GUIDE_VIA4 @= { @ "USER_GUIDE.VIA4 : Via layers with forbidden datatypes." }
+           0 rVIA1_EN_1 @= { @ "VIA1.EN.1 : Enclosure by M1 or Mx >= 0" }
+           0 rVIA1_EN_12 @= { @ "VIA1.EN.12 : Enclosure by M1 or Mx [4.5 um >= metal width > 0.16 um, space < 0.13 um and parallel run length > 0.1 um] >= 0.015" }
+           0 rVIA1_EN_13 @= { @ "VIA1.EN.13 : VIAx bar enclosure by M1/Mx in LOWMEDN >= 0.1" }
+           0 rVIA1_EN_25 @= { @ "VIA1.EN.25 : Enclosure of VIAx bar by Mx in seal-ring >= 0.21" }
+           0 rVIA1_EN_26 @= { @ "VIA1.EN.26 : Enclosure of VIAx hole by Mx in seal-ring >= 0.23" }
+           0 rVIA1_EN_27 @= { @ "VIA1.EN.27 : Enclosure of VIAx hole by Mx in SLDB >= 0.03" }
+           0 rVIA1_EN_2__VIA1_EN_3__VIA1_EN_14__VIA1_EN_15 @= { @ "VIA1.EN.2__VIA1.EN.3__VIA1.EN.14__VIA1.EN.15 : Enclosure by M1 [at least two opposite sides] >= 0.03 um OR [all sides] >= 0.02 OR [all side] >= 0.01 / [at least two opposite sides] >= 0.025" }
+           0 rVIA1_EN_3__VIA1_EN_5__VIA1_EN_6__VIA1_EN_7 @= { @ "VIA1.EN.3__VIA1.EN.5__VIA1.EN.6__VIA1.EN.7 : Enclosure by M1 [two opposite direction >= 0.03 and all side >= 0.01], OR Enclosure by M1 [at rectangular VIA1 end direction] >= 0.04, OR Enclosure by M1 [all sides] >= 0.02" }
+           0 rVIA1_R_2__VIA1_R_3 @= { @ "VIA1.R.2__VIA1.R.3 : When M1 or M2 width > 0.18 um, more than one VIA1 is required. 2 vias spacing should be <= 0.1 um or 4 vias spacing should be <= 0.65 um 4 vias spacing should be <= 0.1 um or 9 vias spacing should be <= 0.85 um" }
+           0 rVIA1_R_4_M1 @= { @ "VIA1.R.4:M1 : At least 2 square VIAx or one rectangular VIAx must be used for a connection that distance <= 1.65 um (D) away from a metal plate (either Mx or Mx+1) with length > 0.18 um (L) and width > 0.18 um (W). (Except VIA bar region)" }
+           0 rVIA1_R_4_M2 @= { @ "VIA1.R.4:M2 : At least 2 square VIAx or one rectangular VIAx must be used for a connection that distance <= 1.65 um (D) away from a metal plate (either Mx or Mx+1) with length > 0.18 um (L) and width > 0.18 um (W). (Except VIA bar region)" }
+           0 rVIA1_R_5_M1 @= { @ "VIA1.R.5:M1 : At least 2 square VIAx or one rectangular VIAx must be used for a connection that distance <= 4 um (D) away from a metal plate (either Mx or Mx+1) with length > 1 um (L) and width > 1 um (W). (Except VIA bar region)" }
+           0 rVIA1_R_5_M2 @= { @ "VIA1.R.5:M2 : At least 2 square VIAx or one rectangular VIAx must be used for a connection that distance <= 4 um (D) away from a metal plate (either Mx or Mx+1) with length > 1 um (L) and width > 1 um (W). (Except VIA bar region)" }
+           0 rVIA1_R_6_M1 @= { @ "VIA1.R.6:M1 : At least 2 square VIAx or one rectangular VIAx must be used for a connection that distance <= 10 um (D) away from a metal plate (either Mx or Mx+1) with length > 5 um (L) and width > 1.5 um (W). (Except VIA bar region)" }
+           0 rVIA1_R_6_M2 @= { @ "VIA1.R.6:M2 : At least 2 square VIAx or one rectangular VIAx must be used for a connection that distance <= 10 um (D) away from a metal plate (either Mx or Mx+1) with length > 5 um (L) and width > 1.5 um (W). (Except VIA bar region)" }
+           0 rVIA1_R_8 @= { @ "VIA1.R.8 : Single VIAx is not allowed for H-shape Mx+1 when all of the following conditions come into existence: 1. The Mx+1 has H-shape interact with two metal holes: two metal hole length(L2) <= 5.0 um and both two metal hole area <= 5.0 um2 2. The VIAx overlaps on the center metal bar of this H-shape Mx+1 3. The length (L) of the center metal bar <= 1.0 um and the width of metal bar is <= 0.15 um." }
+           4 rVIA1_S_1 @= { @ "VIA1.S.1 : Square VIAx space >= 0.07" }
+           0 rVIA1_S_18 @= { @ "VIA1.S.18 : Space of VIAx bar in LOWMEDN to VIAx hole >= 0.35" }
+           0 rVIA1_S_19 @= { @ "VIA1.S.19 : Space of VIAx bar in LOWMEDN >= 0.6" }
+           0 rVIA1_S_24 @= { @ "VIA1.S.24 : Space of VIAx hole in seal-ring >= 0.375" }
+           0 rVIA1_S_25 @= { @ "VIA1.S.25 : Space of VIAx hole to VIAx bar in seal-ring >= 0.35" }
+           0 rVIA1_S_26 @= { @ "VIA1.S.26 : Opposite space of VIAx hole in SLDB >= 0.2" }
+           0 rVIA1_S_27 @= { @ "VIA1.S.27 : Space of VIAx hole in SLDB >= 0.1" }
+           0 rVIA1_S_3 @= { @ "VIA1.S.3 : Square VIAx space to rectangular VIAx >= 0.075" }
+           0 rVIA1_S_4 @= { @ "VIA1.S.4 : Rectangular VIAx space to rectangular VIAx >= 0.08" }
+           4 rVIA1_S_5 @= { @ "VIA1.S.5 : VIAx space [parallel run length > -0.04 um] >= 0.08" }
+           0 rVIA1_S_8 @= { @ "VIA1.S.8 : Maximum space of VIAx hole [INSIDE SEALRING] DRC flags: {SEALRING AND Mx} must be fully covered by {{SEALRING AND VIAx holes} SIZING 3.5 um} <= 7" }
+           0 rVIA1_W_1 @= { @ "VIA1.W.1 : Width x Length = 0.05 x 0.05, 0.05 x 0.13 (Except seal-ring (162,2) and {LOWMEDN NOT {LOWMEDN SIZING -4 m}})" }
+           0 rVIA1_W_2__VIA1_W_4 @= { @ "VIA1.W.2__VIA1.W.4 : Width of VIA1(VIAx) bar of sealring/SLDB = 0.5/0.5" }
+           0 rVIA1_W_3__VIA1_W_5 @= { @ "VIA1.W.3__VIA1.W.5 : Width of VIA1(VIAx) hole of sealring/SLDB = 0.05/0.05" }
+           0 rVIA1_W_6 @= { @ "VIA1.W.6 : Width of VIAx bar in protection ring [INSIDE LOWMEDN] = 0.15" }
+           0 rVIA2_EN_1 @= { @ "VIA2.EN.1 : Enclosure by M1 or Mx >= 0" }
+           0 rVIA2_EN_10 @= { @ "VIA2.EN.10 : Enclosure by Mx [0.07 um >= metal width > 0.055 um, space < 0.065 um (D1) and parallel run length > 0.1 um] >= 0.005" }
+           3 rVIA2_EN_11 @= { @ "VIA2.EN.11 : Enclosure by Mx [0.16 um >= metal width > 0.07 um, space < 0.1 um (D1) and parallel run length > 0.1 um] (For VIAx.EN.11, the rule check is not included same VIAx group, which is defined as below). 1. VIAx space <= 0.11 um2. Mx is same net 3. Mx+1 is same net >= 0.01" }
+           0 rVIA2_EN_12 @= { @ "VIA2.EN.12 : Enclosure by M1 or Mx [4.5 um >= metal width > 0.16 um, space < 0.13 um and parallel run length > 0.1 um] >= 0.015" }
+           0 rVIA2_EN_13 @= { @ "VIA2.EN.13 : VIAx bar enclosure by M1/Mx in LOWMEDN >= 0.1" }
+           0 rVIA2_EN_25 @= { @ "VIA2.EN.25 : Enclosure of VIAx bar by Mx in seal-ring >= 0.21" }
+           0 rVIA2_EN_26 @= { @ "VIA2.EN.26 : Enclosure of VIAx hole by Mx in seal-ring >= 0.23" }
+           0 rVIA2_EN_27 @= { @ "VIA2.EN.27 : Enclosure of VIAx hole by Mx in SLDB >= 0.03" }
+           0 rVIA2_EN_2__VIA2_EN_3__VIA2_EN_14__VIA2_EN_15 @= { @ "VIA2.EN.2__VIA2.EN.3__VIA2.EN.14__VIA2.EN.15 : Enclosure by M2 [at least two opposite sides] >= 0.03 um OR [all sides] >= 0.02 OR [all side] >= 0.01 / [at least two opposite sides] >= 0.025" }
+           0 rVIA2_EN_3__VIA2_EN_5__VIA2_EN_6__VIA2_EN_7 @= { @ "VIA2.EN.3__VIA2.EN.5__VIA2.EN.6__VIA2.EN.7 : Enclosure by M2 [two opposite direction >= 0.03 and all side >= 0.01], OR Enclosure by M2 [at rectangular VIA2 end direction] >= 0.04, OR Enclosure by M2 [all sides] >= 0.02" }
+           0 rVIA2_EN_9 @= { @ "VIA2.EN.9 : Enclosure by Mx [0.055 um >= metal width > 0.05 um, space < 0.06 um (D1) and the other side space >= 0.06 um (D1'), parallel run length > 0.1 um] >= 0.005" }
+           0 rVIA2_R_2__VIA2_R_3 @= { @ "VIA2.R.2__VIA2.R.3 : When M2 or M3 width > 0.18 um, more than one VIA2 is required. 2 vias spacing should be <= 0.1 um or 4 vias spacing should be <= 0.65 um 4 vias spacing should be <= 0.1 um or 9 vias spacing should be <= 0.85 um" }
+           0 rVIA2_R_4_M2 @= { @ "VIA2.R.4:M2 : At least 2 square VIAx or one rectangular VIAx must be used for a connection that distance <= 1.65 um (D) away from a metal plate (either Mx or Mx+1) with length > 0.18 um (L) and width > 0.18 um (W). (Except VIA bar region)" }
+           0 rVIA2_R_4_M3 @= { @ "VIA2.R.4:M3 : At least 2 square VIAx or one rectangular VIAx must be used for a connection that distance <= 1.65 um (D) away from a metal plate (either Mx or Mx+1) with length > 0.18 um (L) and width > 0.18 um (W). (Except VIA bar region)" }
+           0 rVIA2_R_5_M2 @= { @ "VIA2.R.5:M2 : At least 2 square VIAx or one rectangular VIAx must be used for a connection that distance <= 4 um (D) away from a metal plate (either Mx or Mx+1) with length > 1 um (L) and width > 1 um (W). (Except VIA bar region)" }
+           0 rVIA2_R_5_M3 @= { @ "VIA2.R.5:M3 : At least 2 square VIAx or one rectangular VIAx must be used for a connection that distance <= 4 um (D) away from a metal plate (either Mx or Mx+1) with length > 1 um (L) and width > 1 um (W). (Except VIA bar region)" }
+           0 rVIA2_R_6_M2 @= { @ "VIA2.R.6:M2 : At least 2 square VIAx or one rectangular VIAx must be used for a connection that distance <= 10 um (D) away from a metal plate (either Mx or Mx+1) with length > 5 um (L) and width > 1.5 um (W). (Except VIA bar region)" }
+           0 rVIA2_R_6_M3 @= { @ "VIA2.R.6:M3 : At least 2 square VIAx or one rectangular VIAx must be used for a connection that distance <= 10 um (D) away from a metal plate (either Mx or Mx+1) with length > 5 um (L) and width > 1.5 um (W). (Except VIA bar region)" }
+           0 rVIA2_R_8 @= { @ "VIA2.R.8 : Single VIAx is not allowed for H-shape Mx+1 when all of the following conditions come into existence: 1. The Mx+1 has H-shape interact with two metal holes: two metal hole length(L2) <= 5.0 um and both two metal hole area <= 5.0 um2 2. The VIAx overlaps on the center metal bar of this H-shape Mx+1 3. The length (L) of the center metal bar <= 1.0 um and the width of metal bar is <= 0.15 um." }
+           1 rVIA2_S_1 @= { @ "VIA2.S.1 : Square VIAx space >= 0.07" }
+           0 rVIA2_S_18 @= { @ "VIA2.S.18 : Space of VIAx bar in LOWMEDN to VIAx hole >= 0.35" }
+           0 rVIA2_S_19 @= { @ "VIA2.S.19 : Space of VIAx bar in LOWMEDN >= 0.6" }
+           0 rVIA2_S_24 @= { @ "VIA2.S.24 : Space of VIAx hole in seal-ring >= 0.375" }
+           0 rVIA2_S_25 @= { @ "VIA2.S.25 : Space of VIAx hole to VIAx bar in seal-ring >= 0.35" }
+           0 rVIA2_S_26 @= { @ "VIA2.S.26 : Opposite space of VIAx hole in SLDB >= 0.2" }
+           0 rVIA2_S_27 @= { @ "VIA2.S.27 : Space of VIAx hole in SLDB >= 0.1" }
+           0 rVIA2_S_3 @= { @ "VIA2.S.3 : Square VIAx space to rectangular VIAx >= 0.075" }
+           0 rVIA2_S_4 @= { @ "VIA2.S.4 : Rectangular VIAx space to rectangular VIAx >= 0.08" }
+           1 rVIA2_S_5 @= { @ "VIA2.S.5 : VIAx space [parallel run length > -0.04 um] >= 0.08" }
+           0 rVIA2_S_8 @= { @ "VIA2.S.8 : Maximum space of VIAx hole [INSIDE SEALRING] DRC flags: {SEALRING AND Mx} must be fully covered by {{SEALRING AND VIAx holes} SIZING 3.5 um} <= 7" }
+           0 rVIA2_W_1 @= { @ "VIA2.W.1 : Width x Length = 0.05 x 0.05, 0.05 x 0.13 (Except seal-ring (162,2) and {LOWMEDN NOT {LOWMEDN SIZING -4 m}})" }
+           0 rVIA2_W_2__VIA2_W_4 @= { @ "VIA2.W.2__VIA2.W.4 : Width of VIA2(VIAx) bar of sealring/SLDB = 0.5/0.5" }
+           0 rVIA2_W_3__VIA2_W_5 @= { @ "VIA2.W.3__VIA2.W.5 : Width of VIA2(VIAx) hole of sealring/SLDB = 0.05/0.05" }
+           0 rVIA2_W_6 @= { @ "VIA2.W.6 : Width of VIAx bar in protection ring [INSIDE LOWMEDN] = 0.15" }
+           0 rVIA3_EN_1 @= { @ "VIA3.EN.1 : Enclosure by M1 or Mx >= 0" }
+           0 rVIA3_EN_10 @= { @ "VIA3.EN.10 : Enclosure by Mx [0.07 um >= metal width > 0.055 um, space < 0.065 um (D1) and parallel run length > 0.1 um] >= 0.005" }
+           0 rVIA3_EN_11 @= { @ "VIA3.EN.11 : Enclosure by Mx [0.16 um >= metal width > 0.07 um, space < 0.1 um (D1) and parallel run length > 0.1 um] (For VIAx.EN.11, the rule check is not included same VIAx group, which is defined as below). 1. VIAx space <= 0.11 um2. Mx is same net 3. Mx+1 is same net >= 0.01" }
+           0 rVIA3_EN_12 @= { @ "VIA3.EN.12 : Enclosure by M1 or Mx [4.5 um >= metal width > 0.16 um, space < 0.13 um and parallel run length > 0.1 um] >= 0.015" }
+           0 rVIA3_EN_13 @= { @ "VIA3.EN.13 : VIAx bar enclosure by M1/Mx in LOWMEDN >= 0.1" }
+           0 rVIA3_EN_25 @= { @ "VIA3.EN.25 : Enclosure of VIAx bar by Mx in seal-ring >= 0.21" }
+           0 rVIA3_EN_26 @= { @ "VIA3.EN.26 : Enclosure of VIAx hole by Mx in seal-ring >= 0.23" }
+           0 rVIA3_EN_27 @= { @ "VIA3.EN.27 : Enclosure of VIAx hole by Mx in SLDB >= 0.03" }
+           0 rVIA3_EN_2__VIA3_EN_3__VIA3_EN_14__VIA3_EN_15 @= { @ "VIA3.EN.2__VIA3.EN.3__VIA3.EN.14__VIA3.EN.15 : Enclosure by M3 [at least two opposite sides] >= 0.03 um OR [all sides] >= 0.02 OR [all side] >= 0.01 / [at least two opposite sides] >= 0.025" }
+           0 rVIA3_EN_3__VIA3_EN_5__VIA3_EN_6__VIA3_EN_7 @= { @ "VIA3.EN.3__VIA3.EN.5__VIA3.EN.6__VIA3.EN.7 : Enclosure by M3 [two opposite direction >= 0.03 and all side >= 0.01], OR Enclosure by M3 [at rectangular VIA3 end direction] >= 0.04, OR Enclosure by M3 [all sides] >= 0.02" }
+           0 rVIA3_EN_9 @= { @ "VIA3.EN.9 : Enclosure by Mx [0.055 um >= metal width > 0.05 um, space < 0.06 um (D1) and the other side space >= 0.06 um (D1'), parallel run length > 0.1 um] >= 0.005" }
+           3 rVIA3_R_2__VIA3_R_3 @= { @ "VIA3.R.2__VIA3.R.3 : When M3 or M4 width > 0.18 um, more than one VIA3 is required. 2 vias spacing should be <= 0.1 um or 4 vias spacing should be <= 0.65 um 4 vias spacing should be <= 0.1 um or 9 vias spacing should be <= 0.85 um" }
+           0 rVIA3_R_4_M3 @= { @ "VIA3.R.4:M3 : At least 2 square VIAx or one rectangular VIAx must be used for a connection that distance <= 1.65 um (D) away from a metal plate (either Mx or Mx+1) with length > 0.18 um (L) and width > 0.18 um (W). (Except VIA bar region)" }
+           3 rVIA3_R_4_M4 @= { @ "VIA3.R.4:M4 : At least 2 square VIAx or one rectangular VIAx must be used for a connection that distance <= 1.65 um (D) away from a metal plate (either Mx or Mx+1) with length > 0.18 um (L) and width > 0.18 um (W). (Except VIA bar region)" }
+           0 rVIA3_R_5_M3 @= { @ "VIA3.R.5:M3 : At least 2 square VIAx or one rectangular VIAx must be used for a connection that distance <= 4 um (D) away from a metal plate (either Mx or Mx+1) with length > 1 um (L) and width > 1 um (W). (Except VIA bar region)" }
+           0 rVIA3_R_5_M4 @= { @ "VIA3.R.5:M4 : At least 2 square VIAx or one rectangular VIAx must be used for a connection that distance <= 4 um (D) away from a metal plate (either Mx or Mx+1) with length > 1 um (L) and width > 1 um (W). (Except VIA bar region)" }
+           0 rVIA3_R_6_M3 @= { @ "VIA3.R.6:M3 : At least 2 square VIAx or one rectangular VIAx must be used for a connection that distance <= 10 um (D) away from a metal plate (either Mx or Mx+1) with length > 5 um (L) and width > 1.5 um (W). (Except VIA bar region)" }
+           0 rVIA3_R_6_M4 @= { @ "VIA3.R.6:M4 : At least 2 square VIAx or one rectangular VIAx must be used for a connection that distance <= 10 um (D) away from a metal plate (either Mx or Mx+1) with length > 5 um (L) and width > 1.5 um (W). (Except VIA bar region)" }
+          15 rVIA3_R_8 @= { @ "VIA3.R.8 : Single VIAx is not allowed for H-shape Mx+1 when all of the following conditions come into existence: 1. The Mx+1 has H-shape interact with two metal holes: two metal hole length(L2) <= 5.0 um and both two metal hole area <= 5.0 um2 2. The VIAx overlaps on the center metal bar of this H-shape Mx+1 3. The length (L) of the center metal bar <= 1.0 um and the width of metal bar is <= 0.15 um." }
+           2 rVIA3_S_1 @= { @ "VIA3.S.1 : Square VIAx space >= 0.07" }
+           0 rVIA3_S_18 @= { @ "VIA3.S.18 : Space of VIAx bar in LOWMEDN to VIAx hole >= 0.35" }
+           0 rVIA3_S_19 @= { @ "VIA3.S.19 : Space of VIAx bar in LOWMEDN >= 0.6" }
+           0 rVIA3_S_24 @= { @ "VIA3.S.24 : Space of VIAx hole in seal-ring >= 0.375" }
+           0 rVIA3_S_25 @= { @ "VIA3.S.25 : Space of VIAx hole to VIAx bar in seal-ring >= 0.35" }
+           0 rVIA3_S_26 @= { @ "VIA3.S.26 : Opposite space of VIAx hole in SLDB >= 0.2" }
+           0 rVIA3_S_27 @= { @ "VIA3.S.27 : Space of VIAx hole in SLDB >= 0.1" }
+           0 rVIA3_S_3 @= { @ "VIA3.S.3 : Square VIAx space to rectangular VIAx >= 0.075" }
+           0 rVIA3_S_4 @= { @ "VIA3.S.4 : Rectangular VIAx space to rectangular VIAx >= 0.08" }
+           2 rVIA3_S_5 @= { @ "VIA3.S.5 : VIAx space [parallel run length > -0.04 um] >= 0.08" }
+           0 rVIA3_S_8 @= { @ "VIA3.S.8 : Maximum space of VIAx hole [INSIDE SEALRING] DRC flags: {SEALRING AND Mx} must be fully covered by {{SEALRING AND VIAx holes} SIZING 3.5 um} <= 7" }
+           0 rVIA3_W_1 @= { @ "VIA3.W.1 : Width x Length = 0.05 x 0.05, 0.05 x 0.13 (Except seal-ring (162,2) and {LOWMEDN NOT {LOWMEDN SIZING -4 m}})" }
+           0 rVIA3_W_2__VIA3_W_4 @= { @ "VIA3.W.2__VIA3.W.4 : Width of VIA3(VIAx) bar of sealring/SLDB = 0.5/0.5" }
+           0 rVIA3_W_3__VIA3_W_5 @= { @ "VIA3.W.3__VIA3.W.5 : Width of VIA3(VIAx) hole of sealring/SLDB = 0.05/0.05" }
+           0 rVIA3_W_6 @= { @ "VIA3.W.6 : Width of VIAx bar in protection ring [INSIDE LOWMEDN] = 0.15" }
+           0 rVIA4_EN_1 @= { @ "VIA4.EN.1 : Enclosure by Mx, My, Mz, or Mr >= 0.02" }
+           0 rVIA4_EN_2 @= { @ "VIA4.EN.2 : Enclosure by Mx, My, Mz, or Mr [at least 2 opposite sides] >= 0.08" }
+           0 rVIA4_EN_5 @= { @ "VIA4.EN.5 : Enclosure of VIAr bar by Mr in seal-ring >= 0.08" }
+           0 rVIA4_EN_6 @= { @ "VIA4.EN.6 : Enclosure of VIAr hole by Mr in seal-ring >= 0.08" }
+           0 rVIA4_R_2 @= { @ "VIA4.R.2 : At least 2 VIAr with spacing <= 1.7 um are required to connect Mr and Mr+1 when one of these metals has a width and length > 1.8 um" }
+           0 rVIA4_R_3_M4 @= { @ "VIA4.R.3:M4 : At least 2 VIAr must be used for a connection that distance <= 5 um (D) away from a metal plate (either Mr or Mr+1) with length > 10 um (L) and width > 3 um (W). (It is allowed to use one VIAr for a connection that is > 5 um (D) away from a metal plate (either Mr or Mr+1) with length > 10 um (L) and width > 3 um (W))" }
+           0 rVIA4_R_3_M5 @= { @ "VIA4.R.3:M5 : At least 2 VIAr must be used for a connection that distance <= 5 um (D) away from a metal plate (either Mr or Mr+1) with length > 10 um (L) and width > 3 um (W). (It is allowed to use one VIAr for a connection that is > 5 um (D) away from a metal plate (either Mr or Mr+1) with length > 10 um (L) and width > 3 um (W))" }
+           0 rVIA4_S_1 @= { @ "VIA4.S.1 : Space >= 0.44" }
+           0 rVIA4_S_2 @= { @ "VIA4.S.2 : Space to 3-neighboring VIAr (distance <= 0.66 um distance) >= 0.66" }
+           0 rVIA4_S_3 @= { @ "VIA4.S.3 : Space of 2*2 array on the same net >= 0.54" }
+           0 rVIA4_S_4 @= { @ "VIA4.S.4 : Space of VIAr hole in seal-ring >= 0.44" }
+           0 rVIA4_S_5 @= { @ "VIA4.S.5 : Space of VIAr hole to VIAr bar in seal-ring >= 0.44" }
+           0 rVIA4_S_6 @= { @ "VIA4.S.6 : Space of VIAr hole in SLDB >= 0.44" }
+           0 rVIA4_S_7 @= { @ "VIA4.S.7 : Space of VIAr hole to VIAr bar in SLDB >= 0.44" }
+           0 rVIA4_S_9 @= { @ "VIA4.S.9 : Maximum space of VIAr hole [INSIDE SEALRING] DRC flags: {SEALRING AND Mr} must be fully covered by {{SEALRING AND VIAr holes} SIZING 3.5 um} <= 7" }
+           0 rVIA4_W_1 @= { @ "VIA4.W.1 : Width (square)(maximum = minimum) = 0.46" }
+           0 rVIA4_W_2__VIA4_W_4 @= { @ "VIA4.W.2__VIA4.W.4 : Width of VIA4(VIAr) bar of sealring/SLDB = 0.5/0.5" }
+           0 rVIA4_W_3__VIA4_W_5 @= { @ "VIA4.W.3__VIA4.W.5 : Width of VIA4(VIAr) hole of sealring/SLDB = 0.46/0.46" }

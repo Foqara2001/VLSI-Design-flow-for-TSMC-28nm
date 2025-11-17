@@ -1,0 +1,24 @@
+-stage_id 2
+-just_split
+-i xout
+-skip_xtract_pp xout
+-num_cores 1
+-num_parts 0
+-message_suppression_limit  100
+-inter_pic_level_connections
+-xout_offset_file xout_offset
+-random_access_xout
+-local_nodeids
+-xout_nn_stitch 0
+-new_ip_handling
+-gpd_dir ../RISCV1.gpd
+-direct_gpd
+-output_form 3
+-hn_file hnfile.hn
+-net_info_file netlist.netinfo
+-pin_file idx.pins
+-idx_nm_file idx.nm
+-rename_pin_ports _
+-rename_instance_ports _
+-layer_map_ext
+-layer_info layer_info

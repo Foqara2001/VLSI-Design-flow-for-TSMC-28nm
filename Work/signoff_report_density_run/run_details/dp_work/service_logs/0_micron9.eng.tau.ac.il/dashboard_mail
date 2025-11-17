@@ -1,0 +1,5 @@
+[3302796:2025-09-07 01:11:10.087] Starting service 'dashboard_mail' (Node ID=0, Host Name=micron9.eng.tau.ac.il)
+[3302796:2025-09-07 01:11:10.088] [ev_dash_mail] The run detail dir path: /project/tsmc28mmwave/users/foqara/ws/riscv/signoff_report_density_run/run_details.
+[3302796:2025-09-07 01:11:26.256] [ev_dash_mail] Dashboard Mail service is about to stop.
+[3302796:2025-09-07 01:11:26.256] [ev_dash_mail] The email config file path: /project/tsmc28mmwave/users/foqara/ws/riscv/signoff_report_density_run/run_details/dashboard.email/icv_dashboard.conf.
+[3302796:2025-09-07 01:11:26.257] [ev_dash_mail] The email configuration of dashboard is NO_EMAIL.

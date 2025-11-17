@@ -1,0 +1,13 @@
+#!/bin/sh
+ulimit -c 0
+total=0
+pathsize=`/usr/bin/du -s --block-size=1 /project/tsmc28mmwave/users/foqara/ws/riscv/signoff_fill_run/icv_run_1/run_details --exclude=group | awk '{print $1}'`
+total=$(($total+$pathsize))
+group=0
+group=`/usr/bin/du -s --block-size=1 /project/tsmc28mmwave/users/foqara/ws/riscv/signoff_fill_run/icv_run_1/run_details/group | awk '{print $1}'`
+echo $group > /project/tsmc28mmwave/users/foqara/ws/riscv/signoff_fill_run/icv_run_1/run_details/group/duse_group.tmp && \
+mv /project/tsmc28mmwave/users/foqara/ws/riscv/signoff_fill_run/icv_run_1/run_details/group/duse_group.tmp /project/tsmc28mmwave/users/foqara/ws/riscv/signoff_fill_run/icv_run_1/run_details/group/duse_group
+pathsize=`/usr/bin/du -s --block-size=1 /project/tsmc28mmwave/users/foqara/ws/riscv/signoff_fill_run/icv_run_1/RISCV1.LAYOUT_ERRORS | awk '{print $1}'`
+total=$(($total+$pathsize))
+echo $total > /project/tsmc28mmwave/users/foqara/ws/riscv/signoff_fill_run/icv_run_1/run_details/duse_manager_res.tmp && \
+mv /project/tsmc28mmwave/users/foqara/ws/riscv/signoff_fill_run/icv_run_1/run_details/duse_manager_res.tmp /project/tsmc28mmwave/users/foqara/ws/riscv/signoff_fill_run/icv_run_1/run_details/duse_manager_res

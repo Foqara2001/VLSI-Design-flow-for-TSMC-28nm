@@ -1,0 +1,41 @@
+
+                                  StarRC (TM)
+
+               Version W-2024.09-SP3 for linux64 - Jan 17, 2025 
+
+                    Copyright (c) 1999 - 2025 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+ExecName: /tools/synopsys/starrc/W-2024.09-SP3/linux64_starrc/bin/StarXtract
+Version: W-2024.09-SP3
+Built on: Jan 16 2025 19:26:01
+Start Time: Tue Sep  2 13:45:42 2025
+
+Host ............ micron1.eng.tau.ac.il
+
+WARNING: Found shorted nets (see file shorts_all.sum). The capacitances of these nets may be
+         unreliable due to the shorts. (SX-0955)
+WARNING: The short could be on the db layer or other db layers with the same height in
+         star/short_all.sum. (SX-4093)
+  
+Dump VMF File      Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=562.1 
+ReadShorts         Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=563.3 
+WriteShortsReport  Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=563.8 
+ReportViaAndSmin   Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=563.8 
+InstPortNotCovered Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=563.8 
+ReportShorts       Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=563.8 
+  
+Done          Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=563.8 

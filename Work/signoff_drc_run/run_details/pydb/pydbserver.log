@@ -1,0 +1,380 @@
+
+                                  PYDB_Server 
+
+         Version W-2024.09-SP3-1 for linux64 - Feb 11, 2025 cl#11364552
+
+                    Copyright (c) 2007 - 2025 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+variable width coordinate support enabled.
+Listening for connections on port 59635
+PYDB_Server Started on host micron9.eng.tau.ac.il, Sun 09/07/2025 00:52:09
+Client micron9.eng.tau.ac.il(3289931):16 connected (1 total client)
+Verified current licenses.
+Creating file:/project/tsmc28mmwave/users/foqara/ws/riscv/signoff_drc_run/run_details/pydb/PYDB_RISCV1?nolock=1
+SQLite page_size=65536
+SQLite cache_size=65536
+SQLite mmap_size=0
+SQLite journal_mode=OFF
+SQLite version 3.33.0
+Client micron9.eng.tau.ac.il(3289999):25 connected (2 total clients)
+Client micron9.eng.tau.ac.il(3289998):27 connected (3 total clients)
+Client micron9.eng.tau.ac.il(3289999):25 connection closed
+Client micron9.eng.tau.ac.il(3289999):25 disconnected (2 clients remain)
+Client micron9.eng.tau.ac.il(3289998):27 connection closed
+Client micron9.eng.tau.ac.il(3289998):27 disconnected (1 client remains)
+Client micron9.eng.tau.ac.il(3289999):25 connected (2 total clients)
+Client micron9.eng.tau.ac.il(3289998):27 connected (3 total clients)
+Client micron9.eng.tau.ac.il(3289999):25 connection closed
+Client micron9.eng.tau.ac.il(3289999):25 disconnected (2 clients remain)
+Client micron9.eng.tau.ac.il(3289999):25 connected (3 total clients)
+Client micron9.eng.tau.ac.il(3289999):25 connection closed
+Client micron9.eng.tau.ac.il(3289999):25 disconnected (2 clients remain)
+Client micron9.eng.tau.ac.il(3289998):27 connection closed
+Client micron9.eng.tau.ac.il(3289998):27 disconnected (1 client remains)
+Client micron9.eng.tau.ac.il(3289999):25 connected (2 total clients)
+Client micron9.eng.tau.ac.il(3289998):27 connected (3 total clients)
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:30407:copy
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:30407:copy
+  Error Insertion Time=0:00:00  User=0.01 Sys=0.00 Mem=0.001 GB SQLite=0.008 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:30696:copy
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:30696:copy
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.00 Mem=0.001 GB SQLite=0.008 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:22175:external1
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:22175:external1
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.00 Mem=0.001 GB SQLite=0.008 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:22149:internal1
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:22149:internal1
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.01 Mem=0.001 GB SQLite=0.008 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:23893:external2
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:23893:external2
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.00 Mem=0.001 GB SQLite=0.008 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:23034:external2
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:23034:external2
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.00 Mem=0.001 GB SQLite=0.008 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:23307:area
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:23307:area
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.00 Mem=0.001 GB SQLite=0.009 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:22993:external1
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:22993:external1
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.00 Mem=0.001 GB SQLite=0.009 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:23174:external1
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:23174:external1
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.00 Mem=0.001 GB SQLite=0.009 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:23852:external1
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:23852:external1
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.00 Mem=0.001 GB SQLite=0.009 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:24033:external1
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:24033:external1
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.00 Mem=0.001 GB SQLite=0.009 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:24166:area
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:24166:area
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.00 Mem=0.001 GB SQLite=0.009 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:23462:density
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:23462:density
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.01 Mem=0.001 GB SQLite=0.010 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:22489:not_inside
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:22489:not_inside
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.00 Mem=0.001 GB SQLite=0.010 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:13095:copy
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:13095:copy
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.00 Mem=0.002 GB SQLite=0.011 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:13096:copy
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:13096:copy
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.00 Mem=0.001 GB SQLite=0.011 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:21910:external1
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:21910:external1
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.00 Mem=0.001 GB SQLite=0.011 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:21901:external1
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:21901:external1
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.00 Mem=0.001 GB SQLite=0.011 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:12899:copy
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:12899:copy
+  Error Insertion Time=0:00:00  User=0.01 Sys=0.01 Mem=0.002 GB SQLite=0.011 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:12887:copy
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:12887:copy
+  Error Insertion Time=0:00:00  User=0.01 Sys=0.00 Mem=0.002 GB SQLite=0.011 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:22666:external1
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:22666:external1
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.00 Mem=0.002 GB SQLite=0.011 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:22657:external1
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:22657:external1
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.00 Mem=0.002 GB SQLite=0.011 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:23525:external1
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:23525:external1
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.00 Mem=0.002 GB SQLite=0.011 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:23516:external1
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:23516:external1
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.00 Mem=0.002 GB SQLite=0.011 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:22216:not_inside
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:22216:not_inside
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.00 Mem=0.002 GB SQLite=0.011 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:22356:not_inside
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:22356:not_inside
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.00 Mem=0.002 GB SQLite=0.011 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:17308:density
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:17308:density
+  Error Insertion Time=0:00:00  User=0.01 Sys=0.00 Mem=0.002 GB SQLite=0.012 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:17309:copy
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:17309:copy
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.00 Mem=0.002 GB SQLite=0.012 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:17282:density
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:17282:density
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.00 Mem=0.002 GB SQLite=0.011 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:17283:copy
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:17283:copy
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.00 Mem=0.002 GB SQLite=0.012 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:16404:density
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:16404:density
+  Error Insertion Time=0:00:00  User=0.01 Sys=0.00 Mem=0.002 GB SQLite=0.012 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:16405:copy
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:16405:copy
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.00 Mem=0.002 GB SQLite=0.012 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:24533:density
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:24533:density
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.00 Mem=0.002 GB SQLite=0.012 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:24534:copy
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:24534:copy
+  Error Insertion Time=0:00:00  User=0.01 Sys=0.00 Mem=0.002 GB SQLite=0.012 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:25181:density
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:25181:density
+  Error Insertion Time=0:00:00  User=0.01 Sys=0.00 Mem=0.002 GB SQLite=0.012 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:24964:density
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:24964:density
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.00 Mem=0.002 GB SQLite=0.012 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:21435:not_inside
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:21435:not_inside
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.00 Mem=0.002 GB SQLite=0.012 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:22238:not_inside
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:22238:not_inside
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.00 Mem=0.002 GB SQLite=0.012 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:24181:area
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:24181:area
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.00 Mem=0.002 GB SQLite=0.012 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:21453:not_inside
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:21453:not_inside
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.00 Mem=0.002 GB SQLite=0.012 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:23000:contains
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:23000:contains
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.00 Mem=0.002 GB SQLite=0.012 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:21406:not_inside
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:21406:not_inside
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.00 Mem=0.002 GB SQLite=0.012 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:23859:contains
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:23859:contains
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.00 Mem=0.002 GB SQLite=0.012 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:24040:contains
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:24040:contains
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.00 Mem=0.002 GB SQLite=0.012 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:23866:contains
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:23866:contains
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.00 Mem=0.002 GB SQLite=0.012 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:15773:and_edge
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:15773:and_edge
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.00 Mem=0.002 GB SQLite=0.013 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:15779:and_edge
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:15779:and_edge
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.00 Mem=0.002 GB SQLite=0.013 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:24175:not_contains
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:24175:not_contains
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.00 Mem=0.002 GB SQLite=0.013 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:15767:and_edge
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:15767:and_edge
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.00 Mem=0.002 GB SQLite=0.013 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:15785:and_edge
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:15785:and_edge
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.00 Mem=0.002 GB SQLite=0.013 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:22456:not_inside
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:22456:not_inside
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.00 Mem=0.002 GB SQLite=0.013 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:22762:not_inside
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:22762:not_inside
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.01 Mem=0.002 GB SQLite=0.013 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:22237:not_inside
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:22237:not_inside
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.00 Mem=0.002 GB SQLite=0.013 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:34723:copy
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:34723:copy
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.00 Mem=0.002 GB SQLite=0.013 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:23731:not
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:23731:not
+  Error Insertion Time=0:00:00  User=0.01 Sys=0.00 Mem=0.002 GB SQLite=0.013 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:30557:copy
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:30557:copy
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.00 Mem=0.003 GB SQLite=0.013 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:30634:copy
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:30634:copy
+  Error Insertion Time=0:00:00  User=0.01 Sys=0.00 Mem=0.003 GB SQLite=0.014 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:30478:copy
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:30478:copy
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.00 Mem=0.003 GB SQLite=0.014 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:25009:density
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:25009:density
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.00 Mem=0.003 GB SQLite=0.013 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:16240:not
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:16240:not
+  Error Insertion Time=0:00:00  User=0.01 Sys=0.00 Mem=0.003 GB SQLite=0.014 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:23055:enclose
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:23055:enclose
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.00 Mem=0.003 GB SQLite=0.014 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:23056:external2
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:23056:external2
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.00 Mem=0.003 GB SQLite=0.014 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:23914:enclose
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:23914:enclose
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.00 Mem=0.003 GB SQLite=0.014 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:23915:external2
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:23915:external2
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.00 Mem=0.003 GB SQLite=0.014 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:24155:enclose
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:24155:enclose
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.00 Mem=0.003 GB SQLite=0.014 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:23804:and
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:23804:and
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.00 Mem=0.003 GB SQLite=0.015 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:21557:interacting
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:21557:interacting
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.00 Mem=0.003 GB SQLite=0.015 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:22170:not_touching
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:22170:not_touching
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.00 Mem=0.003 GB SQLite=0.016 GB Unpooled=0.000 GB
+Begin error insertion: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:23708:outside
+Error insertion complete: /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt:23708:outside
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.01 Mem=0.003 GB SQLite=0.016 GB Unpooled=0.000 GB
+Client micron9.eng.tau.ac.il(3289998):27 connection closed
+Client micron9.eng.tau.ac.il(3289998):27 disconnected (2 clients remain)
+Client micron9.eng.tau.ac.il(3289999):25 connection closed
+Client micron9.eng.tau.ac.il(3289999):25 disconnected (1 client remains)
+ Total error insertion Time=0:01:03  User=0.10 Sys=0.05 Mem=0.003 GB SQLite=0.017 GB Unpooled=0.000 GB
+  Total Commands: 69
+  Total Errors: 5640
+  Avg Time/Cmd: Wall=0 User=0.00 Sys=0.00 Mem=0.002 GB
+Generating /project/tsmc28mmwave/users/foqara/ws/riscv/signoff_drc_run/RISCV1.LAYOUT_ERRORS
+  Generation Time=0:00:01  User=0.01 Sys=0.00 Mem=0.003 GB
+Flushing database cache
+  Flush Time=0:00:00  User=0.00 Sys=0.00 Mem=0.003 GB SQLite=0.016 GB Unpooled=0.000 GB
+Shutdown requested by client micron9.eng.tau.ac.il(3289931):16
+0 clients remain connected
+Client micron9.eng.tau.ac.il(3289931):16 connection closed
+Overall server Time=0:01:52  User=0.30 Sys=0.16 Mem=0.003 GB SQLite=0.017 GB Unpooled=0.000 GB
+
+                                  PYDB_Server 
+
+         Version W-2024.09-SP3-1 for linux64 - Feb 11, 2025 cl#11364552
+
+                    Copyright (c) 2007 - 2025 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+variable width coordinate support enabled.
+Listening for connections on port 40347
+PYDB_Server Started on host micron9.eng.tau.ac.il, Sun 09/07/2025 00:57:22
+Client micron9.eng.tau.ac.il(3294972):5 connected (1 total client)
+Verified current licenses.
+Opening file:/project/tsmc28mmwave/users/foqara/ws/riscv/signoff_drc_run/run_details/pydb/PYDB_RISCV1?nolock=1 in read-write mode
+SQLite page_size=65536
+SQLite cache_size=65536
+SQLite mmap_size=0
+SQLite journal_mode=OFF
+SQLite version 3.33.0
+Shutdown requested by client micron9.eng.tau.ac.il(3294972):5
+0 clients remain connected
+Client micron9.eng.tau.ac.il(3294972):5 connection closed
+Overall server Time=0:00:01  User=0.00 Sys=0.01 Mem=0.001 GB SQLite=0.004 GB Unpooled=0.000 GB
+
+                                  PYDB_Server 
+
+         Version W-2024.09-SP3-1 for linux64 - Feb 11, 2025 cl#11364552
+
+                    Copyright (c) 2007 - 2025 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+variable width coordinate support enabled.
+Listening for connections on port 44029
+PYDB_Server Started on host micron9.eng.tau.ac.il, Sun 09/07/2025 01:22:57
+Client micron9.eng.tau.ac.il(3307331):5 connected (1 total client)
+Verified current licenses.
+Opening file:/project/tsmc28mmwave/users/foqara/ws/riscv/signoff_drc_run/run_details/pydb/PYDB_RISCV1?nolock=1 in read-write mode
+SQLite page_size=65536
+SQLite cache_size=65536
+SQLite mmap_size=0
+SQLite journal_mode=OFF
+SQLite version 3.33.0
+Shutdown requested by client micron9.eng.tau.ac.il(3307331):5
+0 clients remain connected
+Client micron9.eng.tau.ac.il(3307331):5 connection closed
+Overall server Time=0:00:00  User=0.01 Sys=0.00 Mem=0.001 GB SQLite=0.004 GB Unpooled=0.000 GB
+
+                                  PYDB_Server 
+
+         Version W-2024.09-SP3-1 for linux64 - Feb 11, 2025 cl#11364552
+
+                    Copyright (c) 2007 - 2025 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+variable width coordinate support enabled.
+Listening for connections on port 52461
+PYDB_Server Started on host micron9.eng.tau.ac.il, Sun 09/07/2025 01:31:44
+Client micron9.eng.tau.ac.il(3312936):5 connected (1 total client)
+Verified current licenses.
+Opening file:/project/tsmc28mmwave/users/foqara/ws/riscv/signoff_drc_run/run_details/pydb/PYDB_RISCV1?nolock=1 in read-write mode
+SQLite page_size=65536
+SQLite cache_size=65536
+SQLite mmap_size=0
+SQLite journal_mode=OFF
+SQLite version 3.33.0
+Shutdown requested by client micron9.eng.tau.ac.il(3312936):5
+0 clients remain connected
+Client micron9.eng.tau.ac.il(3312936):5 connection closed
+Overall server Time=0:00:00  User=0.01 Sys=0.00 Mem=0.001 GB SQLite=0.004 GB Unpooled=0.000 GB

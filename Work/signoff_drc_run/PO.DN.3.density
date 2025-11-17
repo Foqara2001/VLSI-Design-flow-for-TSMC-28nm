@@ -1,0 +1,1192 @@
+--------------------------------------------------
+Window (x1,y1) (x2,y2)
+  Window Statistics
+--------------------------------------------------
+(50,0) (70,20)
+  ratio = 0
+  areaL1 = 106.3728
+  areaL2 = 28.2459
+  areaL3 = 106.3728
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 106.3728
+(60,0) (80,20)
+  ratio = 0
+  areaL1 = 244.3816
+  areaL2 = 106.0725
+  areaL3 = 244.3816
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 244.3816
+(70,0) (90,20)
+  ratio = 0
+  areaL1 = 206.7816
+  areaL2 = 84.8807
+  areaL3 = 206.7816
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 206.7816
+(80,0) (100,20)
+  ratio = 0
+  areaL1 = 58.599
+  areaL2 = 7.0541
+  areaL3 = 58.599
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 58.599
+(40,10) (60,30)
+  ratio = 0
+  areaL1 = 106.3728
+  areaL2 = 28.2459
+  areaL3 = 106.3728
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 106.3728
+(50,10) (70,30)
+  ratio = 0
+  areaL1 = 281.2012
+  areaL2 = 153.4069
+  areaL3 = 281.2012
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 281.2012
+(60,10) (80,30)
+  ratio = 0
+  areaL1 = 385.3432
+  areaL2 = 302.583
+  areaL3 = 385.3432
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 385.3432
+(70,10) (90,30)
+  ratio = 0
+  areaL1 = 357.917
+  areaL2 = 264.983
+  areaL3 = 357.917
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 357.917
+(80,10) (100,30)
+  ratio = 0
+  areaL1 = 216.175
+  areaL2 = 94.6151
+  areaL3 = 216.175
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 216.175
+(90,10) (110,30)
+  ratio = 0
+  areaL1 = 58.599
+  areaL2 = 7.0541
+  areaL3 = 58.599
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 58.599
+(30,20) (50,40)
+  ratio = 0
+  areaL1 = 106.3728
+  areaL2 = 28.2459
+  areaL3 = 106.3728
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 106.3728
+(40,20) (60,40)
+  ratio = 0
+  areaL1 = 281.2012
+  areaL2 = 153.4069
+  areaL3 = 281.2012
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 281.2012
+(50,20) (70,40)
+  ratio = 0
+  areaL1 = 385.3432
+  areaL2 = 322.0761
+  areaL3 = 385.3432
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 385.3432
+(60,20) (80,40)
+  ratio = 0
+  areaL1 = 400
+  areaL2 = 396.9151
+  areaL3 = 400
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 400
+(70,20) (90,40)
+  ratio = 0
+  areaL1 = 400
+  areaL2 = 380.5069
+  areaL3 = 400
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 400
+(80,20) (100,40)
+  ratio = 0
+  areaL1 = 357.917
+  areaL2 = 268.0679
+  areaL3 = 357.917
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 357.917
+(90,20) (110,40)
+  ratio = 0
+  areaL1 = 216.175
+  areaL2 = 94.6151
+  areaL3 = 216.175
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 216.175
+(100,20) (120,40)
+  ratio = 0
+  areaL1 = 58.599
+  areaL2 = 7.0541
+  areaL3 = 58.599
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 58.599
+(20,30) (40,50)
+  ratio = 0
+  areaL1 = 106.3728
+  areaL2 = 28.2459
+  areaL3 = 106.3728
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 106.3728
+(30,30) (50,50)
+  ratio = 0
+  areaL1 = 281.2012
+  areaL2 = 153.4069
+  areaL3 = 281.2012
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 281.2012
+(40,30) (60,50)
+  ratio = 0
+  areaL1 = 385.3432
+  areaL2 = 322.0761
+  areaL3 = 385.3432
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 385.3432
+(50,30) (70,50)
+  ratio = 0
+  areaL1 = 400
+  areaL2 = 396.9151
+  areaL3 = 400
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 400
+(60,30) (80,50)
+  ratio = 0
+  areaL1 = 400
+  areaL2 = 400
+  areaL3 = 400
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 400
+(70,30) (90,50)
+  ratio = 0
+  areaL1 = 400
+  areaL2 = 400
+  areaL3 = 400
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 400
+(80,30) (100,50)
+  ratio = 0
+  areaL1 = 400
+  areaL2 = 380.5069
+  areaL3 = 400
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 400
+(90,30) (110,50)
+  ratio = 0
+  areaL1 = 357.917
+  areaL2 = 268.0679
+  areaL3 = 357.917
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 357.917
+(100,30) (120,50)
+  ratio = 0
+  areaL1 = 216.175
+  areaL2 = 94.6151
+  areaL3 = 216.175
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 216.175
+(110,30) (130,50)
+  ratio = 0
+  areaL1 = 58.599
+  areaL2 = 7.0541
+  areaL3 = 58.599
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 58.599
+(10,40) (30,60)
+  ratio = 0
+  areaL1 = 106.3728
+  areaL2 = 28.2459
+  areaL3 = 106.3728
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 106.3728
+(20,40) (40,60)
+  ratio = 0
+  areaL1 = 281.2012
+  areaL2 = 153.4069
+  areaL3 = 281.2012
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 281.2012
+(30,40) (50,60)
+  ratio = 0
+  areaL1 = 385.3432
+  areaL2 = 322.0761
+  areaL3 = 385.3432
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 385.3432
+(40,40) (60,60)
+  ratio = 0
+  areaL1 = 400
+  areaL2 = 396.9151
+  areaL3 = 400
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 400
+(50,40) (70,60)
+  ratio = 0
+  areaL1 = 400
+  areaL2 = 400
+  areaL3 = 400
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 400
+(60,40) (80,60)
+  ratio = 0
+  areaL1 = 400
+  areaL2 = 400
+  areaL3 = 400
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 400
+(70,40) (90,60)
+  ratio = 0
+  areaL1 = 400
+  areaL2 = 400
+  areaL3 = 400
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 400
+(80,40) (100,60)
+  ratio = 0
+  areaL1 = 400
+  areaL2 = 400
+  areaL3 = 400
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 400
+(90,40) (110,60)
+  ratio = 0
+  areaL1 = 400
+  areaL2 = 380.5069
+  areaL3 = 400
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 400
+(100,40) (120,60)
+  ratio = 0
+  areaL1 = 357.917
+  areaL2 = 268.0679
+  areaL3 = 357.917
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 357.917
+(110,40) (130,60)
+  ratio = 0
+  areaL1 = 216.175
+  areaL2 = 94.6151
+  areaL3 = 216.175
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 216.175
+(120,40) (140,60)
+  ratio = 0
+  areaL1 = 58.599
+  areaL2 = 7.0541
+  areaL3 = 58.599
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 58.599
+(0,50) (20,70)
+  ratio = 0
+  areaL1 = 106.3728
+  areaL2 = 28.2459
+  areaL3 = 106.3728
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 106.3728
+(10,50) (30,70)
+  ratio = 0
+  areaL1 = 281.2012
+  areaL2 = 153.4069
+  areaL3 = 281.2012
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 281.2012
+(20,50) (40,70)
+  ratio = 0
+  areaL1 = 385.3432
+  areaL2 = 322.0761
+  areaL3 = 385.3432
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 385.3432
+(30,50) (50,70)
+  ratio = 0
+  areaL1 = 400
+  areaL2 = 396.9151
+  areaL3 = 400
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 400
+(40,50) (60,70)
+  ratio = 0
+  areaL1 = 400
+  areaL2 = 400
+  areaL3 = 400
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 400
+(50,50) (70,70)
+  ratio = 0
+  areaL1 = 400
+  areaL2 = 400
+  areaL3 = 400
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 400
+(60,50) (80,70)
+  ratio = 0
+  areaL1 = 400
+  areaL2 = 400
+  areaL3 = 400
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 400
+(70,50) (90,70)
+  ratio = 0
+  areaL1 = 400
+  areaL2 = 400
+  areaL3 = 400
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 400
+(80,50) (100,70)
+  ratio = 0
+  areaL1 = 400
+  areaL2 = 400
+  areaL3 = 400
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 400
+(90,50) (110,70)
+  ratio = 0
+  areaL1 = 400
+  areaL2 = 400
+  areaL3 = 400
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 400
+(100,50) (120,70)
+  ratio = 0
+  areaL1 = 400
+  areaL2 = 380.5069
+  areaL3 = 400
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 400
+(110,50) (130,70)
+  ratio = 0
+  areaL1 = 357.917
+  areaL2 = 268.0679
+  areaL3 = 357.917
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 357.917
+(120,50) (140,70)
+  ratio = 0
+  areaL1 = 216.175
+  areaL2 = 94.6151
+  areaL3 = 216.175
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 216.175
+(126.24,50) (146.24,70)
+  ratio = 0
+  areaL1 = 106.3728
+  areaL2 = 28.2459
+  areaL3 = 106.3728
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 106.3728
+(0,60) (20,80)
+  ratio = 0
+  areaL1 = 244.106
+  areaL2 = 105.7969
+  areaL3 = 244.106
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 244.106
+(10,60) (30,80)
+  ratio = 0
+  areaL1 = 385.3432
+  areaL2 = 302.3324
+  areaL3 = 385.3432
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 385.3432
+(20,60) (40,80)
+  ratio = 0
+  areaL1 = 400
+  areaL2 = 396.9151
+  areaL3 = 400
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 400
+(30,60) (50,80)
+  ratio = 0
+  areaL1 = 400
+  areaL2 = 400
+  areaL3 = 400
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 400
+(40,60) (60,80)
+  ratio = 0
+  areaL1 = 400
+  areaL2 = 400
+  areaL3 = 400
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 400
+(50,60) (70,80)
+  ratio = 0
+  areaL1 = 400
+  areaL2 = 400
+  areaL3 = 400
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 400
+(60,60) (80,80)
+  ratio = 0
+  areaL1 = 400
+  areaL2 = 400
+  areaL3 = 400
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 400
+(70,60) (90,80)
+  ratio = 0
+  areaL1 = 400
+  areaL2 = 400
+  areaL3 = 400
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 400
+(80,60) (100,80)
+  ratio = 0
+  areaL1 = 400
+  areaL2 = 400
+  areaL3 = 400
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 400
+(90,60) (110,80)
+  ratio = 0
+  areaL1 = 400
+  areaL2 = 400
+  areaL3 = 400
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 400
+(100,60) (120,80)
+  ratio = 0
+  areaL1 = 400
+  areaL2 = 400
+  areaL3 = 400
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 400
+(110,60) (130,80)
+  ratio = 0
+  areaL1 = 400
+  areaL2 = 380.5059
+  areaL3 = 400
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 400
+(120,60) (140,80)
+  ratio = 0
+  areaL1 = 353.4941
+  areaL2 = 227.512
+  areaL3 = 353.4941
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 353.4941
+(126.24,60) (146.24,80)
+  ratio = 0
+  areaL1 = 244.106
+  areaL2 = 105.7969
+  areaL3 = 244.106
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 244.106
+(0,70) (20,90)
+  ratio = 0
+  areaL1 = 206.106
+  areaL2 = 84.4557
+  areaL3 = 206.106
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 206.106
+(10,70) (30,90)
+  ratio = 0
+  areaL1 = 357.5493
+  areaL2 = 264.3324
+  areaL3 = 357.5493
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 357.5493
+(20,70) (40,90)
+  ratio = 0
+  areaL1 = 400
+  areaL2 = 380.2563
+  areaL3 = 400
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 400
+(30,70) (50,90)
+  ratio = 0
+  areaL1 = 400
+  areaL2 = 400
+  areaL3 = 400
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 400
+(40,70) (60,90)
+  ratio = 0
+  areaL1 = 400
+  areaL2 = 400
+  areaL3 = 400
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 400
+(50,70) (70,90)
+  ratio = 0
+  areaL1 = 400
+  areaL2 = 400
+  areaL3 = 400
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 400
+(60,70) (80,90)
+  ratio = 0
+  areaL1 = 400
+  areaL2 = 400
+  areaL3 = 400
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 400
+(70,70) (90,90)
+  ratio = 0
+  areaL1 = 400
+  areaL2 = 400
+  areaL3 = 400
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 400
+(80,70) (100,90)
+  ratio = 0
+  areaL1 = 400
+  areaL2 = 400
+  areaL3 = 400
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 400
+(90,70) (110,90)
+  ratio = 0
+  areaL1 = 400
+  areaL2 = 400
+  areaL3 = 400
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 400
+(100,70) (120,90)
+  ratio = 0
+  areaL1 = 400
+  areaL2 = 399.999
+  areaL3 = 400
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 400
+(110,70) (130,90)
+  ratio = 0
+  areaL1 = 395.5771
+  areaL2 = 349.56
+  areaL3 = 395.5771
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 395.5771
+(120,70) (140,90)
+  ratio = 0
+  areaL1 = 315.8351
+  areaL2 = 189.513
+  areaL3 = 315.8351
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 315.8351
+(126.24,70) (146.24,90)
+  ratio = 0
+  areaL1 = 206.106
+  areaL2 = 84.4557
+  areaL3 = 206.106
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 206.106
+(0,80) (20,100)
+  ratio = 0
+  areaL1 = 58.1667
+  areaL2 = 6.9047
+  areaL3 = 58.1667
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 58.1667
+(10,80) (30,100)
+  ratio = 0
+  areaL1 = 215.4073
+  areaL2 = 94.0657
+  areaL3 = 215.4073
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 215.4073
+(20,80) (40,100)
+  ratio = 0
+  areaL1 = 357.5493
+  areaL2 = 267.4173
+  areaL3 = 357.5493
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 357.5493
+(30,80) (50,100)
+  ratio = 0
+  areaL1 = 400
+  areaL2 = 380.2563
+  areaL3 = 400
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 400
+(40,80) (60,100)
+  ratio = 0
+  areaL1 = 400
+  areaL2 = 400
+  areaL3 = 400
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 400
+(50,80) (70,100)
+  ratio = 0
+  areaL1 = 400
+  areaL2 = 400
+  areaL3 = 400
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 400
+(60,80) (80,100)
+  ratio = 0
+  areaL1 = 400
+  areaL2 = 400
+  areaL3 = 400
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 400
+(70,80) (90,100)
+  ratio = 0
+  areaL1 = 400
+  areaL2 = 400
+  areaL3 = 400
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 400
+(80,80) (100,100)
+  ratio = 0
+  areaL1 = 400
+  areaL2 = 400
+  areaL3 = 400
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 400
+(90,80) (110,100)
+  ratio = 0
+  areaL1 = 400
+  areaL2 = 399.999
+  areaL3 = 400
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 400
+(100,80) (120,100)
+  ratio = 0
+  areaL1 = 395.5771
+  areaL2 = 349.56
+  areaL3 = 395.5771
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 395.5771
+(110,80) (130,100)
+  ratio = 0
+  areaL1 = 315.8351
+  areaL2 = 199.123
+  areaL3 = 315.8351
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 315.8351
+(120,80) (140,100)
+  ratio = 0
+  areaL1 = 144.9389
+  areaL2 = 49.562
+  areaL3 = 144.9389
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 144.9389
+(126.24,80) (146.24,100)
+  ratio = 0
+  areaL1 = 58.1667
+  areaL2 = 6.9047
+  areaL3 = 58.1667
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 58.1667
+(10,90) (30,110)
+  ratio = 0
+  areaL1 = 58.1667
+  areaL2 = 6.9047
+  areaL3 = 58.1667
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 58.1667
+(20,90) (40,110)
+  ratio = 0
+  areaL1 = 215.4073
+  areaL2 = 94.0657
+  areaL3 = 215.4073
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 215.4073
+(30,90) (50,110)
+  ratio = 0
+  areaL1 = 357.5493
+  areaL2 = 267.4173
+  areaL3 = 357.5493
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 357.5493
+(40,90) (60,110)
+  ratio = 0
+  areaL1 = 400
+  areaL2 = 380.2563
+  areaL3 = 400
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 400
+(50,90) (70,110)
+  ratio = 0
+  areaL1 = 400
+  areaL2 = 400
+  areaL3 = 400
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 400
+(60,90) (80,110)
+  ratio = 0
+  areaL1 = 400
+  areaL2 = 400
+  areaL3 = 400
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 400
+(70,90) (90,110)
+  ratio = 0
+  areaL1 = 400
+  areaL2 = 400
+  areaL3 = 400
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 400
+(80,90) (100,110)
+  ratio = 0
+  areaL1 = 400
+  areaL2 = 399.999
+  areaL3 = 400
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 400
+(90,90) (110,110)
+  ratio = 0
+  areaL1 = 395.5771
+  areaL2 = 349.56
+  areaL3 = 395.5771
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 395.5771
+(100,90) (120,110)
+  ratio = 0
+  areaL1 = 315.8351
+  areaL2 = 199.123
+  areaL3 = 315.8351
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 315.8351
+(110,90) (130,110)
+  ratio = 0
+  areaL1 = 144.9389
+  areaL2 = 49.562
+  areaL3 = 144.9389
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 144.9389
+(20,100) (40,120)
+  ratio = 0
+  areaL1 = 58.1667
+  areaL2 = 6.9047
+  areaL3 = 58.1667
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 58.1667
+(30,100) (50,120)
+  ratio = 0
+  areaL1 = 215.4073
+  areaL2 = 94.0657
+  areaL3 = 215.4073
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 215.4073
+(40,100) (60,120)
+  ratio = 0
+  areaL1 = 357.5493
+  areaL2 = 267.4173
+  areaL3 = 357.5493
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 357.5493
+(50,100) (70,120)
+  ratio = 0
+  areaL1 = 400
+  areaL2 = 380.2563
+  areaL3 = 400
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 400
+(60,100) (80,120)
+  ratio = 0
+  areaL1 = 400
+  areaL2 = 400
+  areaL3 = 400
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 400
+(70,100) (90,120)
+  ratio = 0
+  areaL1 = 400
+  areaL2 = 399.999
+  areaL3 = 400
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 400
+(80,100) (100,120)
+  ratio = 0
+  areaL1 = 395.5771
+  areaL2 = 349.56
+  areaL3 = 395.5771
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 395.5771
+(90,100) (110,120)
+  ratio = 0
+  areaL1 = 315.8351
+  areaL2 = 199.123
+  areaL3 = 315.8351
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 315.8351
+(100,100) (120,120)
+  ratio = 0
+  areaL1 = 144.9389
+  areaL2 = 49.562
+  areaL3 = 144.9389
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 144.9389
+(30,110) (50,130)
+  ratio = 0
+  areaL1 = 58.1667
+  areaL2 = 6.9047
+  areaL3 = 58.1667
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 58.1667
+(40,110) (60,130)
+  ratio = 0
+  areaL1 = 215.4073
+  areaL2 = 94.0657
+  areaL3 = 215.4073
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 215.4073
+(50,110) (70,130)
+  ratio = 0
+  areaL1 = 357.5493
+  areaL2 = 267.4173
+  areaL3 = 357.5493
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 357.5493
+(60,110) (80,130)
+  ratio = 0
+  areaL1 = 400
+  areaL2 = 380.2553
+  areaL3 = 400
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 400
+(70,110) (90,130)
+  ratio = 0
+  areaL1 = 395.5771
+  areaL2 = 349.56
+  areaL3 = 395.5771
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 395.5771
+(80,110) (100,130)
+  ratio = 0
+  areaL1 = 315.8351
+  areaL2 = 199.123
+  areaL3 = 315.8351
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 315.8351
+(90,110) (110,130)
+  ratio = 0
+  areaL1 = 144.9389
+  areaL2 = 49.562
+  areaL3 = 144.9389
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 144.9389
+(40,120) (60,140)
+  ratio = 0
+  areaL1 = 58.1667
+  areaL2 = 6.9047
+  areaL3 = 58.1667
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 58.1667
+(50,120) (70,140)
+  ratio = 0
+  areaL1 = 215.4073
+  areaL2 = 94.0657
+  areaL3 = 215.4073
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 215.4073
+(60,120) (80,140)
+  ratio = 0
+  areaL1 = 353.1263
+  areaL2 = 226.9876
+  areaL3 = 353.1263
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 353.1263
+(70,120) (90,140)
+  ratio = 0
+  areaL1 = 315.8351
+  areaL2 = 189.3886
+  areaL3 = 315.8351
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 315.8351
+(80,120) (100,140)
+  ratio = 0
+  areaL1 = 144.9389
+  areaL2 = 49.562
+  areaL3 = 144.9389
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 144.9389
+(50,126.2) (70,146.2)
+  ratio = 0
+  areaL1 = 106.3728
+  areaL2 = 28.2459
+  areaL3 = 106.3728
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 106.3728
+(60,126.2) (80,146.2)
+  ratio = 0
+  areaL1 = 244.3816
+  areaL2 = 106.0725
+  areaL3 = 244.3816
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 244.3816
+(70,126.2) (90,146.2)
+  ratio = 0
+  areaL1 = 206.7816
+  areaL2 = 84.8807
+  areaL3 = 206.7816
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 206.7816
+(80,126.2) (100,146.2)
+  ratio = 0
+  areaL1 = 58.599
+  areaL2 = 7.0541
+  areaL3 = 58.599
+  areaL4 = 0
+  areaL5 = 400
+  areaL6 = 0
+  areaL7 = 58.599

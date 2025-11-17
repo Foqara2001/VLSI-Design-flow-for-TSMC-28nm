@@ -1,0 +1,4 @@
+-merge_gpd_out
+-o .TMP
+-output_form 3
+-num_netlist_parts 2

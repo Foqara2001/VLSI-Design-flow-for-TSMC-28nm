@@ -1,0 +1,17 @@
+Open nets were found during extraction.
+
+Open nets are composed of multiple resistively connected groups (RCGs).
+
+StarRC attempts to determine the location where a net becomes open using
+the topology of the extracted resistor network. However, this determination
+is approximate. This determination is also affected by settings of the
+REDUCTION, REDUCTION_MAX_DELAY_ERROR and EXTRACTION options.
+
+OPEN net: clk_i_clock_gate_u_issue_u_regfile_REGFILE_reg_r24_q_reg  (2 RCGs) :
+	shorting resistor: 91 (resistance=0.01,width=100) is inserted between nodes clk_i_clock_gate_u_issue_u_regfile_REGFILE_reg_r24_q_reg:40 (located at (76.7674,33.9000), layer M2) and u_issue_u_regfile_REGFILE_reg_r24_q_reg_10_:CP (located at (94.0700,33.0900), layer M2)
+OPEN net: clk_i_clock_gate_u_issue_u_regfile_REGFILE_reg_r25_q_reg  (2 RCGs) :
+	shorting resistor: 86 (resistance=0.01,width=100) is inserted between nodes u_issue_u_regfile_REGFILE_reg_r25_q_reg_29_:CP (located at (115.5350,70.9000), layer M2) and u_issue_u_regfile_REGFILE_reg_r25_q_reg_30_:CP (located at (116.0750,54.7000), layer M2)
+OPEN net: clk_i_clock_gate_u_issue_u_regfile_REGFILE_reg_r28_q_reg  (2 RCGs) :
+	shorting resistor: 85 (resistance=0.01,width=100) is inserted between nodes clk_i_clock_gate_u_issue_u_regfile_REGFILE_reg_r28_q_reg:38 (located at (80.9750,28.5000), layer M2) and u_issue_u_regfile_REGFILE_reg_r28_q_reg_1_:CP (located at (83.3524,39.3000), layer M2)
+OPEN net: clk_i_clock_gate_u_issue_u_regfile_REGFILE_reg_r29_q_reg  (2 RCGs) :
+	shorting resistor: 91 (resistance=0.01,width=100) is inserted between nodes u_issue_u_regfile_REGFILE_reg_r29_q_reg_1_:CP (located at (84.3450,41.1000), layer M2) and u_issue_u_regfile_REGFILE_reg_r29_q_reg_24_:CP (located at (85.6900,59.0750), layer M2)

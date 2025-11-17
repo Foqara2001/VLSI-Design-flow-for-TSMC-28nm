@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<errorData typeCount="2" majorVersion="1" minorVersion="8" name="__private_meta_data_:riscv_core_lvs.err" designName="riscv_core" info="" checker="check_lvs" checkerVersion="" created="1756590398" createdDate="08:31:2025:00:46:38:IDT" modified="1756590516" modifiedDate="08:31:2025:00:48:36:IDT" interactive="false" internal="false" metaData="true" numTypes="2" numInsts="26"/>

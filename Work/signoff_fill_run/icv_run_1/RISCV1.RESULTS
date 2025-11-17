@@ -1,0 +1,168 @@
+                               RESULTS: CLEAN
+
+                      ####  #      #####   ###   #   #
+                     #      #      #      #   #  ##  #
+                     #      #      ####   #####  # # #
+                     #      #      #      #   #  #  ##
+                      ####  #####  #####  #   #  #   #
+
+===========================================================================
+
+
+---------------------------------------------------------------------------
+ICV Execution
+---------------------------------------------------------------------------
+
+
+                                 IC Validator 
+
+         Version W-2024.09-SP3-1 for linux64 - Feb 11, 2025 cl#11364552
+
+                    Copyright (c) 1996 - 2025 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Called as: icv -host_init 2 -icc2 -f NDM -i RISCV1.dlib -p /project/tsmc28mmwave/users/foqara/ws/riscv -c RISCV1 -ndm_design_label Routing -icc_density_blockage -I /project/tsmc28mmwave/users/foqara/ws/riscv/signoff_fill_run -I /project/tsmc28mmwave/users/foqara/ws/riscv/signoff_fill_run/icv_run_1 -I /tools/synopsys/fc/V-2023.12-SP3/etc/pxl -I /tools/synopsys/fc/V-2023.12-SP3/etc/pxl -rc /project/tsmc28mmwave/users/foqara/ws/riscv/signoff_fill_run/icv_run_1/icvOptionFile.rc -lf /data/tsmc/28HPCPMMWAVE/dig_libs/PRTF/PRTF_ICC_28nm_Syn_V19_1a/PR_tech/Synopsys/GdsOutMap/gdsout_6X1Z1U.map /tools/synopsys/fc/V-2023.12-SP3/etc/pxl/signoff_metal_fill.rs
+
+Command Line Summary:
+icv
+-c RISCV1
+-f NDM
+-host_init 2
+-i RISCV1.dlib
+-icc2
+-icc_density_blockage
+-lf /data/tsmc/28HPCPMMWAVE/dig_libs/PRTF/PRTF_ICC_28nm_Syn_V19_1a/PR_tech/Synopsys/GdsOutMap/gdsout_6X1Z1U.map
+-ndm_design_label Routing
+-p /project/tsmc28mmwave/users/foqara/ws/riscv
+-rc /project/tsmc28mmwave/users/foqara/ws/riscv/signoff_fill_run/icv_run_1/icvOptionFile.rc
+-I /project/tsmc28mmwave/users/foqara/ws/riscv/signoff_fill_run
+-I /project/tsmc28mmwave/users/foqara/ws/riscv/signoff_fill_run/icv_run_1
+-I /tools/synopsys/fc/V-2023.12-SP3/etc/pxl
+-I /tools/synopsys/fc/V-2023.12-SP3/etc/pxl
+/tools/synopsys/fc/V-2023.12-SP3/etc/pxl/signoff_metal_fill.rs
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Input file name:        RISCV1.dlib
+Top cell name:          RISCV1
+Layout format:          NDM
+Runset file:            /tools/synopsys/fc/V-2023.12-SP3/etc/pxl/signoff_metal_fill.rs
+Working directory:      /project/tsmc28mmwave/users/foqara/ws/riscv/signoff_fill_run/icv_run_1
+Run details directory:  /project/tsmc28mmwave/users/foqara/ws/riscv/signoff_fill_run/icv_run_1/run_details
+Layout error file:      RISCV1.LAYOUT_ERRORS
+User name:              foqara
+Time started:           2025/09/07 12:55:04AM
+Time ended:             2025/09/07 12:55:42AM
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+---------------------------------------------------------------------------
+Results Summary
+---------------------------------------------------------------------------
+
+Rule and DRC Error Summary
+
+1 total rule was run.
+0 rules NOT EXECUTED.
+0 rules have violations.
+There are 0 total violations.
+Refer to RISCV1.LAYOUT_ERRORS
+
+
+---------------------------------------------------------------------------
+Assign Layer Statistics
+---------------------------------------------------------------------------
+
+Utilized Assign Layers = 98
+ Empty Utilized Assign Layers = 85
+ Non-Empty Utilized Assign Layers = 13
+Pruned Assign Layers = 424
+
+
+---------------------------------------------------------------------------
+Run Configuration
+---------------------------------------------------------------------------
+
+run_options()
+ verbose_results_file = { ERRORS }
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+hierarchy_options()
+ delete = { }
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+error_options()
+ error_limit_per_check = ERROR_LIMIT_UNLIMITED
+ match_errors = { }
+ match_errors_processing_mode = HIERARCHICAL
+ match_errors_tolerance = 0.0000
+ violation_options = { }
+ report_empty_violations = false
+ clean_classifications = { }
+ report_error_details_limit_per_check = 100000
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Production Environment Variables
+
+HOME = "/a/home/cc/students/enginer/foqara"
+ICV_HOME_DIR = "/tools/synopsys/icv/W-2024.09-SP3-1"
+PATH = "/tools/synopsys/icv/W-2024.09-SP3-1/bin/LINUX.64:/tools/synopsys/icv/W-2024.09-SP3-1/contrib/bin/LINUX.64:/tools/siemens/CALIBRE/2025.1_33.17/aok_cal_2025.1_33.17/bin:/tools/keysight/ADS/2023/bin:/tools/synopsys/vcs/X-2025.06-1/bin:/tools/synopsys/vcs/vcs_gnu_vX-2025.06/linux/gcc-12.3.0_64-shared/bin:/tools/synopsys/vcs/vcs_gnu_vX-2025.06/linux/binutils-2.33.1_64/bin:/tools/synopsys/fm/W-2024.09-SP3/bin:/tools/ansys/AnsysEM/22.2/v222/Linux64:/tools/synopsys/fc/V-2023.12-SP3/bin:/tools/synopsys/lc/U-2022.12/bin:/tools/synopsys/euclide/X-2025.06-1/eclipse/bin:/tools/synopsys/icv/W-2024.09-SP3-1/bin:/tools/synopsys/starrc/W-2024.09-SP3/bin:/tools/synopsys/prime/W-2024.09-SP3/bin:/tools/synopsys/verdi/X-2025.06-1/bin:/tools/synopsys/syn/W-2024.09-SP3/bin:/tools/synopsys/lc/S-2021.06-SP5/bin:/tools/cadence/PVS/23.11/tools/bin:/tools/keysight/GOLDENGATE/2024/bin:/tools/cadence/XCELIUM/24.09.005/tools/bin/64bit:/tools/cadence/XCELIUM/24.09.005/tools/bin:/tools/cadence/XCELIUM/24.09.005/bin:/tools/cadence/QUANTUS/23.11/tools/bin:/tools/cadence/SPECTRE/24_10.08.371/tools/bin:/tools/cadence/IC/23.10.120/tools/dfII/bin:/tools/cadence/IC/23.10.120/tools/bin:/tools/cadence/EMX/24.10/bin:/usr/local.cc/bin:/tools/common/bin:/tools/common/sge/8.1.9/bin:/tools/common/sge/8.1.9/bin/lx-amd64:/tmp/73838.1.normal:/tools/common/sge/8.1.9/bin:/tools/common/sge/8.1.9/bin:/tools/modules/5.5.0/bin:/tools/common/sge/8.1.9/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/bin:/bin:/usr/bin:/bin:/usr/bin:/bin:/usr/bin:/bin:/tools/cadence/DDI/22.15/bin"
+SNPSLMD_LICENSE_FILE = "27020@micron2.eng.tau.ac.il:27020@micron1.eng.tau.ac.il"
+USER = "foqara"
+
+5 production environment variables set.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Debug Environment Variables
+
+_ICV_RESTORE_LD_LIBRARY_PATH = "/tools/cadence/DDI/22.15/tools/cdsgcc/gcc/9.3/install/lib64"
+icv_WRITE_TECH_FILE_WITH_UPDATES = "/project/tsmc28mmwave/users/foqara/ws/riscv/signoff_fill_run/icv_run_1/tech.tf"
+
+2 debug environment variables set.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Distributed Processing
+ Distributed Cores = 2
+
+ micron9.eng.tau.ac.il (2/112)
+   Commands: 2 in parallel, maximum
+   Model: INTEL(R) XEON(R) GOLD 5520+
+   CPU:   112 cpu 4000 MHz
+   Cores: 56 HT
+   RAM:   1007.125 GB
+   Swap:  32.202 GB
+
+
+---------------------------------------------------------------------------
+Performance Statistics
+---------------------------------------------------------------------------
+
+IC Validator Run Time = 0:00:38
+Peak Single Command Memory = 0.179 GB
+Peak Disk Usage = 0.051 GB
+Network Disk Usage Peak=0.017 GB (no group)
+Group File Disk Usage Peak=0.034 GB
+
+Distributed Host Memory Usage
+ micron9.eng.tau.ac.il (2/112)  ....  Average=1.724 GB, Peak=1.724 GB / 1007.125 GB
+
+Overall Distributed Utilization: not available
+IC Validator is done.

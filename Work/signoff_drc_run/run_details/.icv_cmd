@@ -1,0 +1,4 @@
+signoff_check_drc.err icv Routing RISCV1.dlib RISCV1 NDM INST 2 /project/tsmc28mmwave/users/foqara/ws/riscv/signoff_drc_run/slnFile.txt /project/tsmc28mmwave/users/foqara/ws/riscv/signoff_drc_run/signoff_check_drc.rc /project/tsmc28mmwave/users/foqara/ws/riscv/signoff_drc_run /project/tsmc28mmwave/users/foqara/ws/riscv/signoff_drc_run /project/tsmc28mmwave/users/foqara/ws/riscv /data/tsmc/28HPCPMMWAVE/synopsys/ICV/DRC/2.2a/LOGIC_TopMr_DRC/ICVLN28HP_5M_3X1R_002.22a.encrypt /data/tsmc/28HPCPMMWAVE/dig_libs/PRTF/PRTF_ICC_28nm_Syn_V19_1a/PR_tech/Synopsys/GdsOutMap/gdsout_6X1Z1U.map -rc -p -ndm_design_label -lf -icc_density_blockage -icc2_error_cell -icc2_error_categories -icc2_error_browser -icc2 -i -host_init -hm -f -clf -c -I -I 
+schematic=UNSPECIFIED
+ICV_HOME_DIR=/tools/synopsys/icv/W-2024.09-SP3-1
+ICV_INCLUDES=UNSET

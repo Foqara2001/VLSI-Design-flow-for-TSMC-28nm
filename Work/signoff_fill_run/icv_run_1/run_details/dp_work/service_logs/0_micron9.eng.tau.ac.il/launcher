@@ -1,0 +1,37 @@
+[3292882:2025-09-07 00:55:03.636] Starting service 'launcher' (Node ID=0, Host Name=micron9.eng.tau.ac.il)
+[3292882:2025-09-07 00:55:03.636] Service Launcher starting
+[3292882:2025-09-07 00:55:03.636] Starting service mapper
+[3292882:2025-09-07 00:55:03.636] Started service mapper with PID 3292883
+[3292882:2025-09-07 00:55:03.636] Loading service mapper info
+[3292882:2025-09-07 00:55:03.687] Starting services
+[3292882:2025-09-07 00:55:03.687] Started service license_manager with PID 3292888
+[3292882:2025-09-07 00:55:03.687] Started service cluster with PID 3292889
+[3292882:2025-09-07 00:55:03.688] Started service hdb with PID 3292890
+[3292882:2025-09-07 00:55:03.688] Started service lock_manager with PID 3292891
+[3292882:2025-09-07 00:55:03.688] Started service dashboard_mail with PID 3292892
+[3292882:2025-09-07 00:55:03.688] Started service log_manager with PID 3292893
+[3292882:2025-09-07 00:55:03.710] Service 'log_manager' with PID 3292893 exited with exit status 33
+[3292882:2025-09-07 00:55:43.241] Received signal 15. Shutting down.
+[3292882:2025-09-07 00:55:43.242] Shutting down service 'cluster'
+[3292882:2025-09-07 00:55:43.242]     Closing die FD
+[3292882:2025-09-07 00:55:43.242] Shutting down service 'dashboard_mail'
+[3292882:2025-09-07 00:55:43.242]     Closing die FD
+[3292882:2025-09-07 00:55:43.242] Shutting down service 'hdb'
+[3292882:2025-09-07 00:55:43.242]     Closing die FD
+[3292882:2025-09-07 00:55:43.242] Shutting down service 'license_manager'
+[3292882:2025-09-07 00:55:43.242]     Closing die FD
+[3292882:2025-09-07 00:55:43.242] Shutting down service 'lock_manager'
+[3292882:2025-09-07 00:55:43.242]     Closing die FD
+[3292882:2025-09-07 00:55:43.242] Waiting for service shutdown
+[3292882:2025-09-07 00:55:43.243] Service 'hdb' with PID 3292890 exited with exit status 0
+[3292882:2025-09-07 00:55:43.243] Service 'cluster' with PID 3292889 exited with exit status 0
+[3292882:2025-09-07 00:55:43.243] Service 'lock_manager' with PID 3292891 exited with exit status 0
+[3292882:2025-09-07 00:55:43.243] Service 'dashboard_mail' with PID 3292892 exited with exit status 0
+[3292882:2025-09-07 00:55:43.243] Service 'license_manager' with PID 3292888 exited with exit status 0
+[3292882:2025-09-07 00:55:43.243] Waited 0 seconds on services to shutdown
+[3292882:2025-09-07 00:55:43.243] Shutting down service 'mapper'
+[3292882:2025-09-07 00:55:43.243]     Sending SIGTERM to PID 3292883
+[3292882:2025-09-07 00:55:43.243] Waiting for service shutdown
+[3292882:2025-09-07 00:55:43.247] Service 'mapper' with PID 3292883 exited with exit status 0
+[3292882:2025-09-07 00:55:43.247] Waited 0 seconds on services to shutdown
+[3292882:2025-09-07 00:55:43.247] Service Launcher exiting

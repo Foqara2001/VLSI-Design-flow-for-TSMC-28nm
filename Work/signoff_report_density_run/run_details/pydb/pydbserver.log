@@ -1,0 +1,102 @@
+
+                                  PYDB_Server 
+
+         Version W-2024.09-SP3-1 for linux64 - Feb 11, 2025 cl#11364552
+
+                    Copyright (c) 2007 - 2025 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+variable width coordinate support enabled.
+Removing old database /project/tsmc28mmwave/users/foqara/ws/riscv/signoff_report_density_run/run_details/pydb/PYDB_RISCV1
+Listening for connections on port 37489
+PYDB_Server Started on host micron9.eng.tau.ac.il, Sun 09/07/2025 01:11:13
+Client micron9.eng.tau.ac.il(3302798):15 connected (1 total client)
+Verified current licenses.
+Creating file:/project/tsmc28mmwave/users/foqara/ws/riscv/signoff_report_density_run/run_details/pydb/PYDB_RISCV1?nolock=1
+SQLite page_size=65536
+SQLite cache_size=65536
+SQLite mmap_size=0
+SQLite journal_mode=OFF
+SQLite version 3.33.0
+Client micron9.eng.tau.ac.il(3302872):24 connected (2 total clients)
+Client micron9.eng.tau.ac.il(3302871):27 connected (3 total clients)
+Client micron9.eng.tau.ac.il(3302871):27 connection closed
+Client micron9.eng.tau.ac.il(3302871):27 disconnected (2 clients remain)
+Client micron9.eng.tau.ac.il(3302872):24 connection closed
+Client micron9.eng.tau.ac.il(3302872):24 disconnected (1 client remains)
+Client micron9.eng.tau.ac.il(3302871):24 connected (2 total clients)
+Client micron9.eng.tau.ac.il(3302872):27 connected (3 total clients)
+Client micron9.eng.tau.ac.il(3302871):24 connection closed
+Client micron9.eng.tau.ac.il(3302871):24 disconnected (2 clients remain)
+Client micron9.eng.tau.ac.il(3302871):24 connected (3 total clients)
+Client micron9.eng.tau.ac.il(3302871):24 connection closed
+Client micron9.eng.tau.ac.il(3302871):24 disconnected (2 clients remain)
+Client micron9.eng.tau.ac.il(3302872):27 connection closed
+Client micron9.eng.tau.ac.il(3302872):27 disconnected (1 client remains)
+Client micron9.eng.tau.ac.il(3302871):24 connected (2 total clients)
+Client micron9.eng.tau.ac.il(3302872):27 connected (3 total clients)
+Begin error insertion: /tools/synopsys/fc/V-2023.12-SP3/etc/pxl/report_metal_density.rs:359:density
+Error insertion complete: /tools/synopsys/fc/V-2023.12-SP3/etc/pxl/report_metal_density.rs:359:density
+  Error Insertion Time=0:00:00  User=0.01 Sys=0.01 Mem=0.001 GB SQLite=0.008 GB Unpooled=0.000 GB
+Begin error insertion: /tools/synopsys/fc/V-2023.12-SP3/etc/pxl/report_metal_density.rs:347:density
+Error insertion complete: /tools/synopsys/fc/V-2023.12-SP3/etc/pxl/report_metal_density.rs:347:density
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.00 Mem=0.001 GB SQLite=0.008 GB Unpooled=0.000 GB
+Begin error insertion: /tools/synopsys/fc/V-2023.12-SP3/etc/pxl/report_metal_density.rs:359:density
+Error insertion complete: /tools/synopsys/fc/V-2023.12-SP3/etc/pxl/report_metal_density.rs:359:density
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.00 Mem=0.000 GB SQLite=0.008 GB Unpooled=0.000 GB
+Begin error insertion: /tools/synopsys/fc/V-2023.12-SP3/etc/pxl/report_metal_density.rs:347:density
+Error insertion complete: /tools/synopsys/fc/V-2023.12-SP3/etc/pxl/report_metal_density.rs:347:density
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.00 Mem=0.000 GB SQLite=0.008 GB Unpooled=0.000 GB
+Begin error insertion: /tools/synopsys/fc/V-2023.12-SP3/etc/pxl/report_metal_density.rs:347:density
+Error insertion complete: /tools/synopsys/fc/V-2023.12-SP3/etc/pxl/report_metal_density.rs:347:density
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.00 Mem=0.000 GB SQLite=0.008 GB Unpooled=0.000 GB
+Begin error insertion: /tools/synopsys/fc/V-2023.12-SP3/etc/pxl/report_metal_density.rs:359:density
+Error insertion complete: /tools/synopsys/fc/V-2023.12-SP3/etc/pxl/report_metal_density.rs:359:density
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.00 Mem=0.000 GB SQLite=0.008 GB Unpooled=0.000 GB
+Begin error insertion: /tools/synopsys/fc/V-2023.12-SP3/etc/pxl/report_metal_density.rs:347:density
+Error insertion complete: /tools/synopsys/fc/V-2023.12-SP3/etc/pxl/report_metal_density.rs:347:density
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.00 Mem=0.000 GB SQLite=0.008 GB Unpooled=0.000 GB
+Begin error insertion: /tools/synopsys/fc/V-2023.12-SP3/etc/pxl/report_metal_density.rs:359:density
+Error insertion complete: /tools/synopsys/fc/V-2023.12-SP3/etc/pxl/report_metal_density.rs:359:density
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.00 Mem=0.000 GB SQLite=0.008 GB Unpooled=0.000 GB
+Begin error insertion: /tools/synopsys/fc/V-2023.12-SP3/etc/pxl/report_metal_density.rs:347:density
+Error insertion complete: /tools/synopsys/fc/V-2023.12-SP3/etc/pxl/report_metal_density.rs:347:density
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.00 Mem=0.000 GB SQLite=0.008 GB Unpooled=0.000 GB
+Begin error insertion: /tools/synopsys/fc/V-2023.12-SP3/etc/pxl/report_metal_density.rs:359:density
+Error insertion complete: /tools/synopsys/fc/V-2023.12-SP3/etc/pxl/report_metal_density.rs:359:density
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.00 Mem=0.000 GB SQLite=0.008 GB Unpooled=0.000 GB
+Begin error insertion: /tools/synopsys/fc/V-2023.12-SP3/etc/pxl/report_metal_density.rs:347:density
+Error insertion complete: /tools/synopsys/fc/V-2023.12-SP3/etc/pxl/report_metal_density.rs:347:density
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.00 Mem=0.000 GB SQLite=0.008 GB Unpooled=0.000 GB
+Begin error insertion: /tools/synopsys/fc/V-2023.12-SP3/etc/pxl/report_metal_density.rs:359:density
+Error insertion complete: /tools/synopsys/fc/V-2023.12-SP3/etc/pxl/report_metal_density.rs:359:density
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.00 Mem=0.000 GB SQLite=0.008 GB Unpooled=0.000 GB
+Client micron9.eng.tau.ac.il(3302872):27 connection closed
+Client micron9.eng.tau.ac.il(3302871):24 connection closed
+Client micron9.eng.tau.ac.il(3302872):27 disconnected (2 clients remain)
+Client micron9.eng.tau.ac.il(3302871):24 disconnected (1 client remains)
+ Total error insertion Time=0:00:01  User=0.01 Sys=0.01 Mem=0.001 GB SQLite=0.008 GB Unpooled=0.000 GB
+  Total Commands: 12
+  Total Errors: 12
+  Avg Time/Cmd: Wall=0 User=0.00 Sys=0.00 Mem=0.000 GB
+Generating /project/tsmc28mmwave/users/foqara/ws/riscv/signoff_report_density_run/RISCV1.LAYOUT_ERRORS
+  Generation Time=0:00:00  User=0.00 Sys=0.00 Mem=0.001 GB
+Flushing database cache
+  Flush Time=0:00:00  User=0.00 Sys=0.00 Mem=0.001 GB SQLite=0.008 GB Unpooled=0.000 GB
+Shutdown requested by client micron9.eng.tau.ac.il(3302798):15
+0 clients remain connected
+Client micron9.eng.tau.ac.il(3302798):15 connection closed
+Overall server Time=0:00:13  User=0.01 Sys=0.03 Mem=0.001 GB SQLite=0.008 GB Unpooled=0.000 GB

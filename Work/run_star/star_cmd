@@ -1,0 +1,56 @@
+
+* Specify block name for parasitic extraction
+BLOCK: RISCV1/filler
+
+* Provide the input NDM design database 
+NDM_DATABASE:  /project/tsmc28mmwave/users/foqara/ws/riscv/RISCV1.dlib
+
+
+* Specify nxtgrd file which consists of capacitance models
+TCAD_GRD_FILE:  /data/tsmc/28HPCPMMWAVE/synopsys/StarRC/1.9p1a/typical/crn28hpc+_1p09m+ut-alrdl_5x1y1z1u_typical.nxtgrd
+
+* Provide the mapping file in which design layers mapped to process layers 
+MAPPING_FILE:  /data/tsmc/28HPCPMMWAVE/synopsys/StarRC/1.9p1a/typical/Reference/MAP/star.map_icc_crn28hpc+_1p9m_5x1y1z1u_ut-alrdl
+
+* Reduction setting fro STA Analysis
+REDUCTION: NO_EXTRA_LOOPS 
+
+* Use '*' to extract all signal nets in the design. Otherwise, provide the net names to be extracted separated by a space. Wildcards '?' and '!' are accepted for net names
+NETS: *
+
+* Use 'RC' to perform resistance and capacitance extraction on the nets
+EXTRACTION: RC 
+
+* Provide operating temperature in degree celsius at which extraction is performed
+* OPERATING_TEMPERATURE: <temperature_in_celsius> 
+
+
+* Choose maximum of 2 cores for designs less than 100k nets, 4 to 6 cores for designs around 1Million nets and 8 to 16 cores for designs around 10Million nets
+* NUM_CORES: 4 
+
+* Provide settings to distribute StarRC job on Gridwire or LSF. Use Command Reference manual for reference
+* STARRC_DP_STRING: 
+
+
+SKIP_CELLS: * 
+
+
+COUPLE_TO_GROUND: NO 
+
+COUPLING_ABS_THRESHOLD: 3e-15
+COUPLING_REL_THRESHOLD: 0.03
+REDUCTION_MAX_DELAY_ERROR: 1e-14
+
+
+* Provide the name of a directory
+* GPD: ./results/<gpd_dir>
+NETLIST_FORMAT: SPEF
+NETLIST_FILE: ./results/top_typical.spef
+
+* Provide the name of a summary file to which runtime and memory usage is written
+SUMMARY_FILE: ./results/top.star_sum 
+
+* Provide the working directory name to which StarRC internal information is written in binary
+STAR_DIRECTORY: ./star
+
+

@@ -1,0 +1,251 @@
+
+                                  StarRC (TM)
+
+               Version W-2024.09-SP3 for linux64 - Jan 17, 2025 
+
+                    Copyright (c) 1999 - 2025 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+ExecName: /tools/synopsys/starrc/W-2024.09-SP3/linux64_starrc/bin/StarXtract
+Version: W-2024.09-SP3
+Built on: Jan 16 2025 19:26:01
+Start Time: Tue Sep  2 13:45:03 2025
+
+Host ............ micron1.eng.tau.ac.il
+
+xTractorName: /tools/synopsys/starrc/W-2024.09-SP3/linux64_starrc/bin/xTractor
+Version: W-2024.09-SP3
+Built on: Jan 16 2025 19:25:43
+
+Called as: StarXtract ./run_star/star_cmd 
+Run Directory: /project/tsmc28mmwave/users/foqara/ws/riscv
+WARNING: Design 'RISCV1' is edit-locked by other process/person. (SX-1623)
+
+WARNING: HALF_NODE_SCALE_FACTOR detected in nxtgrd file, setting NETLIST_UNSCALED_RES_PROP:YES for
+         unshrunk coordinates. (SX-0291)
+WARNING: INPUT_NAMES_ESCAPE_REMOVAL is enabled, please make sure that the net select commands remove
+         the escape at the same time. (SX-3860)
+All memory statistics reported in the run refers to peak memory used by one core during respective
+stage. (SX-4032)
+
+Block ........... RISCV1/filler
+Star Directory .. /project/tsmc28mmwave/users/foqara/ws/riscv/star
+WARNING: Running StarRC in single corner mode will result in degraded runtime for design flows where
+         multiple corners are used.  For optimal runtime, add the necessary commands to configure
+         the Simultaneous Multicorner flow (CORNERS_FILE and SELECTED_CORNERS). (SX-3552)
+NDM DB ....... /project/tsmc28mmwave/users/foqara/ws/riscv/RISCV1.dlib:RISCV1.dlib
+ Ref Libs .......
+ /data/tsmc/28HPCPMMWAVE/synopsys/libs/tcbn28hpcplusbwp30p140.ndm:tcbn28hpcplusbwp30p140
+                 
+ /data/tsmc/28HPCPMMWAVE/synopsys/libs/tcbn28hpcplusbwp30p140hvt.ndm:tcbn28hpcplusbwp30p140hvt
+                 
+ /data/tsmc/28HPCPMMWAVE/synopsys/libs/tcbn28hpcplusbwp30p140lvt.ndm:tcbn28hpcplusbwp30p140lvt
+  Setup         Elp=00:00:02 Cpu=00:00:01 Usr=1.4    Sys=0.0    Mem=834.7 
+Done
+WARNING: HALF_NODE_SCALE_FACTOR detected in nxtgrd file, setting NETLIST_UNSCALED_RES_PROP:YES for
+         unshrunk coordinates. (SX-0291)
+
+Map Layers:  Tue Sep  2 13:45:05 2025
+WARNING: HALF_NODE_SCALE_FACTOR detected in nxtgrd file, setting NETLIST_UNSCALED_RES_PROP:YES for
+         unshrunk coordinates. (SX-0291)
+WARNING: MAPPING_FILE layer "poly" is not a valid database layer and will be removed. (SX-1813)
+WARNING: MAPPING_FILE layer "polyCont" is not a valid database layer and will be removed. (SX-1813)
+  Warnings: 3    Errors: 0    (See file summary/layers.sum)
+  Layers        Elp=00:00:00 Cpu=00:00:00 Usr=0.1    Sys=0.0    Mem=846.5 
+Done
+
+Build HN:  Tue Sep  2 13:45:07 2025
+WARNING: HALF_NODE_SCALE_FACTOR detected in nxtgrd file, setting NETLIST_UNSCALED_RES_PROP:YES for
+         unshrunk coordinates. (SX-0291)
+  Warnings: 1    Errors: 0    (See file summary/hn.sum)
+  HN            Elp=00:00:01 Cpu=00:00:00 Usr=0.5    Sys=0.0    Mem=928.3 
+Done
+
+Process Cells:  Tue Sep  2 13:45:08 2025
+WARNING: HALF_NODE_SCALE_FACTOR detected in nxtgrd file, setting NETLIST_UNSCALED_RES_PROP:YES for
+         unshrunk coordinates. (SX-0291)
+  Warnings: 1    Errors: 0    (See file summary/cells.sum)
+  Cells         Elp=00:00:01 Cpu=00:00:01 Usr=1.0    Sys=0.1    Mem=958.1 
+Done
+
+Translate DB:  Tue Sep  2 13:45:09 2025
+WARNING: HALF_NODE_SCALE_FACTOR detected in nxtgrd file, setting NETLIST_UNSCALED_RES_PROP:YES for
+         unshrunk coordinates. (SX-0291)
+  Warnings: 1    Errors: 0    (See file summary/translate.sum)
+  Translate     Elp=00:00:01 Cpu=00:00:00 Usr=0.3    Sys=0.0    Mem=879.0 
+Done
+
+Netlist Setup:  Tue Sep  2 13:45:10 2025
+  Warnings: 0    Errors: 0
+  NetlistSetup  Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=563.8 
+Done
+
+GPD XtractSetup:  Tue Sep  2 13:45:12 2025
+  Warnings: 0    Errors: 0
+  GPD_XtractSetup Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=835.6 
+Done
+
+GPD NameMap:  Tue Sep  2 13:45:14 2025
+  Warnings: 0    Errors: 0
+  GPD_NameMap   Elp=00:00:00 Cpu=00:00:00 Usr=0.1    Sys=0.0    Mem=565.1 
+Done
+
+xTract DB:  Tue Sep  2 13:45:16 2025
+Completed   0%  Time=00:00:00  RemainingTime=00:00:13  Mem=1290.02
+Completed   1%  Time=00:00:00  RemainingTime=00:00:16  Mem=1293.96
+Completed   2%  Time=00:00:00  RemainingTime=00:00:15  Mem=1297.96
+Completed   3%  Time=00:00:00  RemainingTime=00:00:15  Mem=1302.42
+Completed   4%  Time=00:00:00  RemainingTime=00:00:15  Mem=1306.92
+Completed   5%  Time=00:00:00  RemainingTime=00:00:15  Mem=1312.79
+Completed  10%  Time=00:00:01  RemainingTime=00:00:15  Mem=1341.47
+Completed  15%  Time=00:00:02  RemainingTime=00:00:13  Mem=1362.75
+Completed  20%  Time=00:00:02  RemainingTime=00:00:12  Mem=1380.12
+Completed  25%  Time=00:00:03  RemainingTime=00:00:11  Mem=1401.63
+Completed  30%  Time=00:00:04  RemainingTime=00:00:10  Mem=1422.75
+Completed  35%  Time=00:00:05  RemainingTime=00:00:09  Mem=1445.86
+Completed  40%  Time=00:00:05  RemainingTime=00:00:08  Mem=1469.25
+Completed  45%  Time=00:00:06  RemainingTime=00:00:07  Mem=1485.71
+Completed  50%  Time=00:00:06  RemainingTime=00:00:07  Mem=1504.09
+Completed  55%  Time=00:00:08  RemainingTime=00:00:06  Mem=1538.11
+Completed  60%  Time=00:00:09  RemainingTime=00:00:06  Mem=1577.75
+Completed  65%  Time=00:00:10  RemainingTime=00:00:06  Mem=1609.34
+Completed  70%  Time=00:00:11  RemainingTime=00:00:05  Mem=1635.39
+Completed  75%  Time=00:00:12  RemainingTime=00:00:04  Mem=1656.89
+Completed  80%  Time=00:00:12  RemainingTime=00:00:04  Mem=1679.14
+Completed  85%  Time=00:00:13  RemainingTime=00:00:02  Mem=1699.39
+Completed  90%  Time=00:00:14  RemainingTime=00:00:01  Mem=1714.14
+Completed  95%  Time=00:00:14  RemainingTime=00:00:01  Mem=1729.77
+Completed 100%  Time=00:00:14  RemainingTime=00:00:00  Mem=1741.52
+Extracted 878486 capacitors, 1136323 resistors, 1037265 nodes
+Reduced to 119329 nodes,  (88.4958%)
+Reduced to 109956 resistors,  (90.3235%)
+Reduced to 137372 capacitors: 18043 Cc and 119329 Cg (84.3626%)
+  Warnings: 0    Errors: 0
+  xTract        Elp=00:00:20 Cpu=00:00:19 Usr=19.1   Sys=0.5    Mem=1741.5
+Done
+
+xTract Post Process DB:  Tue Sep  2 13:45:40 2025
+  Warnings: 0    Errors: 0
+  xTractPP      Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=406.6 
+Done
+
+Report Violations:  Tue Sep  2 13:45:42 2025
+WARNING: Found shorted nets (see file shorts_all.sum). The capacitances of these nets may be
+         unreliable due to the shorts. (SX-0955)
+WARNING: The short could be on the db layer or other db layers with the same height in
+         star/short_all.sum. (SX-4093)
+  Warnings: 2    Errors: 0    (See file summary/report_violations.sum)
+  ReportViolations Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=563.8 
+Done
+
+Report Opens:  Tue Sep  2 13:45:44 2025
+WARNING: found open net(s) in the design. Check opens.sum file. (EX-414)
+  Warnings: 1    Errors: 0    (See file summary/report_open.sum)
+  ReportOpens   Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=562.1 
+Done
+
+GPD Post Process:  Tue Sep  2 13:45:47 2025
+  Warnings: 0    Errors: 0
+  GPD_PostProcess Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=562.5 
+Done
+
+GPD Converter Part 1:  Tue Sep  2 13:45:49 2025
+  Warnings: 0    Errors: 0
+  GPD_Converter1 Elp=00:00:00 Cpu=00:00:00 Usr=0.6    Sys=0.0    Mem=415.7 
+Done
+
+GPD Converter Part 2:  Tue Sep  2 13:45:51 2025
+  Warnings: 0    Errors: 0
+  GPD_Converter2 Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=400.7 
+Done
+
+GPD Converter Merge:  Tue Sep  2 13:45:54 2025
+  Warnings: 0    Errors: 0
+  GPD_Converter_merge Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=400.6 
+Done
+  
+Setup               Elp=00:00:02 Cpu=00:00:01 Usr=1.4    Sys=0.0    Mem=834.7 
+Layers              Elp=00:00:00 Cpu=00:00:00 Usr=0.1    Sys=0.0    Mem=846.5 
+HN                  Elp=00:00:01 Cpu=00:00:00 Usr=0.5    Sys=0.0    Mem=928.3 
+Cells               Elp=00:00:01 Cpu=00:00:01 Usr=1.0    Sys=0.1    Mem=958.1 
+Translate           Elp=00:00:01 Cpu=00:00:00 Usr=0.3    Sys=0.0    Mem=879.0 
+NetlistSetup        Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=563.8 
+GPD_XtractSetup     Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=835.6 
+GPD_NameMap         Elp=00:00:00 Cpu=00:00:00 Usr=0.1    Sys=0.0    Mem=565.1 
+xTract              Elp=00:00:20 Cpu=00:00:19 Usr=19.1   Sys=0.5    Mem=1741.5
+xTractPP            Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=406.6 
+ReportViolations    Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=563.8 
+ReportOpens         Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=562.1 
+GPD_PostProcess     Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=562.5 
+GPD_Converter1      Elp=00:00:00 Cpu=00:00:00 Usr=0.6    Sys=0.0    Mem=415.7 
+GPD_Converter2      Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=400.7 
+GPD_Converter_merge Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=400.6 
+  
+Done          Elp=00:00:25 Cpu=00:00:23 Usr=23.1   Sys=0.6    Mem=1741.5
+
+End Time: Tue Sep  2 13:45:58 2025
+
+
+
+RUN-TIME SUMMARY:
+----------------------------------------------------------------------------------------------
+CPU#   | STAGE SUMMARY                                            |END TIME             |HOST NAME
+----------------------------------------------------------------------------------------------
+CPU_01 |*Setup                     Elp=00:00:02 Cpu=00:00:01 Mem=834.7  |Sep  2 13:45:05 |micron1.eng.tau.ac.il
+CPU_01 |*Layers                    Elp=00:00:00 Cpu=00:00:00 Mem=846.5  |Sep  2 13:45:05 |micron1.eng.tau.ac.il
+CPU_01 |*HN                        Elp=00:00:01 Cpu=00:00:00 Mem=928.3  |Sep  2 13:45:08 |micron1.eng.tau.ac.il
+CPU_01 |*Cells                     Elp=00:00:01 Cpu=00:00:01 Mem=958.1  |Sep  2 13:45:09 |micron1.eng.tau.ac.il
+CPU_01 |*Translate                 Elp=00:00:01 Cpu=00:00:00 Mem=879    |Sep  2 13:45:10 |micron1.eng.tau.ac.il
+CPU_01 |*NetlistSetup              Elp=00:00:00 Cpu=00:00:00 Mem=563.8  |Sep  2 13:45:10 |micron1.eng.tau.ac.il
+CPU_01 |*GPD_XtractSetup           Elp=00:00:00 Cpu=00:00:00 Mem=835.6  |Sep  2 13:45:12 |micron1.eng.tau.ac.il
+CPU_01 |*GPD_NameMap               Elp=00:00:00 Cpu=00:00:00 Mem=565.1  |Sep  2 13:45:14 |micron1.eng.tau.ac.il
+CPU_01 |*xTract                    Elp=00:00:22 Cpu=00:00:19 Mem=1741.5 |Sep  2 13:45:36 |micron1.eng.tau.ac.il
+CPU_01 |*xTractPP                  Elp=00:00:04 Cpu=00:00:00 Mem=406.6  |Sep  2 13:45:40 |micron1.eng.tau.ac.il
+CPU_01 |*ReportViolations          Elp=00:00:00 Cpu=00:00:00 Mem=563.8  |Sep  2 13:45:42 |micron1.eng.tau.ac.il
+CPU_01 |*ReportOpens               Elp=00:00:01 Cpu=00:00:00 Mem=562.1  |Sep  2 13:45:45 |micron1.eng.tau.ac.il
+CPU_01 |*GPD_PostProcess           Elp=00:00:00 Cpu=00:00:00 Mem=562.5  |Sep  2 13:45:47 |micron1.eng.tau.ac.il
+CPU_01 |*GPD_Converter_DP          Elp=00:00:03 Cpu=00:00:00 Mem=415.7  |Sep  2 13:45:52 |micron1.eng.tau.ac.il
+CPU_01 |*GPD_Converter_merge       Elp=00:00:00 Cpu=00:00:00 Mem=400.6  |Sep  2 13:45:54 |micron1.eng.tau.ac.il
+----------------------------------------------------------------------------------------------
+Start Time: Tue Sep  2 13:45:03 2025
+End Time: Tue Sep  2 13:45:47 2025
+----------------------------------------------------------------------------------------------
+Overall:         Elp=00:00:44 Cpu= 00:00:23 Peak_Mem(MB)=1741.5
+PreXtraction:    Elp=00:00:11 Cpu= 00:00:03 Peak_Mem(MB)=958.1
+Xtraction:       Elp=00:00:22 Cpu= 00:00:19 Peak_Mem(MB)=1741.5
+PostXtraction:   Elp=00:00:11 Cpu= 00:00:00 Peak_Mem(MB)=563.8
+----------------------------------------------------------------------------------------------
+Spef Output:     Elp= 00:00:05 Cpu= 00:00:00 Peak_Mem(MB)=415.7
+----------------------------------------------------------------------------------------------
+
+
+NOTE: Simultaneous Multicorner (SMC) is now the default mode for StarRC gate-level extraction.
+By running SMC, the overall runtime can be reduced by up to 2x with the same level of accuracy
+as single corner extraction. For more information, consult the Simultaneous Multicorner Section
+in the StarRC User Guide.
+
+Message Summary:
+----------------------------------------------------------------------------------------------
+EX-414  (x   1)|Warning      |FOUND OPEN NET(S) IN THE DESIGN. CHECK OPENS.SUM FILE.
+SX-0291 (x   6)|Warning      |HALF_NODE_SCALE_FACTOR DETECTED IN NXTGRD FILE, SETTING NETLIST_UNSCALED_RES_PROP:YES FOR UNSHRUNK COORDINATES.
+SX-0955 (x   1)|Warning      |FOUND SHORTED NETS (SEE FILE SHORTS_ALL.SUM). THE CAPACITANCES OF THESE NETS MAY BE UNRELIABLE DUE TO THE SHORTS.
+SX-1623 (x   1)|Warning      |DESIGN '()' IS EDIT-LOCKED BY OTHER PROCESS/PERSON.
+SX-1813 (x   2)|Warning      |MAPPING_FILE LAYER "()" IS NOT A VALID DATABASE LAYER AND WILL BE REMOVED.
+SX-3552 (x   1)|Warning      |RUNNING STARRC IN SINGLE CORNER MODE WILL RESULT IN DEGRADED RUNTIME FOR DESIGN FLOWS WHERE MULTIPLE CORNERS ARE USED.  FOR OPTIMAL RUNTIME, ADD THE NECESSARY COMMANDS TO CONFIGURE THE SIMULTANEOUS MULTICORNER FLOW (CORNERS_FILE AND SELECTED_CORNERS).
+SX-3860 (x   1)|Warning      |INPUT_NAMES_ESCAPE_REMOVAL IS ENABLED, PLEASE MAKE SURE THAT THE NET SELECT COMMANDS REMOVE THE ESCAPE AT THE SAME TIME.
+SX-4032 (x   1)|Information  |ALL MEMORY STATISTICS REPORTED IN THE RUN REFERS TO PEAK MEMORY USED BY ONE CORE DURING RESPECTIVE STAGE.
+SX-4093 (x   1)|Warning      |THE SHORT COULD BE ON THE DB LAYER OR OTHER DB LAYERS WITH THE SAME HEIGHT IN STAR/SHORT_ALL.SUM.
+

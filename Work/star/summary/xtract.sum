@@ -1,0 +1,13 @@
+Parsing option_file: xtract.tech (EX-304)
+Initializing extraction ... (EX-724)
+Reading binary grd file
+/data/tsmc/28HPCPMMWAVE/synopsys/StarRC/1.9p1a/typical/crn28hpc+_1p09m+ut-alrdl_5x1y1z1u_typical.nxtgrd
+... (EX-135)
+Extracted 878486 capacitors, 1136323 resistors, 1037265 nodes
+Reduced to 119329 nodes,  (88.4958%)
+Reduced to 109956 resistors,  (90.3235%)
+Reduced to 137372 capacitors: 18043 Cc and 119329 Cg (84.3626%)
+  
+xTractor      Elp=00:00:20 Cpu=00:00:19 Usr=19.1   Sys=0.5    Mem=1741.5
+  
+Done          Elp=00:00:20 Cpu=00:00:19 Usr=19.1   Sys=0.5    Mem=1741.5

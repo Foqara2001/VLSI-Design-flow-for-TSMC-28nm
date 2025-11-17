@@ -1,0 +1,20 @@
+[2.53885] Processed 0 packs
+[12.618] Processed 1000 packs
+[13.28] Processed 2000 packs
+[14.5083] Processed 3000 packs
+
+[15.4212] DP Memory Manager Profile
+  Memory manager (OP_MEM) (x884)                     time=0.01s user=0.00s sys=0.00s
+  Memory manager (OP_MMAP) (x204)                    time=0.00s user=0.00s sys=0.01s
+  Memory manager (OP_SEM) (x8)                       time=0.00s user=0.00s sys=0.00s
+  Memory manager (OP_RESTART) (x1)                   time=0.00s user=0.00s sys=0.00s
+  Memory manager (OP_IDLE) (x834)                    time=0.01s user=0.00s sys=0.02s
+  Memory manager (OP_HOST_SHM) (x10)                 time=0.00s user=0.00s sys=0.00s
+  Memory manager (OP_HOST_PROC_MEM) (x6)             time=0.00s user=0.00s sys=0.00s
+  Memory manager (OP_HOST_MEM_STAT) (x4)             time=0.00s user=0.00s sys=0.00s
+  Memory manager (OP_PROC_IO) (x6)                   time=0.00s user=0.00s sys=0.00s
+  Memory manager (OP_PROC_THRD_STAT) (x6)            time=0.00s user=0.00s sys=0.00s
+  Memory manager (OP_CMD_START) (x843)               time=0.00s user=0.00s sys=0.00s
+  Memory manager (OP_CMD_END) (x841)                 time=0.01s user=0.00s sys=0.01s
+
+[15.4212] DP Memory Manager Profile ends

@@ -1,0 +1,41 @@
+[3292883:2025-09-07 00:55:03.657] Starting service 'mapper' (Node ID=0, Host Name=micron9.eng.tau.ac.il)
+[3292883:2025-09-07 00:55:03.678] <Redis> 3292884:C 07 Sep 2025 00:55:03.678 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[3292883:2025-09-07 00:55:03.678] <Redis> 3292884:C 07 Sep 2025 00:55:03.678 # Redis version=6.2.1, bits=64, commit=00000000, modified=0, pid=3292884, just started
+[3292883:2025-09-07 00:55:03.678] <Redis> 3292884:C 07 Sep 2025 00:55:03.678 # Configuration loaded
+[3292883:2025-09-07 00:55:03.679] <Redis> 3292884:M 07 Sep 2025 00:55:03.679 * monotonic clock: POSIX clock_gettime
+[3292883:2025-09-07 00:55:03.679] <Redis> 3292884:M 07 Sep 2025 00:55:03.679 * Running mode=standalone, port=43281.
+[3292883:2025-09-07 00:55:03.679] <Redis> 3292884:M 07 Sep 2025 00:55:03.679 # Server initialized
+[3292883:2025-09-07 00:55:03.679] <Redis> 3292884:M 07 Sep 2025 00:55:03.679 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[3292883:2025-09-07 00:55:03.679] <Redis> 3292884:M 07 Sep 2025 00:55:03.679 * Ready to accept connections
+[3292883:2025-09-07 00:55:03.679] Launched Redis process 3292884 (Service Mapper) on address 127.0.0.1:43281. Attempting to connect...
+[3292883:2025-09-07 00:55:03.679] Attempt #1 successfully connected to Redis at 127.0.0.1:43281
+[3292883:2025-09-07 00:55:03.679] <Redis> 3292884:M 07 Sep 2025 00:55:03.679 * The server is now ready to accept connections at /tmp/icv_HavtW4/mapper
+[3292883:2025-09-07 00:55:03.682] Wrote service info file to run_details/dp_work/service_info
+[3292882:2025-09-07 00:55:13.684] [2025-09-07 00:55:03.687] Service 'launcher:0' registered on micron9.eng.tau.ac.il:53179
+[3292891:2025-09-07 00:55:13.684] [2025-09-07 00:55:03.698] Service 'lock_manager' registered on micron9.eng.tau.ac.il:53881
+[3292889:2025-09-07 00:55:13.685] [2025-09-07 00:55:03.710] Service 'cluster' registered on micron9.eng.tau.ac.il:41655
+[3292888:2025-09-07 00:55:13.685] [2025-09-07 00:55:03.711] Service 'license_manager' registered on micron9.eng.tau.ac.il:46941
+[3292892:2025-09-07 00:55:13.685] [2025-09-07 00:55:03.711] Service 'dashboard_mail' registered on micron9.eng.tau.ac.il:36249
+[3292890:2025-09-07 00:55:13.686] [2025-09-07 00:55:03.733] Service 'hdb' registered on micron9.eng.tau.ac.il:56423
+[3292899:2025-09-07 00:55:13.686] [2025-09-07 00:55:04.395] Service 'memory_manager' registered on micron9.eng.tau.ac.il:53917
+[3292900:2025-09-07 00:55:13.686] [2025-09-07 00:55:04.396] Service 'cleanup' registered on micron9.eng.tau.ac.il:39349
+[3292894:2025-09-07 00:55:23.689] [2025-09-07 00:55:19.291] Service 'add_host' registered on micron9.eng.tau.ac.il:32913
+[3293002:2025-09-07 00:55:23.689] [2025-09-07 00:55:19.323] Per-host service 'worker_pool:micron9.eng.tau.ac.il' registered on micron9.eng.tau.ac.il:34835
+[3293002:2025-09-07 00:55:23.689] [2025-09-07 00:55:19.323] Per-host service 'host_stats:micron9.eng.tau.ac.il' registered on micron9.eng.tau.ac.il:41837
+[3292899:2025-09-07 00:55:43.244] [2025-09-07 00:55:43.153] Removing service 'memory_manager'
+[3292894:2025-09-07 00:55:43.244] [2025-09-07 00:55:43.166] Removing service 'add_host'
+[3292882:2025-09-07 00:55:43.244] [2025-09-07 00:55:43.241] Removing service 'launcher:0'
+[3292889:2025-09-07 00:55:43.244] [2025-09-07 00:55:43.242] Removing service 'cluster'
+[3292890:2025-09-07 00:55:43.244] [2025-09-07 00:55:43.242] Removing service 'hdb'
+[3292891:2025-09-07 00:55:43.244] [2025-09-07 00:55:43.242] Removing service 'lock_manager'
+[3292888:2025-09-07 00:55:43.244] [2025-09-07 00:55:43.242] Removing service 'license_manager'
+[3292892:2025-09-07 00:55:43.244] [2025-09-07 00:55:43.242] Removing service 'dashboard_mail'
+[3293002:2025-09-07 00:55:43.244] [2025-09-07 00:55:43.244] Removing service 'worker_pool:micron9.eng.tau.ac.il'
+[3293002:2025-09-07 00:55:43.244] [2025-09-07 00:55:43.244] Removing service 'host_stats:micron9.eng.tau.ac.il'
+[3292883:2025-09-07 00:55:43.244] Received signal 15 (Terminated). Exiting.
+[3292883:2025-09-07 00:55:43.245] <Redis> 3292884:M 07 Sep 2025 00:55:43.244 # User requested shutdown...
+[3292883:2025-09-07 00:55:43.245] <Redis> 3292884:M 07 Sep 2025 00:55:43.244 * Removing the unix socket file.
+[3292883:2025-09-07 00:55:43.245] <Redis> 3292884:M 07 Sep 2025 00:55:43.244 # Redis is now ready to exit, bye bye...
+[3292883:2025-09-07 00:55:43.245] Pipe is closed from from Redis.
+[3292883:2025-09-07 00:55:43.245] /tmp/icv_HavtW4 is removed
+[3292883:2025-09-07 00:55:43.246] Service info file run_details/dp_work/service_info is removed.

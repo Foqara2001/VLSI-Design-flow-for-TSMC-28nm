@@ -1,0 +1,40 @@
+[09/07/25 00:52:09.938] Host Health Monitor pid 3289979
+stdout and stderr from Host Health Monitor are piped to this file.
+[09/07/25 00:52:09.938] stdin is closed.
+[09/07/25 00:52:09.938] timezone IDT (+0300)
+[09/07/25 00:52:09.938] Initialized callbacks for stdenv library
+[09/07/25 00:52:09.938] Initialized Host Health Monitor
+Sampling interval is set to 4s
+Memory metric is set to pss (proportional set size)
+Parsing smaps files is turned ON
+[09/07/25 00:52:09.948] Starting HHM from parent process icv_worker (pid 3289964).
+[09/07/25 00:52:09.948] Acquire process tree root from icv (pid 3289831)
+[09/07/25 00:52:09.973] wall 0.03s, usr 0.00s, sys 0.01s
+[09/07/25 00:52:13.996] wall 0.07s, usr 0.01s, sys 0.05s
+[09/07/25 00:52:17.975] wall 0.10s, usr 0.01s, sys 0.08s
+[09/07/25 00:52:21.970] wall 0.12s, usr 0.01s, sys 0.10s
+[09/07/25 00:52:25.967] wall 0.14s, usr 0.02s, sys 0.11s
+[09/07/25 00:52:29.962] wall 0.16s, usr 0.02s, sys 0.13s
+[09/07/25 00:52:33.963] wall 0.17s, usr 0.02s, sys 0.14s
+[09/07/25 00:52:37.963] wall 0.18s, usr 0.02s, sys 0.15s
+[09/07/25 00:52:41.962] wall 0.20s, usr 0.03s, sys 0.16s
+[09/07/25 00:52:45.963] wall 0.21s, usr 0.03s, sys 0.17s
+[09/07/25 00:52:49.962] wall 0.23s, usr 0.03s, sys 0.18s
+[09/07/25 00:52:53.962] wall 0.24s, usr 0.03s, sys 0.20s
+[09/07/25 00:52:57.962] wall 0.25s, usr 0.04s, sys 0.21s
+[09/07/25 00:53:01.963] wall 0.27s, usr 0.04s, sys 0.22s
+[09/07/25 00:53:05.962] wall 0.28s, usr 0.04s, sys 0.23s
+[09/07/25 00:53:09.961] wall 0.30s, usr 0.04s, sys 0.24s
+[09/07/25 00:53:13.962] wall 0.31s, usr 0.04s, sys 0.26s
+[09/07/25 00:53:17.962] wall 0.32s, usr 0.05s, sys 0.27s
+[09/07/25 00:53:21.962] wall 0.34s, usr 0.05s, sys 0.28s
+[09/07/25 00:53:25.963] wall 0.35s, usr 0.05s, sys 0.29s
+[09/07/25 00:53:29.962] wall 0.37s, usr 0.05s, sys 0.30s
+[09/07/25 00:53:33.962] wall 0.38s, usr 0.05s, sys 0.31s
+[09/07/25 00:53:37.962] wall 0.39s, usr 0.05s, sys 0.33s
+[09/07/25 00:53:41.962] wall 0.41s, usr 0.06s, sys 0.34s
+[09/07/25 00:53:45.962] wall 0.42s, usr 0.06s, sys 0.35s
+[09/07/25 00:53:49.962] wall 0.43s, usr 0.06s, sys 0.36s
+[09/07/25 00:53:53.962] wall 0.45s, usr 0.07s, sys 0.37s
+[09/07/25 00:53:57.962] wall 0.46s, usr 0.07s, sys 0.38s
+[09/07/25 00:54:01.960] wall 0.47s, usr 0.07s, sys 0.40s

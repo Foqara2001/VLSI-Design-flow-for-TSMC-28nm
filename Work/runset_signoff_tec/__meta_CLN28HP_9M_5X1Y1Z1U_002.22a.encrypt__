@@ -1,0 +1,15 @@
+
+
+// +++ CUSTOMIZATION SETTINGS START +++
+
+#define "FULL_CHIP" 
+#define "WITH_SEALRING" 
+#undefine "CHECK_LOW_DENSITY"
+#undefine "DFM"
+#undefine "USE_IO_VOLTAGE_ON_CORE_TO_IO_NET"
+
+// +++ CUSTOMIZATION SETTINGS END +++
+
+DRC ICSTATION YES
+
+INCLUDE "/data/tsmc/28HPCPMMWAVE/Calibre/drc/2.2a/CLN28HP_9M_5X1Y1Z1U_002.22a.encrypt"
